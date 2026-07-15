@@ -10,7 +10,7 @@
     "description_en": "German supplier of gourmet-water, reverse-osmosis and remineralization systems for home and travel.",
     "products_count": 1,
     "rating": null,
-    "logo": "assets/brands/wertach.svg"
+    "logo": "assets/brands/wertach.png"
   },
   {
     "slug": "pentair",
@@ -23,7 +23,7 @@
     "description_en": "Water treatment, filtration, pumps and residential, commercial and industrial water solutions.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/pentair.svg"
+    "logo": "assets/brands/pentair.png"
   },
   {
     "slug": "pentek",
@@ -36,7 +36,7 @@
     "description_en": "A Pentair brand focused on filter housings, cartridges and point-of-entry water filtration components.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/pentek.svg"
+    "logo": "assets/brands/pentek.png"
   },
   {
     "slug": "3m",
@@ -49,7 +49,7 @@
     "description_en": "Diversified technology company offering drinking-water, foodservice and commercial filtration systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/3m.svg"
+    "logo": "assets/brands/3m.png"
   },
   {
     "slug": "culligan",
@@ -62,7 +62,7 @@
     "description_en": "Global provider of water softeners, drinking-water systems and commercial water treatment services.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/culligan.svg"
+    "logo": "assets/brands/culligan.png"
   },
   {
     "slug": "ao-smith",
@@ -75,7 +75,7 @@
     "description_en": "Manufacturer of water heaters and water treatment products for homes and businesses.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/ao-smith.svg"
+    "logo": "assets/brands/ao-smith.png"
   },
   {
     "slug": "bluewater",
@@ -88,7 +88,7 @@
     "description_en": "Swedish water-purification company known for compact reverse-osmosis and hydration solutions.",
     "products_count": 1,
     "rating": 4.7,
-    "logo": "assets/brands/bluewater.svg"
+    "logo": "assets/brands/bluewater.png"
   },
   {
     "slug": "bwt",
@@ -101,7 +101,7 @@
     "description_en": "European water technology group for residential, hospitality, pharmaceutical and industrial applications.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/bwt.svg"
+    "logo": "assets/brands/bwt.png"
   },
   {
     "slug": "atlas-filtri",
@@ -114,7 +114,7 @@
     "description_en": "Italian manufacturer of filter housings, cartridges and water treatment systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/atlas-filtri.svg"
+    "logo": "assets/brands/atlas-filtri.png"
   },
   {
     "slug": "carbonit",
@@ -127,7 +127,7 @@
     "description_en": "German specialist in activated-carbon drinking-water filters and replacement cartridges.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/carbonit.svg"
+    "logo": "assets/brands/carbonit.png"
   },
   {
     "slug": "kinetico",
@@ -140,7 +140,7 @@
     "description_en": "Water treatment brand known for non-electric softeners and drinking-water systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/kinetico.svg"
+    "logo": "assets/brands/kinetico.png"
   },
   {
     "slug": "walutec",
@@ -153,7 +153,7 @@
     "description_en": "Water technology brand offering filtration, reverse-osmosis and hydrogen-water products.",
     "products_count": 1,
     "rating": 4.5,
-    "logo": "assets/brands/walutec.svg"
+    "logo": "assets/brands/walutec.png"
   },
   {
     "slug": "aquaphor",
@@ -166,7 +166,7 @@
     "description_en": "Developer of household water filters, reverse-osmosis systems and proprietary sorption media.",
     "products_count": 1,
     "rating": 4.4,
-    "logo": "assets/brands/aquaphor.svg"
+    "logo": "assets/brands/aquaphor.png"
   },
   {
     "slug": "waterdrop",
@@ -179,7 +179,7 @@
     "description_en": "Consumer water-filtration brand focused on tankless reverse osmosis and refrigerator filters.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/waterdrop.svg"
+    "logo": "assets/brands/waterdrop.png"
   },
   {
     "slug": "ispring",
@@ -192,7 +192,7 @@
     "description_en": "Supplier of residential reverse-osmosis, whole-house and countertop filtration systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/ispring.svg"
+    "logo": "assets/brands/ispring.png"
   },
   {
     "slug": "apec",
@@ -205,7 +205,7 @@
     "description_en": "US brand specializing in residential reverse-osmosis drinking-water systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/apec.svg"
+    "logo": "assets/brands/apec.png"
   },
   {
     "slug": "home-master",
@@ -218,7 +218,7 @@
     "description_en": "Residential water-filtration brand known for modular RO systems and permeate pumps.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/home-master.svg"
+    "logo": "assets/brands/home-master.png"
   },
   {
     "slug": "express-water",
@@ -231,7 +231,7 @@
     "description_en": "Provider of under-sink reverse osmosis, whole-house and replacement filter products.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/express-water.svg"
+    "logo": "assets/brands/express-water.png"
   },
   {
     "slug": "purepro",
@@ -244,7 +244,7 @@
     "description_en": "Manufacturer of reverse-osmosis systems, components and commercial water-treatment equipment.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/purepro.svg"
+    "logo": "assets/brands/purepro.png"
   },
   {
     "slug": "crystal-quest",
@@ -257,7 +257,7 @@
     "description_en": "Water treatment company offering residential, commercial and specialty filtration systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/crystal-quest.svg"
+    "logo": "assets/brands/crystal-quest.png"
   },
   {
     "slug": "canature",
@@ -270,7 +270,7 @@
     "description_en": "Manufacturer of residential and commercial water-treatment systems and components.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/canature.svg"
+    "logo": "assets/brands/canature.png"
   },
   {
     "slug": "aquatru",
@@ -283,7 +283,7 @@
     "description_en": "Brand known for countertop reverse-osmosis purifiers designed for easy installation.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/aquatru.svg"
+    "logo": "assets/brands/aquatru.png"
   },
   {
     "slug": "coway",
@@ -296,7 +296,7 @@
     "description_en": "Korean home-appliance company producing water purifiers, air purifiers and wellness products.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/coway.svg"
+    "logo": "assets/brands/coway.png"
   },
   {
     "slug": "lg",
@@ -309,7 +309,7 @@
     "description_en": "Global electronics company offering water purifiers and connected home appliances in selected markets.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/lg.svg"
+    "logo": "assets/brands/lg.png"
   },
   {
     "slug": "panasonic",
@@ -322,7 +322,7 @@
     "description_en": "Japanese technology company offering faucet, countertop and household water-treatment products.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/panasonic.svg"
+    "logo": "assets/brands/panasonic.png"
   },
   {
     "slug": "philips",
@@ -335,7 +335,7 @@
     "description_en": "Health-technology brand with water dispensers, filtration devices and household appliances.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/philips.svg"
+    "logo": "assets/brands/philips.png"
   },
   {
     "slug": "xiaomi",
@@ -348,7 +348,7 @@
     "description_en": "Consumer electronics company offering smart water purifiers and connected kitchen appliances.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/xiaomi.svg"
+    "logo": "assets/brands/xiaomi.png"
   },
   {
     "slug": "viomi",
@@ -361,7 +361,7 @@
     "description_en": "Smart-home appliance company with connected reverse-osmosis and countertop water purifiers.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/viomi.svg"
+    "logo": "assets/brands/viomi.png"
   },
   {
     "slug": "angel",
@@ -374,7 +374,7 @@
     "description_en": "Water purification manufacturer active in residential and commercial drinking-water equipment.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/angel.svg"
+    "logo": "assets/brands/angel.png"
   },
   {
     "slug": "qinyuan",
@@ -400,7 +400,7 @@
     "description_en": "Global appliance manufacturer offering water dispensers, purifiers and kitchen systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/midea.svg"
+    "logo": "assets/brands/midea.png"
   },
   {
     "slug": "haier",
@@ -413,7 +413,7 @@
     "description_en": "Home-appliance group offering water purifiers and smart-home products in multiple markets.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/haier.svg"
+    "logo": "assets/brands/haier.png"
   },
   {
     "slug": "echo-water",
@@ -426,7 +426,7 @@
     "description_en": "Hydrogen-water brand offering machines, bottles and related hydration products.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/echo-water.svg"
+    "logo": "assets/brands/echo-water.png"
   },
   {
     "slug": "tyent",
@@ -439,7 +439,7 @@
     "description_en": "Manufacturer of water ionizers and alkaline-hydrogen water systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/tyent.svg"
+    "logo": "assets/brands/tyent.png"
   },
   {
     "slug": "lourdes",
@@ -452,7 +452,7 @@
     "description_en": "Brand associated with dissolved-hydrogen water generators and wellness devices.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/lourdes.svg"
+    "logo": "assets/brands/lourdes.png"
   },
   {
     "slug": "piurify",
@@ -465,7 +465,7 @@
     "description_en": "Consumer brand focused on hydrogen-water bottles and countertop generators.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/piurify.svg"
+    "logo": "assets/brands/piurify.png"
   },
   {
     "slug": "blackwater",
@@ -478,7 +478,7 @@
     "description_en": "German water technology brand offering filtration systems, shower filters and hydrogen-water products.",
     "products_count": 1,
     "rating": 4.8,
-    "logo": "assets/brands/blackwater.svg"
+    "logo": "assets/brands/blackwater.png"
   },
   {
     "slug": "el-nero",
@@ -491,7 +491,7 @@
     "description_en": "Water purification product line focused on direct-flow reverse osmosis and advanced treatment stages.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/el-nero.svg"
+    "logo": "assets/brands/el-nero.png"
   },
   {
     "slug": "alkaviva",
@@ -504,7 +504,7 @@
     "description_en": "Brand specializing in water ionizers, alkaline water and hydrogen-rich water systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/alkaviva.svg"
+    "logo": "assets/brands/alkaviva.png"
   },
   {
     "slug": "fujiiryoki",
@@ -517,7 +517,7 @@
     "description_en": "Japanese wellness equipment company producing water ionizers and health-related devices.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/fujiiryoki.svg"
+    "logo": "assets/brands/fujiiryoki.png"
   },
   {
     "slug": "dupont",
@@ -530,7 +530,7 @@
     "description_en": "Global materials company supplying membranes, ion-exchange resins and water-process technologies.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/dupont.svg"
+    "logo": "assets/brands/dupont.png"
   },
   {
     "slug": "hydranautics",
@@ -543,7 +543,7 @@
     "description_en": "Membrane manufacturer supplying reverse-osmosis, nanofiltration and ultrafiltration elements.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/hydranautics.svg"
+    "logo": "assets/brands/hydranautics.png"
   },
   {
     "slug": "toray",
@@ -556,7 +556,7 @@
     "description_en": "Japanese materials group producing RO, UF and MBR membranes for water treatment.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/toray.svg"
+    "logo": "assets/brands/toray.png"
   },
   {
     "slug": "lg-water-solutions",
@@ -569,7 +569,7 @@
     "description_en": "Membrane business supplying reverse-osmosis products for municipal and industrial applications.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/lg-water-solutions.svg"
+    "logo": "assets/brands/lg-water-solutions.png"
   },
   {
     "slug": "koch-separation",
@@ -582,7 +582,7 @@
     "description_en": "Industrial separation company supplying membrane and process technologies.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/koch-separation.svg"
+    "logo": "assets/brands/koch-separation.png"
   },
   {
     "slug": "veolia",
@@ -595,7 +595,7 @@
     "description_en": "Global provider of municipal and industrial water and wastewater treatment solutions.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/veolia.svg"
+    "logo": "assets/brands/veolia.png"
   },
   {
     "slug": "suez",
@@ -608,7 +608,7 @@
     "description_en": "Water and environmental services group with treatment technologies and infrastructure expertise.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/suez.svg"
+    "logo": "assets/brands/suez.png"
   },
   {
     "slug": "grundfos",
@@ -621,7 +621,7 @@
     "description_en": "Global pump manufacturer supplying dosing, circulation and water-treatment pumping systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/grundfos.svg"
+    "logo": "assets/brands/grundfos.png"
   },
   {
     "slug": "vontron",
@@ -634,7 +634,7 @@
     "description_en": "Manufacturer of reverse-osmosis and nanofiltration membrane elements.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/vontron.svg"
+    "logo": "assets/brands/vontron.png"
   },
   {
     "slug": "lanxess",
@@ -647,7 +647,7 @@
     "description_en": "Specialty chemicals company supplying ion-exchange resins and water-treatment materials.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/lanxess.svg"
+    "logo": "assets/brands/lanxess.png"
   },
   {
     "slug": "brita",
@@ -660,6 +660,6 @@
     "description_en": "German water-filter brand known for pitchers, dispensers and professional filtration systems.",
     "products_count": 0,
     "rating": null,
-    "logo": "assets/brands/brita.svg"
+    "logo": "assets/brands/brita.png"
   }
 ]
