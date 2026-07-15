@@ -1,0 +1,76 @@
+[
+  {
+    "id": "pearl",
+    "slug": "blackwater-pearl",
+    "brand": "BLACKWATER",
+    "name": "Pearl",
+    "category": "Under Sink RO",
+    "price": 1490,
+    "currency": "EUR",
+    "rating": 4.8,
+    "reviews": 34,
+    "image": "assets/img/device-ro.svg",
+    "featured": true,
+    "specs": {
+      "flow_l_h": 102,
+      "tankless": true,
+      "remineralization": true,
+      "warranty_years": 10
+    }
+  },
+  {
+    "id": "dwm",
+    "slug": "aquaphor-dwm-202s-pro",
+    "brand": "Aquaphor",
+    "name": "DWM-202S Pro",
+    "category": "Under Sink RO",
+    "price": 699,
+    "currency": "EUR",
+    "rating": 4.4,
+    "reviews": 81,
+    "image": "assets/img/device-ro.svg",
+    "featured": false,
+    "specs": {
+      "flow_l_h": 15,
+      "tankless": false,
+      "remineralization": true,
+      "pump": true
+    }
+  },
+  {
+    "id": "spirit",
+    "slug": "bluewater-spirit-300",
+    "brand": "Bluewater",
+    "name": "Spirit 300",
+    "category": "Under Sink RO",
+    "price": 1290,
+    "currency": "EUR",
+    "rating": 4.7,
+    "reviews": 19,
+    "image": "assets/img/device-ro.svg",
+    "featured": true,
+    "specs": {
+      "flow_l_h": 25,
+      "tankless": true,
+      "pfas_claim": "certified"
+    }
+  },
+  {
+    "id": "hydro",
+    "slug": "walutec-h2-bottle-pro",
+    "brand": "WALUTEC",
+    "name": "H2 Bottle Pro",
+    "category": "Hydrogen Bottles",
+    "price": 199,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviews": 22,
+    "image": "assets/img/bottle.svg",
+    "featured": false,
+    "specs": {
+      "volume_ml": 260,
+      "ppb_max": 3000,
+      "usb_c": true
+    }
+  }
+]

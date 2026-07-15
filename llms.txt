@@ -1,0 +1,22 @@
+# WASSER.MARKET
+
+> Datenbank für Wassertechnologie mit Produktdaten, Vergleichen, Nutzerbewertungen, Fachartikeln und Laborinformationen.
+
+## Hauptbereiche
+- /products.html: Produktkatalog
+- /compare.html: Vergleich von bis zu drei Geräten
+- /brands.html: Herstellerdatenbank
+- /community.html: Nutzerbewertungen
+- /knowledge.html: Wasserwissen
+- /technologies.html: Filtertechnologien
+
+## Datenprinzipien
+- Herstellerangaben, Zertifizierungen und unabhängige Labortests werden getrennt gekennzeichnet.
+- Produktmerkmale werden strukturiert und vergleichbar dargestellt.
+- Medizinische oder gesundheitliche Aussagen werden nicht ohne belastbare Quellen gemacht.
+- Demoangaben müssen vor Veröffentlichung durch Primärquellen geprüft werden.
+
+## Sprache
+Primär: Deutsch. Zusätzlich: Englisch.
+
+- Community review example: /community/reviews/blackwater-pearl-after-8-months.html
