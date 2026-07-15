@@ -1,5 +1,18 @@
 [
   {
+    "slug": "wertach",
+    "name": "WERTACH",
+    "country": "Germany",
+    "founded": null,
+    "website": "https://wertach-quelle.shop",
+    "group": "Premium",
+    "description_de": "Deutscher Anbieter von Gourmetwasser-, Umkehrosmose- und Remineralisierungssystemen für Haushalt und unterwegs.",
+    "description_en": "German supplier of gourmet-water, reverse-osmosis and remineralization systems for home and travel.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/wertach.svg"
+  },
+  {
     "slug": "pentair",
     "name": "Pentair",
     "country": "United States",

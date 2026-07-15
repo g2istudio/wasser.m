@@ -72,5 +72,38 @@
       "ppb_max": 3000,
       "usb_c": true
     }
+  },
+  {
+    "id": "biella",
+    "slug": "wertach-biella",
+    "brand": "WERTACH",
+    "name": "Biella",
+    "category": "Countertop RO",
+    "price": 1994,
+    "price_variants": {
+      "Basic": 1994,
+      "Performance": 2074,
+      "Medical": 2474
+    },
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/img/wertach-biella.webp",
+    "featured": true,
+    "source": "https://wertach-quelle.shop/product/biella/",
+    "specs": {
+      "production_l_min": 0.34,
+      "filter_stages": 5,
+      "remineralization_stages": 1,
+      "temperature_levels": 9,
+      "temperature_range_c": "10–99",
+      "volume_levels": 7,
+      "volume_range_ml": "90–1000",
+      "microbiological_protection": "4-fold; 5-fold Medical",
+      "tds_display": true,
+      "cooling": true,
+      "instant_heater": true,
+      "warranty_years": 5
+    }
   }
 ]
