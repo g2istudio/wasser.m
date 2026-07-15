@@ -1,0 +1,423 @@
+const products=[
+{id:'pearl',brand:'BLACKWATER',name:'Pearl',cat:'Under Sink RO',price:'€1,490',priceValue:1490,features:['remineralization','certified','tankless','pump'],ppb:null,flow:'102 L/h',maint:'€179/year',liter:'€0.07',membrane:'Premium 600 GPD',pfas:'Lab tested',viruses:'99.9%',bacteria:'99.99%',nitrates:'95%',lead:'99%',arsenic:'96%',micro:'99.9%',tds:'8–35 ppm',remin:'Yes',noise:'38 dB',power:'85 W',warranty:'10 years',country:'Germany',image:'assets/img/device-ro.svg',url:'products/blackwater-pearl.html'},
+{id:'dwm',brand:'Aquaphor',name:'DWM-202S Pro',cat:'Under Sink RO',price:'€699',priceValue:699,features:['remineralization','pump'],ppb:null,flow:'15 L/h',maint:'€130/year',liter:'€0.10',membrane:'100 GPD',pfas:'Claimed',viruses:'99%',bacteria:'99.9%',nitrates:'90%',lead:'98%',arsenic:'90%',micro:'99%',tds:'15–50 ppm',remin:'Yes',noise:'42 dB',power:'55 W',warranty:'2 years',country:'Estonia',image:'assets/img/device-ro.svg',url:'products/blackwater-pearl.html'},
+{id:'spirit',brand:'Bluewater',name:'Spirit 300',cat:'Under Sink RO',price:'€1,290',priceValue:1290,features:['certified','tankless'],ppb:null,flow:'25 L/h',maint:'€210/year',liter:'€0.11',membrane:'High recovery RO',pfas:'Certified',viruses:'99.9%',bacteria:'99.99%',nitrates:'95%',lead:'99%',arsenic:'95%',micro:'99.9%',tds:'10–40 ppm',remin:'Optional',noise:'40 dB',power:'70 W',warranty:'2 years',country:'Sweden',image:'assets/img/device-ro.svg',url:'products/blackwater-pearl.html'},
+{id:'hydro',brand:'WALUTEC',name:'H2 Bottle Pro',cat:'Hydrogen Bottles',price:'€199',priceValue:199,features:['pem-spe','usb-c','display','self-cleaning'],ppb:3000,flow:'260 ml',maint:'€0/year',liter:'—',membrane:'PEM/SPE',pfas:'No',viruses:'No',bacteria:'No',nitrates:'No',lead:'No',arsenic:'No',micro:'No',tds:'Unchanged',remin:'No',noise:'Silent',power:'USB-C',warranty:'2 years',country:'Germany',image:'assets/img/bottle.svg',url:'products/blackwater-pearl.html'}
+];
+
+function storageGet(key,fallback){try{const v=localStorage.getItem(key);return v===null?fallback:v}catch(e){return fallback}}
+function storageSet(key,value){try{localStorage.setItem(key,value)}catch(e){}}
+let selected=[];
+try{selected=JSON.parse(storageGet('wasserCompare','[]'))||[]}catch(e){selected=[]}
+const lang=()=>storageGet('wasserLang','de');
+const tr=(de,en)=>lang()==='de'?de:en;
+function basePrefix(){return /\/(products|brands|articles)\//.test(location.pathname)?'../':''}
+function save(){storageSet('wasserCompare',JSON.stringify(selected));renderDock()}
+function addCompare(id){if(selected.includes(id)){selected=selected.filter(x=>x!==id)}else{if(selected.length>=3){alert(tr('Es können maximal 3 Geräte verglichen werden','You can compare a maximum of 3 devices'));return}selected.push(id)}save()}
+function renderDock(){const dock=document.querySelector('.compare-dock');if(!dock)return;if(!selected.length){dock.classList.remove('show');return}dock.classList.add('show');dock.querySelector('.compare-items').innerHTML=selected.map(id=>{const p=products.find(x=>x.id===id);return p?`<div class="compare-mini">${p.brand} ${p.name}</div>`:''}).join('');dock.querySelector('.count').textContent=`${selected.length}/3`}
+function goCompare(){location.href=basePrefix()+'compare.html'}
+function productMatches(q){q=(q||'').trim().toLowerCase();if(!q)return products;return products.filter(p=>`${p.brand} ${p.name} ${p.cat}`.toLowerCase().includes(q)).slice(0,8)}
+function suggestionHTML(p){return `<div class="autocomplete-item" role="option" tabindex="0" data-id="${p.id}"><img src="${basePrefix()}${p.image}" alt=""><div><b>${p.brand} ${p.name}</b><span>${p.cat} · ${p.price}</span></div></div>`}
+function navigateToProduct(p){if(p) location.href=basePrefix()+p.url}
+
+function setupGeneralAutocomplete(){
+  document.querySelectorAll('.product-search:not(.compare-search)').forEach(input=>{
+    if(input.dataset.searchReady==='1')return;
+    input.dataset.searchReady='1';
+    const parent=input.closest('.searchbar')||input.parentElement;
+    let box=parent.querySelector('.autocomplete-results');
+    if(!box){box=document.createElement('div');box.className='autocomplete-results';box.setAttribute('role','listbox');parent.appendChild(box)}
+    const button=parent.querySelector('button');
+    let currentMatches=[];
+    function draw(force=false){
+      const q=input.value.trim();
+      currentMatches=productMatches(q);
+      box.innerHTML=currentMatches.length?currentMatches.map(suggestionHTML).join(''):`<div class="search-no-results">${tr('Keine passenden Produkte gefunden','No matching products found')}</div>`;
+      box.classList.toggle('show',force||q.length>0);
+      box.querySelectorAll('.autocomplete-item').forEach(el=>{
+        const choose=()=>navigateToProduct(products.find(x=>x.id===el.dataset.id));
+        el.addEventListener('click',choose);
+        el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose()}});
+      });
+    }
+    function submit(){
+      const q=input.value.trim();
+      const exact=productMatches(q)[0];
+      if(exact){navigateToProduct(exact);return}
+      if(q) location.href=basePrefix()+'products.html?q='+encodeURIComponent(q);
+      else draw(true);
+    }
+    input.addEventListener('input',()=>draw(false));
+    input.addEventListener('focus',()=>{if(input.value.trim())draw(false)});
+    input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submit()}else if(e.key==='Escape'){box.classList.remove('show')}});
+    if(button)button.addEventListener('click',e=>{e.preventDefault();submit()});
+    document.addEventListener('click',e=>{if(!parent.contains(e.target))box.classList.remove('show')});
+  });
+}
+
+function setupBrandSearch(){
+  const page=document.querySelector('input[placeholder="Search manufacturer"],input[placeholder="Hersteller suchen"]');
+  if(!page)return;
+  const grid=page.closest('.container')?.querySelector('.article-grid');
+  if(!grid)return;
+  const cards=[...grid.querySelectorAll('.article-card')];
+  const button=page.closest('.searchbar')?.querySelector('button');
+  function filter(){
+    const q=page.value.trim().toLowerCase();
+    let visible=0;
+    cards.forEach(card=>{const match=!q||card.textContent.toLowerCase().includes(q);card.style.display=match?'':'none';if(match)visible++});
+    let empty=grid.parentElement.querySelector('.brand-search-empty');
+    if(!empty){empty=document.createElement('div');empty.className='brand-search-empty panel';empty.style.display='none';grid.after(empty)}
+    empty.textContent=tr('Keine passende Marke gefunden.','No matching brand found.');
+    empty.style.display=visible?'none':'block';
+  }
+  page.classList.remove('product-search');
+  page.addEventListener('input',filter);
+  page.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();filter()}});
+  if(button)button.addEventListener('click',e=>{e.preventDefault();filter()});
+}
+
+function setupProductsQueryFilter(){
+  if(!/products\.html$/.test(location.pathname))return;
+  const q=new URLSearchParams(location.search).get('q');
+  if(!q)return;
+  const cards=[...document.querySelectorAll('.product-card')];
+  cards.forEach(card=>{card.style.display=card.textContent.toLowerCase().includes(q.toLowerCase())?'':'none'});
+}
+
+function initComparePage(){
+  const slots=[0,1,2].map(i=>document.getElementById('slot'+i));if(!slots[0])return;
+
+  const syncClearButton=input=>{
+    const clear=input.parentElement.querySelector('.search-clear-btn');
+    if(!clear)return;
+    const hasValue=input.value.trim().length>0;
+    clear.classList.toggle('show',hasValue);
+    clear.tabIndex=hasValue?0:-1;
+    clear.setAttribute('aria-hidden',hasValue?'false':'true');
+  };
+
+  const refreshSlotValues=()=>{
+    slots.forEach((slot,index)=>{
+      const product=products.find(p=>p.id===selected[index]);
+      slot.value=product?`${product.brand} ${product.name}`:'';
+      syncClearButton(slot);
+    });
+  };
+
+  slots.forEach((input,i)=>{
+    const box=input.parentElement.querySelector('.autocomplete-results');
+    const current=products.find(p=>p.id===selected[i]);
+    if(current)input.value=`${current.brand} ${current.name}`;
+    syncClearButton(input);
+
+    function draw(){
+      const matches=productMatches(input.value);
+      box.innerHTML=matches.length?matches.map(suggestionHTML).join(''):`<div class="search-no-results">${tr('Keine passenden Produkte gefunden','No matching products found')}</div>`;
+      box.classList.add('show');
+      box.querySelectorAll('.autocomplete-item').forEach(el=>el.onclick=()=>{
+        const id=el.dataset.id;
+        if(selected.includes(id)&&selected[i]!==id)return;
+        selected[i]=id;
+        selected=selected.filter(Boolean).slice(0,3);
+        save();
+        refreshSlotValues();
+        box.classList.remove('show');
+        renderCompareTable();
+      });
+    }
+
+    input.addEventListener('input',()=>{
+      if(!input.value.trim()&&selected[i]){
+        selected.splice(i,1);
+        save();
+        refreshSlotValues();
+        renderCompareTable();
+        box.classList.remove('show');
+        return;
+      }
+      syncClearButton(input);
+      draw();
+    });
+    input.addEventListener('focus',draw);
+    input.addEventListener('keydown',e=>{if(e.key==='Escape')box.classList.remove('show')});
+  });
+
+  document.addEventListener('click',e=>{
+    document.querySelectorAll('.compare-slot .autocomplete-results').forEach(box=>{
+      if(!box.parentElement.contains(e.target))box.classList.remove('show');
+    });
+  });
+  refreshSlotValues();
+  renderCompareTable();
+}
+function renderCompareTable(){const table=document.getElementById('comparison');if(!table)return;const ps=selected.map(id=>products.find(p=>p.id===id)).filter(Boolean);if(ps.length<2){table.innerHTML=`<div style="padding:25px">${tr('Fügen Sie mindestens zwei Geräte zum Vergleich hinzu.','Add at least two products to compare.')}</div>`;return}const rows=[[tr('Allgemein','General'),null],[tr('Kategorie','Category'),'cat'],[tr('Preis','Price'),'price'],[tr('Markenland','Brand country'),'country'],[tr('Leistung','Performance'),null],[tr('Durchfluss','Flow rate'),'flow'],[tr('Jährliche Wartung','Annual maintenance'),'maint'],[tr('Kosten pro Liter','Cost per liter'),'liter'],[tr('Membran','Membrane'),'membrane'],[tr('Filtration','Filtration'),null],['PFAS','pfas'],[tr('Viren','Viruses'),'viruses'],[tr('Bakterien','Bacteria'),'bacteria'],[tr('Nitrate','Nitrates'),'nitrates'],[tr('Blei','Lead'),'lead'],[tr('Arsen','Arsenic'),'arsenic'],[tr('Mikroplastik','Microplastics'),'micro'],[tr('Wasserqualität','Water quality'),null],['TDS','tds'],[tr('Remineralisierung','Remineralization'),'remin'],[tr('Betrieb','Operation'),null],[tr('Geräuschpegel','Noise'),'noise'],[tr('Stromverbrauch','Power'),'power'],[tr('Garantie','Warranty'),'warranty']];table.innerHTML=`<table class="compare-table"><thead><tr><th>${tr('Parameter','Parameter')}</th>${ps.map(p=>`<th>${p.brand}<br><strong>${p.name}</strong></th>`).join('')}</tr></thead><tbody>${rows.map(r=>r[1]?`<tr><td>${r[0]}</td>${ps.map(p=>`<td>${p[r[1]]}</td>`).join('')}</tr>`:`<tr class="group-row"><td colspan="${ps.length+1}">${r[0]}</td></tr>`).join('')}</tbody></table>`}
+
+
+
+function setupSearchClearButtons(){
+  const inputs=[...document.querySelectorAll('.product-search, input[placeholder="Search manufacturer"], input[placeholder="Hersteller suchen"], input[type="search"]')];
+  inputs.forEach(input=>{
+    if(input.dataset.clearReady==='1')return;
+    const parent=input.parentElement;
+    if(!parent)return;
+    if(input.id==='brandDirectorySearch' || parent.querySelector('.field-clear')){
+      input.dataset.clearReady='1';
+      return;
+    }
+    input.dataset.clearReady='1';
+    const clear=document.createElement('button');
+    clear.type='button';
+    clear.className='search-clear-btn';
+    clear.setAttribute('aria-label',tr('Suchfeld leeren','Clear search field'));
+    clear.setAttribute('title',tr('Suchfeld leeren','Clear search field'));
+    clear.innerHTML='×';
+    input.insertAdjacentElement('afterend',clear);
+    const update=()=>{
+      const hasValue=input.value.length>0;
+      clear.classList.toggle('show',hasValue);
+      clear.tabIndex=hasValue?0:-1;
+      clear.setAttribute('aria-hidden',hasValue?'false':'true');
+    };
+    clear.addEventListener('click',e=>{
+      e.preventDefault();
+      e.stopPropagation();
+      input.value='';
+      input.dispatchEvent(new Event('input',{bubbles:true}));
+      input.dispatchEvent(new Event('change',{bubbles:true}));
+      parent.querySelectorAll('.autocomplete-results').forEach(box=>box.classList.remove('show'));
+      update();
+      input.focus();
+    });
+    input.addEventListener('input',update);
+    input.addEventListener('change',update);
+    update();
+  });
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  renderDock();
+  setupSearchClearButtons();
+  setupBrandSearch();
+  initComparePage();
+  setupGeneralAutocomplete();
+  setupProductsQueryFilter();
+  document.querySelectorAll('[data-compare]').forEach(b=>b.addEventListener('click',()=>addCompare(b.dataset.compare)));
+});
+
+
+const productRatingSeed={
+ pearl:{average:4.8,count:34},dwm:{average:4.4,count:81},spirit:{average:4.7,count:19},hydro:{average:4.5,count:22}
+};
+function getReviewStore(){try{return JSON.parse(storageGet('wasserProductReviews','{}'))||{}}catch(e){return {}}}
+function saveReviewStore(data){storageSet('wasserProductReviews',JSON.stringify(data))}
+function getProductReviews(id){return getReviewStore()[id]||[]}
+function calculateProductRating(id){const seed=productRatingSeed[id]||{average:0,count:0};const reviews=getProductReviews(id);const total=seed.average*seed.count+reviews.reduce((s,r)=>s+Number(r.rating||0),0);const count=seed.count+reviews.length;return {average:count?total/count:0,count}}
+function starText(value){const full=Math.round(value);return '★★★★★'.slice(0,full)+'☆☆☆☆☆'.slice(0,5-full)}
+function refreshProductRatings(){
+ document.querySelectorAll('[data-rating-summary]').forEach(el=>{const id=el.dataset.ratingSummary,r=calculateProductRating(id);el.textContent=`${starText(r.average)} ${r.average.toFixed(1)} (${r.count})`});
+ document.querySelectorAll('[data-rating-value]').forEach(el=>{const r=calculateProductRating(el.dataset.ratingValue);el.textContent=r.average.toFixed(1)});
+ document.querySelectorAll('[data-rating-stars]').forEach(el=>{const r=calculateProductRating(el.dataset.ratingStars);el.textContent=starText(r.average)});
+ document.querySelectorAll('[data-rating-count]').forEach(el=>{const r=calculateProductRating(el.dataset.ratingCount);el.textContent=`${r.count} ${tr('Bewertungen','reviews')}`});
+ document.querySelectorAll('[data-review-list]').forEach(renderReviewList);
+}
+function renderReviewList(el){const id=el.dataset.reviewList,reviews=getProductReviews(id);if(!reviews.length){el.innerHTML=`<div class="review-empty">${tr('Noch keine zusätzlichen Nutzerbewertungen in diesem Browser.','No additional user reviews in this browser yet.')}</div>`;return}el.innerHTML=reviews.slice().reverse().map((r,i)=>`<article class="rich-review-card"><div class="user-review-head"><strong>${escapeReview(r.name||tr('Anonym','Anonymous'))}</strong><span class="review-stars-display">${starText(r.rating)}</span></div><p>${escapeReview(r.comment)}</p>${(r.pros||[]).length||(r.cons||[]).length?`<div class="pros-cons"><div><b>${tr('Vorteile','Pros')}</b>${(r.pros||[]).map(x=>`<span>✓ ${escapeReview(x)}</span>`).join('')}</div><div><b>${tr('Nachteile','Cons')}</b>${(r.cons||[]).map(x=>`<span>− ${escapeReview(x)}</span>`).join('')}</div></div>`:''}<div class="review-footer"><button class="helpful-btn" data-helpful-id="local-${id}-${i}" data-helpful-count="${r.helpful||0}">👍 <span>${r.helpful||0}</span> ${tr('hilfreich','helpful')}</button><time>${new Date(r.date).toLocaleDateString(lang()==='de'?'de-DE':'en-US')}</time></div></article>`).join('');setupHelpfulButtons(el)}
+function escapeReview(v){const d=document.createElement('div');d.textContent=v||'';return d.innerHTML}
+function openReviewModal(id){const p=products.find(x=>x.id===id);let modal=document.getElementById('review-modal');if(!modal){modal=document.createElement('div');modal.id='review-modal';modal.className='review-modal';modal.innerHTML=`<div class="review-dialog" role="dialog" aria-modal="true"><button class="review-close" aria-label="Close">×</button><h2 class="review-dialog-title"></h2><form id="review-form"><input type="hidden" name="productId"><label>${tr('Ihr Name','Your name')}<input name="name" maxlength="60" placeholder="${tr('Optional','Optional')}"></label><fieldset><legend>${tr('Bewertung','Rating')}</legend><div class="star-picker">${[1,2,3,4,5].map(n=>`<button type="button" data-star="${n}" aria-label="${n} ${tr('Sterne','stars')}">☆</button>`).join('')}</div><input type="hidden" name="rating" required></fieldset><label>${tr('Kommentar','Comment')}<textarea name="comment" rows="5" maxlength="1200" required placeholder="${tr('Beschreiben Sie Ihre Erfahrung mit dem Produkt.','Describe your experience with the product.')}"></textarea></label><label>${tr('Vorteile (eine Zeile pro Punkt)','Pros (one item per line)')}<textarea name="pros" rows="3" maxlength="600" placeholder="${tr('Leise\nHoher Durchfluss','Quiet\nHigh flow rate')}"></textarea></label><label>${tr('Nachteile (eine Zeile pro Punkt)','Cons (one item per line)')}<textarea name="cons" rows="3" maxlength="600" placeholder="${tr('Ersatzfilter teuer','Expensive replacement filters')}"></textarea></label><label class="review-consent"><input type="checkbox" required> ${tr('Ich bestätige, dass diese Bewertung auf meiner eigenen Erfahrung basiert.','I confirm this review is based on my own experience.')}</label><button class="btn primary" type="submit">${tr('Bewertung veröffentlichen','Publish review')}</button><p class="review-storage-note">${tr('Demoversion: Speicherung nur in diesem Browser.','Demo: stored only in this browser.')}</p></form></div>`;document.body.appendChild(modal);modal.querySelector('.review-close').onclick=()=>modal.classList.remove('show');modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});const form=modal.querySelector('#review-form');modal.querySelectorAll('[data-star]').forEach(btn=>btn.onclick=()=>{const n=Number(btn.dataset.star);form.rating.value=n;modal.querySelectorAll('[data-star]').forEach(b=>b.textContent=Number(b.dataset.star)<=n?'★':'☆')});form.onsubmit=e=>{e.preventDefault();if(!form.rating.value){alert(tr('Bitte wählen Sie eine Sternebewertung.','Please choose a star rating.'));return}const store=getReviewStore(),pid=form.productId.value;store[pid]=store[pid]||[];store[pid].push({name:form.name.value.trim(),rating:Number(form.rating.value),comment:form.comment.value.trim(),pros:form.pros.value.split(/\n+/).map(x=>x.trim()).filter(Boolean),cons:form.cons.value.split(/\n+/).map(x=>x.trim()).filter(Boolean),helpful:0,date:new Date().toISOString()});saveReviewStore(store);modal.classList.remove('show');form.reset();modal.querySelectorAll('[data-star]').forEach(b=>b.textContent='☆');refreshProductRatings()}}
+ modal.querySelector('.review-dialog-title').textContent=`${tr('Bewertung für','Review for')} ${p?p.brand+' '+p.name:id}`;modal.querySelector('[name="productId"]').value=id;modal.classList.add('show')}
+
+function setupHelpfulButtons(root=document){root.querySelectorAll('.helpful-btn').forEach(btn=>{if(btn.dataset.ready)return;btn.dataset.ready='1';const id=btn.dataset.helpfulId;let count=Number(btn.dataset.helpfulCount||0);if(storageGet('wasserHelpful_'+id,'0')==='1'){btn.classList.add('voted');count+=1;btn.querySelector('span').textContent=count}btn.addEventListener('click',()=>{if(storageGet('wasserHelpful_'+id,'0')==='1')return;storageSet('wasserHelpful_'+id,'1');btn.classList.add('voted');btn.querySelector('span').textContent=count+1})})}
+function setupReviewSystem(){document.querySelectorAll('[data-review-product]').forEach(btn=>btn.addEventListener('click',()=>openReviewModal(btn.dataset.reviewProduct)));refreshProductRatings()}
+document.addEventListener('DOMContentLoaded',()=>{setupReviewSystem();setupHelpfulButtons()});
+
+
+function setupProductsLiveFilters(){
+  if(!/products\.html$/.test(location.pathname)) return;
+
+  const category = document.getElementById('filterCategory');
+  const brandInput = document.getElementById('filterBrand');
+  const brandClear = document.getElementById('filterBrandClear');
+  const brandSuggestions = document.getElementById('filterBrandSuggestions');
+  const price = document.getElementById('filterPrice');
+  const featuresBox = document.getElementById('dynamicFeatures');
+  const reset = document.getElementById('resetProductFilters');
+  const count = document.getElementById('productResultCount');
+  const resultText = document.getElementById('productResultText');
+  if(!category || !brandInput || !price || !featuresBox) return;
+
+  const cards = [...document.querySelectorAll('.product-card')];
+  const brands = [...new Set(products.map(p=>p.brand))].sort((a,b)=>a.localeCompare(b));
+  const featureDefinitions = {
+    'Under Sink RO': [
+      {id:'remineralization',de:'Remineralisierung',en:'Remineralization'},
+      {id:'certified',de:'Geprüfte Filterleistung',en:'Certified claims'},
+      {id:'tankless',de:'Tanklos',en:'Tankless'},
+      {id:'pump',de:'Integrierte Pumpe',en:'Integrated pump'}
+    ],
+    'Hydrogen Bottles': [
+      {id:'ppb1500',de:'Mindestens 1.500 PPB',en:'At least 1,500 PPB',test:p=>(p.ppb||0)>=1500},
+      {id:'ppb3000',de:'Bis 3.000 PPB',en:'Up to 3,000 PPB',test:p=>(p.ppb||0)>=3000},
+      {id:'pem-spe',de:'PEM/SPE-Technologie',en:'PEM/SPE technology'},
+      {id:'usb-c',de:'USB-C',en:'USB-C'},
+      {id:'display',de:'Display',en:'Display'},
+      {id:'self-cleaning',de:'Selbstreinigung',en:'Self-cleaning'}
+    ],
+    'Shower Filters': [
+      {id:'chlorine',de:'Chlorreduzierung',en:'Chlorine reduction'},
+      {id:'universal',de:'Universalanschluss',en:'Universal connection'},
+      {id:'replaceable',de:'Wechselkartusche',en:'Replaceable cartridge'}
+    ],
+    '': [
+      {id:'remineralization',de:'Remineralisierung',en:'Remineralization'},
+      {id:'certified',de:'Geprüfte Filterleistung',en:'Certified claims'},
+      {id:'tankless',de:'Tanklos',en:'Tankless'},
+      {id:'pem-spe',de:'PEM/SPE-Technologie',en:'PEM/SPE technology'}
+    ]
+  };
+
+  function localText(item){ return lang()==='de' ? item.de : item.en; }
+
+  function renderFeatures(){
+    const defs = featureDefinitions[category.value] || featureDefinitions[''];
+    featuresBox.innerHTML = defs.map(item=>`
+      <label class="feature-option">
+        <input type="checkbox" value="${item.id}">
+        <span>${localText(item)}</span>
+      </label>`).join('');
+    featuresBox.querySelectorAll('input').forEach(el=>el.addEventListener('change',applyFilters));
+  }
+
+  function selectedFeatureDefs(){
+    const defs = featureDefinitions[category.value] || featureDefinitions[''];
+    const checked = [...featuresBox.querySelectorAll('input:checked')].map(x=>x.value);
+    return defs.filter(d=>checked.includes(d.id));
+  }
+
+  function productForCard(card){
+    return products.find(p=>p.id===card.dataset.productId);
+  }
+
+  function matchesFeatures(p){
+    return selectedFeatureDefs().every(def=>{
+      if(def.test) return def.test(p);
+      return (p.features||[]).includes(def.id);
+    });
+  }
+
+  function applyFilters(){
+    const selectedCategory = category.value;
+    const brandQuery = brandInput.value.trim().toLowerCase();
+    const selectedPrice = price.value;
+    let visible = 0;
+
+    cards.forEach(card=>{
+      const p = productForCard(card);
+      if(!p){ card.style.display='none'; return; }
+
+      const categoryMatch = !selectedCategory || p.cat===selectedCategory;
+      const brandMatch = !brandQuery || p.brand.toLowerCase().includes(brandQuery);
+      const priceMatch = !selectedPrice ||
+        (selectedPrice==='under1500' && p.priceValue < 1500) ||
+        (selectedPrice==='from1500' && p.priceValue >= 1500);
+      const featureMatch = matchesFeatures(p);
+      const show = categoryMatch && brandMatch && priceMatch && featureMatch;
+
+      card.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+
+    if(count) count.textContent = `${visible} ${visible===1 ? tr('Modell','model') : tr('Modelle','models')}`;
+    if(resultText) resultText.textContent = visible
+      ? tr('Die Auswahl wird automatisch aktualisiert.','Results update automatically.')
+      : tr('Keine Produkte entsprechen den gewählten Filtern.','No products match the selected filters.');
+
+    brandClear.classList.toggle('show', brandInput.value.length>0);
+  }
+
+  function drawBrandSuggestions(){
+    const q = brandInput.value.trim().toLowerCase();
+    const matches = brands.filter(b=>!q || b.toLowerCase().includes(q));
+    brandSuggestions.innerHTML = matches.length
+      ? matches.map(b=>`<button type="button" class="brand-suggestion" role="option">${b}</button>`).join('')
+      : `<div class="brand-suggestion-empty">${tr('Keine Marke gefunden','No brand found')}</div>`;
+    brandSuggestions.classList.add('show');
+    brandSuggestions.querySelectorAll('.brand-suggestion').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        brandInput.value = btn.textContent;
+        brandSuggestions.classList.remove('show');
+        applyFilters();
+        brandInput.focus();
+      });
+    });
+  }
+
+  category.addEventListener('change',()=>{
+    renderFeatures();
+    applyFilters();
+  });
+  price.addEventListener('change', applyFilters);
+  brandInput.addEventListener('input',()=>{
+    drawBrandSuggestions();
+    applyFilters();
+  });
+  brandInput.addEventListener('focus', drawBrandSuggestions);
+  brandInput.addEventListener('keydown',e=>{
+    if(e.key==='Escape') brandSuggestions.classList.remove('show');
+    if(e.key==='Enter'){
+      e.preventDefault();
+      const first = brandSuggestions.querySelector('.brand-suggestion');
+      if(first) first.click();
+      else applyFilters();
+    }
+  });
+  brandClear.addEventListener('click',()=>{
+    brandInput.value='';
+    brandSuggestions.classList.remove('show');
+    applyFilters();
+    brandInput.focus();
+  });
+  reset.addEventListener('click',()=>{
+    category.value='';
+    brandInput.value='';
+    price.value='';
+    renderFeatures();
+    brandSuggestions.classList.remove('show');
+    applyFilters();
+  });
+  document.addEventListener('click',e=>{
+    if(!brandInput.closest('.filter-autocomplete').contains(e.target)){
+      brandSuggestions.classList.remove('show');
+    }
+  });
+
+  renderFeatures();
+  applyFilters();
+}
+
+
+document.addEventListener('DOMContentLoaded', setupProductsLiveFilters);
+
+
+// Sprint 1.1 global UI behaviours
+(function(){
+  function initV2Navigation(){
+    document.querySelectorAll('.mobile-menu-btn').forEach(btn=>{
+      const header=btn.closest('.site-header');
+      const panel=header && header.querySelector('.mobile-nav-panel');
+      if(!panel) return;
+      btn.addEventListener('click',()=>{
+        const open=panel.classList.toggle('open');
+        panel.setAttribute('aria-hidden',String(!open));
+        btn.setAttribute('aria-expanded',String(open));
+        btn.textContent=open?'×':'☰';
+      });
+    });
+    document.querySelectorAll('.nav-more-btn').forEach(btn=>{
+      btn.addEventListener('click',()=>btn.setAttribute('aria-expanded',btn.getAttribute('aria-expanded')==='true'?'false':'true'));
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initV2Navigation); else initV2Navigation();
+})();
+
+function setupBrandDirectory(){const input=document.getElementById('brandDirectorySearch');if(!input)return;const clear=document.getElementById('brandDirectoryClear');const cards=[...document.querySelectorAll('.brand-directory-card')];const count=document.getElementById('brandDirectoryCount');const empty=document.getElementById('brandDirectoryEmpty');const normalize=value=>(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').trim().toLowerCase();function run(){const q=normalize(input.value);let n=0;cards.forEach(c=>{const haystack=normalize([c.dataset.brandName,c.dataset.brandCountry,c.querySelector('h3')?.textContent,c.querySelector('.brand-meta')?.textContent].join(' '));const show=!q||haystack.includes(q);c.hidden=!show;c.style.display=show?'':'none';if(show)n++});if(count)count.textContent=`${n} ${lang()==='de'?'Marken':'brands'}`;if(clear)clear.classList.toggle('show',!!q);if(empty)empty.hidden=n>0}input.addEventListener('input',run);input.addEventListener('search',run);if(clear)clear.addEventListener('click',()=>{input.value='';run();input.focus()});run()}
+document.addEventListener('DOMContentLoaded',setupBrandDirectory);

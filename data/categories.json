@@ -1,0 +1,26 @@
+[
+  {
+    "id": "under-sink-ro",
+    "name_de": "Untertisch-RO",
+    "name_en": "Under Sink RO",
+    "icon": "◫"
+  },
+  {
+    "id": "countertop-ro",
+    "name_de": "Auftisch-RO",
+    "name_en": "Countertop RO",
+    "icon": "▣"
+  },
+  {
+    "id": "whole-house",
+    "name_de": "Hauswasserfilter",
+    "name_en": "Whole House",
+    "icon": "⌂"
+  },
+  {
+    "id": "hydrogen-bottles",
+    "name_de": "Wasserstoffflaschen",
+    "name_en": "Hydrogen Bottles",
+    "icon": "◒"
+  }
+]
