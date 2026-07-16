@@ -499,3 +499,80 @@ body.wm-v2 .brand-count-badge{
     min-width:0;
   }
 }
+
+/* New brand pages: balanced information above the fold */
+body.wm-v2 .brand-hero{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(320px,.75fr);
+  gap:24px;
+  align-items:stretch;
+  margin-bottom:22px;
+}
+body.wm-v2 .brand-hero-primary,
+body.wm-v2 .brand-hero-details{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  box-shadow:0 14px 38px rgba(18,56,86,.07);
+}
+body.wm-v2 .brand-hero-primary{
+  display:grid;
+  grid-template-columns:190px minmax(0,1fr);
+  gap:28px;
+  align-items:center;
+  padding:30px;
+}
+body.wm-v2 .brand-hero-logo{
+  display:grid;
+  place-items:center;
+  min-height:190px;
+  padding:22px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:linear-gradient(145deg,#fff,#f1f7fb);
+}
+body.wm-v2 .brand-hero-logo img{
+  display:block;
+  width:100%;
+  max-width:170px;
+  max-height:150px;
+  object-fit:contain;
+}
+body.wm-v2 .brand-hero-copy h1{
+  margin:12px 0 10px;
+  font-size:clamp(38px,4vw,58px);
+  line-height:1;
+}
+body.wm-v2 .brand-hero-copy .lead{max-width:670px;margin-bottom:0}
+body.wm-v2 .brand-hero-details{
+  display:flex;
+  flex-direction:column;
+  padding:26px;
+  background:linear-gradient(155deg,#f8fbfe,#eef6fb);
+}
+body.wm-v2 .brand-hero-details h2{margin:0 0 12px;font-size:22px}
+body.wm-v2 .brand-hero-details dl{margin:0 0 20px}
+body.wm-v2 .brand-hero-details dl div{
+  display:grid;
+  grid-template-columns:minmax(105px,.85fr) minmax(0,1.15fr);
+  gap:14px;
+  padding:12px 0;
+  border-bottom:1px solid rgba(155,180,199,.4);
+}
+body.wm-v2 .brand-hero-details dt{color:var(--muted);font-size:13px}
+body.wm-v2 .brand-hero-details dd{margin:0;font-weight:750;text-align:right}
+body.wm-v2 .brand-hero-details .btn{width:100%;margin-top:auto}
+@media(max-width:980px){
+  body.wm-v2 .brand-hero{grid-template-columns:1fr}
+  body.wm-v2 .brand-hero-details dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  body.wm-v2 .brand-hero-details dl div{display:block;border:1px solid var(--line);border-radius:12px;padding:12px}
+  body.wm-v2 .brand-hero-details dd{margin-top:5px;text-align:left}
+}
+@media(max-width:620px){
+  body.wm-v2 .brand-hero-primary{grid-template-columns:1fr;padding:20px;gap:18px}
+  body.wm-v2 .brand-hero-logo{min-height:145px}
+  body.wm-v2 .brand-hero-copy h1{font-size:38px}
+  body.wm-v2 .brand-hero-details{padding:20px}
+  body.wm-v2 .brand-hero-details dl{grid-template-columns:1fr}
+}
