@@ -63,14 +63,8 @@ const newBrandCards = additions.brands.filter(brand => !brandsHtml.includes(`hre
 brandsHtml = brandsHtml.replace('</div>\n<div class="panel brand-empty"',`${newBrandCards}</div>\n<div class="panel brand-empty"`);
 fs.writeFileSync(path.join(root,'brands.html'),brandsHtml);
 
-let productsHtml = fs.readFileSync(path.join(root,'products.html'),'utf8');
-if (!productsHtml.includes('id="catalogAdditions"')) {
-  const section = `<div class="container"><section class="section" id="catalogAdditions"><div class="section-head"><div><h2>Weitere Modelle</h2><p>Erweiterte Hersteller- und Produktdatenbank</p></div></div><div class="product-grid">${additions.products.map(item=>productCard(item,'')).join('')}</div></section></div>`;
-  productsHtml = productsHtml.replace('</main>',`${section}</main>`);
-  fs.writeFileSync(path.join(root,'products.html'),productsHtml);
-}
-
 let app = fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
 const appItems = additions.products.filter(product=>!app.includes(`id:'${product.slug}'`)).map(product=>`{id:'${product.slug}',brand:${JSON.stringify(product.brand)},name:${JSON.stringify(product.name)},cat:${JSON.stringify(product.category)},price:${JSON.stringify(priceText(product.price))},priceValue:${product.price ?? 'null'},features:[],ppb:null,flow:'Not published',maint:'Not published',liter:'—',membrane:${JSON.stringify(product.specs.find(([key])=>/Membran/.test(key))?.[1] || 'Not published')},pfas:'Not published',viruses:'Not published',bacteria:'Not published',nitrates:'Not published',lead:'Not published',arsenic:'Not published',micro:'Not published',tds:'Not published',remin:'Not published',noise:'Not published',power:'Not published',warranty:'Not published',country:'Germany',image:${JSON.stringify(product.image)},url:'products/${product.slug}.html'}`).join(',\n');
 app = app.replace('\n];',`,\n${appItems}\n];`);
 fs.writeFileSync(path.join(root,'assets/app.js'),app);
+await import('./rebuild-products-page.mjs');

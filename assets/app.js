@@ -340,8 +340,8 @@ function setupProductsLiveFilters(){
       const categoryMatch = !selectedCategory || p.cat===selectedCategory;
       const brandMatch = !brandQuery || p.brand.toLowerCase().includes(brandQuery);
       const priceMatch = !selectedPrice ||
-        (selectedPrice==='under1500' && p.priceValue < 1500) ||
-        (selectedPrice==='from1500' && p.priceValue >= 1500);
+        (selectedPrice==='under1500' && p.priceValue != null && p.priceValue < 1500) ||
+        (selectedPrice==='from1500' && p.priceValue != null && p.priceValue >= 1500);
       const featureMatch = matchesFeatures(p);
       const show = categoryMatch && brandMatch && priceMatch && featureMatch;
 
