@@ -8,7 +8,7 @@
     "group": "Hydrogen Water",
     "description_de": "Deutsche Wassertechnologie-Marke für Filtersysteme, Duschfilter und Wasserstoffwasser-Produkte.",
     "description_en": "German water technology brand offering filtration systems, shower filters and hydrogen-water products.",
-    "products_count": 2,
+    "products_count": 3,
     "rating": 4.8,
     "logo": "assets/brands/blackwater.png"
   },
@@ -425,7 +425,7 @@
     "group": "Hydrogen Water",
     "description_de": "Wasserstoffwasser-Marke mit Geräten, Flaschen und Hydrationsprodukten.",
     "description_en": "Hydrogen-water brand offering machines, bottles and related hydration products.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/echo-water.png"
   },
@@ -464,7 +464,7 @@
     "group": "Hydrogen Water",
     "description_de": "Verbrauchermarke für Wasserstoffflaschen und Auftisch-Generatoren.",
     "description_en": "Consumer brand focused on hydrogen-water bottles and countertop generators.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/piurify.png"
   },
@@ -477,7 +477,7 @@
     "group": "Hydrogen Water",
     "description_de": "Marke für Wasserionisierer, alkalisches Wasser und wasserstoffreiches Wasser.",
     "description_en": "Brand specializing in water ionizers, alkaline water and hydrogen-rich water systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/alkaviva.png"
   },

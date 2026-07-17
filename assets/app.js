@@ -561,6 +561,12 @@ async function setupCatalogCardSync(){
 }
 document.addEventListener('DOMContentLoaded',setupCatalogCardSync);
 
+const hydrogenBrandPages={
+ 'WALUTEC':'walutec','BLACKWATER':'blackwater','PIURIFY':'piurify','Echo Water':'echo-water',
+ 'ionBottles':'ionbottles','Level Up Way':'level-up-way','AlkaViva':'alkaviva'
+};
+function hydrogenBrandPage(brand){const slug=hydrogenBrandPages[brand];return slug?`brands/${slug}.html`:''}
+
 function injectHydrogenCatalogCards(){
  const grid=document.querySelector('.filters-layout .product-grid');
  if(!grid)return;
@@ -568,7 +574,8 @@ function injectHydrogenCatalogCards(){
   if(grid.querySelector(`[data-product-id="${product.id}"]`))return;
   const card=document.createElement('div');
   card.className='product-card';card.dataset.productId=product.id;
-  card.innerHTML=`<div class="photo"><img alt="${product.brand} ${product.name}" src="${product.image}"></div><div class="brand">${product.brand}</div><h3>${product.name}</h3><div class="rating"></div><div class="price">${product.price}</div><div class="specs"><span>${product.flow} · ${product.membrane}</span><span>${product.ppb?`bis ${new Intl.NumberFormat('de-DE').format(product.ppb)} PPB`:'H₂-Wert nicht veröffentlicht'}</span><span>${product.warranty}</span></div><div class="actions"><a class="btn small" href="${product.url}">Alle Daten</a><button class="btn small" data-compare="${product.id}">+ Compare</button></div>`;
+  const brandUrl=hydrogenBrandPage(product.brand);
+  card.innerHTML=`<div class="photo"><img alt="${product.brand} ${product.name}" src="${product.image}"></div>${brandUrl?`<a class="brand" href="${brandUrl}">${product.brand}</a>`:`<div class="brand">${product.brand}</div>`}<h3>${product.name}</h3><div class="rating"></div><div class="price">${product.price}</div><div class="specs"><span>${product.flow} · ${product.membrane}</span><span>${product.ppb?`bis ${new Intl.NumberFormat('de-DE').format(product.ppb)} PPB`:'H₂-Wert nicht veröffentlicht'}</span><span>${product.warranty}</span></div><div class="actions"><a class="btn small" href="${product.url}">Alle Daten</a><button class="btn small" data-compare="${product.id}">+ Compare</button></div>`;
   grid.appendChild(card);
  });
 }

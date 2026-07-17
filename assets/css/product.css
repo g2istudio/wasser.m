@@ -10,3 +10,10 @@
 .review-score-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.review-score-fields legend{grid-column:1/-1}.review-score-fields label{margin:0}.review-score-fields select{width:100%;margin-top:5px;padding:9px;border:1px solid var(--line);border-radius:9px;background:#fff}
 @media(max-width:980px){.product-rating-panel{grid-template-columns:220px 1fr}.rating-feedback{grid-column:1/-1}.rating-overview{padding-right:18px}}
 @media(max-width:680px){.product-rating-panel{grid-template-columns:1fr;padding:18px}.rating-overview{align-items:center;padding:0 0 18px;border-right:0;border-bottom:1px solid var(--line)}.rating-feedback{grid-column:auto;grid-template-columns:1fr}.review-score-fields{grid-template-columns:1fr}}
+
+/* Explicit product-to-brand relationship */
+.product-brand-link{display:inline-flex;align-items:center;gap:7px;margin:0 0 12px;color:var(--blue);font-size:14px;font-weight:800;text-decoration:none}
+.product-brand-link:before{content:'↗';display:grid;width:22px;height:22px;place-items:center;border:1px solid #b9d4e8;border-radius:50%;background:#f3f9fd;font-size:12px}
+.product-brand-link:hover{text-decoration:underline}
+.product-card a.brand{display:block;width:max-content;color:var(--blue);text-decoration:none}
+.product-card a.brand:hover{text-decoration:underline}
