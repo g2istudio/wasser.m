@@ -17,3 +17,8 @@
 .product-brand-link:hover{text-decoration:underline}
 .product-card a.brand{display:block;width:max-content;color:var(--blue);text-decoration:none}
 .product-card a.brand:hover{text-decoration:underline}
+.water-test-banner{display:block;margin-top:14px;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#eef6ff;box-shadow:0 10px 28px rgba(18,56,86,.09);line-height:0;transition:transform .18s ease,box-shadow .18s ease}
+.water-test-banner img{display:block;width:100%;height:auto;aspect-ratio:800/522;object-fit:cover}
+.water-test-banner:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(18,56,86,.15)}
+.water-test-banner:focus-visible{outline:3px solid rgba(7,95,174,.35);outline-offset:3px}
+@media(max-width:780px){.water-test-banner{max-width:520px;margin:14px auto 0}}

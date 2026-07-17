@@ -342,7 +342,20 @@ function openReviewModal(id){const p=products.find(x=>x.id===id);let modal=docum
 
 function setupHelpfulButtons(root=document){root.querySelectorAll('.helpful-btn').forEach(btn=>{if(btn.dataset.ready)return;btn.dataset.ready='1';const id=btn.dataset.helpfulId;let count=Number(btn.dataset.helpfulCount||0);if(storageGet('wasserHelpful_'+id,'0')==='1'){btn.classList.add('voted');count+=1;btn.querySelector('span').textContent=count}btn.addEventListener('click',()=>{if(storageGet('wasserHelpful_'+id,'0')==='1')return;storageSet('wasserHelpful_'+id,'1');btn.classList.add('voted');btn.querySelector('span').textContent=count+1})})}
 function setupReviewSystem(){document.querySelectorAll('[data-review-product]').forEach(btn=>btn.addEventListener('click',()=>openReviewModal(btn.dataset.reviewProduct)));refreshProductRatings()}
-document.addEventListener('DOMContentLoaded',()=>{setupReviewSystem();setupHelpfulButtons()});
+function setupWaterTestBanner(){
+ if(!/\/products\/[^/]+\.html$/.test(location.pathname))return;
+ const aside=document.querySelector('.content-grid > aside');
+ if(!aside||aside.querySelector('.water-test-banner'))return;
+ const banner=document.createElement('a');
+ banner.className='water-test-banner';
+ banner.href='https://wasserfiltercheck.de';
+ banner.target='_blank';
+ banner.rel='noopener';
+ banner.setAttribute('aria-label',tr('Wasser selbst testen – wasserfiltercheck.de öffnen','Test your water – open wasserfiltercheck.de'));
+ banner.innerHTML=`<img src="${basePrefix()}assets/img/wasserfiltercheck-banner.png" alt="${tr('Senden Sie eine Anfrage oder testen Sie Ihr Wasser selbst','Send an inquiry or test your water yourself')}" loading="lazy" decoding="async">`;
+ aside.appendChild(banner);
+}
+document.addEventListener('DOMContentLoaded',()=>{setupReviewSystem();setupHelpfulButtons();setupWaterTestBanner()});
 
 
 function setupProductsLiveFilters(){
