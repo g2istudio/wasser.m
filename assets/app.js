@@ -448,3 +448,27 @@ document.addEventListener('DOMContentLoaded', setupProductsLiveFilters);
 
 function setupBrandDirectory(){const input=document.getElementById('brandDirectorySearch');if(!input)return;const clear=document.getElementById('brandDirectoryClear');const cards=[...document.querySelectorAll('.brand-directory-card')];const count=document.getElementById('brandDirectoryCount');const empty=document.getElementById('brandDirectoryEmpty');const normalize=value=>(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').trim().toLowerCase();function run(){const q=normalize(input.value);let n=0;cards.forEach(c=>{const haystack=normalize([c.dataset.brandName,c.dataset.brandCountry,c.querySelector('h3')?.textContent,c.querySelector('.brand-meta')?.textContent].join(' '));const show=!q||haystack.includes(q);c.hidden=!show;c.style.display=show?'':'none';if(show)n++});if(count)count.textContent=`${n} ${lang()==='de'?'Marken':'brands'}`;if(clear)clear.classList.toggle('show',!!q);if(empty)empty.hidden=n>0}input.addEventListener('input',run);input.addEventListener('search',run);if(clear)clear.addEventListener('click',()=>{input.value='';run();input.focus()});run()}
 document.addEventListener('DOMContentLoaded',setupBrandDirectory);
+
+async function setupDatabaseOverview(){
+  const root=document.getElementById('databaseOverview');
+  if(!root)return;
+  try{
+    const prefix=basePrefix();
+    const [productResponse,brandResponse]=await Promise.all([
+      fetch(prefix+'data/products.json',{cache:'no-store'}),
+      fetch(prefix+'data/brands.json',{cache:'no-store'})
+    ]);
+    if(!productResponse.ok||!brandResponse.ok)throw new Error('Catalog data unavailable');
+    const [catalogProducts,catalogBrands]=await Promise.all([productResponse.json(),brandResponse.json()]);
+    const values={
+      overviewProducts:catalogProducts.length,
+      overviewBrands:catalogBrands.length,
+      overviewTechnologies:new Set(catalogProducts.map(item=>item.category).filter(Boolean)).size,
+      overviewReviews:catalogProducts.reduce((sum,item)=>sum+(Number(item.reviews)||0),0)
+    };
+    Object.entries(values).forEach(([id,value])=>{const node=document.getElementById(id);if(node)node.textContent=new Intl.NumberFormat(lang()==='de'?'de-DE':'en-US').format(value)});
+  }catch(error){
+    root.dataset.syncStatus='fallback';
+  }
+}
+document.addEventListener('DOMContentLoaded',setupDatabaseOverview);
