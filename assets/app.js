@@ -342,6 +342,23 @@ function openReviewModal(id){const p=products.find(x=>x.id===id);let modal=docum
 
 function setupHelpfulButtons(root=document){root.querySelectorAll('.helpful-btn').forEach(btn=>{if(btn.dataset.ready)return;btn.dataset.ready='1';const id=btn.dataset.helpfulId;let count=Number(btn.dataset.helpfulCount||0);if(storageGet('wasserHelpful_'+id,'0')==='1'){btn.classList.add('voted');count+=1;btn.querySelector('span').textContent=count}btn.addEventListener('click',()=>{if(storageGet('wasserHelpful_'+id,'0')==='1')return;storageSet('wasserHelpful_'+id,'1');btn.classList.add('voted');btn.querySelector('span').textContent=count+1})})}
 function setupReviewSystem(){document.querySelectorAll('[data-review-product]').forEach(btn=>btn.addEventListener('click',()=>openReviewModal(btn.dataset.reviewProduct)));refreshProductRatings()}
+function setupHydrogenProductLayout(){
+ const file=location.pathname.split('/').pop();
+ const product=products.find(item=>item.url?.split('/').pop()===file&&item.cat==='Hydrogen Bottles');
+ if(!product)return;
+ const container=document.querySelector('main > .container');
+ const details=container?.querySelector(':scope > section.panel');
+ if(!container||!details||container.querySelector(':scope > .content-grid'))return;
+ const brandLink=document.querySelector('.product-brand-link');
+ const grid=document.createElement('div');
+ grid.className='content-grid';
+ details.insertAdjacentElement('beforebegin',grid);
+ grid.appendChild(details);
+ const aside=document.createElement('aside');
+ const brandValue=brandLink?`<a href="${brandLink.getAttribute('href')}">${product.brand}</a>`:product.brand;
+ aside.innerHTML=`<div class="panel"><h3 style="margin-top:0">${tr('Einordnung','Classification')}</h3><table class="spec-table"><tr><td>${tr('Marke','Brand')}</td><td>${brandValue}</td></tr><tr><td>${tr('Kategorie','Category')}</td><td>Hydrogen Bottle</td></tr><tr><td>${tr('Preisstatus','Price status')}</td><td>${product.price}</td></tr></table></div><div class="panel" style="margin-top:14px"><h3 style="margin-top:0">${tr('Hinweis','Note')}</h3><p>${tr('Hydrogenflaschen dienen der Anreicherung von Wasser mit molekularem Wasserstoff und ersetzen keine Trinkwasserfiltration.','Hydrogen bottles enrich water with molecular hydrogen and do not replace drinking-water filtration.')}</p></div>`;
+ grid.appendChild(aside);
+}
 function setupWaterTestBanner(){
  if(!/\/products\/[^/]+\.html$/.test(location.pathname))return;
  const aside=document.querySelector('.content-grid > aside');
@@ -355,7 +372,7 @@ function setupWaterTestBanner(){
  banner.innerHTML=`<img src="${basePrefix()}assets/img/wasserfiltercheck-banner.png" alt="${tr('Senden Sie eine Anfrage oder testen Sie Ihr Wasser selbst','Send an inquiry or test your water yourself')}" loading="lazy" decoding="async">`;
  aside.appendChild(banner);
 }
-document.addEventListener('DOMContentLoaded',()=>{setupReviewSystem();setupHelpfulButtons();setupWaterTestBanner()});
+document.addEventListener('DOMContentLoaded',()=>{setupHydrogenProductLayout();setupReviewSystem();setupHelpfulButtons();setupWaterTestBanner()});
 
 
 function setupProductsLiveFilters(){
