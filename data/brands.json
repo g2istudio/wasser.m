@@ -8,7 +8,7 @@
     "group": "Hydrogen Water",
     "description_de": "Deutsche Wassertechnologie-Marke für Filtersysteme, Duschfilter und Wasserstoffwasser-Produkte.",
     "description_en": "German water technology brand offering filtration systems, shower filters and hydrogen-water products.",
-    "products_count": 1,
+    "products_count": 2,
     "rating": 4.8,
     "logo": "assets/brands/blackwater.png"
   },
@@ -60,7 +60,7 @@
     "group": "Premium",
     "description_de": "Globaler Anbieter von Enthärtungsanlagen, Trinkwassersystemen und gewerblicher Wasseraufbereitung.",
     "description_en": "Global provider of water softeners, drinking-water systems and commercial water treatment services.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/culligan.png"
   },
@@ -152,7 +152,7 @@
     "group": "Premium",
     "description_de": "Wassertechnologie-Marke mit Filtration, Umkehrosmose und Wasserstoffwasser-Produkten.",
     "description_en": "Water technology brand offering filtration, reverse-osmosis and hydrogen-water products.",
-    "products_count": 1,
+    "products_count": 3,
     "rating": 4.5,
     "logo": "assets/brands/walutec.png"
   },
