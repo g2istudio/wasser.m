@@ -175,6 +175,22 @@
       "website": "https://bela-aqua.de",
       "group": "Reverse Osmosis",
       "description": "Anbieter von Direct-Flow- und Tank-Umkehrosmoseanlagen für Trinkwasser."
+    },
+    {
+      "slug": "aquapro",
+      "name": "AQUAPRO",
+      "country": "United Arab Emirates",
+      "website": "https://aquapro.shop",
+      "group": "Reverse Osmosis",
+      "description": "Anbieter von Wasseraufbereitungs-, Umkehrosmose- und Filtersystemen für Haushalt und Gewerbe; offizieller Distributor für den Nahen Osten und Afrika."
+    },
+    {
+      "slug": "bluewater",
+      "name": "Bluewater",
+      "country": "Sweden",
+      "website": "https://www.bluewatergroup.com",
+      "group": "Reverse Osmosis",
+      "description": "Schwedischer Anbieter leistungsstarker SuperiorOsmosis™-Wasseraufbereitungssysteme für Haushalt und Gewerbe."
     }
   ],
   "products": [
@@ -1585,6 +1601,156 @@
         [
           "Vorratstank",
           "Nein"
+        ]
+      ]
+    },
+    {
+      "slug": "aquapro-high-flow-800-gpd",
+      "brand": "AQUAPRO",
+      "brandSlug": "aquapro",
+      "name": "High Flow 800 GPD Reverse Osmosis System",
+      "category": "Commercial RO",
+      "price": 3799,
+      "currency": "AED",
+      "country": "United Arab Emirates",
+      "image": "assets/products/aquapro-high-flow-800-gpd.jpg",
+      "source": "https://aquapro.shop/products/high-flow-800-gpd-reverse-osmosis-system",
+      "summary": "Hochleistungs-Umkehrosmosesystem von AQUAPRO für Haushalt, Cafés und Gewerbe mit zwei RO-Elementen, automatischer Spülung und TDS-Überwachung.",
+      "specs": [
+        [
+          "Nennleistung",
+          "800 GPD"
+        ],
+        [
+          "Filtration",
+          "ACFS und zwei RO-Elemente"
+        ],
+        [
+          "Membranfeinheit",
+          "0,0001 Mikron"
+        ],
+        [
+          "Reinwasserverhältnis",
+          "2:1 laut Händlerseite"
+        ],
+        [
+          "Spülung",
+          "Automatische Membranspülung"
+        ],
+        [
+          "Kontrolle",
+          "Smart-Panel mit TDS-Echtzeitanzeige"
+        ],
+        [
+          "Filterwechsel",
+          "Werkzeuglose Quick-Change-Kartuschen"
+        ],
+        [
+          "Einsatz",
+          "Haushalt und Gewerbe, insbesondere Cafés und Restaurants"
+        ],
+        [
+          "Preis",
+          "AED 3.799 bei der Recherche"
+        ],
+        [
+          "Verfügbarkeit",
+          "Coming Soon / Sold out bei der Recherche"
+        ],
+        [
+          "Lieferung",
+          "1–3 Werktage bei Verfügbarkeit"
+        ],
+        [
+          "Region",
+          "Offizieller AQUAPRO-Vertrieb für Nahost und Afrika"
+        ]
+      ]
+    },
+    {
+      "id": "spirit",
+      "slug": "bluewater-spirit-300",
+      "brand": "Bluewater",
+      "brandSlug": "bluewater",
+      "name": "Spirit 300CP",
+      "category": "Under Sink RO",
+      "price": 7999,
+      "currency": "AED",
+      "country": "Sweden",
+      "rating": null,
+      "reviews": 0,
+      "featured": true,
+      "image": "assets/products/bluewater-spirit-300cp.jpg",
+      "source": "https://store.nia.me/spirit-300",
+      "summary": "Kompaktes tankloses Bluewater-SuperiorOsmosis™-System für die Untertischmontage mit bis zu 3 l/min und intelligenter Wasserqualitätsüberwachung.",
+      "specs": [
+        [
+          "Technologie",
+          "SuperiorOsmosis™ (Umkehrosmose)"
+        ],
+        [
+          "Reinigungsleistung",
+          "bis 99–99,7 % laut Händlerseite"
+        ],
+        [
+          "Tagesleistung",
+          "2.521–3.380 l/Tag in der Tabelle; bis 3.800 l/Tag im Beschreibungstext"
+        ],
+        [
+          "Durchfluss",
+          "bis 3 l/min"
+        ],
+        [
+          "Recovery",
+          "53–61 % in der Tabelle; bis 70 % im Beschreibungstext"
+        ],
+        [
+          "Vorfilter",
+          "Granulierte Aktivkohle (GAC)"
+        ],
+        [
+          "Wassertank",
+          "Nicht erforderlich"
+        ],
+        [
+          "Spülung",
+          "Intelligente Membranspülung"
+        ],
+        [
+          "Überwachung",
+          "Laufzeitzähler, Qualitätsanzeige, Alarm und Qualitätsstopp"
+        ],
+        [
+          "Stromverbrauch",
+          "350 W / 6 A"
+        ],
+        [
+          "Abmessungen",
+          "150 × 365 × 462 mm"
+        ],
+        [
+          "Remineralisierung",
+          "Nein"
+        ],
+        [
+          "Anschlussvarianten",
+          "Separater LED-Hahn oder Anschluss von Küchengeräten"
+        ],
+        [
+          "Preis",
+          "AED 7.999 bei der Recherche"
+        ],
+        [
+          "Verfügbarkeit",
+          "Nicht auf Lager bei der Recherche"
+        ],
+        [
+          "Garantie",
+          "1 Jahr"
+        ],
+        [
+          "SKU",
+          "Spirit 300"
         ]
       ]
     }
