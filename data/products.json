@@ -131,17 +131,19 @@
     "featured": false,
     "specs": {
       "Einsatz": "Unternehmen, Fitness, Gastronomie, Kliniken und Pflege",
-      "Reservoir": "85 Liter",
-      "Filtration": "9-stufiges System laut Hersteller",
+      "Reservoir": "85 Liter, Glas",
+      "Filtration": "9-stufiges Vor- und Hauptfiltersystem",
+      "Bedienung": "Tap & Refill, sensorgesteuert",
+      "Material": "Edelstahlgehäuse und V4A-Leitungen",
       "Herstellung": "Made in Germany"
     },
-    "source": "https://www.truu.com/en/media/about-truu/"
+    "source": "https://www.truu.com/truu-water/produkte/"
   },
   {
     "id": "mrwater-premium-ro",
     "slug": "mrwater-premium-ro",
-    "brand": "MrWater",
-    "name": "Premium RO System",
+    "brand": "misterwater®",
+    "name": "Wasserfilteranlagen (Puria / Arctica / Silver Star / Futura)",
     "category": "Reverse Osmosis",
     "price": null,
     "currency": "EUR",
@@ -150,10 +152,12 @@
     "image": "assets/brands/mrwater.png",
     "featured": false,
     "specs": {
-      "Technologie": "Umkehrosmose",
-      "Installation": "Untertisch",
-      "Preis": "Nicht öffentlich bestätigt",
-      "Datenstatus": "Modellseite nicht öffentlich indexiert"
+      "Modelle": "Puria, Arctica, Silver Star und Futura",
+      "Bauart": "Auftisch, Direct Flow oder Tanksystem – modellabhängig",
+      "Filterstufen": "7 oder 8 – modellabhängig",
+      "Durchfluss": "ca. 0,7 bis 2,0 L/min – modellabhängig",
+      "Reinwasser/Abwasser": "von ca. 1:1,2 bis 2,33:1 – modellabhängig",
+      "Hinweis": "Kein offizielles Modell „Premium RO System“ auf der verlinkten Seite"
     },
     "source": "https://misterwater.eu/wasserfilteranlagen/"
   },
@@ -172,10 +176,11 @@
     "specs": {
       "System": "Direct-Flow-Umkehrosmose",
       "Varianten": "Basic, Performance und Medical",
+      "Installation": "Untertisch",
       "Garantie": "WERTGARANTIE laut Hersteller",
-      "Installation": "Untertisch"
+      "Preis": "Auf der verlinkten Seite variantenabhängig"
     },
-    "source": "https://wertach-quelle.shop/wp-content/uploads/datenblatt-pantera-wertach_04_2025.pdf"
+    "source": "https://wertach-quelle.shop/product/gourmetwasseranlage-pantera/"
   },
   {
     "id": "osmofresh-fusion-pro",
@@ -202,7 +207,7 @@
     "id": "greifenstein-direct-flow-premium",
     "slug": "greifenstein-direct-flow-premium",
     "brand": "Greifenstein Wasserveredelung",
-    "name": "Direct Flow Premium",
+    "name": "INOX",
     "category": "Direct Flow RO",
     "price": null,
     "currency": "EUR",
@@ -211,12 +216,15 @@
     "image": "assets/brands/greifenstein.png",
     "featured": false,
     "specs": {
-      "Technologie": "Direct-Flow-Umkehrosmose",
-      "Vorratstank": "Nicht erforderlich",
-      "Hersteller": "Greifenstein Wasserveredelung",
-      "Preis": "Auf Anfrage"
+      "Filterwasser": "100–360 Liter pro Tag",
+      "Filterstufen": "Bis zu 6",
+      "Tank": "18 Liter Standard-Fassungsvermögen",
+      "Anlage": "Ø 15 cm, Höhe 46 cm, ca. 8 kg",
+      "Membran": "TFC, 0,0001 Mikron",
+      "Strom": "Nicht erforderlich",
+      "Garantie": "2 Jahre; Verlängerung unter Herstellerbedingungen"
     },
-    "source": "https://greifenstein-wasser.de/"
+    "source": "https://greifenstein-wasser.de/umkehrosmose/inox/"
   },
   {
     "id": "gewapur-ro-comfort-direct-flow",
@@ -234,9 +242,9 @@
       "Technologie": "Umkehrosmose",
       "Bauart": "Direct Flow",
       "Vorratstank": "Nein",
-      "Datenstatus": "Herstellerdaten derzeit nicht öffentlich indexiert"
+      "Datenstatus": "Modellwerte auf der verlinkten Kategorieseite prüfen"
     },
-    "source": "https://gewapur.de"
+    "source": "https://gewapur.de/wasseraufbereitung-kategorie/osmoseanlage-trinkwasser/"
   },
   {
     "id": "aqmos-aq-ro-800-gpd",
@@ -254,9 +262,9 @@
       "Membranleistung": "800 GPD",
       "Technologie": "Umkehrosmose",
       "Bauart": "Direct Flow",
-      "Preis": "Nicht öffentlich bestätigt"
+      "Quelle": "Offizielle AQMOS-Produktkategorie"
     },
-    "source": "https://www.aqmos.com"
+    "source": "https://www.aqmos.com/c/umkehrosmoseanlagen-fuer-zuhause/umkehrosmoseanlagen/"
   },
   {
     "id": "wasserhaus-zen-flow",
@@ -276,7 +284,7 @@
       "Vorratstank": "Nein",
       "Einsatz": "Haushalt und Familie"
     },
-    "source": "https://www.wasserhaus.de/hersteller/hersteller-wasserhaus/zen-flow-direct-flow-umkehrosmosesystem"
+    "source": "https://www.wasserhaus.de/zen-flow-direct-flow-umkehrosmosesystem"
   },
   {
     "id": "arktisquelle-direct-flow-premium",
@@ -292,11 +300,11 @@
     "featured": false,
     "specs": {
       "Technologie": "Umkehrosmose",
-      "Ausgabemenge": "150–2000 ml stufenlos",
-      "Bedienung": "Direkte Wasserausgabe",
-      "Preis": "Nicht öffentlich bestätigt"
+      "Sortiment": "Aktuelle Collections des Herstellers",
+      "Ausgabemenge": "Modellabhängig",
+      "Preis": "Modellabhängig"
     },
-    "source": "https://arktisquelle.de/pages/funktion"
+    "source": "https://arktisquelle.de/collections"
   },
   {
     "id": "myaqua-1900",
@@ -316,7 +324,7 @@
       "Reinwasser/Abwasser": "bis 1:1",
       "Einsatz": "Süß- und Meerwasseraquaristik"
     },
-    "source": "https://www.arka-biotech.de/pl/products/arka-myaqua-1900"
+    "source": "https://www.arka-biotech.de/produkte/arka-myaqua-1900"
   },
   {
     "id": "purway-pur-booster-quick",
@@ -354,10 +362,10 @@
     "specs": {
       "Technologie": "Umkehrosmose",
       "Bauart": "Direct Flow",
-      "Varianten": "400/600 GPD laut Anleitung",
+      "Varianten": "400/600 GPD laut Herstellerunterlagen",
       "Vorratstank": "Nein"
     },
-    "source": "https://osmounity.de/media/27/aa/79/1728919720/PressureLine%20LDW_WSD%20400_600.01.pdf"
+    "source": "https://osmounity.de/aquaristik/Filteranlagen/"
   },
   {
     "id": "wasserwelt-ww-premium-direct-flow",
@@ -392,12 +400,13 @@
     "image": "assets/brands/bwt.png",
     "featured": false,
     "specs": {
-      "Einsatz": "Büro, Gastronomie und Gewerbe",
-      "Bauart": "Tischgerät",
-      "Wasseranschluss": "Festwasser",
-      "Service": "Aufstellung und Inbetriebnahme durch BWT verfügbar"
+      "Produkttyp": "Leitungsgebundener Wasserspender",
+      "Bauart": "Auftischgerät",
+      "Wasseroptionen": "3",
+      "Produktnummer": "826024",
+      "Einsatz": "Büro, Gastronomie und Gewerbe"
     },
-    "source": "https://www.bwt.com/en-gb/products/plumbed-in-water-dispenser/aqa-drink-pro-20/aqa-drink-pro-20-tabletop-unit-cas/"
+    "source": "https://www.bwt.com/de-de/shop/AQA-drink-Pro-20-CAS-Auftischgeraet/826024"
   },
   {
     "id": "bwt-bestaqua-roc",
@@ -437,7 +446,7 @@
       "System": "Modular konfigurierbar",
       "Preis": "Projektbezogen"
     },
-    "source": "https://www.gruenbeck.com/products-and-solutions/gruenbeck-for-your-business/membrane-technology/reverse-osmosis/geno-osmo-x"
+    "source": "https://www.gruenbeck.de/produkte-loesungen/gruenbeck-fuer-gewerbe/membrantechnik/umkehrosmose/geno-osmo-x"
   },
   {
     "id": "judo-i-fill",
@@ -477,7 +486,7 @@
       "Konfiguration": "Projektabhängig",
       "Preis": "Auf Anfrage"
     },
-    "source": "https://www.alfiltra.de"
+    "source": "https://www.alfiltra.de/umkehrosmoseanlagen"
   },
   {
     "id": "aquion-premium-7",
@@ -493,11 +502,11 @@
     "featured": false,
     "specs": {
       "Produkttyp": "Wasserionisierer",
-      "Elektroden": "7, modelltypisch",
-      "Bedienung": "Elektronisch",
-      "Preis": "Nicht öffentlich bestätigt"
+      "Elektroden": "7",
+      "Serie": "AQUION Premium",
+      "Bedienung": "Elektronisch"
     },
-    "source": "https://aquion.de"
+    "source": "https://aquion.de/wasser-systeme/premium-serie"
   },
   {
     "id": "quooker-front-cube",
@@ -515,9 +524,9 @@
       "Wasserarten": "Kalt, warm, 100 °C kochend",
       "CUBE": "Gekühlt still und sprudelnd",
       "Armatur": "Front mit Bedienung am Auslauf",
-      "Installation": "Untertisch-Tanksystem"
+      "Installation": "Untertisch-Reservoir und CUBE"
     },
-    "source": "https://www.quooker.de"
+    "source": "https://www.quooker.de/wasserhahn/front"
   },
   {
     "id": "brita-mypure-p1",
@@ -535,9 +544,9 @@
       "Produkttyp": "Untertisch-Trinkwasserfilter",
       "Filter": "BRITA P1000",
       "Installation": "Unter der Spüle",
-      "Anwendung": "Geschmack, Geruch und kalkbildende Stoffe"
+      "Artikelnummer": "1025434"
     },
-    "source": "https://www.brita.de/produkte/mypure-p1-einbau-filter"
+    "source": "https://www.brita.de/produkte/mypure-p1-einbau-filter/1025434"
   },
   {
     "id": "grohe-blue-home",
@@ -554,9 +563,97 @@
     "specs": {
       "Wasserarten": "Still, medium und sprudelnd",
       "Kühlung": "Integriert",
-      "CO₂": "425-g-Flasche im Starterset",
+      "CO₂": "Flaschensystem",
       "Installation": "Küchenarmatur mit Untertisch-Kühler"
     },
-    "source": "https://www.grohe.com/en-GB/inspiration/explore-collections/grohe-blue-home"
+    "source": "https://www.grohe.com/de-DE/inspiration/kollektionen/grohe-blue-home"
+  },
+  {
+    "id": "franke-mythos-water-hub",
+    "slug": "franke-mythos-water-hub",
+    "brand": "Franke",
+    "name": "Mythos Water Hub",
+    "category": "Kitchen Water System",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/franke.svg",
+    "featured": false,
+    "specs": {
+      "Varianten": "All in One 6-in-1 und Sparkling 5-in-1",
+      "Wasserarten": "Kalt, warm, kochend, gekühlt, raumtemperiert und sprudelnd – variantenabhängig",
+      "Installation": "Kompaktes Untertischsystem",
+      "Steuerung": "Bluetooth-App und LED-Anzeige",
+      "Lieferumfang": "Boiler, Kühler, CO₂-Flasche sowie Filter/Filterkopf"
+    },
+    "source": "https://www.franke.com/de/de/home-solutions/produkte/sparkling-filtered-water.html"
+  },
+  {
+    "id": "blanco-unit-drink-systems",
+    "slug": "blanco-unit-drink-systems",
+    "brand": "BLANCO",
+    "name": "BLANCO UNIT / DRINK.SYSTEMS",
+    "category": "Kitchen Water System",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/blanco.svg",
+    "featured": false,
+    "specs": {
+      "System": "Modularer Küchen-Wasserplatz",
+      "Komponenten": "Armatur/DRINK.SYSTEM, Spüle, Abfall- und Organisationssystem",
+      "Konfiguration": "Stile, Materialien und Einbauarten kombinierbar",
+      "Installation": "Optimierte Nutzung des Unterschranks"
+    },
+    "source": "https://www.blanco.de/blanco-unit/"
+  },
+  {
+    "id": "aqua-global-flexible-touch",
+    "slug": "aqua-global-flexible-touch",
+    "brand": "Aqua Global",
+    "name": "Flexible Touch",
+    "category": "Countertop RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/aqua-global.svg",
+    "featured": false,
+    "specs": {
+      "Wasseranschluss": "Nicht erforderlich",
+      "Temperaturen": "ca. 50 °C, 85 °C, 95 °C oder ungekühlt",
+      "Wassermengen": "200, 500 oder 1.000 ml",
+      "Tank": "5,0 L Rohwasser / 1,5 L gefiltertes Wasser",
+      "Leistung": "ca. 10–15 L/h",
+      "Reinwasser/Abwasser": "1:1",
+      "Abmessungen": "183 × 388 × 405 mm",
+      "Gewicht": "7,10 kg"
+    },
+    "source": "https://aqua-global.com/?pid=1000115&nav_id=1000108"
+  },
+  {
+    "id": "bela-aqua-oblige-directflow",
+    "slug": "bela-aqua-oblige-directflow",
+    "brand": "Bela Aqua",
+    "name": "OBLIGE Directflow",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/bela-aqua.svg",
+    "featured": false,
+    "specs": {
+      "Membran": "800 GPD RO",
+      "Durchfluss": "bis zu 2,1 L/min",
+      "Reinwasser/Abwasser": "1:0,6",
+      "Filtration": "5 bis 7 Stufen",
+      "Vorratstank": "Nein",
+      "Sicherheit": "Leaking-Sensor und Aqua-Stopp",
+      "Gehäuse": "Pulverbeschichtetes Aluminium und ABS"
+    },
+    "source": "https://bela-aqua.de/oblige-ro-directflow"
   }
 ]

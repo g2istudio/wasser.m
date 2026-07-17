@@ -1,46 +1,1012 @@
 {
   "brands": [
-    {"slug":"truu","name":"truu","country":"Germany","website":"https://www.truu.com","group":"Premium","description":"Deutscher Anbieter hochwertiger mehrstufiger Wasserfiltrationssysteme."},
-    {"slug":"mrwater","name":"MrWater","country":"Germany","website":"https://misterwater.eu","group":"Reverse Osmosis","description":"Anbieter von Wasserfilter- und Umkehrosmosesystemen für den Haushalt."},
-    {"slug":"osmofresh","name":"OsmoFresh","country":"Germany","website":"https://www.osmofresh.de","group":"Reverse Osmosis","description":"Deutscher Anbieter von Auftisch- und Direct-Flow-Umkehrosmoseanlagen."},
-    {"slug":"greifenstein","name":"Greifenstein Wasserveredelung","country":"Germany","website":"https://greifenstein-wasser.de","group":"Reverse Osmosis","description":"Entwickler und Hersteller von Umkehrosmose- und Wasseraufbereitungsanlagen."},
-    {"slug":"gewapur","name":"Gewapur","country":"Germany","website":"https://gewapur.de","group":"Reverse Osmosis","description":"Anbieter von Direct-Flow-Wasserfiltersystemen und Umkehrosmoseanlagen."},
-    {"slug":"aqmos","name":"Aqmos","country":"Germany","website":"https://www.aqmos.com","group":"Reverse Osmosis","description":"Anbieter von Wasserenthärtungs-, Filter- und Umkehrosmosetechnik."},
-    {"slug":"wasserhaus","name":"Wasserhaus","country":"Germany","website":"https://www.wasserhaus.de","group":"Reverse Osmosis","description":"Deutscher Hersteller und Fachanbieter für Umkehrosmose- und Filtersysteme."},
-    {"slug":"arktisquelle","name":"Arktisquelle","country":"Germany","website":"https://arktisquelle.de","group":"Reverse Osmosis","description":"Anbieter kompakter Osmose-Wasserfilter für den Haushalt."},
-    {"slug":"myaqua","name":"myAqua","country":"Germany","website":"https://www.arka-biotech.de","group":"Reverse Osmosis","description":"ARKA-Produktlinie leistungsstarker Umkehrosmoseanlagen für Aquaristik."},
-    {"slug":"purway","name":"Purway","country":"Germany","website":"https://shop.purway.de","group":"Reverse Osmosis","description":"Wasserfilter- und Direct-Flow-Umkehrosmosesysteme für Haushalt und Gewerbe."},
-    {"slug":"osmounity","name":"Osmounity","country":"Germany","website":"https://osmounity.de","group":"Reverse Osmosis","description":"Anbieter tankloser Direct-Flow-Umkehrosmosesysteme."},
-    {"slug":"wasserwelt","name":"WasserWelt","country":"Germany","website":null,"group":"Reverse Osmosis","description":"Marke für Direct-Flow-Wasseraufbereitungssysteme."},
-    {"slug":"gruenbeck","name":"Grünbeck","country":"Germany","website":"https://www.gruenbeck.de","group":"Industrial & Membranes","description":"Deutscher Hersteller von Wasseraufbereitungslösungen für Haushalt, Gewerbe und Industrie."},
-    {"slug":"judo","name":"JUDO","country":"Germany","website":"https://judo.eu","group":"Industrial & Components","description":"Deutscher Hersteller von Wasseraufbereitungs- und Heizungsbefüllsystemen."},
-    {"slug":"alfiltra","name":"Alfiltra","country":"Germany","website":"https://www.alfiltra.de","group":"Reverse Osmosis","description":"Fachanbieter für Enthärtungs-, Filter- und Umkehrosmoseanlagen."},
-    {"slug":"aquion-de","name":"AQUION","country":"Germany","website":"https://aquion.de","group":"Hydrogen Water","description":"Anbieter von Wasserionisierern und alkalischen Wasseraufbereitungssystemen."},
-    {"slug":"quooker","name":"Quooker","country":"Netherlands","website":"https://www.quooker.de","group":"Kitchen Water Systems","description":"Hersteller multifunktionaler Küchenarmaturen für kaltes, heißes, kochendes und gekühltes Wasser."},
-    {"slug":"grohe-blue","name":"GROHE Blue","country":"Germany","website":"https://www.grohe.de","group":"Kitchen Water Systems","description":"GROHE-Systeme für gefiltertes, gekühltes und karbonisiertes Trinkwasser."}
+    {
+      "slug": "truu",
+      "name": "truu",
+      "country": "Germany",
+      "website": "https://www.truu.com",
+      "group": "Premium",
+      "description": "Deutscher Anbieter hochwertiger mehrstufiger Wasserfiltrationssysteme."
+    },
+    {
+      "slug": "mrwater",
+      "name": "MrWater",
+      "country": "Germany",
+      "website": "https://misterwater.eu",
+      "group": "Reverse Osmosis",
+      "description": "Anbieter von Wasserfilter- und Umkehrosmosesystemen für den Haushalt."
+    },
+    {
+      "slug": "osmofresh",
+      "name": "OsmoFresh",
+      "country": "Germany",
+      "website": "https://www.osmofresh.de",
+      "group": "Reverse Osmosis",
+      "description": "Deutscher Anbieter von Auftisch- und Direct-Flow-Umkehrosmoseanlagen."
+    },
+    {
+      "slug": "greifenstein",
+      "name": "Greifenstein Wasserveredelung",
+      "country": "Germany",
+      "website": "https://greifenstein-wasser.de",
+      "group": "Reverse Osmosis",
+      "description": "Entwickler und Hersteller von Umkehrosmose- und Wasseraufbereitungsanlagen."
+    },
+    {
+      "slug": "gewapur",
+      "name": "Gewapur",
+      "country": "Germany",
+      "website": "https://gewapur.de",
+      "group": "Reverse Osmosis",
+      "description": "Anbieter von Direct-Flow-Wasserfiltersystemen und Umkehrosmoseanlagen."
+    },
+    {
+      "slug": "aqmos",
+      "name": "Aqmos",
+      "country": "Germany",
+      "website": "https://www.aqmos.com",
+      "group": "Reverse Osmosis",
+      "description": "Anbieter von Wasserenthärtungs-, Filter- und Umkehrosmosetechnik."
+    },
+    {
+      "slug": "wasserhaus",
+      "name": "Wasserhaus",
+      "country": "Germany",
+      "website": "https://www.wasserhaus.de",
+      "group": "Reverse Osmosis",
+      "description": "Deutscher Hersteller und Fachanbieter für Umkehrosmose- und Filtersysteme."
+    },
+    {
+      "slug": "arktisquelle",
+      "name": "Arktisquelle",
+      "country": "Germany",
+      "website": "https://arktisquelle.de",
+      "group": "Reverse Osmosis",
+      "description": "Anbieter kompakter Osmose-Wasserfilter für den Haushalt."
+    },
+    {
+      "slug": "myaqua",
+      "name": "myAqua",
+      "country": "Germany",
+      "website": "https://www.arka-biotech.de",
+      "group": "Reverse Osmosis",
+      "description": "ARKA-Produktlinie leistungsstarker Umkehrosmoseanlagen für Aquaristik."
+    },
+    {
+      "slug": "purway",
+      "name": "Purway",
+      "country": "Germany",
+      "website": "https://shop.purway.de",
+      "group": "Reverse Osmosis",
+      "description": "Wasserfilter- und Direct-Flow-Umkehrosmosesysteme für Haushalt und Gewerbe."
+    },
+    {
+      "slug": "osmounity",
+      "name": "Osmounity",
+      "country": "Germany",
+      "website": "https://osmounity.de",
+      "group": "Reverse Osmosis",
+      "description": "Anbieter tankloser Direct-Flow-Umkehrosmosesysteme."
+    },
+    {
+      "slug": "wasserwelt",
+      "name": "WasserWelt",
+      "country": "Germany",
+      "website": null,
+      "group": "Reverse Osmosis",
+      "description": "Marke für Direct-Flow-Wasseraufbereitungssysteme."
+    },
+    {
+      "slug": "gruenbeck",
+      "name": "Grünbeck",
+      "country": "Germany",
+      "website": "https://www.gruenbeck.de",
+      "group": "Industrial & Membranes",
+      "description": "Deutscher Hersteller von Wasseraufbereitungslösungen für Haushalt, Gewerbe und Industrie."
+    },
+    {
+      "slug": "judo",
+      "name": "JUDO",
+      "country": "Germany",
+      "website": "https://judo.eu",
+      "group": "Industrial & Components",
+      "description": "Deutscher Hersteller von Wasseraufbereitungs- und Heizungsbefüllsystemen."
+    },
+    {
+      "slug": "alfiltra",
+      "name": "Alfiltra",
+      "country": "Germany",
+      "website": "https://www.alfiltra.de",
+      "group": "Reverse Osmosis",
+      "description": "Fachanbieter für Enthärtungs-, Filter- und Umkehrosmoseanlagen."
+    },
+    {
+      "slug": "aquion-de",
+      "name": "AQUION",
+      "country": "Germany",
+      "website": "https://aquion.de",
+      "group": "Hydrogen Water",
+      "description": "Anbieter von Wasserionisierern und alkalischen Wasseraufbereitungssystemen."
+    },
+    {
+      "slug": "quooker",
+      "name": "Quooker",
+      "country": "Netherlands",
+      "website": "https://www.quooker.de",
+      "group": "Kitchen Water Systems",
+      "description": "Hersteller multifunktionaler Küchenarmaturen für kaltes, heißes, kochendes und gekühltes Wasser."
+    },
+    {
+      "slug": "grohe-blue",
+      "name": "GROHE Blue",
+      "country": "Germany",
+      "website": "https://www.grohe.de",
+      "group": "Kitchen Water Systems",
+      "description": "GROHE-Systeme für gefiltertes, gekühltes und karbonisiertes Trinkwasser."
+    },
+    {
+      "slug": "franke",
+      "name": "Franke",
+      "country": "Switzerland",
+      "website": "https://www.franke.com",
+      "group": "Kitchen Water Systems",
+      "description": "Hersteller von Küchenlösungen und multifunktionalen Trinkwassersystemen."
+    },
+    {
+      "slug": "blanco",
+      "name": "BLANCO",
+      "country": "Germany",
+      "website": "https://www.blanco.de",
+      "group": "Kitchen Water Systems",
+      "description": "Hersteller modularer Küchen-Wasserplätze, Armaturen und DRINK.SYSTEMS."
+    },
+    {
+      "slug": "aqua-global",
+      "name": "Aqua Global",
+      "country": "Germany",
+      "website": "https://aqua-global.com",
+      "group": "Countertop RO",
+      "description": "Anbieter kompakter Umkehrosmose-Wasserbars für flexible Aufstellung."
+    },
+    {
+      "slug": "bela-aqua",
+      "name": "Bela Aqua",
+      "country": "Germany",
+      "website": "https://bela-aqua.de",
+      "group": "Reverse Osmosis",
+      "description": "Anbieter von Direct-Flow- und Tank-Umkehrosmoseanlagen für Trinkwasser."
+    }
   ],
   "products": [
-    {"slug":"truu-fountain-3","brand":"truu","brandSlug":"truu","name":"fountain 3","category":"Commercial Water System","price":null,"image":"assets/brands/truu.png","source":"https://www.truu.com/en/media/about-truu/","summary":"Gewerbliches High-End-Filtersystem mit 85-Liter-Wasserreservoir und mehrstufiger Aufbereitung.","specs":[["Einsatz","Unternehmen, Fitness, Gastronomie, Kliniken und Pflege"],["Reservoir","85 Liter"],["Filtration","9-stufiges System laut Hersteller"],["Herstellung","Made in Germany"]]},
-    {"slug":"mrwater-premium-ro","brand":"MrWater","brandSlug":"mrwater","name":"Premium RO System","category":"Reverse Osmosis","price":null,"image":"assets/brands/mrwater.png","source":"https://misterwater.eu/wasserfilteranlagen/","summary":"Premium-Umkehrosmosesystem für die Trinkwasseraufbereitung im Haushalt.","specs":[["Technologie","Umkehrosmose"],["Installation","Untertisch"],["Preis","Nicht öffentlich bestätigt"],["Datenstatus","Modellseite nicht öffentlich indexiert"]]},
-    {"slug":"wertach-pantera","brand":"WERTACH","brandSlug":"wertach","name":"Pantera","category":"Direct Flow RO","price":null,"image":"assets/brands/wertach.png","source":"https://wertach-quelle.shop/wp-content/uploads/datenblatt-pantera-wertach_04_2025.pdf","summary":"Direct-Flow-Gourmetwassersystem mit mehreren Ausstattungsvarianten und optionaler Wasserveredelung.","specs":[["System","Direct-Flow-Umkehrosmose"],["Varianten","Basic, Performance und Medical"],["Garantie","WERTGARANTIE laut Hersteller"],["Installation","Untertisch"]]},
-    {"slug":"osmofresh-fusion-pro","brand":"OsmoFresh","brandSlug":"osmofresh","name":"Fusion Pro","category":"Countertop RO","price":1290,"image":"assets/brands/osmofresh.png","source":"https://www.osmofresh.de/osmoseanlagen/fusion-pro","summary":"Auftisch-Osmoseanlage für kaltes, heißes und gesprudeltes Wasser mit Tank- oder Leitungsbetrieb.","specs":[["Wasserarten","Kalt, heiß und gesprudelt"],["Anschluss","Tank oder Wasserleitung"],["Reinwasser/Abwasser","bis 4:1"],["Schutz","3-fache UV-C-LED"],["Remineralisierung","Integriert"]]},
-    {"slug":"greifenstein-direct-flow-premium","brand":"Greifenstein Wasserveredelung","brandSlug":"greifenstein","name":"Direct Flow Premium","category":"Direct Flow RO","price":null,"image":"assets/brands/greifenstein.png","source":"https://greifenstein-wasser.de/","summary":"Tankloses Premium-Umkehrosmosesystem zur direkten Trinkwasseraufbereitung.","specs":[["Technologie","Direct-Flow-Umkehrosmose"],["Vorratstank","Nicht erforderlich"],["Hersteller","Greifenstein Wasserveredelung"],["Preis","Auf Anfrage"]]},
-    {"slug":"gewapur-ro-comfort-direct-flow","brand":"Gewapur","brandSlug":"gewapur","name":"RO Comfort Direct Flow","category":"Direct Flow RO","price":null,"image":"assets/brands/gewapur.png","source":"https://gewapur.de","summary":"Direct-Flow-Umkehrosmosesystem für die komfortable Wasserentnahme ohne Vorratstank.","specs":[["Technologie","Umkehrosmose"],["Bauart","Direct Flow"],["Vorratstank","Nein"],["Datenstatus","Herstellerdaten derzeit nicht öffentlich indexiert"]]},
-    {"slug":"aqmos-aq-ro-800-gpd","brand":"Aqmos","brandSlug":"aqmos","name":"AQ-RO 800 GPD","category":"Direct Flow RO","price":null,"image":"assets/brands/aqmos.png","source":"https://www.aqmos.com","summary":"Leistungsstarke Direct-Flow-Umkehrosmoseanlage mit einer Nennleistung von 800 GPD.","specs":[["Membranleistung","800 GPD"],["Technologie","Umkehrosmose"],["Bauart","Direct Flow"],["Preis","Nicht öffentlich bestätigt"]]},
-    {"slug":"wasserhaus-zen-flow","brand":"Wasserhaus","brandSlug":"wasserhaus","name":"ZEN FLOW","category":"Direct Flow RO","price":null,"image":"assets/brands/wasserhaus.png","source":"https://www.wasserhaus.de/hersteller/hersteller-wasserhaus/zen-flow-direct-flow-umkehrosmosesystem","summary":"Direct-Flow-Umkehrosmoseanlage mit direkter Produktion bei der Entnahme und langfristigem Herstellerservice.","specs":[["Technologie","Direct-Flow-Umkehrosmose"],["Membranfeinheit","0,0001 µm"],["Vorratstank","Nein"],["Einsatz","Haushalt und Familie"]]},
-    {"slug":"arktisquelle-direct-flow-premium","brand":"Arktisquelle","brandSlug":"arktisquelle","name":"Direct Flow Premium","category":"Countertop RO","price":null,"image":"assets/brands/arktisquelle.png","source":"https://arktisquelle.de/pages/funktion","summary":"Kompaktes Osmose-Filtersystem mit flexibel einstellbarer Wasserausgabe.","specs":[["Technologie","Umkehrosmose"],["Ausgabemenge","150–2000 ml stufenlos"],["Bedienung","Direkte Wasserausgabe"],["Preis","Nicht öffentlich bestätigt"]]},
-    {"slug":"myaqua-1900","brand":"myAqua","brandSlug":"myaqua","name":"myAQUA 1900","category":"Aquarium RO","price":null,"image":"assets/brands/myaqua.png","source":"https://www.arka-biotech.de/pl/products/arka-myaqua-1900","summary":"Umkehrosmoseanlage für Süß- und Meerwasseraquarien mit bis zu 1.900 Litern Tagesleistung.","specs":[["Tagesleistung","bis 1.900 Liter"],["Rückhaltung","bis 99 % laut Hersteller"],["Reinwasser/Abwasser","bis 1:1"],["Einsatz","Süß- und Meerwasseraquaristik"]]},
-    {"slug":"purway-pur-booster-quick","brand":"Purway","brandSlug":"purway","name":"PUR Booster Quick","category":"Direct Flow RO","price":309,"image":"assets/brands/purway.png","source":"https://shop.purway.de/products/pur-booster-quick-7-stufen-umkehrosmoseanlage-400-gpd-ohne-tank","summary":"Tanklose 7-stufige Direct-Flow-Umkehrosmoseanlage mit 400-GPD-Boosterpumpe.","specs":[["Filterstufen","7"],["Membran","400 GPD"],["Reinwasserleistung","bis 1,1 L/min bzw. 1.500 L/Tag"],["Reinwasser/Abwasser","maximal 1:1"],["Remineralisierung","Enthalten"]]},
-    {"slug":"osmounity-direct-flow","brand":"Osmounity","brandSlug":"osmounity","name":"Direct Flow","category":"Direct Flow RO","price":null,"image":"assets/brands/osmounity.png","source":"https://osmounity.de/media/27/aa/79/1728919720/PressureLine%20LDW_WSD%20400_600.01.pdf","summary":"Tankloses Direct-Flow-Umkehrosmosesystem der Osmounity PressureLine.","specs":[["Technologie","Umkehrosmose"],["Bauart","Direct Flow"],["Varianten","400/600 GPD laut Anleitung"],["Vorratstank","Nein"]]},
-    {"slug":"wasserwelt-ww-premium-direct-flow","brand":"WasserWelt","brandSlug":"wasserwelt","name":"WW Premium Direct Flow","category":"Direct Flow RO","price":null,"image":"assets/brands/wasserwelt.svg","source":null,"summary":"Premium-Direct-Flow-System zur tanklosen Umkehrosmose-Wasseraufbereitung.","specs":[["Technologie","Umkehrosmose"],["Bauart","Direct Flow"],["Vorratstank","Nein"],["Datenstatus","Keine öffentlich indexierte Herstellerseite gefunden"]]},
-    {"slug":"bwt-aqa-drink-pro-20","brand":"BWT","brandSlug":"bwt","name":"AQA drink PRO 20","category":"Water Dispenser","price":null,"image":"assets/brands/bwt.png","source":"https://www.bwt.com/en-gb/products/plumbed-in-water-dispenser/aqa-drink-pro-20/aqa-drink-pro-20-tabletop-unit-cas/","summary":"Professioneller leitungsgebundener Wasserspender im kompakten Tischgeräteformat.","specs":[["Einsatz","Büro, Gastronomie und Gewerbe"],["Bauart","Tischgerät"],["Wasseranschluss","Festwasser"],["Service","Aufstellung und Inbetriebnahme durch BWT verfügbar"]]},
-    {"slug":"bwt-bestaqua-roc","brand":"BWT","brandSlug":"bwt","name":"bestaqua ROC","category":"Commercial RO","price":null,"image":"assets/brands/bwt.png","source":"https://www.bwt.com/pl-pl/produkty/odwrocona-osmoza/bwt-bestaqua-roc/","summary":"Kompaktes professionelles Umkehrosmosesystem für Gastronomie und Hotellerie.","specs":[["Technologie","Umkehrosmose"],["Einsatz","Gastronomie und Hotellerie"],["Durchfluss","modellabhängig, bis 180 L/h dokumentiert"],["Stromversorgung","230 V / 50 Hz"]]},
-    {"slug":"gruenbeck-geno-osmo-x","brand":"Grünbeck","brandSlug":"gruenbeck","name":"GENO-OSMO-X","category":"Industrial RO","price":null,"image":"assets/brands/gruenbeck.png","source":"https://www.gruenbeck.com/products-and-solutions/gruenbeck-for-your-business/membrane-technology/reverse-osmosis/geno-osmo-x","summary":"Modulares industrielles Umkehrosmosesystem für gewerbliche Anwendungen.","specs":[["Technologie","Umkehrosmose"],["Einsatz","Gewerbe und Industrie"],["System","Modular konfigurierbar"],["Preis","Projektbezogen"]]},
-    {"slug":"judo-i-fill","brand":"JUDO","brandSlug":"judo","name":"i-fill","category":"Heating Water Filling","price":null,"image":"assets/brands/judo.png","source":"https://judo.eu","summary":"System zur kontrollierten Befüllung und Aufbereitung von Heizungswasser.","specs":[["Produkttyp","Heizungsbefüllsystem"],["Einsatz","Heizungswasseraufbereitung"],["Hersteller","JUDO Wasseraufbereitung"],["Preis","Auf Anfrage"]]},
-    {"slug":"alfiltra-ro-professional","brand":"Alfiltra","brandSlug":"alfiltra","name":"RO Professional","category":"Commercial RO","price":null,"image":"assets/brands/alfiltra.png","source":"https://www.alfiltra.de","summary":"Professionelle Umkehrosmoseanlage für höhere Reinwasserbedarfe.","specs":[["Technologie","Umkehrosmose"],["Einsatz","Gewerbe und professionelle Anwendungen"],["Konfiguration","Projektabhängig"],["Preis","Auf Anfrage"]]},
-    {"slug":"aquion-premium-7","brand":"AQUION","brandSlug":"aquion-de","name":"Premium 7","category":"Water Ionizer","price":null,"image":"assets/brands/aquion-de.png","source":"https://aquion.de","summary":"Premium-Wasserionisierer zur Erzeugung verschiedener alkalischer und saurer Wasserstufen.","specs":[["Produkttyp","Wasserionisierer"],["Elektroden","7, modelltypisch"],["Bedienung","Elektronisch"],["Preis","Nicht öffentlich bestätigt"]]},
-    {"slug":"quooker-front-cube","brand":"Quooker","brandSlug":"quooker","name":"Front + CUBE","category":"Kitchen Water System","price":null,"image":"assets/brands/quooker.png","source":"https://www.quooker.de","summary":"Multifunktionale Küchenarmatur mit CUBE für heißes, kaltes, kochendes, gekühltes stilles und sprudelndes Wasser.","specs":[["Wasserarten","Kalt, warm, 100 °C kochend"],["CUBE","Gekühlt still und sprudelnd"],["Armatur","Front mit Bedienung am Auslauf"],["Installation","Untertisch-Tanksystem"]]},
-    {"slug":"brita-mypure-p1","brand":"BRITA","brandSlug":"brita","name":"mypure P1","category":"Under Sink Filter","price":null,"image":"assets/brands/brita.png","source":"https://www.brita.de/produkte/mypure-p1-einbau-filter","summary":"Kompaktes Untertisch-Filtersystem mit separater Filterarmatur und P1000-Filterkartusche.","specs":[["Produkttyp","Untertisch-Trinkwasserfilter"],["Filter","BRITA P1000"],["Installation","Unter der Spüle"],["Anwendung","Geschmack, Geruch und kalkbildende Stoffe"]]},
-    {"slug":"grohe-blue-home","brand":"GROHE Blue","brandSlug":"grohe-blue","name":"GROHE Blue Home","category":"Kitchen Water System","price":null,"image":"assets/brands/grohe-blue.png","source":"https://www.grohe.com/en-GB/inspiration/explore-collections/grohe-blue-home","summary":"Küchensystem für gefiltertes und gekühltes Wasser – still, medium oder sprudelnd.","specs":[["Wasserarten","Still, medium und sprudelnd"],["Kühlung","Integriert"],["CO₂","425-g-Flasche im Starterset"],["Installation","Küchenarmatur mit Untertisch-Kühler"]]}
+    {
+      "slug": "truu-fountain-3",
+      "brand": "truu",
+      "brandSlug": "truu",
+      "name": "fountain 3",
+      "category": "Commercial Water System",
+      "price": null,
+      "image": "assets/brands/truu.png",
+      "source": "https://www.truu.com/truu-water/produkte/",
+      "summary": "Professionelles Festwasser-Filtersystem mit 85-Liter-Glasreservoir, automatischer Nachfüllung und sensorgesteuerter Selbstreinigung.",
+      "specs": [
+        [
+          "Einsatz",
+          "Unternehmen, Fitness, Gastronomie, Kliniken und Pflege"
+        ],
+        [
+          "Reservoir",
+          "85 Liter, Glas"
+        ],
+        [
+          "Filtration",
+          "9-stufiges Vor- und Hauptfiltersystem"
+        ],
+        [
+          "Bedienung",
+          "Tap & Refill, sensorgesteuert"
+        ],
+        [
+          "Material",
+          "Edelstahlgehäuse und V4A-Leitungen"
+        ],
+        [
+          "Herstellung",
+          "Made in Germany"
+        ]
+      ]
+    },
+    {
+      "slug": "mrwater-premium-ro",
+      "brand": "misterwater®",
+      "brandSlug": "mrwater",
+      "name": "Wasserfilteranlagen (Puria / Arctica / Silver Star / Futura)",
+      "category": "Reverse Osmosis",
+      "price": null,
+      "image": "assets/brands/mrwater.png",
+      "source": "https://misterwater.eu/wasserfilteranlagen/",
+      "summary": "Die Herstellerseite führt keine einzelne Anlage namens „Premium RO System“, sondern vier Umkehrosmose-Modelle für unterschiedliche Einbausituationen.",
+      "specs": [
+        [
+          "Modelle",
+          "Puria, Arctica, Silver Star und Futura"
+        ],
+        [
+          "Bauart",
+          "Auftisch, Direct Flow oder Tanksystem – modellabhängig"
+        ],
+        [
+          "Filterstufen",
+          "7 oder 8 – modellabhängig"
+        ],
+        [
+          "Durchfluss",
+          "ca. 0,7 bis 2,0 L/min – modellabhängig"
+        ],
+        [
+          "Reinwasser/Abwasser",
+          "von ca. 1:1,2 bis 2,33:1 – modellabhängig"
+        ],
+        [
+          "Hinweis",
+          "Kein offizielles Modell „Premium RO System“ auf der verlinkten Seite"
+        ]
+      ]
+    },
+    {
+      "slug": "wertach-pantera",
+      "brand": "WERTACH",
+      "brandSlug": "wertach",
+      "name": "Pantera",
+      "category": "Direct Flow RO",
+      "price": null,
+      "image": "assets/brands/wertach.png",
+      "source": "https://wertach-quelle.shop/product/gourmetwasseranlage-pantera/",
+      "summary": "Untertisch-Gourmetwasseranlage Pantera mit Direct-Flow-Umkehrosmose und den Hersteller-Varianten Basic, Performance und Medical.",
+      "specs": [
+        [
+          "System",
+          "Direct-Flow-Umkehrosmose"
+        ],
+        [
+          "Varianten",
+          "Basic, Performance und Medical"
+        ],
+        [
+          "Installation",
+          "Untertisch"
+        ],
+        [
+          "Garantie",
+          "WERTGARANTIE laut Hersteller"
+        ],
+        [
+          "Preis",
+          "Auf der verlinkten Seite variantenabhängig"
+        ]
+      ]
+    },
+    {
+      "slug": "osmofresh-fusion-pro",
+      "brand": "OsmoFresh",
+      "brandSlug": "osmofresh",
+      "name": "Fusion Pro",
+      "category": "Countertop RO",
+      "price": 1290,
+      "image": "assets/brands/osmofresh.png",
+      "source": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+      "summary": "Auftisch-Osmoseanlage für kaltes, heißes und gesprudeltes Wasser mit Tank- oder Festwasserbetrieb.",
+      "specs": [
+        [
+          "Wasserarten",
+          "Kalt, heiß und gesprudelt"
+        ],
+        [
+          "Anschluss",
+          "Tank oder Wasserleitung"
+        ],
+        [
+          "Reinwasser/Abwasser",
+          "bis 4:1"
+        ],
+        [
+          "Schutz",
+          "3-fache UV-C-LED"
+        ],
+        [
+          "Remineralisierung",
+          "Integriert"
+        ]
+      ]
+    },
+    {
+      "slug": "greifenstein-direct-flow-premium",
+      "brand": "Greifenstein Wasserveredelung",
+      "brandSlug": "greifenstein",
+      "name": "INOX",
+      "category": "Direct Flow RO",
+      "price": null,
+      "image": "assets/brands/greifenstein.png",
+      "source": "https://greifenstein-wasser.de/umkehrosmose/inox/",
+      "summary": "INOX-Umkehrosmoseanlage für Zuhause im Edelstahl-Design mit Vorratstank und bis zu sechs Filterstufen.",
+      "specs": [
+        [
+          "Filterwasser",
+          "100–360 Liter pro Tag"
+        ],
+        [
+          "Filterstufen",
+          "Bis zu 6"
+        ],
+        [
+          "Tank",
+          "18 Liter Standard-Fassungsvermögen"
+        ],
+        [
+          "Anlage",
+          "Ø 15 cm, Höhe 46 cm, ca. 8 kg"
+        ],
+        [
+          "Membran",
+          "TFC, 0,0001 Mikron"
+        ],
+        [
+          "Strom",
+          "Nicht erforderlich"
+        ],
+        [
+          "Garantie",
+          "2 Jahre; Verlängerung unter Herstellerbedingungen"
+        ]
+      ]
+    },
+    {
+      "slug": "gewapur-ro-comfort-direct-flow",
+      "brand": "Gewapur",
+      "brandSlug": "gewapur",
+      "name": "RO Comfort Direct Flow",
+      "category": "Direct Flow RO",
+      "price": null,
+      "image": "assets/brands/gewapur.png",
+      "source": "https://gewapur.de/wasseraufbereitung-kategorie/osmoseanlage-trinkwasser/",
+      "summary": "Direct-Flow-Umkehrosmosesystem aus dem Gewapur-Sortiment für Trinkwasseraufbereitung ohne klassischen Vorratstank.",
+      "specs": [
+        [
+          "Technologie",
+          "Umkehrosmose"
+        ],
+        [
+          "Bauart",
+          "Direct Flow"
+        ],
+        [
+          "Vorratstank",
+          "Nein"
+        ],
+        [
+          "Datenstatus",
+          "Modellwerte auf der verlinkten Kategorieseite prüfen"
+        ]
+      ]
+    },
+    {
+      "slug": "aqmos-aq-ro-800-gpd",
+      "brand": "Aqmos",
+      "brandSlug": "aqmos",
+      "name": "AQ-RO 800 GPD",
+      "category": "Direct Flow RO",
+      "price": null,
+      "image": "assets/brands/aqmos.png",
+      "source": "https://www.aqmos.com/c/umkehrosmoseanlagen-fuer-zuhause/umkehrosmoseanlagen/",
+      "summary": "AQMOS-Umkehrosmoseanlage der 800-GPD-Leistungsklasse aus dem offiziellen Sortiment für Zuhause.",
+      "specs": [
+        [
+          "Membranleistung",
+          "800 GPD"
+        ],
+        [
+          "Technologie",
+          "Umkehrosmose"
+        ],
+        [
+          "Bauart",
+          "Direct Flow"
+        ],
+        [
+          "Quelle",
+          "Offizielle AQMOS-Produktkategorie"
+        ]
+      ]
+    },
+    {
+      "slug": "wasserhaus-zen-flow",
+      "brand": "Wasserhaus",
+      "brandSlug": "wasserhaus",
+      "name": "ZEN FLOW",
+      "category": "Direct Flow RO",
+      "price": null,
+      "image": "assets/brands/wasserhaus.png",
+      "source": "https://www.wasserhaus.de/zen-flow-direct-flow-umkehrosmosesystem",
+      "summary": "Tankloses ZEN FLOW Direct-Flow-Umkehrosmosesystem, das Reinwasser bei der Entnahme produziert.",
+      "specs": [
+        [
+          "Technologie",
+          "Direct-Flow-Umkehrosmose"
+        ],
+        [
+          "Membranfeinheit",
+          "0,0001 µm"
+        ],
+        [
+          "Vorratstank",
+          "Nein"
+        ],
+        [
+          "Einsatz",
+          "Haushalt und Familie"
+        ]
+      ]
+    },
+    {
+      "slug": "arktisquelle-direct-flow-premium",
+      "brand": "Arktisquelle",
+      "brandSlug": "arktisquelle",
+      "name": "Direct Flow Premium",
+      "category": "Countertop RO",
+      "price": null,
+      "image": "assets/brands/arktisquelle.png",
+      "source": "https://arktisquelle.de/collections",
+      "summary": "Arktisquelle-Osmose-Filtersystem aus dem aktuellen Hersteller-Sortiment; genaue Ausstattung ist variantenabhängig.",
+      "specs": [
+        [
+          "Technologie",
+          "Umkehrosmose"
+        ],
+        [
+          "Sortiment",
+          "Aktuelle Collections des Herstellers"
+        ],
+        [
+          "Ausgabemenge",
+          "Modellabhängig"
+        ],
+        [
+          "Preis",
+          "Modellabhängig"
+        ]
+      ]
+    },
+    {
+      "slug": "myaqua-1900",
+      "brand": "myAqua",
+      "brandSlug": "myaqua",
+      "name": "myAQUA 1900",
+      "category": "Aquarium RO",
+      "price": null,
+      "image": "assets/brands/myaqua.png",
+      "source": "https://www.arka-biotech.de/produkte/arka-myaqua-1900",
+      "summary": "ARKA myAQUA 1900 Umkehrosmoseanlage für Süß- und Meerwasseraquarien mit bis zu 1.900 Litern Tagesleistung.",
+      "specs": [
+        [
+          "Tagesleistung",
+          "bis 1.900 Liter"
+        ],
+        [
+          "Rückhaltung",
+          "bis 99 % laut Hersteller"
+        ],
+        [
+          "Reinwasser/Abwasser",
+          "bis 1:1"
+        ],
+        [
+          "Einsatz",
+          "Süß- und Meerwasseraquaristik"
+        ]
+      ]
+    },
+    {
+      "slug": "purway-pur-booster-quick",
+      "brand": "Purway",
+      "brandSlug": "purway",
+      "name": "PUR Booster Quick",
+      "category": "Direct Flow RO",
+      "price": 309,
+      "image": "assets/brands/purway.png",
+      "source": "https://shop.purway.de/products/pur-booster-quick-7-stufen-umkehrosmoseanlage-400-gpd-ohne-tank",
+      "summary": "Tanklose 7-stufige PUR Booster Quick Direct-Flow-Anlage mit 400-GPD-Membran und Boosterpumpe.",
+      "specs": [
+        [
+          "Filterstufen",
+          "7"
+        ],
+        [
+          "Membran",
+          "400 GPD"
+        ],
+        [
+          "Reinwasserleistung",
+          "bis 1,1 L/min bzw. 1.500 L/Tag"
+        ],
+        [
+          "Reinwasser/Abwasser",
+          "maximal 1:1"
+        ],
+        [
+          "Remineralisierung",
+          "Enthalten"
+        ]
+      ]
+    },
+    {
+      "slug": "osmounity-direct-flow",
+      "brand": "Osmounity",
+      "brandSlug": "osmounity",
+      "name": "Direct Flow",
+      "category": "Direct Flow RO",
+      "price": null,
+      "image": "assets/brands/osmounity.png",
+      "source": "https://osmounity.de/aquaristik/Filteranlagen/",
+      "summary": "Tanklose Direct-Flow-Umkehrosmoseanlage aus dem Osmounity-Sortiment für die Aquaristik.",
+      "specs": [
+        [
+          "Technologie",
+          "Umkehrosmose"
+        ],
+        [
+          "Bauart",
+          "Direct Flow"
+        ],
+        [
+          "Varianten",
+          "400/600 GPD laut Herstellerunterlagen"
+        ],
+        [
+          "Vorratstank",
+          "Nein"
+        ]
+      ]
+    },
+    {
+      "slug": "wasserwelt-ww-premium-direct-flow",
+      "brand": "WasserWelt",
+      "brandSlug": "wasserwelt",
+      "name": "WW Premium Direct Flow",
+      "category": "Direct Flow RO",
+      "price": null,
+      "image": "assets/brands/wasserwelt.svg",
+      "source": null,
+      "summary": "Premium-Direct-Flow-System zur tanklosen Umkehrosmose-Wasseraufbereitung.",
+      "specs": [
+        [
+          "Technologie",
+          "Umkehrosmose"
+        ],
+        [
+          "Bauart",
+          "Direct Flow"
+        ],
+        [
+          "Vorratstank",
+          "Nein"
+        ],
+        [
+          "Datenstatus",
+          "Keine öffentlich indexierte Herstellerseite gefunden"
+        ]
+      ]
+    },
+    {
+      "slug": "bwt-aqa-drink-pro-20",
+      "brand": "BWT",
+      "brandSlug": "bwt",
+      "name": "AQA drink PRO 20",
+      "category": "Water Dispenser",
+      "price": null,
+      "image": "assets/brands/bwt.png",
+      "source": "https://www.bwt.com/de-de/shop/AQA-drink-Pro-20-CAS-Auftischgeraet/826024",
+      "summary": "AQA drink Pro 20 CAS als Auftisch-Wasserspender mit drei Wasseroptionen.",
+      "specs": [
+        [
+          "Produkttyp",
+          "Leitungsgebundener Wasserspender"
+        ],
+        [
+          "Bauart",
+          "Auftischgerät"
+        ],
+        [
+          "Wasseroptionen",
+          "3"
+        ],
+        [
+          "Produktnummer",
+          "826024"
+        ],
+        [
+          "Einsatz",
+          "Büro, Gastronomie und Gewerbe"
+        ]
+      ]
+    },
+    {
+      "slug": "bwt-bestaqua-roc",
+      "brand": "BWT",
+      "brandSlug": "bwt",
+      "name": "bestaqua ROC",
+      "category": "Commercial RO",
+      "price": null,
+      "image": "assets/brands/bwt.png",
+      "source": "https://www.bwt.com/pl-pl/produkty/odwrocona-osmoza/bwt-bestaqua-roc/",
+      "summary": "Kompaktes professionelles BWT-Umkehrosmosesystem für Gastronomie und Hotellerie.",
+      "specs": [
+        [
+          "Technologie",
+          "Umkehrosmose"
+        ],
+        [
+          "Einsatz",
+          "Gastronomie und Hotellerie"
+        ],
+        [
+          "Durchfluss",
+          "modellabhängig, bis 180 L/h dokumentiert"
+        ],
+        [
+          "Stromversorgung",
+          "230 V / 50 Hz"
+        ]
+      ]
+    },
+    {
+      "slug": "gruenbeck-geno-osmo-x",
+      "brand": "Grünbeck",
+      "brandSlug": "gruenbeck",
+      "name": "GENO-OSMO-X",
+      "category": "Industrial RO",
+      "price": null,
+      "image": "assets/brands/gruenbeck.png",
+      "source": "https://www.gruenbeck.de/produkte-loesungen/gruenbeck-fuer-gewerbe/membrantechnik/umkehrosmose/geno-osmo-x",
+      "summary": "Modulares GENO-OSMO-X Umkehrosmosesystem von Grünbeck für gewerbliche und industrielle Anwendungen.",
+      "specs": [
+        [
+          "Technologie",
+          "Umkehrosmose"
+        ],
+        [
+          "Einsatz",
+          "Gewerbe und Industrie"
+        ],
+        [
+          "System",
+          "Modular konfigurierbar"
+        ],
+        [
+          "Preis",
+          "Projektbezogen"
+        ]
+      ]
+    },
+    {
+      "slug": "judo-i-fill",
+      "brand": "JUDO",
+      "brandSlug": "judo",
+      "name": "i-fill",
+      "category": "Heating Water Filling",
+      "price": null,
+      "image": "assets/brands/judo.png",
+      "source": "https://judo.eu",
+      "summary": "System zur kontrollierten Befüllung und Aufbereitung von Heizungswasser.",
+      "specs": [
+        [
+          "Produkttyp",
+          "Heizungsbefüllsystem"
+        ],
+        [
+          "Einsatz",
+          "Heizungswasseraufbereitung"
+        ],
+        [
+          "Hersteller",
+          "JUDO Wasseraufbereitung"
+        ],
+        [
+          "Preis",
+          "Auf Anfrage"
+        ]
+      ]
+    },
+    {
+      "slug": "alfiltra-ro-professional",
+      "brand": "Alfiltra",
+      "brandSlug": "alfiltra",
+      "name": "RO Professional",
+      "category": "Commercial RO",
+      "price": null,
+      "image": "assets/brands/alfiltra.png",
+      "source": "https://www.alfiltra.de/umkehrosmoseanlagen",
+      "summary": "Professionelle Alfiltra-Umkehrosmoseanlagen für höhere Reinwasserbedarfe; Ausführung und Leistung sind projektabhängig.",
+      "specs": [
+        [
+          "Technologie",
+          "Umkehrosmose"
+        ],
+        [
+          "Einsatz",
+          "Gewerbe und professionelle Anwendungen"
+        ],
+        [
+          "Konfiguration",
+          "Projektabhängig"
+        ],
+        [
+          "Preis",
+          "Auf Anfrage"
+        ]
+      ]
+    },
+    {
+      "slug": "aquion-premium-7",
+      "brand": "AQUION",
+      "brandSlug": "aquion-de",
+      "name": "Premium 7",
+      "category": "Water Ionizer",
+      "price": null,
+      "image": "assets/brands/aquion-de.png",
+      "source": "https://aquion.de/wasser-systeme/premium-serie",
+      "summary": "AQUION Premium 7 Wasserionisierer aus der Premium-Serie zur Erzeugung unterschiedlicher Wasserstufen.",
+      "specs": [
+        [
+          "Produkttyp",
+          "Wasserionisierer"
+        ],
+        [
+          "Elektroden",
+          "7"
+        ],
+        [
+          "Serie",
+          "AQUION Premium"
+        ],
+        [
+          "Bedienung",
+          "Elektronisch"
+        ]
+      ]
+    },
+    {
+      "slug": "quooker-front-cube",
+      "brand": "Quooker",
+      "brandSlug": "quooker",
+      "name": "Front + CUBE",
+      "category": "Kitchen Water System",
+      "price": null,
+      "image": "assets/brands/quooker.png",
+      "source": "https://www.quooker.de/wasserhahn/front",
+      "summary": "Quooker Front Küchenarmatur in Kombination mit CUBE für fünf Wasserarten.",
+      "specs": [
+        [
+          "Wasserarten",
+          "Kalt, warm, 100 °C kochend"
+        ],
+        [
+          "CUBE",
+          "Gekühlt still und sprudelnd"
+        ],
+        [
+          "Armatur",
+          "Front mit Bedienung am Auslauf"
+        ],
+        [
+          "Installation",
+          "Untertisch-Reservoir und CUBE"
+        ]
+      ]
+    },
+    {
+      "slug": "brita-mypure-p1",
+      "brand": "BRITA",
+      "brandSlug": "brita",
+      "name": "mypure P1",
+      "category": "Under Sink Filter",
+      "price": null,
+      "image": "assets/brands/brita.png",
+      "source": "https://www.brita.de/produkte/mypure-p1-einbau-filter/1025434",
+      "summary": "BRITA mypure P1 Einbau-Filtersystem mit separater Filterarmatur und P1000-Kartusche.",
+      "specs": [
+        [
+          "Produkttyp",
+          "Untertisch-Trinkwasserfilter"
+        ],
+        [
+          "Filter",
+          "BRITA P1000"
+        ],
+        [
+          "Installation",
+          "Unter der Spüle"
+        ],
+        [
+          "Artikelnummer",
+          "1025434"
+        ]
+      ]
+    },
+    {
+      "slug": "grohe-blue-home",
+      "brand": "GROHE Blue",
+      "brandSlug": "grohe-blue",
+      "name": "GROHE Blue Home",
+      "category": "Kitchen Water System",
+      "price": null,
+      "image": "assets/brands/grohe-blue.png",
+      "source": "https://www.grohe.com/de-DE/inspiration/kollektionen/grohe-blue-home",
+      "summary": "GROHE Blue Home Küchensystem für gefiltertes, gekühltes Wasser – still, medium oder sprudelnd.",
+      "specs": [
+        [
+          "Wasserarten",
+          "Still, medium und sprudelnd"
+        ],
+        [
+          "Kühlung",
+          "Integriert"
+        ],
+        [
+          "CO₂",
+          "Flaschensystem"
+        ],
+        [
+          "Installation",
+          "Küchenarmatur mit Untertisch-Kühler"
+        ]
+      ]
+    },
+    {
+      "slug": "franke-mythos-water-hub",
+      "brand": "Franke",
+      "brandSlug": "franke",
+      "name": "Mythos Water Hub",
+      "category": "Kitchen Water System",
+      "price": null,
+      "image": "assets/brands/franke.svg",
+      "source": "https://www.franke.com/de/de/home-solutions/produkte/sparkling-filtered-water.html",
+      "summary": "Kompaktes Untertisch-Wassersystem mit bis zu sechs Wasseroptionen und Steuerung per App.",
+      "specs": [
+        [
+          "Varianten",
+          "All in One 6-in-1 und Sparkling 5-in-1"
+        ],
+        [
+          "Wasserarten",
+          "Kalt, warm, kochend, gekühlt, raumtemperiert und sprudelnd – variantenabhängig"
+        ],
+        [
+          "Installation",
+          "Kompaktes Untertischsystem"
+        ],
+        [
+          "Steuerung",
+          "Bluetooth-App und LED-Anzeige"
+        ],
+        [
+          "Lieferumfang",
+          "Boiler, Kühler, CO₂-Flasche sowie Filter/Filterkopf"
+        ]
+      ]
+    },
+    {
+      "slug": "blanco-unit-drink-systems",
+      "brand": "BLANCO",
+      "brandSlug": "blanco",
+      "name": "BLANCO UNIT / DRINK.SYSTEMS",
+      "category": "Kitchen Water System",
+      "price": null,
+      "image": "assets/brands/blanco.svg",
+      "source": "https://www.blanco.de/blanco-unit/",
+      "summary": "Modularer BLANCO-Wasserplatz aus Armatur oder DRINK.SYSTEM, Spüle und abgestimmtem Unterschrank-Organisationssystem.",
+      "specs": [
+        [
+          "System",
+          "Modularer Küchen-Wasserplatz"
+        ],
+        [
+          "Komponenten",
+          "Armatur/DRINK.SYSTEM, Spüle, Abfall- und Organisationssystem"
+        ],
+        [
+          "Konfiguration",
+          "Stile, Materialien und Einbauarten kombinierbar"
+        ],
+        [
+          "Installation",
+          "Optimierte Nutzung des Unterschranks"
+        ]
+      ]
+    },
+    {
+      "slug": "aqua-global-flexible-touch",
+      "brand": "Aqua Global",
+      "brandSlug": "aqua-global",
+      "name": "Flexible Touch",
+      "category": "Countertop RO",
+      "price": null,
+      "image": "assets/brands/aqua-global.svg",
+      "source": "https://aqua-global.com/?pid=1000115&nav_id=1000108",
+      "summary": "Mobile Umkehrosmose-Wasserbar ohne festen Wasseranschluss für ungekühltes, temperiertes oder heißes Wasser.",
+      "specs": [
+        [
+          "Wasseranschluss",
+          "Nicht erforderlich"
+        ],
+        [
+          "Temperaturen",
+          "ca. 50 °C, 85 °C, 95 °C oder ungekühlt"
+        ],
+        [
+          "Wassermengen",
+          "200, 500 oder 1.000 ml"
+        ],
+        [
+          "Tank",
+          "5,0 L Rohwasser / 1,5 L gefiltertes Wasser"
+        ],
+        [
+          "Leistung",
+          "ca. 10–15 L/h"
+        ],
+        [
+          "Reinwasser/Abwasser",
+          "1:1"
+        ],
+        [
+          "Abmessungen",
+          "183 × 388 × 405 mm"
+        ],
+        [
+          "Gewicht",
+          "7,10 kg"
+        ]
+      ]
+    },
+    {
+      "slug": "bela-aqua-oblige-directflow",
+      "brand": "Bela Aqua",
+      "brandSlug": "bela-aqua",
+      "name": "OBLIGE Directflow",
+      "category": "Direct Flow RO",
+      "price": null,
+      "image": "assets/brands/bela-aqua.svg",
+      "source": "https://bela-aqua.de/oblige-ro-directflow",
+      "summary": "Tanklose Direct-Flow-Umkehrosmoseanlage mit 800-GPD-Membran, 3-in-1-Kombifilter und Leckageschutz.",
+      "specs": [
+        [
+          "Membran",
+          "800 GPD RO"
+        ],
+        [
+          "Durchfluss",
+          "bis zu 2,1 L/min"
+        ],
+        [
+          "Reinwasser/Abwasser",
+          "1:0,6"
+        ],
+        [
+          "Filtration",
+          "5 bis 7 Stufen"
+        ],
+        [
+          "Vorratstank",
+          "Nein"
+        ],
+        [
+          "Sicherheit",
+          "Leaking-Sensor und Aqua-Stopp"
+        ],
+        [
+          "Gehäuse",
+          "Pulverbeschichtetes Aluminium und ABS"
+        ]
+      ]
+    }
   ]
 }
