@@ -269,7 +269,7 @@ function renderRatingExperience(){
    const photo=card.querySelector('.photo');
    if(photo){let badge=photo.querySelector('.product-rating-badge');if(!badge){badge=document.createElement('span');badge.className='product-rating-badge';photo.appendChild(badge)}badge.innerHTML=result.count?`★ <b>${result.average.toFixed(2)}</b>`:`☆ <span>${tr('Keine Bewertung','No rating')}</span>`;badge.classList.toggle('is-empty',!result.count)}
    const summary=card.querySelector('.rating');
-   if(summary){summary.classList.add('rating-line');summary.innerHTML=result.count?`${ratingStars(result.average)} <strong>${result.average.toFixed(2)}</strong><span>${result.count}</span>`:`<span class="rating-empty">${tr('Noch keine Nutzerbewertung','No user ratings yet')}</span>`}
+   if(summary){summary.classList.add('rating-line');summary.innerHTML=result.count?`${ratingStars(result.average)} <strong>${result.average.toFixed(2)}</strong><span>${result.count} ${tr('Bewertungen','reviews')}</span>`:`<span class="rating-empty">${tr('Noch keine Nutzerbewertung','No user ratings yet')}</span>`}
  });
 
  const layout=document.querySelector('.device-layout');
