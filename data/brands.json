@@ -1,16 +1,16 @@
 [
   {
-    "slug": "wertach",
-    "name": "WERTACH",
+    "slug": "blackwater",
+    "name": "BLACKWATER",
     "country": "Germany",
     "founded": null,
-    "website": "https://wertach-quelle.shop",
-    "group": "Premium",
-    "description_de": "Deutscher Anbieter von Gourmetwasser-, Umkehrosmose- und Remineralisierungssystemen für Haushalt und unterwegs.",
-    "description_en": "German supplier of gourmet-water, reverse-osmosis and remineralization systems for home and travel.",
+    "website": "https://blackwater-shop.de",
+    "group": "Hydrogen Water",
+    "description_de": "Deutsche Wassertechnologie-Marke für Filtersysteme, Duschfilter und Wasserstoffwasser-Produkte.",
+    "description_en": "German water technology brand offering filtration systems, shower filters and hydrogen-water products.",
     "products_count": 1,
-    "rating": null,
-    "logo": "assets/brands/wertach.png"
+    "rating": 4.8,
+    "logo": "assets/brands/blackwater.png"
   },
   {
     "slug": "pentair",
@@ -467,19 +467,6 @@
     "products_count": 0,
     "rating": null,
     "logo": "assets/brands/piurify.png"
-  },
-  {
-    "slug": "blackwater",
-    "name": "BLACKWATER",
-    "country": "Germany",
-    "founded": null,
-    "website": "https://blackwater-shop.de",
-    "group": "Hydrogen Water",
-    "description_de": "Deutsche Wassertechnologie-Marke für Filtersysteme, Duschfilter und Wasserstoffwasser-Produkte.",
-    "description_en": "German water technology brand offering filtration systems, shower filters and hydrogen-water products.",
-    "products_count": 1,
-    "rating": 4.8,
-    "logo": "assets/brands/blackwater.png"
   },
   {
     "slug": "el-nero",
@@ -970,6 +957,19 @@
     "products_count": 1,
     "rating": null,
     "logo": "assets/brands/bela-aqua.svg"
+  },
+  {
+    "slug": "wertach",
+    "name": "WERTACH",
+    "country": "Germany",
+    "founded": null,
+    "website": "https://wertach-quelle.shop",
+    "group": "Premium",
+    "description_de": "Deutscher Anbieter von Gourmetwasser-, Umkehrosmose- und Remineralisierungssystemen für Haushalt und unterwegs.",
+    "description_en": "German supplier of gourmet-water, reverse-osmosis and remineralization systems for home and travel.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/wertach.png"
   },
   {
     "slug": "aquapro",
