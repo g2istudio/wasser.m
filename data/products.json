@@ -30,25 +30,6 @@
     "source": "https://blackwater-shop.de/product/blackwater-pearl/"
   },
   {
-    "id": "dwm",
-    "slug": "aquaphor-dwm-202s-pro",
-    "brand": "Aquaphor",
-    "name": "DWM-202S Pro",
-    "category": "Under Sink RO",
-    "price": 699,
-    "currency": "EUR",
-    "rating": 4.4,
-    "reviews": 81,
-    "image": "assets/img/device-ro.svg",
-    "featured": false,
-    "specs": {
-      "flow_l_h": 15,
-      "tankless": false,
-      "remineralization": true,
-      "pump": true
-    }
-  },
-  {
     "id": "spirit",
     "slug": "bluewater-spirit-300",
     "brand": "Bluewater",

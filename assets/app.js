@@ -1,7 +1,6 @@
 const products=[
 {id:'biella',brand:'WERTACH',name:'Biella',cat:'Countertop RO',price:'from €1,994',priceValue:1994,features:['remineralization','display','cooling','instant-heater'],ppb:null,flow:'0.34 L/min',maint:'Filter-dependent',liter:'—',membrane:'100 GPD Filmtec® RO',pfas:'Manufacturer claim',viruses:'RO + UV protection',bacteria:'4-fold; 5-fold Medical',nitrates:'RO filtration',lead:'RO filtration',arsenic:'RO filtration',micro:'RO filtration',tds:'Real-time display',remin:'Yes',noise:'Not specified',power:'2,093 W max.',warranty:'5 years',country:'Germany',image:'assets/img/wertach-biella.webp',url:'products/wertach-biella.html'},
 {id:'pearl',brand:'BLACKWATER',name:'Pearl',cat:'Countertop RO',price:'€1,497',priceValue:1497,features:['remineralization','display','cooling','instant-heater'],ppb:null,flow:'0.34 L/min',maint:'Filter-dependent',liter:'—',membrane:'100 GPD Filmtec® RO',pfas:'RO filtration',viruses:'RO + dual UV',bacteria:'3-fold protection',nitrates:'RO filtration',lead:'RO filtration',arsenic:'RO filtration',micro:'0.0001 µm membrane',tds:'Input display',remin:'Yes',noise:'Not specified',power:'2,150 W max.',warranty:'Not specified',country:'Germany',image:'assets/img/blackwater-pearl.jpg',url:'products/blackwater-pearl.html'},
-{id:'dwm',brand:'Aquaphor',name:'DWM-202S Pro',cat:'Under Sink RO',price:'€699',priceValue:699,features:['remineralization','pump'],ppb:null,flow:'15 L/h',maint:'€130/year',liter:'€0.10',membrane:'100 GPD',pfas:'Claimed',viruses:'99%',bacteria:'99.9%',nitrates:'90%',lead:'98%',arsenic:'90%',micro:'99%',tds:'15–50 ppm',remin:'Yes',noise:'42 dB',power:'55 W',warranty:'2 years',country:'Estonia',image:'assets/img/device-ro.svg',url:'products/blackwater-pearl.html'},
 {id:'spirit',brand:"Bluewater",name:"Spirit 300CP",cat:"Under Sink RO",price:"€1,910",priceValue:1910,features:[],ppb:null,flow:"bis 99–99,7 % laut Händlerseite",maint:"Not published",liter:'—',membrane:"Not published",pfas:'Not published',viruses:'Not published',bacteria:'Not published',nitrates:'Not published',lead:'Not published',arsenic:'Not published',micro:'Not published',tds:"Not published",remin:"Nein",noise:'Not published',power:"350 W / 6 A",warranty:"1 Jahr",country:"Sweden",image:"assets/products/bluewater-spirit-300cp.jpg",url:'products/bluewater-spirit-300.html'},
 {id:'hydro',brand:'WALUTEC',name:'Hydrogen Water Bottle',cat:'Hydrogen Bottles',price:'€199',priceValue:199,features:['pem-spe','usb-c','display'],ppb:3000,flow:'280 ml',maint:'No filter cartridges',liter:'—',membrane:'SPE/PEM',pfas:'No filtration function',viruses:'No filtration function',bacteria:'No filtration function',nitrates:'No filtration function',lead:'No filtration function',arsenic:'No filtration function',micro:'No filtration function',tds:'Unchanged',remin:'No',noise:'Not specified',power:'USB-C',warranty:'Not specified',country:'UAE / Germany',image:'assets/products/walutec-hydrogen-bottle.png',url:'products/walutec-hydrogen-bottle.html'},
 {id:'blackwater-hydrogen',brand:'BLACKWATER',name:'Hydrogen Bottle',cat:'Hydrogen Bottles',price:'€199',priceValue:199,features:['pem-spe','usb-c','display'],ppb:3000,flow:'260 ml',maint:'No filter cartridges',liter:'—',membrane:'DuPont Nafion™ 117 SPE/PEM',pfas:'No filtration function',viruses:'No filtration function',bacteria:'No filtration function',nitrates:'No filtration function',lead:'No filtration function',arsenic:'No filtration function',micro:'No filtration function',tds:'Unchanged',remin:'No',noise:'Not specified',power:'Rechargeable battery',warranty:'Manufacturer information',country:'Germany',image:'assets/products/blackwater-hydrogen-bottle.png',url:'products/blackwater-hydrogen-bottle.html'},
@@ -47,6 +46,8 @@ function storageGet(key,fallback){try{const v=localStorage.getItem(key);return v
 function storageSet(key,value){try{localStorage.setItem(key,value)}catch(e){}}
 let selected=[];
 try{selected=JSON.parse(storageGet('wasserCompare','[]'))||[]}catch(e){selected=[]}
+selected=selected.filter(id=>products.some(product=>product.id===id));
+storageSet('wasserCompare',JSON.stringify(selected));
 const isComparePage=/(^|\/)compare(?:\.html)?\/?$/.test(location.pathname);
 let compareDockActivated=isComparePage;
 let compareDockDismissed=false;
@@ -277,7 +278,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 const productRatingSeed={
- pearl:{average:5,count:5},dwm:{average:4.4,count:81},hydro:{average:4.5,count:22}
+ pearl:{average:5,count:5},hydro:{average:4.5,count:22}
 };
 function getReviewStore(){try{return JSON.parse(storageGet('wasserProductReviews','{}'))||{}}catch(e){return {}}}
 function saveReviewStore(data){storageSet('wasserProductReviews',JSON.stringify(data))}
