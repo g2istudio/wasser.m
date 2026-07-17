@@ -469,19 +469,6 @@
     "logo": "assets/brands/piurify.png"
   },
   {
-    "slug": "el-nero",
-    "name": "eL-Neró",
-    "country": "Germany",
-    "founded": null,
-    "website": "https://walutec.ae",
-    "group": "Hydrogen Water",
-    "description_de": "Produktlinie für Direct-Flow-Umkehrosmose und mehrstufige Wasseraufbereitung.",
-    "description_en": "Water purification product line focused on direct-flow reverse osmosis and advanced treatment stages.",
-    "products_count": 0,
-    "rating": null,
-    "logo": "assets/brands/el-nero.png"
-  },
-  {
     "slug": "alkaviva",
     "name": "AlkaViva",
     "country": "United States",
