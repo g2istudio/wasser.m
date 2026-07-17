@@ -47,13 +47,27 @@ function storageGet(key,fallback){try{const v=localStorage.getItem(key);return v
 function storageSet(key,value){try{localStorage.setItem(key,value)}catch(e){}}
 let selected=[];
 try{selected=JSON.parse(storageGet('wasserCompare','[]'))||[]}catch(e){selected=[]}
+let compareDockDismissed=false;
 const lang=()=>storageGet('wasserLang','de');
 const tr=(de,en)=>lang()==='de'?de:en;
-function basePrefix(){return /\/(products|brands|articles)\//.test(location.pathname)?'../':''}
+function basePrefix(){const parts=location.pathname.split('/').filter(Boolean);return '../'.repeat(Math.max(0,parts.length-1))}
 function save(){storageSet('wasserCompare',JSON.stringify(selected));renderDock()}
-function addCompare(id){if(selected.includes(id)){selected=selected.filter(x=>x!==id)}else{if(selected.length>=3){alert(tr('Es können maximal 3 Geräte verglichen werden','You can compare a maximum of 3 devices'));return}selected.push(id)}save()}
-function renderDock(){const dock=document.querySelector('.compare-dock');if(!dock)return;if(!selected.length){dock.classList.remove('show');return}dock.classList.add('show');dock.querySelector('.compare-items').innerHTML=selected.map(id=>{const p=products.find(x=>x.id===id);return p?`<div class="compare-mini">${p.brand} ${p.name}</div>`:''}).join('');dock.querySelector('.count').textContent=`${selected.length}/3`}
+function addCompare(id){compareDockDismissed=false;if(selected.includes(id)){selected=selected.filter(x=>x!==id)}else{if(selected.length>=3){alert(tr('Es können maximal 3 Geräte verglichen werden','You can compare a maximum of 3 devices'));return}selected.push(id)}save()}
+function ensureCompareDock(){
+ let dock=document.querySelector('.compare-dock');if(!dock){dock=document.createElement('div');dock.className='compare-dock';document.body.appendChild(dock)}dock.setAttribute('aria-live','polite');
+ dock.innerHTML=`<button class="compare-dock-close" type="button" data-compare-close aria-label="${tr('Vergleichsleiste schließen','Close comparison bar')}">×</button><div class="compare-dock-summary"><strong>${tr('Vergleich','Compare')} <span class="count">0/3</span></strong><div class="compare-items"></div></div><button class="btn primary small compare-dock-action" type="button" data-go-compare>${tr('Jetzt vergleichen','Compare now')}</button>`;
+}
+function renderDock(){ensureCompareDock();const dock=document.querySelector('.compare-dock');if(!dock)return;document.querySelectorAll('[data-compare]').forEach(button=>{const active=selected.includes(button.dataset.compare);button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active))});if(!selected.length||compareDockDismissed){dock.classList.remove('show');return}dock.classList.add('show');dock.querySelector('.compare-items').innerHTML=selected.map(id=>{const p=products.find(x=>x.id===id);return p?`<div class="compare-mini"><span>${p.brand} ${p.name}</span><button type="button" data-compare-remove="${p.id}" aria-label="${tr('Aus Vergleich entfernen','Remove from comparison')}">×</button></div>`:''}).join('');dock.querySelector('.count').textContent=`${selected.length}/3`}
 function goCompare(){location.href=basePrefix()+'compare.html'}
+
+function ensureMobileNavigation(){
+ document.querySelectorAll('.site-header').forEach(header=>{
+  const shell=header.querySelector('.header-shell');if(!shell)return;
+  let tools=shell.querySelector('.header-tools');if(!tools){tools=document.createElement('div');tools.className='header-tools';shell.appendChild(tools)}
+  let menuButton=shell.querySelector('.mobile-menu-btn');if(!menuButton){menuButton=document.createElement('button');menuButton.className='icon-btn mobile-menu-btn';menuButton.type='button';menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label',tr('Menü öffnen','Open menu'));menuButton.textContent='☰'}if(menuButton.parentElement!==tools)tools.appendChild(menuButton)
+  if(!header.querySelector('.mobile-nav-panel')){const panel=document.createElement('div');panel.className='mobile-nav-panel';panel.setAttribute('aria-hidden','true');const prefix=basePrefix();panel.innerHTML=`<div class="container mobile-nav-inner"><a href="${prefix}products.html">${tr('Produkte','Products')}</a><a href="${prefix}brands.html">${tr('Marken','Brands')}</a><a href="${prefix}compare.html">${tr('Vergleichen','Compare')}</a><a href="${prefix}hydrogen-bottles.html">Hydrogenflaschen</a><a href="${prefix}community.html">Community</a><a href="${prefix}knowledge.html">${tr('Wissen','Knowledge')}</a></div>`;header.appendChild(panel)}
+ });
+}
 function productMatches(q){q=(q||'').trim().toLowerCase();if(!q)return products;return products.filter(p=>`${p.brand} ${p.name} ${p.cat}`.toLowerCase().includes(q)).slice(0,8)}
 function suggestionHTML(p){return `<div class="autocomplete-item" role="option" tabindex="0" data-id="${p.id}"><img src="${basePrefix()}${p.image}" alt=""><div><b>${p.brand} ${p.name}</b><span>${p.cat} · ${p.price}</span></div></div>`}
 function navigateToProduct(p){if(p) location.href=basePrefix()+p.url}
@@ -234,13 +248,20 @@ function setupSearchClearButtons(){
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
+  ensureMobileNavigation();
+  ensureCompareDock();
   renderDock();
   setupSearchClearButtons();
   setupBrandSearch();
   initComparePage();
   setupGeneralAutocomplete();
   setupProductsQueryFilter();
-  document.querySelectorAll('[data-compare]').forEach(b=>b.addEventListener('click',()=>addCompare(b.dataset.compare)));
+  document.addEventListener('click',event=>{
+    const compareButton=event.target.closest('[data-compare]');if(compareButton){event.preventDefault();addCompare(compareButton.dataset.compare);return}
+    const removeButton=event.target.closest('[data-compare-remove]');if(removeButton){event.preventDefault();compareDockDismissed=false;selected=selected.filter(id=>id!==removeButton.dataset.compareRemove);save();return}
+    if(event.target.closest('[data-compare-close]')){compareDockDismissed=true;renderDock();return}
+    if(event.target.closest('[data-go-compare]'))goCompare();
+  });
 });
 
 
