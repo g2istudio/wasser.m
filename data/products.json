@@ -127,15 +127,20 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/truu.png",
+    "image": "assets/products/truu-fountain-3.png",
     "featured": false,
     "specs": {
       "Einsatz": "Unternehmen, Fitness, Gastronomie, Kliniken und Pflege",
+      "Installation": "Festwasseranschluss",
       "Reservoir": "85 Liter, Glas",
       "Filtration": "9-stufiges Vor- und Hauptfiltersystem",
-      "Bedienung": "Tap & Refill, sensorgesteuert",
-      "Material": "Edelstahlgehäuse und V4A-Leitungen",
-      "Herstellung": "Made in Germany"
+      "Bedienung": "Tap & Refill",
+      "Nachfüllung": "Automatisch",
+      "Reinigung": "Sensorgesteuerte Selbstreinigung",
+      "Gehäuse": "Edelstahl",
+      "Wasserleitungen": "V4A-Edelstahl",
+      "Herstellung": "Made in Germany",
+      "Preis": "Individuelles Preismodell / Anfrage"
     },
     "source": "https://www.truu.com/truu-water/produkte/"
   },
@@ -149,15 +154,20 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/mrwater.png",
+    "image": "assets/products/mrwater-premium-ro.png",
     "featured": false,
     "specs": {
+      "Hinweis": "Die Quelle führt vier Modelle, kein offizielles Modell „Premium RO System“",
       "Modelle": "Puria, Arctica, Silver Star und Futura",
-      "Bauart": "Auftisch, Direct Flow oder Tanksystem – modellabhängig",
-      "Filterstufen": "7 oder 8 – modellabhängig",
-      "Durchfluss": "ca. 0,7 bis 2,0 L/min – modellabhängig",
-      "Reinwasser/Abwasser": "von ca. 1:1,2 bis 2,33:1 – modellabhängig",
-      "Hinweis": "Kein offizielles Modell „Premium RO System“ auf der verlinkten Seite"
+      "Puria": "Auftisch; 8 Stufen; ca. 0,7 L/min; 25,3 × 36,4 × 40,4 cm; 7,5 kg",
+      "Arctica": "Untertisch Direct Flow; 7 Stufen; ca. 1,5 L/min; 10,5 × 38,5 × 50 cm; 11,8 kg",
+      "Silver Star": "Untertisch Direct Flow; 8 Stufen; ca. 2,0 L/min; 10,5 × 45 × 50 cm; 13,5 kg",
+      "Futura": "Untertisch mit Tank; 7 Stufen; ca. 1,0 L/min; 35 × 40 × 12 cm; 3,4 kg",
+      "Reinwasser/Abwasser Puria": "ca. 2,33:1",
+      "Reinwasser/Abwasser Arctica/Silver Star": "ca. 1:1,2",
+      "Reinwasser/Abwasser Futura": "ca. 1:1,3",
+      "Technologie": "Umkehrosmose",
+      "Zielregion": "Für Wasserbedingungen in Deutschland, Österreich und der Schweiz entwickelt"
     },
     "source": "https://misterwater.eu/wasserfilteranlagen/"
   },
@@ -171,14 +181,18 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/wertach.png",
+    "image": "assets/products/wertach-pantera.webp",
     "featured": false,
     "specs": {
-      "System": "Direct-Flow-Umkehrosmose",
+      "Produkttyp": "Untertisch-Gourmetwasseranlage",
+      "Technologie": "Direct-Flow-Umkehrosmose",
       "Varianten": "Basic, Performance und Medical",
-      "Installation": "Untertisch",
+      "Installation": "Unter der Spüle",
+      "Bedienung": "Touchdisplay, variantenabhängig",
+      "Wasserveredelung": "Variantenabhängig",
       "Garantie": "WERTGARANTIE laut Hersteller",
-      "Preis": "Auf der verlinkten Seite variantenabhängig"
+      "Preis": "Variantenabhängig auf der Produktseite",
+      "Entwicklung": "In Deutschland entwickelt laut Hersteller"
     },
     "source": "https://wertach-quelle.shop/product/gourmetwasseranlage-pantera/"
   },
@@ -192,14 +206,29 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/osmofresh.png",
+    "image": "assets/products/osmofresh-fusion-pro.webp",
     "featured": false,
     "specs": {
-      "Wasserarten": "Kalt, heiß und gesprudelt",
-      "Anschluss": "Tank oder Wasserleitung",
-      "Reinwasser/Abwasser": "bis 4:1",
-      "Schutz": "3-fache UV-C-LED",
-      "Remineralisierung": "Integriert"
+      "Preis": "1.290 € (Herstellerseite bei Recherche)",
+      "Produktnummer": "ROFP",
+      "Einsatz": "Haushalt, 1–6 Personen",
+      "Wasserarten": "Still, gekühlt, heiß und zwei Sprudelstärken",
+      "Temperaturbereich Ausgabe": "4–95 °C",
+      "Anschluss": "Wassertank oder Festwasser, jederzeit umschaltbar",
+      "Filter": "7-in-1 Quick-Change-Kartusche",
+      "Filterwechsel": "Alle 12 Monate",
+      "Hygiene": "3-fache UV-C-LED; Microbial Resistance Technology",
+      "Display": "7 Zoll Touchdisplay mit zwei TDS-Anzeigen",
+      "Abwasserverhältnis": "Tankmodus 4:1; Leitungsmodus 1:2",
+      "Maße": "51 × 22 × 43,7 cm (L × B × H)",
+      "Gewicht": "21,6 kg ohne Wasser",
+      "Eingangsdruck": "1–5 bar",
+      "Eingangstemperatur": "5–45 °C",
+      "Ausgabemengen": "150 ml bis 1,2 l in 100-ml-Schritten",
+      "Kühlleistung": "120 W",
+      "Leistungsaufnahme": "ca. 2,6 W Standby; bis 2.400 W Betrieb",
+      "CO₂": "Kleine Kartusche oder große Flasche; CO₂-Flasche nicht enthalten",
+      "Zertifizierung": "TÜV Rheinland ID 1111314292; WQA/NSF/ANSI/CAN 372-2020"
     },
     "source": "https://www.osmofresh.de/osmoseanlagen/fusion-pro"
   },
@@ -213,15 +242,22 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/greifenstein.png",
+    "image": "assets/products/greifenstein-inox.jpg",
     "featured": false,
     "specs": {
+      "Bauart": "Untertisch-Umkehrosmoseanlage mit Vorratstank",
       "Filterwasser": "100–360 Liter pro Tag",
+      "Wirkungsgrad": "50 % Abwasser laut Hersteller",
       "Filterstufen": "Bis zu 6",
-      "Tank": "18 Liter Standard-Fassungsvermögen",
-      "Anlage": "Ø 15 cm, Höhe 46 cm, ca. 8 kg",
       "Membran": "TFC, 0,0001 Mikron",
+      "Leitwert Eingang": "bis 2.000 µS/cm",
+      "Filtermodul": "Edelstahlgehäuse, Ø 15 cm, Höhe 46 cm",
+      "Gerätegewicht": "ca. 8 kg",
+      "Tank": "18 Liter, Ø 29 cm, Höhe 38 cm, Leergewicht ca. 3 kg",
       "Strom": "Nicht erforderlich",
+      "Optionen": "Mineralisierung und EM-Keramik",
+      "Nachfilter": "UF-Membran als Post- und Sicherheitsstufe",
+      "Armatur": "Edelstahl, Chrom oder 2-Wege-Armatur",
       "Garantie": "2 Jahre; Verlängerung unter Herstellerbedingungen"
     },
     "source": "https://greifenstein-wasser.de/umkehrosmose/inox/"
@@ -230,21 +266,26 @@
     "id": "gewapur-ro-comfort-direct-flow",
     "slug": "gewapur-ro-comfort-direct-flow",
     "brand": "Gewapur",
-    "name": "RO Comfort Direct Flow",
+    "name": "Osmo Star 2.0",
     "category": "Direct Flow RO",
     "price": null,
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/gewapur.png",
+    "image": "assets/products/gewapur-osmo-star-2.webp",
     "featured": false,
     "specs": {
-      "Technologie": "Umkehrosmose",
-      "Bauart": "Direct Flow",
+      "Offizieller Modellname": "Osmo Star 2.0; „RO Comfort“ ist auf der verlinkten Seite nicht aufgeführt",
+      "Technologie": "Direct-Flow-Umkehrosmose",
+      "Membran": "800 GPD",
       "Vorratstank": "Nein",
-      "Datenstatus": "Modellwerte auf der verlinkten Kategorieseite prüfen"
+      "Installation": "Untertisch",
+      "Filterwechsel": "Schnellwechselsystem",
+      "Einsatz": "Trinkwasser im Privathaushalt",
+      "Herstellung": "Made in Germany laut Kategorieseite",
+      "Filterintervalle": "Vorfilter typischerweise 6–12 Monate; Membran 2–4 Jahre laut Kategorieseite"
     },
-    "source": "https://gewapur.de/wasseraufbereitung-kategorie/osmoseanlage-trinkwasser/"
+    "source": "https://gewapur.de/produkt/trinkwasser-untertisch-osmoseanlage-gewapur-osmo-star-2-0/"
   },
   {
     "id": "aqmos-aq-ro-800-gpd",
@@ -259,10 +300,14 @@
     "image": "assets/brands/aqmos.png",
     "featured": false,
     "specs": {
-      "Membranleistung": "800 GPD",
+      "Modellstatus": "„AQ-RO 800 GPD“ ist auf der verlinkten aktuellen Kategorieseite nicht eindeutig ausgewiesen",
       "Technologie": "Umkehrosmose",
-      "Bauart": "Direct Flow",
-      "Quelle": "Offizielle AQMOS-Produktkategorie"
+      "Nennleistung aus Modellbezeichnung": "800 GPD",
+      "Produktgruppe": "Umkehrosmoseanlagen für Zuhause",
+      "Bauart": "Nicht eindeutig durch die verlinkte Übersichtsseite bestätigt",
+      "Preis": "Nicht eindeutig zuordenbar",
+      "Foto": "Kein fremdes AQMOS-Modell zugeordnet; Logo bleibt bis zur bestätigten Produktseite",
+      "Datenhinweis": "Für vollständige Werte ist eine direkte offizielle Modellseite erforderlich"
     },
     "source": "https://www.aqmos.com/c/umkehrosmoseanlagen-fuer-zuhause/umkehrosmoseanlagen/"
   },
@@ -276,13 +321,22 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/wasserhaus.png",
+    "image": "assets/products/wasserhaus-zen-flow.jpg",
     "featured": false,
     "specs": {
-      "Technologie": "Direct-Flow-Umkehrosmose",
-      "Membranfeinheit": "0,0001 µm",
-      "Vorratstank": "Nein",
-      "Einsatz": "Haushalt und Familie"
+      "Preis": "1.199 € (Herstellerseite bei Recherche)",
+      "Bauart": "Tankloses Direct-Flow-Unterbaugerät",
+      "Membran": "800 GPD",
+      "Durchfluss": "bis ca. 2,1 L/min unter optimalen Bedingungen",
+      "Reinwasser/Abwasser": "ca. 1:1",
+      "Filtration": "Vorfilter, RO-Membran und Aktivkohle-Nachfilter",
+      "Remineralisierung": "Magnesium, Kalium und Calcium",
+      "Wasserveredelung": "ZENERGIZER Edelstahl-Wasserwirbler",
+      "Hygiene": "Automatische Spülung alle 24 Stunden",
+      "Sicherheit": "LED-Anzeige, Filterwechselhinweis und elektronischer Leckageschutz",
+      "Montage": "Stehend oder liegend im Küchenschrank, in geeigneter Schublade oder Sockel",
+      "Armatur": "INOX-Edelstahl-Osmosehahn enthalten; 3-Wege-Armaturen optional",
+      "Vorratstank": "Nein"
     },
     "source": "https://www.wasserhaus.de/zen-flow-direct-flow-umkehrosmosesystem"
   },
@@ -296,13 +350,17 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/arktisquelle.png",
+    "image": "assets/products/arktisquelle-direct-flow-premium.png",
     "featured": false,
     "specs": {
-      "Technologie": "Umkehrosmose",
-      "Sortiment": "Aktuelle Collections des Herstellers",
-      "Ausgabemenge": "Modellabhängig",
-      "Preis": "Modellabhängig"
+      "Modellstatus": "„Direct Flow Premium“ ist in der verlinkten aktuellen Collection nicht eindeutig ausgewiesen",
+      "Technologie": "Umkehrosmose laut ursprünglicher Modellangabe",
+      "Produktgruppe": "Arktisquelle Wasserfiltersysteme",
+      "Ausführung": "Aktuelles abgebildetes Arktisquelle-Auftischsystem",
+      "Bedienung": "Modellabhängig",
+      "Temperaturfunktionen": "Modellabhängig",
+      "Preis": "Abhängig vom aktuell angebotenen Paket",
+      "Datenhinweis": "Nicht veröffentlichte Werte wurden nicht aus anderen Modellen übernommen"
     },
     "source": "https://arktisquelle.de/collections"
   },
@@ -316,13 +374,23 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/myaqua.png",
+    "image": "assets/products/myaqua-1900.jpg",
     "featured": false,
     "specs": {
+      "Einsatz": "Süß- und Meerwasseraquaristik",
       "Tagesleistung": "bis 1.900 Liter",
-      "Rückhaltung": "bis 99 % laut Hersteller",
-      "Reinwasser/Abwasser": "bis 1:1",
-      "Einsatz": "Süß- und Meerwasseraquaristik"
+      "Durchfluss": "max. 1,32 L/min",
+      "Salzrückhaltung": "bis 99 %",
+      "Reinwasser/Abwasser": "ca. 1:1",
+      "Betriebsdruck": "1–4 bar",
+      "Wassertemperatur": "5–38 °C",
+      "Abmessungen": "ca. 434 × 163 × 418 mm",
+      "Stromverbrauch": "70 W; Standby 1–2 W",
+      "Spannung": "24 V",
+      "Abschaltautomatik": "Nach 12 Stunden Dauerbetrieb",
+      "Montage": "Wandhalterung und Anschlusszubehör enthalten",
+      "Artikelnummer": "#MA1900",
+      "Filtermaterialien": "Natürliche Filtermaterialien, ohne chemische Zusätze"
     },
     "source": "https://www.arka-biotech.de/produkte/arka-myaqua-1900"
   },
@@ -336,14 +404,29 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/purway.png",
+    "image": "assets/products/purway-pur-booster-quick.jpg",
     "featured": false,
     "specs": {
+      "Preis": "309 € (Herstellerseite bei Recherche)",
+      "EAN": "4260303252520",
       "Filterstufen": "7",
       "Membran": "400 GPD",
-      "Reinwasserleistung": "bis 1,1 L/min bzw. 1.500 L/Tag",
-      "Reinwasser/Abwasser": "maximal 1:1",
-      "Remineralisierung": "Enthalten"
+      "Durchfluss": "bis ca. 1,1 L/min",
+      "Tagesleistung": "bis ca. 1.500 Liter",
+      "Reinwasser/Abwasser": "max. 1:1, abhängig von der Wasserqualität",
+      "Wasserleitungsdruck": "1–4 bar",
+      "Wassertemperatur": "5–40 °C",
+      "Stromversorgung": "AC 120–230 V, 50–60 Hz, 80 W",
+      "Gerätegewicht": "ca. 8,8 kg",
+      "Filterpaketgewicht": "ca. 1,2 kg",
+      "Gerätemaße": "49 × 37 × 19 cm (H × B × T)",
+      "Einbaumaße": "54 × 37 × 19 cm",
+      "Bedienung": "LED-Computersteuerung",
+      "Filterwechsel": "Twist-Change-System",
+      "Spülung": "Manuell und automatisch",
+      "Sicherheit": "Wasserstoppventil",
+      "Filterfolge": "PP 10 µm; GAC; CTO 5 µm; UF 0,02 µm; RO 400 GPD; T33; Remineralisierung",
+      "Wechselintervalle": "Vor-/Postfilter ca. 6 Monate; Membran ca. 1–2 Jahre"
     },
     "source": "https://shop.purway.de/products/pur-booster-quick-7-stufen-umkehrosmoseanlage-400-gpd-ohne-tank"
   },
@@ -357,13 +440,17 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/osmounity.png",
+    "image": "assets/products/osmounity-direct-flow.jpg",
     "featured": false,
     "specs": {
+      "Produktgruppe": "Aquaristik-Filteranlagen",
       "Technologie": "Umkehrosmose",
       "Bauart": "Direct Flow",
       "Varianten": "400/600 GPD laut Herstellerunterlagen",
-      "Vorratstank": "Nein"
+      "Vorratstank": "Nein",
+      "Installation": "Festwasseranschluss",
+      "Leistung": "Variantenabhängig",
+      "Datenhinweis": "Die verlinkte Seite ist eine Kategorie; Werte unterscheiden sich je Anlage"
     },
     "source": "https://osmounity.de/aquaristik/Filteranlagen/"
   },
@@ -380,10 +467,13 @@
     "image": "assets/brands/wasserwelt.svg",
     "featured": false,
     "specs": {
-      "Technologie": "Umkehrosmose",
-      "Bauart": "Direct Flow",
-      "Vorratstank": "Nein",
-      "Datenstatus": "Keine öffentlich indexierte Herstellerseite gefunden"
+      "Modellstatus": "Keine öffentlich verifizierbare offizielle Produktseite hinterlegt",
+      "Technologie": "Umkehrosmose gemäß vorhandener Modellangabe",
+      "Bauart": "Direct Flow gemäß vorhandener Modellangabe",
+      "Vorratstank": "Nein gemäß vorhandener Modellangabe",
+      "Preis": "Nicht bestätigt",
+      "Foto": "Kein Gerätefoto ohne verifizierte Herstellerquelle verwendet",
+      "Datenhinweis": "Weitere technische Werte werden erst nach einer offiziellen Quelle ergänzt"
     },
     "source": null
   },
@@ -397,14 +487,18 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/bwt.png",
+    "image": "assets/products/bwt-aqa-drink-pro-20.png",
     "featured": false,
     "specs": {
+      "Produktname": "AQA drink Pro 20 CAS",
+      "Produktnummer": "826024",
       "Produkttyp": "Leitungsgebundener Wasserspender",
       "Bauart": "Auftischgerät",
-      "Wasseroptionen": "3",
-      "Produktnummer": "826024",
-      "Einsatz": "Büro, Gastronomie und Gewerbe"
+      "Wasseroptionen": "Kalt, Raumtemperatur und prickelnd",
+      "Wasseranschluss": "Festwasser",
+      "CO₂": "Für prickelndes Wasser",
+      "Einsatz": "Büro, Gastronomie und Gewerbe",
+      "Service": "Aufstellung und Inbetriebnahme durch BWT verfügbar"
     },
     "source": "https://www.bwt.com/de-de/shop/AQA-drink-Pro-20-CAS-Auftischgeraet/826024"
   },
@@ -418,13 +512,16 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/bwt.png",
+    "image": "assets/products/bwt-bestaqua-roc.png",
     "featured": false,
     "specs": {
       "Technologie": "Umkehrosmose",
       "Einsatz": "Gastronomie und Hotellerie",
-      "Durchfluss": "modellabhängig, bis 180 L/h dokumentiert",
-      "Stromversorgung": "230 V / 50 Hz"
+      "Bauart": "Kompaktes professionelles System",
+      "Durchfluss": "Modellabhängig, bis 180 L/h dokumentiert",
+      "Stromversorgung": "230 V / 50 Hz",
+      "Varianten": "Leistungsabhängige ROC-Ausführungen",
+      "Installation": "Festwasser, gewerbliche Untertisch-/Technikinstallation"
     },
     "source": "https://www.bwt.com/pl-pl/produkty/odwrocona-osmoza/bwt-bestaqua-roc/"
   },
@@ -438,13 +535,17 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/gruenbeck.png",
+    "image": "assets/products/gruenbeck-geno-osmo-x.png",
     "featured": false,
     "specs": {
       "Technologie": "Umkehrosmose",
       "Einsatz": "Gewerbe und Industrie",
       "System": "Modular konfigurierbar",
-      "Preis": "Projektbezogen"
+      "Anlagenfamilie": "GENO-OSMO-X",
+      "Aufbereitung": "Teilentsalzung über Membrantechnik",
+      "Planung": "Auslegung abhängig von Rohwasser und benötigter Permeatleistung",
+      "Preis": "Projektbezogen",
+      "Installation": "Durch Fachbetrieb / Projektplanung"
     },
     "source": "https://www.gruenbeck.de/produkte-loesungen/gruenbeck-fuer-gewerbe/membrantechnik/umkehrosmose/geno-osmo-x"
   },
@@ -461,10 +562,13 @@
     "image": "assets/brands/judo.png",
     "featured": false,
     "specs": {
-      "Produkttyp": "Heizungsbefüllsystem",
+      "Produktstatus": "Direkte offizielle Modellseite in den bereitgestellten Quellen nicht vorhanden",
+      "Produkttyp": "Heizungsbefüllsystem gemäß vorhandener Modellangabe",
       "Einsatz": "Heizungswasseraufbereitung",
       "Hersteller": "JUDO Wasseraufbereitung",
-      "Preis": "Auf Anfrage"
+      "Preis": "Auf Anfrage / nicht bestätigt",
+      "Foto": "Kein fremdes JUDO-Gerät zugeordnet",
+      "Datenhinweis": "Technische Werte werden nicht aus ähnlich benannten Produkten übernommen"
     },
     "source": "https://judo.eu"
   },
@@ -478,13 +582,16 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/alfiltra.png",
+    "image": "assets/products/alfiltra-ro-professional.jpg",
     "featured": false,
     "specs": {
       "Technologie": "Umkehrosmose",
       "Einsatz": "Gewerbe und professionelle Anwendungen",
-      "Konfiguration": "Projektabhängig",
-      "Preis": "Auf Anfrage"
+      "Baureihe": "Projekt- und leistungsabhängig",
+      "Installation": "Festwasseranlage",
+      "Konfiguration": "Vorbehandlung, Membranleistung und Speicher nach Bedarf",
+      "Preis": "Auf Anfrage bzw. modellabhängig",
+      "Hinweis": "Die verlinkte Seite ist eine Produktübersicht; technische Werte unterscheiden sich je Anlage"
     },
     "source": "https://www.alfiltra.de/umkehrosmoseanlagen"
   },
@@ -498,13 +605,17 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/aquion-de.png",
+    "image": "assets/products/aquion-premium-7.jpg",
     "featured": false,
     "specs": {
       "Produkttyp": "Wasserionisierer",
-      "Elektroden": "7",
       "Serie": "AQUION Premium",
-      "Bedienung": "Elektronisch"
+      "Elektroden": "7",
+      "Bedienung": "Elektronisch",
+      "Installation": "Am Wasseranschluss / Küche",
+      "Wasserstufen": "Alkalische und saure Stufen, modellabhängig",
+      "Filtration": "Integrierte Vorfiltration, abhängig von Konfiguration",
+      "Preis": "Modell- und Ausstattungsabhängig"
     },
     "source": "https://aquion.de/wasser-systeme/premium-serie"
   },
@@ -518,13 +629,18 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/quooker.png",
+    "image": "assets/products/quooker-front-cube.webp",
     "featured": false,
     "specs": {
-      "Wasserarten": "Kalt, warm, 100 °C kochend",
-      "CUBE": "Gekühlt still und sprudelnd",
-      "Armatur": "Front mit Bedienung am Auslauf",
-      "Installation": "Untertisch-Reservoir und CUBE"
+      "Produkttyp": "Multifunktionale Küchenarmatur",
+      "Armatur": "Quooker Front mit Bedienung am Auslauf",
+      "Basiswasser": "Kalt und warm",
+      "Reservoir": "100 °C kochendes Wasser",
+      "CUBE": "Gekühltes stilles und sprudelndes Wasser",
+      "Wasserarten gesamt": "Fünf in Kombination mit CUBE",
+      "Installation": "Reservoir und CUBE unter der Spüle",
+      "CO₂": "CUBE-CO₂-System",
+      "Oberflächen": "Mehrere Ausführungen laut Hersteller"
     },
     "source": "https://www.quooker.de/wasserhahn/front"
   },
@@ -538,13 +654,17 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/brita.png",
+    "image": "assets/products/brita-mypure-p1.jpg",
     "featured": false,
     "specs": {
       "Produkttyp": "Untertisch-Trinkwasserfilter",
-      "Filter": "BRITA P1000",
+      "Filterkartusche": "BRITA P1000",
       "Installation": "Unter der Spüle",
-      "Artikelnummer": "1025434"
+      "Ausgabe": "Separate Filterarmatur",
+      "Reduktion": "Kalkbildende Stoffe sowie geschmacks- und geruchsstörende Bestandteile laut Hersteller",
+      "Artikelnummer": "1025434",
+      "Filterwechsel": "Abhängig von Wasserhärte und Verbrauch",
+      "Strom": "Nicht erforderlich"
     },
     "source": "https://www.brita.de/produkte/mypure-p1-einbau-filter/1025434"
   },
@@ -561,10 +681,14 @@
     "image": "assets/brands/grohe-blue.png",
     "featured": false,
     "specs": {
+      "Produkttyp": "Küchen-Wassersystem",
       "Wasserarten": "Still, medium und sprudelnd",
-      "Kühlung": "Integriert",
+      "Filtration": "GROHE Blue Filter",
+      "Kühlung": "Integrierter Untertisch-Kühler",
       "CO₂": "Flaschensystem",
-      "Installation": "Küchenarmatur mit Untertisch-Kühler"
+      "Installation": "Spezialarmatur und Kühler unter der Spüle",
+      "Bedienung": "Auswahl der Wasserart an der Armatur",
+      "Einsatz": "Privathaushalt"
     },
     "source": "https://www.grohe.com/de-DE/inspiration/kollektionen/grohe-blue-home"
   },
@@ -578,14 +702,17 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/franke.svg",
+    "image": "assets/products/franke-mythos-water-hub.jpg",
     "featured": false,
     "specs": {
       "Varianten": "All in One 6-in-1 und Sparkling 5-in-1",
       "Wasserarten": "Kalt, warm, kochend, gekühlt, raumtemperiert und sprudelnd – variantenabhängig",
       "Installation": "Kompaktes Untertischsystem",
-      "Steuerung": "Bluetooth-App und LED-Anzeige",
-      "Lieferumfang": "Boiler, Kühler, CO₂-Flasche sowie Filter/Filterkopf"
+      "Steuerung": "Bluetooth-App",
+      "Armatur": "LED-Anzeige für Betriebszustände",
+      "Filterüberwachung": "RFID-gestützte Filterwechselanzeige",
+      "Lieferumfang": "Boiler, Kühler, CO₂-Flasche sowie Filter und Filterkopf",
+      "Konfiguration": "Oberflächen und Armaturvarianten modellabhängig"
     },
     "source": "https://www.franke.com/de/de/home-solutions/produkte/sparkling-filtered-water.html"
   },
@@ -599,13 +726,16 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/blanco.svg",
+    "image": "assets/products/blanco-unit-drink-systems.webp",
     "featured": false,
     "specs": {
-      "System": "Modularer Küchen-Wasserplatz",
-      "Komponenten": "Armatur/DRINK.SYSTEM, Spüle, Abfall- und Organisationssystem",
+      "Produkttyp": "Modularer Küchen-Wasserplatz, kein einzelnes Gerät",
+      "Komponenten": "Armatur oder DRINK.SYSTEM, Spüle, Abfall- und Organisationssystem",
       "Konfiguration": "Stile, Materialien und Einbauarten kombinierbar",
-      "Installation": "Optimierte Nutzung des Unterschranks"
+      "Unterschrank": "Komponenten auf gemeinsame Raumnutzung abgestimmt",
+      "Wasserfunktionen": "Abhängig vom gewählten DRINK.SYSTEM",
+      "Preis": "Konfigurationsabhängig",
+      "Hinweis": "Technische Werte hängen von den gewählten Einzelkomponenten ab"
     },
     "source": "https://www.blanco.de/blanco-unit/"
   },
@@ -622,14 +752,22 @@
     "image": "assets/brands/aqua-global.svg",
     "featured": false,
     "specs": {
+      "Bauart": "Mobile Auftisch-Wasserbar mit Umkehrosmose",
       "Wasseranschluss": "Nicht erforderlich",
-      "Temperaturen": "ca. 50 °C, 85 °C, 95 °C oder ungekühlt",
-      "Wassermengen": "200, 500 oder 1.000 ml",
-      "Tank": "5,0 L Rohwasser / 1,5 L gefiltertes Wasser",
-      "Leistung": "ca. 10–15 L/h",
+      "Temperaturen": "Baby ca. 50 °C; Tea ca. 85 °C; Hot ca. 95 °C; Room ungekühlt",
+      "Portionen": "200, 500 oder 1.000 ml",
+      "Rohwassertank": "5,0 Liter",
+      "Reinwassertank": "1,5 Liter",
+      "Filterleistung": "ca. 10–15 L/h",
       "Reinwasser/Abwasser": "1:1",
       "Abmessungen": "183 × 388 × 405 mm",
-      "Gewicht": "7,10 kg"
+      "Gewicht": "7,10 kg",
+      "Spannung": "220 V / 50 Hz",
+      "Heizleistung": "2.180 W",
+      "Standby": "0,0–0,1 kWh pro 24 h laut Hersteller",
+      "Hygiene": "UV-Lampe und automatische Self-Control-Membranspülung nach 24 h Inaktivität",
+      "Filterwechsel": "Composite/Nachfilter 6–12 Monate; Membran 12–24 Monate; UV-Lampe 60 Monate",
+      "Varianten": "Silver Edition und Black Edition"
     },
     "source": "https://aqua-global.com/?pid=1000115&nav_id=1000108"
   },
@@ -643,16 +781,23 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/brands/bela-aqua.svg",
+    "image": "assets/products/bela-aqua-oblige-directflow.jpg",
     "featured": false,
     "specs": {
-      "Membran": "800 GPD RO",
+      "Bauart": "Tanklose Direct-Flow-Umkehrosmoseanlage",
+      "Membran": "800 GPD High Performance RO",
       "Durchfluss": "bis zu 2,1 L/min",
       "Reinwasser/Abwasser": "1:0,6",
       "Filtration": "5 bis 7 Stufen",
-      "Vorratstank": "Nein",
+      "Vorfilter": "3-in-1 PP + Carbonblock + UF",
+      "Membranfeinheit": "0,0001 Mikrometer laut Hersteller",
+      "Remineralisierung": "Optionaler BIO-3+-Filter bei OBLIGE MINERALE",
       "Sicherheit": "Leaking-Sensor und Aqua-Stopp",
-      "Gehäuse": "Pulverbeschichtetes Aluminium und ABS"
+      "Selbstreinigung": "Automatisch bei längerer Abwesenheit",
+      "Display": "Interaktives Frontdisplay mit Status- und Filterwechselanzeige",
+      "Gehäuse": "Pulverbeschichtetes Aluminium und ABS",
+      "Zertifizierungen": "NSF/ANSI 42, 58 und 61; WRAF, FDA, UL, RoHS, TÜV, CE laut Hersteller",
+      "Vorratstank": "Nein"
     },
     "source": "https://bela-aqua.de/oblige-ro-directflow"
   }
