@@ -12,22 +12,23 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;',
 const priceText = value => value == null ? 'Preis auf Anfrage' : new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(value);
 
 for (const brand of additions.brands) {
-  if (!brands.some(item => item.slug === brand.slug)) {
-    const count = additions.products.filter(product => product.brandSlug === brand.slug).length;
-    const ext = brand.slug === 'wasserwelt' ? 'svg' : 'png';
-    brands.push({...brand, founded:null, description_de:brand.description, description_en:brand.description, products_count:count, rating:null, logo:`assets/brands/${brand.slug}.${ext}`});
-  }
+  const count = additions.products.filter(product => product.brandSlug === brand.slug).length;
+  const ext = ['wasserwelt','franke','blanco','aqua-global','bela-aqua'].includes(brand.slug) ? 'svg' : 'png';
+  const record = {...brand, founded:null, description_de:brand.description, description_en:brand.description, products_count:count, rating:null, logo:`assets/brands/${brand.slug}.${ext}`};
+  const index = brands.findIndex(item => item.slug === brand.slug);
+  if (index < 0) brands.push(record);
+  else brands[index] = {...brands[index], ...record};
 }
 
 for (const product of additions.products) {
-  if (!products.some(item => item.slug === product.slug)) {
-    products.push({id:product.slug, slug:product.slug, brand:product.brand, name:product.name, category:product.category, price:product.price, currency:'EUR', rating:null, reviews:0, image:product.image, featured:false, specs:Object.fromEntries(product.specs.map(([key,value]) => [key,value])), source:product.source});
-  }
+  const record = {id:product.slug, slug:product.slug, brand:product.brand, name:product.name, category:product.category, price:product.price, currency:'EUR', rating:null, reviews:0, image:product.image, featured:false, specs:Object.fromEntries(product.specs.map(([key,value]) => [key,value])), source:product.source};
+  const index = products.findIndex(item => item.slug === product.slug);
+  if (index < 0) products.push(record);
+  else products[index] = {...products[index], ...record};
 }
 
 for (const brand of brands) {
-  const added = additions.products.filter(product => product.brandSlug === brand.slug).length;
-  if (added && !additions.brands.some(item => item.slug === brand.slug)) brand.products_count = (brand.products_count || 0) + added;
+  brand.products_count = products.filter(product => additions.products.some(item => item.slug === product.slug && item.brandSlug === brand.slug) || product.brand_slug === brand.slug).length || brand.products_count || 0;
 }
 
 fs.writeFileSync(brandsPath, JSON.stringify(brands,null,2)+'\n');
@@ -39,7 +40,7 @@ const footer = depth => `<footer class="site-footer"><div class="footer-bottom">
 const productCard = (product, depth='') => `<div class="product-card" data-product-id="${esc(product.slug)}"><div class="photo"><img alt="${esc(product.brand)} ${esc(product.name)}" src="${depth}${esc(product.image)}"></div><div class="brand">${esc(product.brand)}</div><h3>${esc(product.name)}</h3><div class="rating">Herstellerdaten</div><div class="price">${esc(priceText(product.price))}</div><div class="specs">${product.specs.slice(0,3).map(([key,value])=>`<span>${esc(key)}: ${esc(value)}</span>`).join('')}</div><div class="actions"><a class="btn small" href="${depth}products/${esc(product.slug)}.html">Alle Daten</a><button class="btn small" data-compare="${esc(product.slug)}">+ Compare</button></div></div>`;
 
 for (const brand of additions.brands) {
-  const logoExt = brand.slug === 'wasserwelt' ? 'svg' : 'png';
+  const logoExt = ['wasserwelt','franke','blanco','aqua-global','bela-aqua'].includes(brand.slug) ? 'svg' : 'png';
   const items = additions.products.filter(product => product.brandSlug === brand.slug);
   const website = brand.website ? `<a class="btn primary" href="${esc(brand.website)}" target="_blank" rel="noopener nofollow">Offizielle Website ↗</a>` : '<span class="meta">Offizielle Website nicht bestätigt</span>';
   const html = `<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(brand.name)} – Marke und Produkte</title><meta name="description" content="${esc(brand.description)}"><link rel="stylesheet" href="../assets/styles.css"><link rel="icon" href="../assets/favicon/favicon.ico"><link rel="canonical" href="https://hitmoda.ru/brands/${esc(brand.slug)}.html"></head><body class="wm-v2">${header()}<main><div class="container"><div class="breadcrumbs">Home / Marken / ${esc(brand.name)}</div><section class="brand-hero"><div class="brand-hero-primary"><div class="brand-hero-logo"><img src="../assets/brands/${esc(brand.slug)}.${logoExt}" alt="${esc(brand.name)} Logo"></div><div class="brand-hero-copy"><span class="badge">${esc(brand.group)}</span><h1>${esc(brand.name)}</h1><p class="lead">${esc(brand.description)}</p></div></div><aside class="brand-hero-details"><h2>Markenprofil</h2><dl><div><dt>Land</dt><dd>${esc(brand.country)}</dd></div><div><dt>Bereich</dt><dd>${esc(brand.group)}</dd></div><div><dt>Modelle</dt><dd>${items.length}</dd></div></dl>${website}</aside></section><section class="panel"><h2>Produkte in der Datenbank</h2><div class="product-grid">${items.map(item=>productCard(item,'../')).join('')}</div></section></div></main>${footer('..')}</body></html>`;
@@ -57,14 +58,37 @@ for (const product of additions.products) {
 
 let brandsHtml = fs.readFileSync(path.join(root,'brands.html'),'utf8');
 const newBrandCards = additions.brands.filter(brand => !brandsHtml.includes(`href="brands/${brand.slug}.html"`)).map(brand => {
-  const ext = brand.slug === 'wasserwelt' ? 'svg' : 'png';
+  const ext = ['wasserwelt','franke','blanco','aqua-global','bela-aqua'].includes(brand.slug) ? 'svg' : 'png';
   return `<a class="brand-directory-card" href="brands/${esc(brand.slug)}.html" data-brand-name="${esc(brand.name.toLowerCase())}" data-brand-country="${esc(brand.country.toLowerCase())}"><div class="brand-logo-wrap"><img src="assets/brands/${esc(brand.slug)}.${ext}" alt="${esc(brand.name)} Logo" loading="lazy"></div><div class="brand-card-body"><span class="badge">${esc(brand.group)}</span><h3>${esc(brand.name)}</h3><p>${esc(brand.description)}</p><span class="brand-meta">${esc(brand.country)} · ${additions.products.filter(product=>product.brandSlug===brand.slug).length} Modelle</span><span class="brand-link">Profil ansehen →</span></div></a>`;
 }).join('\n');
-brandsHtml = brandsHtml.replace('</div>\n<div class="panel brand-empty"',`${newBrandCards}</div>\n<div class="panel brand-empty"`);
+if (newBrandCards) {
+  const emptyIndex = brandsHtml.indexOf('<div class="panel brand-empty"');
+  const gridEnd = brandsHtml.lastIndexOf('</div>', emptyIndex);
+  if (gridEnd < 0) throw new Error('Brand directory closing marker was not found');
+  brandsHtml = brandsHtml.slice(0, gridEnd) + newBrandCards + brandsHtml.slice(gridEnd);
+}
+brandsHtml = brandsHtml
+  .replace(/\d+ bekannte Hersteller/g, `${brands.length} bekannte Hersteller`)
+  .replace(/\d+ established manufacturers/g, `${brands.length} established manufacturers`)
+  .replace(/<span id="brandDirectoryCount" class="brand-count-badge">\d+ Marken<\/span>/, `<span id="brandDirectoryCount" class="brand-count-badge">${brands.length} Marken</span>`);
 fs.writeFileSync(path.join(root,'brands.html'),brandsHtml);
 
 let app = fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
 const appItems = additions.products.filter(product=>!app.includes(`id:'${product.slug}'`)).map(product=>`{id:'${product.slug}',brand:${JSON.stringify(product.brand)},name:${JSON.stringify(product.name)},cat:${JSON.stringify(product.category)},price:${JSON.stringify(priceText(product.price))},priceValue:${product.price ?? 'null'},features:[],ppb:null,flow:'Not published',maint:'Not published',liter:'—',membrane:${JSON.stringify(product.specs.find(([key])=>/Membran/.test(key))?.[1] || 'Not published')},pfas:'Not published',viruses:'Not published',bacteria:'Not published',nitrates:'Not published',lead:'Not published',arsenic:'Not published',micro:'Not published',tds:'Not published',remin:'Not published',noise:'Not published',power:'Not published',warranty:'Not published',country:'Germany',image:${JSON.stringify(product.image)},url:'products/${product.slug}.html'}`).join(',\n');
-app = app.replace('\n];',`,\n${appItems}\n];`);
+for (const product of additions.products) {
+  const item = `{id:'${product.slug}',brand:${JSON.stringify(product.brand)},name:${JSON.stringify(product.name)},cat:${JSON.stringify(product.category)},price:${JSON.stringify(priceText(product.price))},priceValue:${product.price ?? 'null'},features:[],ppb:null,flow:${JSON.stringify(product.specs.find(([key])=>/Durchfluss|Leistung/.test(key))?.[1] || 'Not published')},maint:${JSON.stringify(product.specs.find(([key])=>/Filterwechsel/.test(key))?.[1] || 'Not published')},liter:'—',membrane:${JSON.stringify(product.specs.find(([key])=>/Membran/.test(key))?.[1] || 'Not published')},pfas:'Not published',viruses:'Not published',bacteria:'Not published',nitrates:'Not published',lead:'Not published',arsenic:'Not published',micro:'Not published',tds:'Not published',remin:${JSON.stringify(product.specs.find(([key])=>/Remineralisierung|Mineralisierung/.test(key))?.[1] || 'Not published')},noise:'Not published',power:${JSON.stringify(product.specs.find(([key])=>/Leistung \(elektrisch\)|Heizleistung/.test(key))?.[1] || 'Not published')},warranty:${JSON.stringify(product.specs.find(([key])=>/Garantie/.test(key))?.[1] || 'Not published')},country:'Germany',image:${JSON.stringify(product.image)},url:'products/${product.slug}.html'}`;
+  const pattern = new RegExp(`\\{id:'${product.slug.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\$&')}'[^\\n]*\\}`);
+  if (pattern.test(app)) app = app.replace(pattern,item);
+}
+if (appItems) app = app.replace('\n];',`,\n${appItems}\n];`);
 fs.writeFileSync(path.join(root,'assets/app.js'),app);
+
+let sitemap = fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+const sitemapUrls = [
+  ...additions.brands.map(brand => `https://hitmoda.ru/brands/${brand.slug}.html`),
+  ...additions.products.map(product => `https://hitmoda.ru/products/${product.slug}.html`)
+];
+const missingUrls = sitemapUrls.filter(url => !sitemap.includes(`<loc>${url}</loc>`)).map(url => `<url><loc>${url}</loc></url>`).join('\n');
+if (missingUrls) sitemap = sitemap.replace('</urlset>', `${missingUrls}\n</urlset>`);
+fs.writeFileSync(path.join(root,'sitemap.xml'),sitemap);
 await import('./rebuild-products-page.mjs');

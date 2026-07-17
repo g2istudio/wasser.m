@@ -8,7 +8,7 @@
     "group": "Premium",
     "description_de": "Deutscher Anbieter von Gourmetwasser-, Umkehrosmose- und Remineralisierungssystemen für Haushalt und unterwegs.",
     "description_en": "German supplier of gourmet-water, reverse-osmosis and remineralization systems for home and travel.",
-    "products_count": 2,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/wertach.png"
   },
@@ -913,5 +913,61 @@
     "products_count": 1,
     "rating": null,
     "logo": "assets/brands/grohe-blue.png"
+  },
+  {
+    "slug": "franke",
+    "name": "Franke",
+    "country": "Switzerland",
+    "website": "https://www.franke.com",
+    "group": "Kitchen Water Systems",
+    "description": "Hersteller von Küchenlösungen und multifunktionalen Trinkwassersystemen.",
+    "founded": null,
+    "description_de": "Hersteller von Küchenlösungen und multifunktionalen Trinkwassersystemen.",
+    "description_en": "Hersteller von Küchenlösungen und multifunktionalen Trinkwassersystemen.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/franke.svg"
+  },
+  {
+    "slug": "blanco",
+    "name": "BLANCO",
+    "country": "Germany",
+    "website": "https://www.blanco.de",
+    "group": "Kitchen Water Systems",
+    "description": "Hersteller modularer Küchen-Wasserplätze, Armaturen und DRINK.SYSTEMS.",
+    "founded": null,
+    "description_de": "Hersteller modularer Küchen-Wasserplätze, Armaturen und DRINK.SYSTEMS.",
+    "description_en": "Hersteller modularer Küchen-Wasserplätze, Armaturen und DRINK.SYSTEMS.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/blanco.svg"
+  },
+  {
+    "slug": "aqua-global",
+    "name": "Aqua Global",
+    "country": "Germany",
+    "website": "https://aqua-global.com",
+    "group": "Countertop RO",
+    "description": "Anbieter kompakter Umkehrosmose-Wasserbars für flexible Aufstellung.",
+    "founded": null,
+    "description_de": "Anbieter kompakter Umkehrosmose-Wasserbars für flexible Aufstellung.",
+    "description_en": "Anbieter kompakter Umkehrosmose-Wasserbars für flexible Aufstellung.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/aqua-global.svg"
+  },
+  {
+    "slug": "bela-aqua",
+    "name": "Bela Aqua",
+    "country": "Germany",
+    "website": "https://bela-aqua.de",
+    "group": "Reverse Osmosis",
+    "description": "Anbieter von Direct-Flow- und Tank-Umkehrosmoseanlagen für Trinkwasser.",
+    "founded": null,
+    "description_de": "Anbieter von Direct-Flow- und Tank-Umkehrosmoseanlagen für Trinkwasser.",
+    "description_en": "Anbieter von Direct-Flow- und Tank-Umkehrosmoseanlagen für Trinkwasser.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/bela-aqua.svg"
   }
 ]

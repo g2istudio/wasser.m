@@ -10,7 +10,7 @@ const price = product => product.price == null ? 'Preis auf Anfrage' : new Intl.
 const specLines = product => Object.entries(product.specs||{}).slice(0,3).map(([key,value])=>`<span>${esc(key.replaceAll('_',' '))}: ${esc(value)}</span>`).join('');
 const cards = products.map(product=>`<div class="product-card" data-product-id="${esc(product.id)}"><div class="photo"><img alt="${esc(product.brand)} ${esc(product.name)}" src="${esc(product.image)}"></div><div class="brand">${esc(product.brand)}</div><h3>${esc(product.name)}</h3><div class="rating">${product.rating ? `★ ${esc(product.rating)} (${esc(product.reviews||0)})` : 'Herstellerdaten'}</div><div class="price">${esc(price(product))}</div><div class="specs">${specLines(product)}</div><div class="actions"><a class="btn small" href="products/${esc(product.slug)}.html">Alle Daten</a><button class="btn small" data-compare="${esc(product.id)}">+ Compare</button></div></div>`).join('\n');
 
-const gridStart = html.indexOf('<div class="product-grid">', html.indexOf('id="productResultText"'));
+const gridStart = html.indexOf('<div class="product-grid"', html.indexOf('id="productResultText"'));
 const additionsStart = html.indexOf('<div class="container"><section class="section" id="catalogAdditions">');
 if(gridStart < 0) throw new Error('Product grid marker was not found');
 if(additionsStart >= 0){
