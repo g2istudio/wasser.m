@@ -1610,8 +1610,10 @@
       "brandSlug": "aquapro",
       "name": "High Flow 800 GPD Reverse Osmosis System",
       "category": "Commercial RO",
-      "price": 3799,
-      "currency": "AED",
+      "price": 907,
+      "currency": "EUR",
+      "originalPrice": 3799,
+      "originalCurrency": "AED",
       "country": "United Arab Emirates",
       "image": "assets/products/aquapro-high-flow-800-gpd.jpg",
       "source": "https://aquapro.shop/products/high-flow-800-gpd-reverse-osmosis-system",
@@ -1651,7 +1653,7 @@
         ],
         [
           "Preis",
-          "AED 3.799 bei der Recherche"
+          "907 € (aus AED nach Kurs der Bank von Russland vom 17.07.2026)"
         ],
         [
           "Verfügbarkeit",
@@ -1674,8 +1676,10 @@
       "brandSlug": "bluewater",
       "name": "Spirit 300CP",
       "category": "Under Sink RO",
-      "price": 7999,
-      "currency": "AED",
+      "price": 1910,
+      "currency": "EUR",
+      "originalPrice": 7999,
+      "originalCurrency": "AED",
       "country": "Sweden",
       "rating": null,
       "reviews": 0,
@@ -1738,7 +1742,7 @@
         ],
         [
           "Preis",
-          "AED 7.999 bei der Recherche"
+          "1.910 € (aus AED nach Kurs der Bank von Russland vom 17.07.2026)"
         ],
         [
           "Verfügbarkeit",
