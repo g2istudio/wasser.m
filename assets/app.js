@@ -47,17 +47,19 @@ function storageGet(key,fallback){try{const v=localStorage.getItem(key);return v
 function storageSet(key,value){try{localStorage.setItem(key,value)}catch(e){}}
 let selected=[];
 try{selected=JSON.parse(storageGet('wasserCompare','[]'))||[]}catch(e){selected=[]}
+const isComparePage=/(^|\/)compare(?:\.html)?\/?$/.test(location.pathname);
+let compareDockActivated=isComparePage;
 let compareDockDismissed=false;
 const lang=()=>storageGet('wasserLang','de');
 const tr=(de,en)=>lang()==='de'?de:en;
 function basePrefix(){const parts=location.pathname.split('/').filter(Boolean);return '../'.repeat(Math.max(0,parts.length-1))}
 function save(){storageSet('wasserCompare',JSON.stringify(selected));renderDock()}
-function addCompare(id){compareDockDismissed=false;if(selected.includes(id)){selected=selected.filter(x=>x!==id)}else{if(selected.length>=3){alert(tr('Es können maximal 3 Geräte verglichen werden','You can compare a maximum of 3 devices'));return}selected.push(id)}save()}
+function addCompare(id){compareDockActivated=true;compareDockDismissed=false;if(selected.includes(id)){selected=selected.filter(x=>x!==id)}else{if(selected.length>=3){alert(tr('Es können maximal 3 Geräte verglichen werden','You can compare a maximum of 3 devices'));return}selected.push(id)}save()}
 function ensureCompareDock(){
  let dock=document.querySelector('.compare-dock');if(!dock){dock=document.createElement('div');dock.className='compare-dock';document.body.appendChild(dock)}dock.setAttribute('aria-live','polite');
  dock.innerHTML=`<button class="compare-dock-close" type="button" data-compare-close aria-label="${tr('Vergleichsleiste schließen','Close comparison bar')}">×</button><div class="compare-dock-summary"><strong>${tr('Vergleich','Compare')} <span class="count">0/3</span></strong><div class="compare-items"></div></div><button class="btn primary small compare-dock-action" type="button" data-go-compare>${tr('Jetzt vergleichen','Compare now')}</button>`;
 }
-function renderDock(){ensureCompareDock();const dock=document.querySelector('.compare-dock');if(!dock)return;document.querySelectorAll('[data-compare]').forEach(button=>{const active=selected.includes(button.dataset.compare);button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active))});if(!selected.length||compareDockDismissed){dock.classList.remove('show');return}dock.classList.add('show');dock.querySelector('.compare-items').innerHTML=selected.map(id=>{const p=products.find(x=>x.id===id);return p?`<div class="compare-mini"><span>${p.brand} ${p.name}</span><button type="button" data-compare-remove="${p.id}" aria-label="${tr('Aus Vergleich entfernen','Remove from comparison')}">×</button></div>`:''}).join('');dock.querySelector('.count').textContent=`${selected.length}/3`}
+function renderDock(){ensureCompareDock();const dock=document.querySelector('.compare-dock');if(!dock)return;document.querySelectorAll('[data-compare]').forEach(button=>{const active=selected.includes(button.dataset.compare);button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active))});if(!selected.length||!compareDockActivated||compareDockDismissed){dock.classList.remove('show');return}dock.classList.add('show');dock.querySelector('.compare-items').innerHTML=selected.map(id=>{const p=products.find(x=>x.id===id);return p?`<div class="compare-mini"><span>${p.brand} ${p.name}</span><button type="button" data-compare-remove="${p.id}" aria-label="${tr('Aus Vergleich entfernen','Remove from comparison')}">×</button></div>`:''}).join('');dock.querySelector('.count').textContent=`${selected.length}/3`}
 function goCompare(){location.href=basePrefix()+'compare.html'}
 
 function ensureMobileNavigation(){
