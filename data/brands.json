@@ -971,5 +971,7 @@
     "products_count": 1,
     "rating": null,
     "logo": "assets/brands/aquapro.svg"
-  }
+  },
+  {"slug":"ionbottles","name":"ionBottles","country":"USA","group":"Hydrogen Water","description":"US-Anbieter tragbarer Hydrogen-Wasserflaschen mit PEM-Technologie und veröffentlichten Labordaten.","description_de":"US-Anbieter tragbarer Hydrogen-Wasserflaschen mit PEM-Technologie und veröffentlichten Labordaten.","description_en":"US provider of portable PEM hydrogen water bottles.","products_count":1,"rating":null,"logo":"assets/brands/ionbottles.svg"},
+  {"slug":"level-up-way","name":"Level Up Way","country":"USA","group":"Hydrogen Water","description":"Anbieter kompakter Hydrogen-Wassergeräte und Wellnessprodukte.","description_de":"Anbieter kompakter Hydrogen-Wassergeräte und Wellnessprodukte.","description_en":"Provider of compact hydrogen water and wellness products.","products_count":1,"rating":null,"logo":"assets/brands/level-up-way.svg"}
 ]
