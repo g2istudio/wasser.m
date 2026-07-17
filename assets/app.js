@@ -68,6 +68,14 @@ function ensureMobileNavigation(){
   if(!header.querySelector('.mobile-nav-panel')){const panel=document.createElement('div');panel.className='mobile-nav-panel';panel.setAttribute('aria-hidden','true');const prefix=basePrefix();panel.innerHTML=`<div class="container mobile-nav-inner"><a href="${prefix}products.html">${tr('Produkte','Products')}</a><a href="${prefix}brands.html">${tr('Marken','Brands')}</a><a href="${prefix}compare.html">${tr('Vergleichen','Compare')}</a><a href="${prefix}hydrogen-bottles.html">Hydrogenflaschen</a><a href="${prefix}community.html">Community</a><a href="${prefix}knowledge.html">${tr('Wissen','Knowledge')}</a></div>`;header.appendChild(panel)}
  });
 }
+function linkProductCardImages(root=document){
+ root.querySelectorAll('.product-card[data-product-id]').forEach(card=>{
+  const photo=card.querySelector(':scope > .photo');if(!photo)return;
+  const product=products.find(item=>item.id===card.dataset.productId);if(!product?.url)return;
+  const link=document.createElement('a');link.className='product-photo-link';link.href=basePrefix()+product.url;link.setAttribute('aria-label',`${product.brand} ${product.name} – ${tr('Produktseite öffnen','Open product page')}`);
+  photo.replaceWith(link);link.appendChild(photo);
+ });
+}
 function productMatches(q){q=(q||'').trim().toLowerCase();if(!q)return products;return products.filter(p=>`${p.brand} ${p.name} ${p.cat}`.toLowerCase().includes(q)).slice(0,8)}
 function suggestionHTML(p){return `<div class="autocomplete-item" role="option" tabindex="0" data-id="${p.id}"><img src="${basePrefix()}${p.image}" alt=""><div><b>${p.brand} ${p.name}</b><span>${p.cat} · ${p.price}</span></div></div>`}
 function navigateToProduct(p){if(p) location.href=basePrefix()+p.url}
@@ -256,6 +264,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   initComparePage();
   setupGeneralAutocomplete();
   setupProductsQueryFilter();
+  linkProductCardImages();
   document.addEventListener('click',event=>{
     const compareButton=event.target.closest('[data-compare]');if(compareButton){event.preventDefault();addCompare(compareButton.dataset.compare);return}
     const removeButton=event.target.closest('[data-compare-remove]');if(removeButton){event.preventDefault();compareDockDismissed=false;selected=selected.filter(id=>id!==removeButton.dataset.compareRemove);save();return}
