@@ -81,14 +81,15 @@
     "slug": "bluewater",
     "name": "Bluewater",
     "country": "Sweden",
-    "founded": 2013,
+    "founded": null,
     "website": "https://www.bluewatergroup.com",
-    "group": "Premium",
-    "description_de": "Schwedisches Unternehmen für kompakte Umkehrosmose- und Hydrationslösungen.",
-    "description_en": "Swedish water-purification company known for compact reverse-osmosis and hydration solutions.",
+    "group": "Reverse Osmosis",
+    "description_de": "Schwedischer Anbieter leistungsstarker SuperiorOsmosis™-Wasseraufbereitungssysteme für Haushalt und Gewerbe.",
+    "description_en": "Schwedischer Anbieter leistungsstarker SuperiorOsmosis™-Wasseraufbereitungssysteme für Haushalt und Gewerbe.",
     "products_count": 1,
-    "rating": 4.7,
-    "logo": "assets/brands/bluewater.png"
+    "rating": null,
+    "logo": "assets/brands/bluewater.png",
+    "description": "Schwedischer Anbieter leistungsstarker SuperiorOsmosis™-Wasseraufbereitungssysteme für Haushalt und Gewerbe."
   },
   {
     "slug": "bwt",
@@ -969,5 +970,19 @@
     "products_count": 1,
     "rating": null,
     "logo": "assets/brands/bela-aqua.svg"
+  },
+  {
+    "slug": "aquapro",
+    "name": "AQUAPRO",
+    "country": "United Arab Emirates",
+    "website": "https://aquapro.shop",
+    "group": "Reverse Osmosis",
+    "description": "Anbieter von Wasseraufbereitungs-, Umkehrosmose- und Filtersystemen für Haushalt und Gewerbe; offizieller Distributor für den Nahen Osten und Afrika.",
+    "founded": null,
+    "description_de": "Anbieter von Wasseraufbereitungs-, Umkehrosmose- und Filtersystemen für Haushalt und Gewerbe; offizieller Distributor für den Nahen Osten und Afrika.",
+    "description_en": "Anbieter von Wasseraufbereitungs-, Umkehrosmose- und Filtersystemen für Haushalt und Gewerbe; offizieller Distributor für den Nahen Osten und Afrika.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/aquapro.svg"
   }
 ]
