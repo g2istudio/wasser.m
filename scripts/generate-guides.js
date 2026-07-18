@@ -232,3 +232,4 @@ for(const topic of topics)for(const suffix of ['','-en']){const url=`https://hit
 sitemap=sitemap.replace('</urlset>',additions.join('\n')+'\n</urlset>');
 fs.writeFileSync(path.join(root,'sitemap.xml'),sitemap);
 console.log(`Generated ${topics.length*2} article pages; linked indexes; added ${additions.length} sitemap URLs.`);
+require('./seo-internal-links.cjs');

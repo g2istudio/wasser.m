@@ -181,3 +181,7 @@ body.wm-v2 h1,body.wm-v2 h2,body.wm-v2 h3{color:var(--wm-text)}body.wm-v2 h2{let
 html,body{max-width:100%;overflow-x:clip}.hero-grid>*{min-width:0}
 @supports not (overflow:clip){html,body{overflow-x:hidden}}
 @media(max-width:780px){.hero-main:after{right:-18px;top:-42px;width:205px;height:205px}.hero-main,.hero-grid,.site-header,body.wm-v2 main,.site-footer{max-width:100%}}
+/* Crawlable language links share the existing switcher appearance. */
+.lang-switch a{border:0;background:#fff;padding:7px 9px;font-size:12px;font-weight:700;cursor:pointer;color:#64748b;text-decoration:none}
+.lang-switch a.active,.lang-switch a[aria-current="page"]{background:#0d6efd;color:#fff}
+@media(max-width:760px){.lang-switch a{padding:7px 8px}}

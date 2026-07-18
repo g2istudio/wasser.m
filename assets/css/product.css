@@ -22,3 +22,9 @@
 .water-test-banner:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(18,56,86,.15)}
 .water-test-banner:focus-visible{outline:3px solid rgba(7,95,174,.35);outline-offset:3px}
 @media(max-width:780px){.water-test-banner{max-width:520px;margin:14px auto 0}}
+/* Editorial links on product pages */
+.product-knowledge-links{margin-top:24px}
+.product-knowledge-links ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 22px;padding-left:20px}
+.product-knowledge-links li{line-height:1.45}
+.product-knowledge-links a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+@media(max-width:700px){.product-knowledge-links ul{grid-template-columns:1fr}}
