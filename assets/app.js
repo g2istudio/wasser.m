@@ -546,16 +546,17 @@ document.addEventListener('DOMContentLoaded', setupProductsLiveFilters);
 // Sprint 1.1 global UI behaviours
 (function(){
   function initV2Navigation(){
-    document.querySelectorAll('.mobile-menu-btn').forEach(btn=>{
+    document.addEventListener('click',event=>{
+      const btn=event.target.closest('.mobile-menu-btn');
+      if(!btn)return;
       const header=btn.closest('.site-header');
       const panel=header && header.querySelector('.mobile-nav-panel');
       if(!panel) return;
-      btn.addEventListener('click',()=>{
-        const open=panel.classList.toggle('open');
-        panel.setAttribute('aria-hidden',String(!open));
-        btn.setAttribute('aria-expanded',String(open));
-        btn.textContent=open?'×':'☰';
-      });
+      const open=panel.classList.toggle('open');
+      panel.setAttribute('aria-hidden',String(!open));
+      btn.setAttribute('aria-expanded',String(open));
+      btn.setAttribute('aria-label',open?tr('Menü schließen','Close menu'):tr('Menü öffnen','Open menu'));
+      btn.textContent=open?'×':'☰';
     });
     document.querySelectorAll('.nav-more-btn').forEach(btn=>{
       btn.addEventListener('click',()=>btn.setAttribute('aria-expanded',btn.getAttribute('aria-expanded')==='true'?'false':'true'));
