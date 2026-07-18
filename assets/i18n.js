@@ -2,9 +2,10 @@ const WASSER_TRANSLATIONS={"Products": "Produkte", "Brands": "Marken", "Compare"
 (function(){
  const key='wasserLang';
  let lang='de';try{lang=localStorage.getItem(key)||'de'}catch(e){}
+ const pageLang=document.body?.dataset.pageLang;if(pageLang)lang=pageLang;
  document.documentElement.lang=lang;
  function translateNode(n){if(n.nodeType===3){const raw=n.nodeValue;const t=raw.trim();if(lang==='de'&&WASSER_TRANSLATIONS[t]) n.nodeValue=raw.replace(t,WASSER_TRANSLATIONS[t]);}}
  if(lang==='de'){const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while(n=walker.nextNode()){if(!['SCRIPT','STYLE'].includes(n.parentElement?.tagName))translateNode(n)}}
- document.querySelectorAll('[data-lang]').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang);b.addEventListener('click',()=>{try{localStorage.setItem(key,b.dataset.lang)}catch(e){}location.reload()})});
+ document.querySelectorAll('[data-lang]').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang);b.addEventListener('click',()=>{try{localStorage.setItem(key,b.dataset.lang)}catch(e){}if(b.dataset.langUrl){location.href=b.dataset.langUrl;return}location.reload()})});
  document.querySelectorAll('input[placeholder]').forEach(i=>{if(lang==='de'){const p=i.getAttribute('placeholder');if(p==='Search product, model or manufacturer')i.placeholder='Produkt, Modell oder Hersteller suchen';if(p==='Produkt oder Marke suchen')i.placeholder='Produkt oder Marke suchen';}});
 })();
