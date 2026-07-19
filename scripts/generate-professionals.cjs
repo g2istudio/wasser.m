@@ -22,6 +22,8 @@ for(const p of profiles){
  const oldButtons=`<div class="professional-card-buttons"><a class="btn primary small" href="professionals/${p.id}.html">Profil & Bewertungen</a><button class="btn small professional-review-button" type="button" data-professional-review="${p.id}" data-professional-name="${p.name}">Bewertung schreiben</button></div>`;
  const newButtons=`<div class="professional-card-buttons"><button class="btn primary small professional-review-button" type="button" data-professional-review="${p.id}" data-professional-name="${p.name}">Bewertung schreiben</button><a class="btn small" href="professionals/${p.id}.html">Profil & Bewertungen</a></div>`;
  community=community.replace(oldButtons,newButtons);
+ const profileOnlyButtons=`<div class="professional-card-buttons"><a class="btn primary small" href="professionals/${p.id}.html">Profil & Bewertungen</a></div>`;
+ community=community.replace(newButtons,profileOnlyButtons);
 }
 fs.writeFileSync(communityFile,community);
 console.log(`Generated professionals directory and ${profiles.length} profile pages.`);
