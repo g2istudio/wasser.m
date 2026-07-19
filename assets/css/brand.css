@@ -180,6 +180,7 @@ body.wm-v2 .brand-search-panel{
   border-radius:0;
   box-shadow:none;
 }
+.misterwater-logo-surface{background:linear-gradient(145deg,#061927,#123c54)!important}.misterwater-logo-surface img{filter:none;object-fit:contain}
 
 body.wm-v2 .brand-search-box{
   position:relative;

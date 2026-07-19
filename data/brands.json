@@ -653,7 +653,7 @@
   },
   {
     "slug": "mrwater",
-    "name": "MrWater",
+    "name": "MisterWater",
     "country": "Germany",
     "website": "https://misterwater.eu",
     "group": "Reverse Osmosis",
@@ -663,7 +663,7 @@
     "description_en": "Anbieter von Wasserfilter- und Umkehrosmosesystemen für den Haushalt.",
     "products_count": 1,
     "rating": null,
-    "logo": "assets/brands/mrwater.png"
+    "logo": "assets/brands/misterwater-logo-white.png"
   },
   {
     "slug": "osmofresh",
