@@ -377,18 +377,27 @@ def main():
     websites = {
         "Bela Aqua": "https://www.bela-aqua.de",
         "HappyFilter": "https://happyfilter.de",
-        "SPRUDELUX": "https://neueswasser.de",
+        "SPRUDELUX": "https://sprudelux.de",
         "AORA": "https://neueswasser.de",
-        "stillundlaut": "https://neueswasser.de",
+        "stillundlaut": "https://stillundlaut.de",
         "ROWA 4 you": "https://www.wasserladen.de",
         "Wasserladen": "https://www.wasserladen.de",
         "CARBONIT": "https://www.wasserladen.de",
-        "Osmotech": "https://www.filterzentrale.com",
+        "Osmotech": "https://www.filterzentrale.com/UEber-uns/Marke-Osmotech/",
+    }
+    official_logos = {
+        "AORA": "assets/products/aora-gt600-umkehrosmose-wasserfilter-ohne-tank-1-57-l-min.webp",
+        "HappyFilter": "assets/brands/happyfilter.svg",
+        "Osmotech": "assets/brands/osmotech.jpg",
+        "ROWA 4 you": "assets/brands/rowa-4-you.webp",
+        "SPRUDELUX": "assets/brands/sprudelux.webp",
+        "Wasserladen": "assets/brands/wasserladen.png",
+        "stillundlaut": "assets/brands/stillundlaut.png",
     }
     for name in sorted({p["brand"] for p in products}):
         brand_slug = slugify(name)
         description = f"{name} bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften."
-        record = {"slug": brand_slug, "name": name, "country": "Germany", "website": websites.get(name, ""), "group": "Water Filtration", "description": description, "founded": None, "description_de": description, "description_en": description, "products_count": 0, "rating": None, "logo": "assets/img/wasser-market-logo.jpg"}
+        record = {"slug": brand_slug, "name": name, "country": "Germany", "website": websites.get(name, ""), "group": "Water Filtration", "description": description, "founded": None, "description_de": description, "description_en": description, "products_count": 0, "rating": None, "logo": official_logos.get(name, "assets/img/wasser-market-logo.jpg")}
         existing = next((i for i, b in enumerate(brands) if b.get("slug") == brand_slug or b.get("name", "").lower() == name.lower()), -1)
         if existing < 0:
             brands.append(record)

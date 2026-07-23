@@ -381,3 +381,14 @@ body.wm-v2 .brand-hero-details .btn{width:100%;margin-top:auto}
   body.wm-v2 .brand-hero-details{padding:20px}
   body.wm-v2 .brand-hero-details dl{grid-template-columns:1fr}
 }
+
+/* Official white wordmarks need a dark field on the light directory cards. */
+.brand-logo-wrap img[src*="sprudelux."],
+.brand-logo-wrap img[src$="blanco.svg"],
+body.wm-v2 .brand-hero-logo img[src*="sprudelux."],
+body.wm-v2 .brand-hero-logo img[src$="blanco.svg"]{
+  box-sizing:border-box;
+  border-radius:12px;
+  background:#143d57;
+  padding:18px;
+}

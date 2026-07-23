@@ -1021,7 +1021,7 @@
     "description_en": "AORA bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "products_count": 3,
     "rating": null,
-    "logo": "assets/img/wasser-market-logo.jpg"
+    "logo": "assets/products/aora-gt600-umkehrosmose-wasserfilter-ohne-tank-1-57-l-min.webp"
   },
   {
     "slug": "happyfilter",
@@ -1035,13 +1035,13 @@
     "description_en": "HappyFilter bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "products_count": 1,
     "rating": null,
-    "logo": "assets/img/wasser-market-logo.jpg"
+    "logo": "assets/brands/happyfilter.svg"
   },
   {
     "slug": "osmotech",
     "name": "Osmotech",
     "country": "Germany",
-    "website": "https://www.filterzentrale.com",
+    "website": "https://www.filterzentrale.com/UEber-uns/Marke-Osmotech/",
     "group": "Water Filtration",
     "description": "Osmotech bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "founded": null,
@@ -1049,7 +1049,7 @@
     "description_en": "Osmotech bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "products_count": 5,
     "rating": null,
-    "logo": "assets/img/wasser-market-logo.jpg"
+    "logo": "assets/brands/osmotech.jpg"
   },
   {
     "slug": "rowa-4-you",
@@ -1063,13 +1063,13 @@
     "description_en": "ROWA 4 you bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "products_count": 2,
     "rating": null,
-    "logo": "assets/img/wasser-market-logo.jpg"
+    "logo": "assets/brands/rowa-4-you.webp"
   },
   {
     "slug": "sonvita",
     "name": "SONVITA",
     "country": "Germany",
-    "website": "",
+    "website": "https://rdl-group.de/marken/sonvita",
     "group": "Water Filtration",
     "description": "SONVITA bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "founded": null,
@@ -1077,13 +1077,13 @@
     "description_en": "SONVITA bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "products_count": 11,
     "rating": null,
-    "logo": "assets/img/wasser-market-logo.jpg"
+    "logo": "assets/brands/sonvita.jpg"
   },
   {
     "slug": "sprudelux",
     "name": "SPRUDELUX",
     "country": "Germany",
-    "website": "https://neueswasser.de",
+    "website": "https://sprudelux.de",
     "group": "Water Filtration",
     "description": "SPRUDELUX bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "founded": null,
@@ -1091,7 +1091,7 @@
     "description_en": "SPRUDELUX bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "products_count": 8,
     "rating": null,
-    "logo": "assets/img/wasser-market-logo.jpg"
+    "logo": "assets/brands/sprudelux.webp"
   },
   {
     "slug": "wasserladen",
@@ -1105,13 +1105,13 @@
     "description_en": "Wasserladen bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "products_count": 1,
     "rating": null,
-    "logo": "assets/img/wasser-market-logo.jpg"
+    "logo": "assets/brands/wasserladen.png"
   },
   {
     "slug": "stillundlaut",
     "name": "stillundlaut",
     "country": "Germany",
-    "website": "https://neueswasser.de",
+    "website": "https://stillundlaut.de",
     "group": "Water Filtration",
     "description": "stillundlaut bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "founded": null,
@@ -1119,6 +1119,6 @@
     "description_en": "stillundlaut bietet Systeme und Produkte für Trinkwasserfiltration, Umkehrosmose und Wasseraufbereitung. Die Datenbank führt die offiziell veröffentlichten Modelle und technischen Eigenschaften.",
     "products_count": 1,
     "rating": null,
-    "logo": "assets/img/wasser-market-logo.jpg"
+    "logo": "assets/brands/stillundlaut.png"
   }
 ]
