@@ -152,7 +152,7 @@
     "group": "Premium",
     "description_de": "Wassertechnologie-Marke mit Filtration, Umkehrosmose und Wasserstoffwasser-Produkten.",
     "description_en": "Water technology brand offering filtration, reverse-osmosis and hydrogen-water products.",
-    "products_count": 3,
+    "products_count": 4,
     "rating": 4.5,
     "logo": "assets/brands/walutec.png"
   },
@@ -165,7 +165,7 @@
     "group": "Reverse Osmosis",
     "description_de": "Entwickler von Haushaltsfiltern, Umkehrosmoseanlagen und eigenen Sorptionsmaterialien.",
     "description_en": "Developer of household water filters, reverse-osmosis systems and proprietary sorption media.",
-    "products_count": 1,
+    "products_count": 0,
     "rating": 4.4,
     "logo": "assets/brands/aquaphor.png"
   },
@@ -174,11 +174,11 @@
     "name": "Waterdrop",
     "country": "United States",
     "founded": 2015,
-    "website": "https://www.waterdropfilter.com",
+    "website": "https://www.waterdropfilter.de",
     "group": "Reverse Osmosis",
-    "description_de": "Marke für tanklose Umkehrosmoseanlagen und Kühlschrankfilter.",
-    "description_en": "Consumer water-filtration brand focused on tankless reverse osmosis and refrigerator filters.",
-    "products_count": 0,
+    "description_de": "Internationale Wasserfiltermarke mit tanklosen Untertisch-RO-Systemen, intelligenten Wasserhähnen sowie Auftischanlagen für heißes, kaltes und mineralisiertes Wasser.",
+    "description_en": "International water-filtration brand offering tankless under-sink RO systems, smart faucets and countertop hot, cold and mineralized-water dispensers.",
+    "products_count": 18,
     "rating": null,
     "logo": "assets/brands/waterdrop.png"
   },
@@ -464,7 +464,7 @@
     "group": "Hydrogen Water",
     "description_de": "Verbrauchermarke für Wasserstoffflaschen und Auftisch-Generatoren.",
     "description_en": "Consumer brand focused on hydrogen-water bottles and countertop generators.",
-    "products_count": 1,
+    "products_count": 0,
     "rating": null,
     "logo": "assets/brands/piurify.png"
   },
@@ -743,8 +743,8 @@
     "group": "Reverse Osmosis",
     "description": "Anbieter kompakter Osmose-Wasserfilter für den Haushalt.",
     "founded": null,
-    "description_de": "Anbieter kompakter Osmose-Wasserfilter für den Haushalt.",
-    "description_en": "Anbieter kompakter Osmose-Wasserfilter für den Haushalt.",
+    "description_de": "Deutscher Anbieter von Auftisch-Umkehrosmoseanlagen mit SeptaTech®-Filtration, UV-Hygieneschutz, Heißwasserfunktion und eigenem Servicekonzept.",
+    "description_en": "German supplier of countertop reverse-osmosis systems with multi-stage filtration, UV hygiene protection and hot-water functions.",
     "products_count": 1,
     "rating": null,
     "logo": "assets/brands/arktisquelle.png"
@@ -925,9 +925,9 @@
     "group": "Countertop RO",
     "description": "Anbieter kompakter Umkehrosmose-Wasserbars für flexible Aufstellung.",
     "founded": null,
-    "description_de": "Anbieter kompakter Umkehrosmose-Wasserbars für flexible Aufstellung.",
-    "description_en": "Anbieter kompakter Umkehrosmose-Wasserbars für flexible Aufstellung.",
-    "products_count": 1,
+    "description_de": "Deutscher Anbieter von Umkehrosmoseanlagen, Wasserbars, Heiß-/Kaltwasserspendern, Sprudelsystemen und Wasserstoffflaschen für Haushalt und Büro.",
+    "description_en": "German supplier of reverse-osmosis systems, water bars, hot/cold dispensers, sparkling-water systems and hydrogen bottles.",
+    "products_count": 7,
     "rating": null,
     "logo": "assets/brands/aqua-global.svg"
   },
@@ -954,7 +954,7 @@
     "group": "Premium",
     "description_de": "Deutscher Anbieter von Gourmetwasser-, Umkehrosmose- und Remineralisierungssystemen für Haushalt und unterwegs.",
     "description_en": "German supplier of gourmet-water, reverse-osmosis and remineralization systems for home and travel.",
-    "products_count": 1,
+    "products_count": 2,
     "rating": null,
     "logo": "assets/brands/wertach.png"
   },
@@ -972,6 +972,40 @@
     "rating": null,
     "logo": "assets/brands/aquapro.svg"
   },
-  {"slug":"ionbottles","name":"ionBottles","country":"USA","group":"Hydrogen Water","description":"US-Anbieter tragbarer Hydrogen-Wasserflaschen mit PEM-Technologie und veröffentlichten Labordaten.","description_de":"US-Anbieter tragbarer Hydrogen-Wasserflaschen mit PEM-Technologie und veröffentlichten Labordaten.","description_en":"US provider of portable PEM hydrogen water bottles.","products_count":1,"rating":null,"logo":"assets/brands/ionbottles.svg"},
-  {"slug":"level-up-way","name":"Level Up Way","country":"USA","group":"Hydrogen Water","description":"Anbieter kompakter Hydrogen-Wassergeräte und Wellnessprodukte.","description_de":"Anbieter kompakter Hydrogen-Wassergeräte und Wellnessprodukte.","description_en":"Provider of compact hydrogen water and wellness products.","products_count":1,"rating":null,"logo":"assets/brands/level-up-way.svg"}
+  {
+    "slug": "ionbottles",
+    "name": "ionBottles",
+    "country": "USA",
+    "group": "Hydrogen Water",
+    "description": "US-Anbieter tragbarer Hydrogen-Wasserflaschen mit PEM-Technologie und veröffentlichten Labordaten.",
+    "description_de": "US-Anbieter tragbarer Hydrogen-Wasserflaschen mit PEM-Technologie und veröffentlichten Labordaten.",
+    "description_en": "US provider of portable PEM hydrogen water bottles.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/ionbottles.svg"
+  },
+  {
+    "slug": "level-up-way",
+    "name": "Level Up Way",
+    "country": "USA",
+    "group": "Hydrogen Water",
+    "description": "Anbieter kompakter Hydrogen-Wassergeräte und Wellnessprodukte.",
+    "description_de": "Anbieter kompakter Hydrogen-Wassergeräte und Wellnessprodukte.",
+    "description_en": "Provider of compact hydrogen water and wellness products.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/level-up-way.svg"
+  },
+  {
+    "slug": "ho3-filter",
+    "name": "HO3 Filter",
+    "country": "Germany",
+    "website": "https://ho3filter.de",
+    "founded": null,
+    "description_de": "Deutsche Wasserfiltermarke für Auftisch-Umkehrosmoseanlagen mit UV-Hygieneschutz, Heißwasserfunktion und optionaler Mineralisierung.",
+    "description_en": "German water-filter brand for countertop reverse-osmosis systems with UV hygiene protection, hot water and optional remineralization.",
+    "products_count": 1,
+    "rating": null,
+    "logo": "assets/brands/ho3-filter.png"
+  }
 ]
