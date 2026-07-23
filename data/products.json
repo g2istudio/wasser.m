@@ -1094,19 +1094,24 @@
     "specs": {
       "Modell": "G5P500A",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "8-stufig",
+      "Filtration": "8-stufig, RO-Membran 0,0001 µm und alkalische Mineralisierung",
       "RO-Leistung": "500 GPD",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Nein",
       "Kaltwasser": "Nein",
-      "Reinwasser-Abwasser-Verhältnis": "Herstellerangabe auf der Produktseite",
+      "Reinwasser-Abwasser-Verhältnis": "Nicht separat veröffentlicht",
       "Bedienung": "Intelligenter Wasserhahn mit Filterstatusanzeige",
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
-      "Abmessungen": "Auf der offiziellen Produktseite veröffentlicht",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
+      "Abmessungen": "Nicht separat veröffentlicht",
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Mineralien": "Calcium, Magnesium, Natrium und Kalium",
+      "Filterlebensdauer": "Je nach Kartusche ca. 6–12 Monate",
+      "Schadstoffreduktion": "Unter anderem Chlor, Blei, Fluorid, Schwermetalle sowie PFOA/PFOS",
+      "Wasserhahn": "Smart Display",
+      "Platzbedarf": "Tankloses Design, laut Hersteller bis zu 70 % weniger Platz"
     }
   },
   {
@@ -1126,19 +1131,23 @@
     "specs": {
       "Modell": "G5P700A",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "8-stufig",
+      "Filtration": "8-stufig, RO-Membran 0,0001 µm und alkalische Mineralisierung",
       "RO-Leistung": "700 GPD",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Nein",
       "Kaltwasser": "Nein",
-      "Reinwasser-Abwasser-Verhältnis": "Herstellerangabe auf der Produktseite",
+      "Reinwasser-Abwasser-Verhältnis": "Nicht separat veröffentlicht",
       "Bedienung": "Intelligenter Wasserhahn mit Filterstatusanzeige",
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
-      "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
-      "Abmessungen": "Auf der offiziellen Produktseite veröffentlicht",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Installation": "Tanklose Untertischanlage; DIY-Wechselkartuschen",
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
+      "Abmessungen": "Nicht separat veröffentlicht",
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Mineralien": "Calcium, Magnesium, Natrium und Kalium",
+      "Filterlebensdauer": "Je nach Kartusche ca. 6–12 Monate",
+      "Schadstoffreduktion": "Unter anderem Chlor, Blei, Fluorid, Schwermetalle sowie PFOA/PFOS",
+      "Platzbedarf": "Tankloses Design, laut Hersteller bis zu 70 % weniger Platz"
     }
   },
   {
@@ -1158,7 +1167,7 @@
     "specs": {
       "Modell": "G3P600",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "8-stufig",
+      "Filtration": "8-stufige tanklose Umkehrosmose-Filtration",
       "RO-Leistung": "600 GPD",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Nein",
@@ -1168,9 +1177,13 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 42, 58 und 372",
       "Abmessungen": "45,9 × 14,4 × 45,0 cm",
       "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Wasserhahn": "Smart Display mit TDS- und Filterstatusanzeige",
+      "Filterlebensdauer": "CF ca. 6 Monate; CB ca. 12 Monate; RO ca. 24 Monate",
+      "Gewicht": "14,7 kg",
+      "Zulaufdruck": "1,0–6,0 bar (14,5–87 psi)",
       "Set-Inhalt": "G3P600-System mit MNR35-Mineralfilter"
     }
   },
@@ -1191,7 +1204,7 @@
     "specs": {
       "Modell": "G3P600",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "8-stufig",
+      "Filtration": "8-stufige tanklose Umkehrosmose-Filtration",
       "RO-Leistung": "600 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Nein",
@@ -1201,9 +1214,13 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 42, 58 und 372",
       "Abmessungen": "45,9 × 14,4 × 45,0 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Wasserhahn": "Smart Display mit TDS- und Filterstatusanzeige",
+      "Filterlebensdauer": "CF ca. 6 Monate; CB ca. 12 Monate; RO ca. 24 Monate",
+      "Gewicht": "14,7 kg",
+      "Zulaufdruck": "1,0–6,0 bar (14,5–87 psi)"
     }
   },
   {
@@ -1223,7 +1240,7 @@
     "specs": {
       "Modell": "G3P800",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "10-stufig",
+      "Filtration": "10-stufige tanklose Umkehrosmose-Filtration",
       "RO-Leistung": "800 GPD",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Nein",
@@ -1233,9 +1250,12 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 42, 58 und 372",
       "Abmessungen": "45,9 × 14,4 × 45,0 cm",
       "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Wasserhahn": "Smart Display mit TDS- und Filterstatusanzeige",
+      "Filterlebensdauer": "CF ca. 6 Monate; CB ca. 12 Monate; RO ca. 24 Monate",
+      "Gewicht": "16,33 kg",
       "Set-Inhalt": "G3P800-System mit MNR35-Mineralfilter"
     }
   },
@@ -1256,7 +1276,7 @@
     "specs": {
       "Modell": "A1",
       "Bauart": "Auftisch-Umkehrosmoseanlage ohne Festinstallation",
-      "Filtration": "7-stufig",
+      "Filtration": "Mehrstufige RO-Filtration mit dualer UV-Behandlung",
       "RO-Leistung": "100 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Nein",
@@ -1265,10 +1285,16 @@
       "Bedienung": "Display mit Filterstatus und Wassereinstellungen",
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Integrierte Tanks",
-      "Installation": "Aufstellen, befüllen und an Strom anschließen",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Installation": "Keine Festinstallation",
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
       "Abmessungen": "46,5 × 19,8 × 43,3 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Temperaturbereich": "Kalt bis 5 °C; heiß bis 95 °C; 6 Temperaturstufen",
+      "Ausgabemengen": "5 voreingestellte Mengen",
+      "Tankvolumen": "Rohwasser ca. 4,0 l; Kaltwassertank ca. 1,0 l",
+      "Anzeige": "TDS, Menge, Temperatur und Filterstatus",
+      "Filterlebensdauer": "CF ca. 6 Monate; RO ca. 12 Monate",
+      "UV-Hygiene": "Duale UV-Einheit; Herstellerangabe 99,9 %"
     }
   },
   {
@@ -1288,7 +1314,7 @@
     "specs": {
       "Modell": "K6",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "Mehrstufige Umkehrosmose-Filtration",
+      "Filtration": "5-stufige Umkehrosmose-Filtration",
       "RO-Leistung": "600 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Ja",
@@ -1298,9 +1324,19 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
       "Abmessungen": "17,0 × 44,5 × 42,2 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Durchfluss": "600 GPD",
+      "Zulaufdruck": "1,0–6,0 bar (14,5–87 psi)",
+      "Zulauftemperatur": "5–38 °C",
+      "Heißwassertemperatur": "40–95 °C einstellbar",
+      "Wasserhahn": "Smart LED, gebürstetes Nickel",
+      "Filterlebensdauer": "KJF ca. 12 Monate",
+      "Anzeige": "TDS, Filterstatus und Temperatur",
+      "Funktionen": "Selbstreinigung und Urlaubsmodus",
+      "Gewicht": "14,47 kg",
+      "Modellnummer": "WD-K6-W / WD-KJ-600"
     }
   },
   {
@@ -1320,7 +1356,7 @@
     "specs": {
       "Modell": "C1H",
       "Bauart": "Auftisch-Umkehrosmoseanlage ohne Festinstallation",
-      "Filtration": "Mehrstufige Umkehrosmose-Filtration",
+      "Filtration": "6-stufig, RO-Membran 0,0001 µm",
       "RO-Leistung": "75 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Ja",
@@ -1329,10 +1365,16 @@
       "Bedienung": "Display mit Filterstatus und Wassereinstellungen",
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Integrierte Tanks",
-      "Installation": "Aufstellen, befüllen und an Strom anschließen",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Installation": "Keine Festinstallation",
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
       "Abmessungen": "39,6 × 27,7 × 43,2 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Rohwassertank": "3,2 Liter",
+      "Reinwassertank": "1 Liter",
+      "Heißwassertemperatur": "Bis 95 °C",
+      "Leistungsaufnahme": "1.700 W; 110–120 V, 50–60 Hz",
+      "Anzeige": "Filterstatus, Wassermenge und Temperatur",
+      "Filterlebensdauer": "C1RF ca. 12 Monate"
     }
   },
   {
@@ -1352,7 +1394,7 @@
     "specs": {
       "Modell": "X12",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "11-stufig",
+      "Filtration": "11-stufig, RO-Membran 0,0001 µm, UV und alkalische Remineralisierung",
       "RO-Leistung": "1200 GPD",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Nein",
@@ -1362,9 +1404,14 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 42, 58 und 372; IAPMO-geprüfte Angaben",
       "Abmessungen": "46,2 × 15,9 × 42,5 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Durchfluss": "Becherfüllung in ca. 3 Sekunden",
+      "Wasserhahn": "Touchscreen: Echtzeit-TDS, Filterstatus und Mengenvorwahl",
+      "Filterlebensdauer": "F1A bis 12 Monate / 4.164 l; F2 bis 6 Monate / 2.082 l; F3 bis 24 Monate / 8.328 l",
+      "Gewicht": "16,75 kg",
+      "Material": "BPA-freie und bleifreie wasserberührte Materialien"
     }
   },
   {
@@ -1384,7 +1431,7 @@
     "specs": {
       "Modell": "X16",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "11-stufig",
+      "Filtration": "11-stufig, RO-Membran 0,0001 µm und alkalische Remineralisierung",
       "RO-Leistung": "1600 GPD",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Nein",
@@ -1394,9 +1441,11 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 58 und 372",
       "Abmessungen": "46,2 × 15,9 × 42,5 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Wasserhahn": "Touchscreen: Echtzeit-TDS, Filterstatus und Mengenvorwahl",
+      "Gewicht": "16,76 kg"
     }
   },
   {
@@ -1416,7 +1465,7 @@
     "specs": {
       "Modell": "G3P800",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "10-stufig",
+      "Filtration": "10-stufige tanklose Umkehrosmose-Filtration",
       "RO-Leistung": "800 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Nein",
@@ -1426,9 +1475,12 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 42, 58 und 372",
       "Abmessungen": "45,9 × 14,4 × 45,0 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Wasserhahn": "Smart Display mit TDS- und Filterstatusanzeige",
+      "Filterlebensdauer": "CF ca. 6 Monate; CB ca. 12 Monate; RO ca. 24 Monate",
+      "Gewicht": "16,33 kg"
     }
   },
   {
@@ -1448,7 +1500,7 @@
     "specs": {
       "Modell": "X8",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "9-stufig",
+      "Filtration": "9-stufig, RO-Membran 0,0001 µm",
       "RO-Leistung": "800 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Nein",
@@ -1458,9 +1510,13 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 58 und 372",
       "Abmessungen": "46,2 × 15,9 × 42,5 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Durchfluss": "0,56 GPM (ca. 2,12 l/min)",
+      "Wasserhahn": "Smart Display mit TDS- und Filterstatusanzeige",
+      "Gewicht": "16,50 kg",
+      "Modellnummer": "WD-X8"
     }
   },
   {
@@ -1480,19 +1536,25 @@
     "specs": {
       "Modell": "G2P600",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "Mehrstufige Umkehrosmose-Filtration",
+      "Filtration": "MRO: RO-Membran, PP-Sediment, Aktivkohle und PET-Faltenfilter; CF: PP-Sediment und Aktivkohle",
       "RO-Leistung": "600 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Nein",
       "Kaltwasser": "Nein",
-      "Reinwasser-Abwasser-Verhältnis": "Herstellerangabe auf der Produktseite",
+      "Reinwasser-Abwasser-Verhältnis": "Nicht separat veröffentlicht",
       "Bedienung": "Intelligenter Wasserhahn mit Filterstatusanzeige",
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
-      "Abmessungen": "Auf der offiziellen Produktseite veröffentlicht",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
+      "Abmessungen": "43,9 × 15,0 × 35,3 cm",
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Gewicht": "9,50 kg",
+      "Zulaufdruck": "1,0–6,0 bar (14,5–87 psi)",
+      "Netzkabel": "Ca. 150 cm",
+      "Wasserhahn": "Metallarmatur; Filterlebensdaueranzeige am Gerät",
+      "Filterlebensdauer": "CF ca. 12 Monate; MRO ca. 24 Monate",
+      "Material": "BPA-freies Gehäuse"
     }
   },
   {
@@ -1512,7 +1574,7 @@
     "specs": {
       "Modell": "C1SL",
       "Bauart": "Auftisch-Umkehrosmoseanlage ohne Festinstallation",
-      "Filtration": "Mehrstufige Umkehrosmose-Filtration",
+      "Filtration": "Umkehrosmose mit alkalischer Mineralisierung",
       "RO-Leistung": "75 GPD",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Nein",
@@ -1521,10 +1583,15 @@
       "Bedienung": "Display mit Filterstatus und Wassereinstellungen",
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Integrierte Tanks",
-      "Installation": "Aufstellen, befüllen und an Strom anschließen",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
-      "Abmessungen": "Auf der offiziellen Produktseite veröffentlicht",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Installation": "Keine Festinstallation",
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
+      "Abmessungen": "29,7 × 21,1 × 34,8 cm",
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Rohwassertank": "3,25 Liter",
+      "Reinwassertank": "Herausnehmbar",
+      "Wassertemperatur": "Raumtemperatur",
+      "Anzeige": "TDS, Ausgabemenge und Filterstatus",
+      "Filterlebensdauer": "C1RFG ca. 12 Monate"
     }
   },
   {
@@ -1544,7 +1611,7 @@
     "specs": {
       "Modell": "K19-HG",
       "Bauart": "Auftisch-Umkehrosmoseanlage ohne Festinstallation",
-      "Filtration": "Mehrstufige Umkehrosmose-Filtration",
+      "Filtration": "5-in-1-Filter mit RO, Erhitzung und Mineralisierung",
       "RO-Leistung": "75 GPD",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Ja",
@@ -1553,10 +1620,15 @@
       "Bedienung": "Display mit Filterstatus und Wassereinstellungen",
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Integrierte Tanks",
-      "Installation": "Aufstellen, befüllen und an Strom anschließen",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
-      "Abmessungen": "Auf der offiziellen Produktseite veröffentlicht",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Installation": "Keine Festinstallation",
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
+      "Abmessungen": "35,1 × 20,1 × 41,5 cm",
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Rohwassertank": "5 Liter",
+      "Reinwassertank": "Herausnehmbar",
+      "Heißwassertemperatur": "Bis 95 °C",
+      "Anzeige": "TDS, Ausgabemenge und Filterstatus",
+      "Filterlebensdauer": "K19RFG ca. 12 Monate"
     }
   },
   {
@@ -1576,8 +1648,8 @@
     "specs": {
       "Modell": "A2G",
       "Bauart": "Auftisch-Umkehrosmoseanlage ohne Festinstallation",
-      "Filtration": "6-stufig",
-      "RO-Leistung": "Herstellerangabe modellabhängig",
+      "Filtration": "6-stufige RO-Filtration mit alkalischer Remineralisierung",
+      "RO-Leistung": "Nicht separat veröffentlicht",
       "Mineralisierung": "Ja, alkalische/mineralische Nachbehandlung",
       "Heißwasser": "Ja",
       "Kaltwasser": "Ja",
@@ -1585,10 +1657,17 @@
       "Bedienung": "Display mit Filterstatus und Wassereinstellungen",
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Integrierte Tanks",
-      "Installation": "Aufstellen, befüllen und an Strom anschließen",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Installation": "Keine Festinstallation",
+      "Zertifizierung": "NSF/ANSI 372 (bleifreie wasserberührte Komponenten)",
       "Abmessungen": "29,0 × 47,2 × 49,0 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers"
+      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Temperaturbereich": "15–95 °C; 6 Temperaturstufen",
+      "Ausgabemengen": "5 voreingestellte Mengen",
+      "Tankvolumen": "Rohwasser 4,7 l; Reinwasser 1,0 l",
+      "Filterlebensdauer": "A2RF ca. 12 Monate",
+      "Anzeige": "Favoriten, Temperatur und Filterstatus",
+      "Gewicht": "Ca. 10 kg",
+      "UV-Hygiene": "Integrierte UV-Behandlung"
     }
   },
   {
@@ -1608,7 +1687,7 @@
     "specs": {
       "Modell": "X8",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "9-stufig",
+      "Filtration": "9-stufig, RO-Membran 0,0001 µm",
       "RO-Leistung": "800 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Nein",
@@ -1618,9 +1697,13 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 58 und 372",
       "Abmessungen": "46,2 × 15,9 × 42,5 cm",
       "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Durchfluss": "0,56 GPM (ca. 2,12 l/min)",
+      "Wasserhahn": "Smart Display mit TDS- und Filterstatusanzeige",
+      "Gewicht": "16,50 kg",
+      "Modellnummer": "WD-X8",
       "Set-Inhalt": "X8-System mit F2-Filter"
     }
   },
@@ -1641,7 +1724,7 @@
     "specs": {
       "Modell": "X8",
       "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "9-stufig",
+      "Filtration": "9-stufig, RO-Membran 0,0001 µm",
       "RO-Leistung": "800 GPD",
       "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
       "Heißwasser": "Nein",
@@ -1651,9 +1734,13 @@
       "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
       "Tank": "Tanklos",
       "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI-Angaben siehe offizielle Produktseite",
+      "Zertifizierung": "NSF/ANSI 58 und 372",
       "Abmessungen": "46,2 × 15,9 × 42,5 cm",
       "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
+      "Durchfluss": "0,56 GPM (ca. 2,12 l/min)",
+      "Wasserhahn": "Smart Display mit TDS- und Filterstatusanzeige",
+      "Gewicht": "16,50 kg",
+      "Modellnummer": "WD-X8",
       "Set-Inhalt": "X8-System mit zusätzlichem F3-Ersatzfilter"
     }
   },
@@ -1715,7 +1802,8 @@
       "Filterbetrieb": "30 W",
       "Heizleistung": "2.200 W",
       "Installation": "Keine Festinstallation erforderlich",
-      "Wartung": "Wechselbare Filtermodule laut Herstellerplan"
+      "Wartung": "Wechselbare Filtermodule laut Herstellerplan",
+      "Lieferumfang": "Home-One-Gerät, Filtermodule und Mineralisierung gemäß gewähltem Bundle"
     }
   },
   {
@@ -1733,14 +1821,15 @@
     "source": "https://aqua-global.com/?mode=artikel&detailid=1189&wg_id=1098",
     "summary": "Aqua Global Mini Touch: Wasseraufbereitungssystem aus dem aktuellen Hersteller-Shop mit offiziell veröffentlichten technischen Daten und Zubehörangaben.",
     "specs": {
-      "Filterwechsel": "Composite | 6-12 Monate Nachfilter | 6-12 Monate Membrane | 12-24 Monate UV-Lampe | 60 Monate",
-      "Temperaturen": "Baby | ~50°C Tea | ~85°C Hot | ~95°C Room | ungekühlt",
+      "Filterwechsel": "Composite 6–12 Monate; Postfilter 6–12 Monate; RO-Membran 12–24 Monate; UV 60 Monate",
+      "Temperaturen": "Baby ca. 50 °C; Tee ca. 85 °C; Heiß ca. 95 °C; Raumtemperatur",
       "Tankgröße": "2,50 Liter (innen)",
-      "Filterleistung": "Befüllungstemperatur | 10-38°C Leistung | ca. 10-15 Liter / Std.",
-      "Elektrische Parameter": "Spannung | 220V - 240 V / 50hz Heizleistung | 2180 Watt Verbrauch (Standbymodus) | 0,0-0,1 kW/h / 24 Std.",
-      "Abmessungen und Gewicht": "Breite: 183mm Höhe: 388mm Tiefe: 300mm Gewicht: 6,50 kg",
+      "Filterleistung": "10–15 l/h; Zulaufwasser 10–38 °C",
+      "Elektrische Parameter": "220–240 V / 50 Hz; Heizung 2.180 W; Standby 0–0,1 kWh/24 h",
+      "Abmessungen und Gewicht": "183 × 388 × 300 mm; 6,5 kg",
       "Abwasserverhältnis": "1:1",
-      "Filtrationsverfahren": "Das Produkt Mini Touch verwendet die Umkehrosmose (Membranfiltration) als Filtrationsverfahren."
+      "Filtrationsverfahren": "Umkehrosmose",
+      "Tankvolumen": "2,5 Liter"
     }
   },
   {
@@ -1758,14 +1847,14 @@
     "source": "https://aqua-global.com/?mode=artikel&detailid=1457&wg_id=1098",
     "summary": "Aqua Global Mini Touch PRO – Black: Wasseraufbereitungssystem aus dem aktuellen Hersteller-Shop mit offiziell veröffentlichten technischen Daten und Zubehörangaben.",
     "specs": {
-      "Filterwechsel": "Composite | 6-12 Monate Membrane | 12-24 Monate UV-Lampe | 60 Monate",
-      "Temperaturen": "Baby | ~45-50°C Tea | ~80-85°C Hot | ~90-95°C Room | ungekühlt Cold | ~6-12°C",
-      "Filterleistung": "Befüllungstemperatur | 10-38°C Leistung | ca. 15-25 Liter / Std.",
-      "Elektrische Parameter": "Spannung | 220 V - 240 V / 50hz Heizleistung | 2100 Watt Verbrauch (Standbymodus) | 1 W pro Std.",
-      "Abmessungen und Gewicht": "Breite: 225mm Höhe: 376mm Tiefe: 329mm Gewicht: 6,50 kg",
+      "Filterwechsel": "Composite 6–12 Monate; RO-Membran 12–24 Monate; UV 60 Monate",
+      "Temperaturen": "Baby 45–50 °C; Tee 80–85 °C; Heiß 90–95 °C; Raumtemperatur; Kalt 6–12 °C",
+      "Filterleistung": "15–25 l/h; Zulaufwasser 10–38 °C",
+      "Elektrische Parameter": "220–240 V / 50 Hz; Heizung 2.100 W; Standby 1 W/h",
+      "Abmessungen und Gewicht": "225 × 376 × 329 mm; 6,5 kg",
       "Abwasserverhältnis": "1:1",
-      "Filtrationsverfahren": "Das Produkt Mini Touch verwendet die Umkehrosmose (Membranfiltration) als Filtrationsverfahren.",
-      "Tankvolumen": "Direkt verfügbare Wassermenge: 0,8 - 1,0 Liter"
+      "Filtrationsverfahren": "Umkehrosmose",
+      "Tankvolumen": "Nutzbares Reinwasser ca. 0,8–1,0 Liter"
     }
   },
   {
@@ -1783,14 +1872,15 @@
     "source": "https://aqua-global.com/?mode=artikel&detailid=1221&wg_id=1098",
     "summary": "Aqua Global Basic: Wasseraufbereitungssystem aus dem aktuellen Hersteller-Shop mit offiziell veröffentlichten technischen Daten und Zubehörangaben.",
     "specs": {
-      "Filterwechsel": "PC-C | 6-12 Monate Membrane | 18-36 Monate",
-      "Temperaturen": "Room | ungekühlt",
+      "Filterwechsel": "PC-C 6–12 Monate; RO-Membran 18–36 Monate",
+      "Temperaturen": "Raumtemperatur",
       "Tankgröße": "kein Tank | Direct Flow",
-      "Filterleistung": "ca. 1 Liter je Minute",
-      "Elektrische Parameter": "Spannung | 220 V - 240 V / 50hz Nenngesamtleistung | 64W",
-      "Abmessungen und Gewicht": "Durchmesser: 240mm | Höhe: 395mm Gewicht | 7,84kg",
+      "Filterleistung": "Ca. 1 l/min",
+      "Elektrische Parameter": "220–240 V / 50 Hz; 64 W",
+      "Abmessungen und Gewicht": "Ø 240 × 395 mm; 7,84 kg",
       "Abwasserverhältnis": "1:1",
-      "Filtrationsverfahren": "Das Produkt Basic verwendet die Umkehrosmose (Membranfiltration) als Filtrationsverfahren."
+      "Filtrationsverfahren": "Umkehrosmose",
+      "Tankvolumen": "Tankloses Direct-Flow-System"
     }
   },
   {
@@ -1808,14 +1898,15 @@
     "source": "https://aqua-global.com/?mode=artikel&detailid=1231&wg_id=1098",
     "summary": "Aqua Global Sparkling: Wasseraufbereitungssystem aus dem aktuellen Hersteller-Shop mit offiziell veröffentlichten technischen Daten und Zubehörangaben.",
     "specs": {
-      "Filterwechsel": "Nano-Silver Carbon Filter | 6-12 Monate UV-Lampe | 6-12 Monate",
-      "Temperaturen": "Sprudel | gekühlt | still | ungekühlt",
+      "Filterwechsel": "Nano-Silver-Carbon 6–12 Monate; UV 6–12 Monate",
+      "Temperaturen": "Sprudel, gekühlt, still gekühlt und Raumtemperatur",
       "Tankgröße": "kein Tank | Direct Flow",
-      "Filterleistung": "ca. 1 Liter je Minute",
-      "Elektrische Parameter": "Spannung | 220 V - 240 V / 50hz",
-      "Abmessungen und Gewicht": "Breite: 230mm | Tiefe: 380mm | Höhe: 380mm | Gewicht | 18,00kg",
+      "Filterleistung": "Ca. 1 l/min",
+      "Elektrische Parameter": "220–240 V / 50 Hz",
+      "Abmessungen und Gewicht": "230 × 380 × 380 mm; 18 kg",
       "Abwasserverhältnis": "1:1",
-      "Filtrationsverfahren": "Das Produkt Sparkling verwendet Nano-Silver-Carbon Filter um das Wasser zu filtern. (Wichtiger Hinweis: Keine Membranfiltration / Keine Umkehrosmose!!! Nicht kompatibel mit der BASIC.)"
+      "Filtrationsverfahren": "Nano-Silver-Carbon und UV; keine integrierte RO-Membran",
+      "Tankvolumen": "Tankloses Direct-Flow-System"
     }
   },
   {
@@ -1833,14 +1924,15 @@
     "source": "https://aqua-global.com/?mode=artikel&detailid=1237&wg_id=1098",
     "summary": "Aqua Global Sparkling Pro: Wasseraufbereitungssystem aus dem aktuellen Hersteller-Shop mit offiziell veröffentlichten technischen Daten und Zubehörangaben.",
     "specs": {
-      "Filterwechsel": "PC-C | 6-12 Monate Membrane | 18-36 Monate UV-Lampe | 6-12 Monate",
-      "Temperaturen": "Sprudel | gekühlt | still | ungekühlt (Basic) | heiß",
+      "Filterwechsel": "PC-C 6–12 Monate; RO-Membran 18–36 Monate; UV 6–12 Monate",
+      "Temperaturen": "Sprudel, gekühlt, still, Raumtemperatur und heiß",
       "Tankgröße": "kein Tank | Direct Flow",
-      "Filterleistung": "ca. 1 Liter je Minute",
-      "Elektrische Parameter": "Spannung | 220 V - 240 V / 50hz",
-      "Abmessungen und Gewicht": "BASIC: Durchmesser: 240mm | Höhe: 395mm | Gewicht | 7,84kg SPARKLING PRO: Breite: 230mm | Tiefe: 380mm | Höhe: 380mm | Gewicht | 19,00kg",
+      "Filterleistung": "Ca. 1 l/min",
+      "Elektrische Parameter": "220–240 V / 50 Hz",
+      "Abmessungen und Gewicht": "Basic: Ø 240 × 395 mm / 7,84 kg; Sparkling Pro: 230 × 380 × 380 mm / 19 kg",
       "Abwasserverhältnis": "1:1",
-      "Filtrationsverfahren": "Die Sparkling PRO wird gemeinsam mit unserer BASIC geliefert. Das Produkt BASIC verwendet die Umkehrosmose (Membranfiltration) als Filtrationsverfahren."
+      "Filtrationsverfahren": "Umkehrosmose im Basic-Modul, Kühlung, Karbonisierung und UV",
+      "Tankvolumen": "Tankloses Direct-Flow-System"
     }
   },
   {
@@ -1858,9 +1950,18 @@
     "source": "https://aqua-global.com/?mode=artikel&detailid=1193&wg_id=1098",
     "summary": "Aqua Global Hydrogenflasche Glas schwarz: Wasseraufbereitungssystem aus dem aktuellen Hersteller-Shop mit offiziell veröffentlichten technischen Daten und Zubehörangaben.",
     "specs": {
-      "Produktart": "Hydrogen Bottles",
+      "Produktart": "Tragbare Wasserstoffflasche",
       "Technologie": "Herstellerangaben auf der offiziellen Produktseite",
-      "Preisstatus": "Offizieller Shoppreis bei Recherche"
+      "Preisstatus": "Offizieller Shoppreis bei Recherche",
+      "Wasserstoffkonzentration": "Bis zu 1.200 ppb",
+      "ORP": "Bis zu −600 mV",
+      "Flaschenkapazität": "400 ml",
+      "Leistung": "USB 3,7 V / 2 A; Ausgang ≤ 5 W",
+      "Abmessungen": "Ø 70 × 230 mm",
+      "Gewicht": "405 g",
+      "Flaschenmaterial": "Borosilikatglas",
+      "Geeignetes Wasser": "Stilles, reines Osmosewasser; laut Hersteller aus Mini Touch, Flexible Touch, Basic, Sparkling oder Sparkling Pro",
+      "Gewährleistung": "24 Monate"
     }
   }
 ]
