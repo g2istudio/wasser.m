@@ -21,7 +21,7 @@
     "group": "Premium",
     "description_de": "Wasseraufbereitung, Filtration, Pumpen sowie Lösungen für Haushalt, Gewerbe und Industrie.",
     "description_en": "Water treatment, filtration, pumps and residential, commercial and industrial water solutions.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/pentair.png"
   },
@@ -34,7 +34,7 @@
     "group": "Premium",
     "description_de": "Eine Pentair-Marke für Filtergehäuse, Kartuschen und Komponenten der Hauswasserfiltration.",
     "description_en": "A Pentair brand focused on filter housings, cartridges and point-of-entry water filtration components.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/pentek.png"
   },
@@ -47,7 +47,7 @@
     "group": "Premium",
     "description_de": "Diversifiziertes Technologieunternehmen mit Trinkwasser-, Gastronomie- und Gewerbefiltern.",
     "description_en": "Diversified technology company offering drinking-water, foodservice and commercial filtration systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/3m.png"
   },
@@ -73,7 +73,7 @@
     "group": "Premium",
     "description_de": "Hersteller von Warmwasser- und Wasseraufbereitungsprodukten für Haushalte und Unternehmen.",
     "description_en": "Manufacturer of water heaters and water treatment products for homes and businesses.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/ao-smith.png"
   },
@@ -113,7 +113,7 @@
     "group": "Premium",
     "description_de": "Italienischer Hersteller von Filtergehäusen, Kartuschen und Wasseraufbereitungssystemen.",
     "description_en": "Italian manufacturer of filter housings, cartridges and water treatment systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/atlas-filtri.png"
   },
@@ -140,7 +140,7 @@
     "group": "Premium",
     "description_de": "Wasseraufbereitungsmarke, bekannt für stromlose Enthärter und Trinkwassersysteme.",
     "description_en": "Water treatment brand known for non-electric softeners and drinking-water systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/kinetico.png"
   },
@@ -153,7 +153,7 @@
     "group": "Premium",
     "description_de": "Wassertechnologie-Marke mit Filtration, Umkehrosmose und Wasserstoffwasser-Produkten.",
     "description_en": "Water technology brand offering filtration, reverse-osmosis and hydrogen-water products.",
-    "products_count": 4,
+    "products_count": 3,
     "rating": 4.5,
     "logo": "assets/brands/walutec.png"
   },
@@ -166,7 +166,7 @@
     "group": "Reverse Osmosis",
     "description_de": "Entwickler von Haushaltsfiltern, Umkehrosmoseanlagen und eigenen Sorptionsmaterialien.",
     "description_en": "Developer of household water filters, reverse-osmosis systems and proprietary sorption media.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": 4.4,
     "logo": "assets/brands/aquaphor.png"
   },
@@ -192,7 +192,7 @@
     "group": "Reverse Osmosis",
     "description_de": "Anbieter von Umkehrosmose-, Haus- und Auftischfiltersystemen.",
     "description_en": "Supplier of residential reverse-osmosis, whole-house and countertop filtration systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/ispring.png"
   },
@@ -205,7 +205,7 @@
     "group": "Reverse Osmosis",
     "description_de": "US-Marke mit Schwerpunkt auf Umkehrosmose-Trinkwassersystemen für Haushalte.",
     "description_en": "US brand specializing in residential reverse-osmosis drinking-water systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/apec.png"
   },
@@ -218,7 +218,7 @@
     "group": "Reverse Osmosis",
     "description_de": "Marke für modulare RO-Systeme und Permeatpumpen im Haushaltsbereich.",
     "description_en": "Residential water-filtration brand known for modular RO systems and permeate pumps.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/home-master.png"
   },
@@ -231,7 +231,7 @@
     "group": "Reverse Osmosis",
     "description_de": "Anbieter von Untertisch-RO, Hausfiltration und Ersatzfiltern.",
     "description_en": "Provider of under-sink reverse osmosis, whole-house and replacement filter products.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/express-water.png"
   },
@@ -244,7 +244,7 @@
     "group": "Reverse Osmosis",
     "description_de": "Hersteller von Umkehrosmoseanlagen, Komponenten und gewerblicher Wassertechnik.",
     "description_en": "Manufacturer of reverse-osmosis systems, components and commercial water-treatment equipment.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/purepro.png"
   },
@@ -257,7 +257,7 @@
     "group": "Reverse Osmosis",
     "description_de": "Wasseraufbereitungsunternehmen mit Haushalts-, Gewerbe- und Spezialfiltern.",
     "description_en": "Water treatment company offering residential, commercial and specialty filtration systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/crystal-quest.png"
   },
@@ -270,7 +270,7 @@
     "group": "Reverse Osmosis",
     "description_de": "Hersteller von Wasseraufbereitungssystemen und Komponenten für Haushalt und Gewerbe.",
     "description_en": "Manufacturer of residential and commercial water-treatment systems and components.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/canature.png"
   },
@@ -283,7 +283,7 @@
     "group": "Countertop RO",
     "description_de": "Marke für einfach installierbare Auftisch-Umkehrosmosegeräte.",
     "description_en": "Brand known for countertop reverse-osmosis purifiers designed for easy installation.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/aquatru.png"
   },
@@ -296,7 +296,7 @@
     "group": "Countertop",
     "description_de": "Koreanischer Haushaltsgerätehersteller für Wasserreiniger, Luftreiniger und Wellnessprodukte.",
     "description_en": "Korean home-appliance company producing water purifiers, air purifiers and wellness products.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/coway.png"
   },
@@ -309,7 +309,7 @@
     "group": "Countertop",
     "description_de": "Globaler Elektronikkonzern mit Wasserreinigern und vernetzten Haushaltsgeräten in ausgewählten Märkten.",
     "description_en": "Global electronics company offering water purifiers and connected home appliances in selected markets.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/lg.png"
   },
@@ -322,7 +322,7 @@
     "group": "Countertop",
     "description_de": "Japanisches Technologieunternehmen mit Wasserfiltern für Armatur, Auftisch und Haushalt.",
     "description_en": "Japanese technology company offering faucet, countertop and household water-treatment products.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/panasonic.png"
   },
@@ -335,7 +335,7 @@
     "group": "Countertop",
     "description_de": "Gesundheitstechnologie-Marke mit Wasserspendern, Filtern und Haushaltsgeräten.",
     "description_en": "Health-technology brand with water dispensers, filtration devices and household appliances.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/philips.png"
   },
@@ -348,7 +348,7 @@
     "group": "Countertop",
     "description_de": "Elektronikunternehmen mit smarten Wasserreinigern und vernetzten Küchengeräten.",
     "description_en": "Consumer electronics company offering smart water purifiers and connected kitchen appliances.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/xiaomi.png"
   },
@@ -361,7 +361,7 @@
     "group": "Countertop",
     "description_de": "Smart-Home-Hersteller mit vernetzten Umkehrosmose- und Auftisch-Wasserreinigern.",
     "description_en": "Smart-home appliance company with connected reverse-osmosis and countertop water purifiers.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/viomi.png"
   },
@@ -374,7 +374,7 @@
     "group": "Countertop",
     "description_de": "Hersteller von Trinkwasseraufbereitung für Haushalt und Gewerbe.",
     "description_en": "Water purification manufacturer active in residential and commercial drinking-water equipment.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/angel.png"
   },
@@ -387,7 +387,7 @@
     "group": "Countertop",
     "description_de": "Chinesisches Unternehmen für Haushalts-Wasserreiniger und Trinkwassertechnik.",
     "description_en": "Chinese water-purification company producing household purifiers and drinking-water equipment.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/qinyuan.svg"
   },
@@ -400,7 +400,7 @@
     "group": "Countertop",
     "description_de": "Globaler Haushaltsgerätehersteller mit Wasserspendern, Reinigern und Küchensystemen.",
     "description_en": "Global appliance manufacturer offering water dispensers, purifiers and kitchen systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/midea.png"
   },
@@ -413,7 +413,7 @@
     "group": "Countertop",
     "description_de": "Haushaltsgeräte-Gruppe mit Wasserreinigern und Smart-Home-Produkten.",
     "description_en": "Home-appliance group offering water purifiers and smart-home products in multiple markets.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/haier.png"
   },
@@ -439,7 +439,7 @@
     "group": "Hydrogen Water",
     "description_de": "Hersteller von Wasserionisierern und alkalischen Wasserstoffwassersystemen.",
     "description_en": "Manufacturer of water ionizers and alkaline-hydrogen water systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/tyent.png"
   },
@@ -452,7 +452,7 @@
     "group": "Hydrogen Water",
     "description_de": "Marke für Wasserstoffwasser-Generatoren und Wellnessgeräte.",
     "description_en": "Brand associated with dissolved-hydrogen water generators and wellness devices.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/lourdes.png"
   },
@@ -465,7 +465,7 @@
     "group": "Hydrogen Water",
     "description_de": "Verbrauchermarke für Wasserstoffflaschen und Auftisch-Generatoren.",
     "description_en": "Consumer brand focused on hydrogen-water bottles and countertop generators.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/piurify.png"
   },
@@ -491,7 +491,7 @@
     "group": "Hydrogen Water",
     "description_de": "Japanischer Wellnessgerätehersteller mit Wasserionisierern und Gesundheitsprodukten.",
     "description_en": "Japanese wellness equipment company producing water ionizers and health-related devices.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/fujiiryoki.png"
   },
@@ -504,7 +504,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Globales Materialunternehmen für Membranen, Ionenaustauscher und Wasserprozess-Technologien.",
     "description_en": "Global materials company supplying membranes, ion-exchange resins and water-process technologies.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/dupont.png"
   },
@@ -517,7 +517,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Membranhersteller für Umkehrosmose, Nanofiltration und Ultrafiltration.",
     "description_en": "Membrane manufacturer supplying reverse-osmosis, nanofiltration and ultrafiltration elements.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/hydranautics.png"
   },
@@ -530,7 +530,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Japanischer Materialkonzern mit RO-, UF- und MBR-Membranen.",
     "description_en": "Japanese materials group producing RO, UF and MBR membranes for water treatment.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/toray.png"
   },
@@ -543,7 +543,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Membranbereich für kommunale und industrielle Umkehrosmoseanwendungen.",
     "description_en": "Membrane business supplying reverse-osmosis products for municipal and industrial applications.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/lg-water-solutions.png"
   },
@@ -556,7 +556,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Industrieunternehmen für Membran- und Trennprozess-Technologien.",
     "description_en": "Industrial separation company supplying membrane and process technologies.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/koch-separation.png"
   },
@@ -569,7 +569,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Globaler Anbieter für kommunale und industrielle Wasser- und Abwasseraufbereitung.",
     "description_en": "Global provider of municipal and industrial water and wastewater treatment solutions.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/veolia.png"
   },
@@ -582,7 +582,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Wasser- und Umweltdienstleister mit Aufbereitungstechnologien und Infrastrukturkompetenz.",
     "description_en": "Water and environmental services group with treatment technologies and infrastructure expertise.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/suez.png"
   },
@@ -595,7 +595,7 @@
     "group": "Industrial & Components",
     "description_de": "Globaler Pumpenhersteller für Dosierung, Zirkulation und Wasseraufbereitung.",
     "description_en": "Global pump manufacturer supplying dosing, circulation and water-treatment pumping systems.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/grundfos.png"
   },
@@ -608,7 +608,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Hersteller von Umkehrosmose- und Nanofiltrationsmembranen.",
     "description_en": "Manufacturer of reverse-osmosis and nanofiltration membrane elements.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/vontron.png"
   },
@@ -621,7 +621,7 @@
     "group": "Industrial & Membranes",
     "description_de": "Spezialchemie-Unternehmen für Ionenaustauscherharze und Wasseraufbereitungsmaterialien.",
     "description_en": "Specialty chemicals company supplying ion-exchange resins and water-treatment materials.",
-    "products_count": 0,
+    "products_count": 1,
     "rating": null,
     "logo": "assets/brands/lanxess.png"
   },

@@ -71,24 +71,6 @@
     "source": "https://store.nia.me/spirit-300"
   },
   {
-    "id": "hydro",
-    "slug": "walutec-h2-bottle-pro",
-    "brand": "WALUTEC",
-    "name": "H2 Bottle Pro",
-    "category": "Hydrogen Bottles",
-    "price": 199,
-    "currency": "EUR",
-    "rating": 4.5,
-    "reviews": 22,
-    "image": "assets/img/bottle.svg",
-    "featured": false,
-    "specs": {
-      "volume_ml": 260,
-      "ppb_max": 3000,
-      "usb_c": true
-    }
-  },
-  {
     "id": "biella",
     "slug": "wertach-biella",
     "brand": "WERTACH",
@@ -971,7 +953,8 @@
       "Technologie": "SPE/PEM",
       "Anzeige": "OLED",
       "Laden": "USB-C"
-    }
+    },
+    "slug": "walutec-hydrogen-bottle"
   },
   {
     "id": "blackwater-hydrogen",
@@ -989,11 +972,12 @@
       "Programme": "5 / 10 Minuten",
       "Technologie": "SPE/PEM",
       "Membran": "DuPont Nafion 117"
-    }
+    },
+    "slug": "blackwater-hydrogen-bottle"
   },
   {
     "id": "piurify-hydrogenator-black",
-    "brand": "PIURIFY",
+    "brand": "Piurify",
     "name": "Hydrogenator Bottle Black",
     "category": "Hydrogen Bottles",
     "price": 120,
@@ -1006,7 +990,9 @@
       "Volumen": "280 ml",
       "Programme": "5 / 10 Minuten",
       "Technologie": "DuPont SPE/PEM"
-    }
+    },
+    "brandSlug": "piurify",
+    "slug": "piurify-hydrogenator-black"
   },
   {
     "id": "echo-flask",
@@ -1024,7 +1010,8 @@
       "Technologie": "PEM",
       "Bedienung": "Touchscreen und App",
       "Garantie": "5 Jahre"
-    }
+    },
+    "slug": "echo-flask"
   },
   {
     "id": "ionbottles-atom",
@@ -1042,7 +1029,8 @@
       "Technologie": "DuPont PEM",
       "Anzeige": "OLED",
       "Garantie": "1 Jahr"
-    }
+    },
+    "slug": "ionbottles-atom"
   },
   {
     "id": "levelupway-2-in-1",
@@ -1059,7 +1047,8 @@
       "Volumen": "ca. 325 ml",
       "Technologie": "SPE/PEM",
       "Pflege": "Selbstreinigungsmodus"
-    }
+    },
+    "slug": "levelupway-2-in-1"
   },
   {
     "id": "alkaviva-hi-output",
@@ -1075,7 +1064,8 @@
       "H₂-Konzentration": "bis 5.000 ppb laut Produkttitel",
       "Volumen": "210 ml",
       "Produkttyp": "Portable Hydrogen-Wasserflasche"
-    }
+    },
+    "slug": "alkaviva-hi-output"
   },
   {
     "id": "waterdrop-alkaline-ro-water-purifier-g5p500a",
@@ -3009,6 +2999,822 @@
       "Temperaturbereich": "Aus technischen Gründen ist der Einsatz nur bei Kaltwasser zulässig, vor Frost schützen",
       "Anschrift": "Industriestr. 2 29410 Salzwedel OT Dambeck",
       "Website": "www.carbonit.com"
+    }
+  },
+  {
+    "id": "pentair-freshpoint-gro-350b",
+    "slug": "pentair-freshpoint-gro-350b",
+    "brand": "Pentair",
+    "brandSlug": "pentair",
+    "name": "FreshPoint GRO-350B",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/pentair.png",
+    "source": "https://www.pentair.com/en-us/home-water-treatment/under-sink-filtration-systems/gro-350b-3-stage/sku/161110.html",
+    "summary": "Pentair FreshPoint GRO-350B: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Filtration": "3-stufige Umkehrosmose",
+      "Kapazität": "50 GPD",
+      "Reduktion": "TDS, Fluorid, Blei und Zysten",
+      "Boosterpumpe": "Optional"
+    }
+  },
+  {
+    "id": "pentek-dura-series-standard-filter-housing",
+    "slug": "pentek-dura-series-standard-filter-housing",
+    "brand": "Pentek",
+    "brandSlug": "pentek",
+    "name": "Dura-Series Standard Filter Housing",
+    "category": "Filter Housing",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/pentek.png",
+    "source": "https://www.pentair.com/en-us/home-water-treatment/filter-housings/dura-series-standard.html",
+    "summary": "Pentek Dura-Series Standard Filter Housing: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Bauart": "Standard-Filtergehäuse",
+      "Gehäuse": "Transparentes Polycarbonat",
+      "Anschluss": "Modellabhängig",
+      "Einsatz": "Trinkwasser-Vorfiltration"
+    }
+  },
+  {
+    "id": "3m-3mro301",
+    "slug": "3m-3mro301",
+    "brand": "3M",
+    "brandSlug": "3m",
+    "name": "3MRO301",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/3m.png",
+    "source": "https://multimedia.3m.com/mws/mediawebserver?mwsId=SSSSSu9n_zu8l00xNxteM8_eMv70k17zHvu9lxtD7xtBevSSSSSS-",
+    "summary": "3M 3MRO301: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Montage": "Untertisch",
+      "Stufen": "Mehrstufig",
+      "Datenquelle": "Offizielle 3M Produktdokumentation"
+    }
+  },
+  {
+    "id": "ao-smith-ao-us-ro-4000",
+    "slug": "ao-smith-ao-us-ro-4000",
+    "brand": "A.O. Smith",
+    "brandSlug": "ao-smith",
+    "name": "AO-US-RO-4000",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/ao-smith.png",
+    "source": "https://www.aosmith.com/on/demandware.static/-/Sites-aosmith-Library/default/vf6001c546aa197de9553f84960e7ff257d369e3a/pdf/product-resources/AOW-3000_RO_with_Claryum_Install_Online.pdf",
+    "summary": "A.O. Smith AO-US-RO-4000: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Kapazität": "50,4 l/Tag",
+      "Betriebsdruck": "2,8–6,9 bar",
+      "Temperatur": "4,4–32,2 °C",
+      "Zertifizierung": "NSF/ANSI 42, 53, 58, 401 und P473",
+      "Recovery": "29,43 %"
+    }
+  },
+  {
+    "id": "atlas-filtri-hydra-self-cleaning-1-npt",
+    "slug": "atlas-filtri-hydra-self-cleaning-1-npt",
+    "brand": "Atlas Filtri",
+    "brandSlug": "atlas-filtri",
+    "name": "HYDRA Self-Cleaning 1″ NPT",
+    "category": "Sediment Filter",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/atlas-filtri.png",
+    "source": "https://us.atlasfiltri.com/product/hydra-self-cleaning-stainless-steel-90m-cartridge-1-npt",
+    "summary": "Atlas Filtri HYDRA Self-Cleaning 1″ NPT: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Filterfeinheit": "90 µm",
+      "Kartusche": "Edelstahl",
+      "Maximaldruck": "8,6 bar",
+      "Temperatur": "4–45 °C",
+      "Anschluss": "1″ NPT"
+    }
+  },
+  {
+    "id": "kinetico-k5-drinking-water-station-with-voc-guard",
+    "slug": "kinetico-k5-drinking-water-station-with-voc-guard",
+    "brand": "Kinetico",
+    "brandSlug": "kinetico",
+    "name": "K5 Drinking Water Station with VOC Guard",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/kinetico.png",
+    "source": "https://www.kinetico.com/drinking-water-filtration-systems/kinetico-k5-drinking-water-station-with-voc-guard/",
+    "summary": "Kinetico K5 Drinking Water Station with VOC Guard: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Nicht-elektrische Umkehrosmose",
+      "Kapazität": "bis 148 l/Tag",
+      "Recovery": "bis 36,7 %",
+      "Ausstattung": "QuickFlo und VOC Guard",
+      "Zertifizierung": "WQA / NSF 58, PFOS/PFOA"
+    }
+  },
+  {
+    "id": "aquaphor-ro-101s-morion",
+    "slug": "aquaphor-ro-101s-morion",
+    "brand": "Aquaphor",
+    "brandSlug": "aquaphor",
+    "name": "RO-101S Morion",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/aquaphor.png",
+    "source": "https://aquaphor.com/es-es/reverse-osmosis/ro-101s",
+    "summary": "Aquaphor RO-101S Morion: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Tank": "Integrierter Wasser-auf-Wasser-Tank",
+      "Besonderheit": "Betrieb bei niedrigem Leitungsdruck",
+      "Montage": "Untertisch"
+    }
+  },
+  {
+    "id": "ispring-rcc7ak",
+    "slug": "ispring-rcc7ak",
+    "brand": "iSpring",
+    "brandSlug": "ispring",
+    "name": "RCC7AK",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/ispring.png",
+    "source": "https://www.ispringfilter.com/isprings-nsf-certified-water-filtration-systems-trusted-solutions-for-safer-drinking-water",
+    "summary": "iSpring RCC7AK: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Filtration": "6-stufig",
+      "Membran": "0,0001 µm",
+      "Kapazität": "75 GPD",
+      "Remineralisierung": "Alkalische Stufe",
+      "Zertifizierung": "NSF/ANSI 58"
+    }
+  },
+  {
+    "id": "apec-roes-50",
+    "slug": "apec-roes-50",
+    "brand": "APEC Water Systems",
+    "brandSlug": "apec",
+    "name": "ROES-50",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/apec.png",
+    "source": "https://www.freedrinkingwater.com/products/roes-50",
+    "summary": "APEC Water Systems ROES-50: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Filtration": "5-stufige Umkehrosmose",
+      "Kapazität": "50 GPD",
+      "Montage": "Untertisch",
+      "Zertifizierung": "WQA Gold Seal"
+    }
+  },
+  {
+    "id": "home-master-tmafc-artesian-full-contact",
+    "slug": "home-master-tmafc-artesian-full-contact",
+    "brand": "Home Master",
+    "brandSlug": "home-master",
+    "name": "TMAFC Artesian Full Contact",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/home-master.png",
+    "source": "https://www.theperfectwater.com/home-master-artesian-full-contact-reverse-osmosis-water-filtration-system.html",
+    "summary": "Home Master TMAFC Artesian Full Contact: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Filtration": "7-stufig",
+      "Kapazität": "50 GPD",
+      "Remineralisierung": "Full Contact",
+      "Vorratstank": "3,2 gal",
+      "Garantie": "5 Jahre"
+    }
+  },
+  {
+    "id": "express-water-ro5dx",
+    "slug": "express-water-ro5dx",
+    "brand": "Express Water",
+    "brandSlug": "express-water",
+    "name": "RO5DX",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/express-water.png",
+    "source": "https://www.expresswater.com/products/ro5dx",
+    "summary": "Express Water RO5DX: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Filtration": "5-stufige Umkehrosmose",
+      "Kapazität": "50 GPD",
+      "Vorratstank": "Enthalten",
+      "Montage": "Untertisch"
+    }
+  },
+  {
+    "id": "purepro-ro-105",
+    "slug": "purepro-ro-105",
+    "brand": "PurePro",
+    "brandSlug": "purepro",
+    "name": "RO-105",
+    "category": "Under-sink RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/purepro.png",
+    "source": "https://www.pure-pro.com/products/ro105.htm",
+    "summary": "PurePro RO-105: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Filtration": "5-stufige Umkehrosmose",
+      "Kapazität": "50 GPD",
+      "Membran": "TFC",
+      "Vorratstank": "Enthalten"
+    }
+  },
+  {
+    "id": "crystal-quest-thunder-1000c",
+    "slug": "crystal-quest-thunder-1000c",
+    "brand": "Crystal Quest",
+    "brandSlug": "crystal-quest",
+    "name": "Thunder 1000C",
+    "category": "Countertop RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/crystal-quest.png",
+    "source": "https://crystalquest.com/products/thunder-reverse-osmosis-water-filter-system",
+    "summary": "Crystal Quest Thunder 1000C: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Bauart": "Auftischsystem",
+      "Ausgabe": "Heiß- und Kaltwasser",
+      "Filtration": "Mehrstufig"
+    }
+  },
+  {
+    "id": "canature-cro-400ux1",
+    "slug": "canature-cro-400ux1",
+    "brand": "Canature",
+    "brandSlug": "canature",
+    "name": "CRO-400UX1",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/canature.png",
+    "source": "https://www.canature.com/product/cro-400ux1/",
+    "summary": "Canature CRO-400UX1: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Tanklose Umkehrosmose",
+      "Kapazität": "400 GPD",
+      "Montage": "Untertisch",
+      "Spülung": "Automatisch"
+    }
+  },
+  {
+    "id": "aquatru-classic-countertop-purifier",
+    "slug": "aquatru-classic-countertop-purifier",
+    "brand": "AquaTru",
+    "brandSlug": "aquatru",
+    "name": "Classic Countertop Purifier",
+    "category": "Countertop RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/aquatru.png",
+    "source": "https://aquatruwater.com/products/countertop-reverse-osmosis-water-purifier",
+    "summary": "AquaTru Classic Countertop Purifier: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Filtration": "4-stufige Umkehrosmose",
+      "Rohwassertank": "3,8 l",
+      "Reinwassertank": "2,8 l",
+      "Gewicht": "7,7 kg",
+      "Prüfung": "Reduktion von 84 Schadstoffen"
+    }
+  },
+  {
+    "id": "coway-neo-plus-chp-264l",
+    "slug": "coway-neo-plus-chp-264l",
+    "brand": "Coway",
+    "brandSlug": "coway",
+    "name": "Neo Plus CHP-264L",
+    "category": "Water Dispenser",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/coway.png",
+    "source": "https://company.coway.com/en/newsroom/press/430",
+    "summary": "Coway Neo Plus CHP-264L: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "RO-Membran bis 0,4 nm",
+      "Ausgabe": "Heiß-, Kalt- und Raumtemperaturwasser",
+      "Zertifizierung": "NSF-JWPA P508",
+      "Bauart": "Auftischgerät"
+    }
+  },
+  {
+    "id": "lg-puricare-self-service-tankless-water-purifier",
+    "slug": "lg-puricare-self-service-tankless-water-purifier",
+    "brand": "LG",
+    "brandSlug": "lg",
+    "name": "PuriCare Self-Service Tankless Water Purifier",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/lg.png",
+    "source": "https://www.lg.com/my/about-lg/press-and-media/water-purifier-objet-collection-npi-launch/",
+    "summary": "LG PuriCare Self-Service Tankless Water Purifier: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Bauart": "Tanklos",
+      "Technologie": "Mehrstufige Direktfiltration",
+      "Hygiene": "UVnano-Auslaufsterilisation",
+      "Bedienung": "Temperatur- und Mengenwahl"
+    }
+  },
+  {
+    "id": "panasonic-tk-as500",
+    "slug": "panasonic-tk-as500",
+    "brand": "Panasonic",
+    "brandSlug": "panasonic",
+    "name": "TK-AS500",
+    "category": "Water Ionizer",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/panasonic.png",
+    "source": "https://www.panasonic.com/tw/consumer/health/water/alkaline-water/tk-as500.html",
+    "summary": "Panasonic TK-AS500: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Elektroden": "3",
+      "pH-Stufen": "5",
+      "Filterkapazität": "12.000 l",
+      "Abmessungen": "168 × 95 × 333 mm",
+      "Gewicht": "2,1 kg"
+    }
+  },
+  {
+    "id": "philips-add6910-ro-water-station",
+    "slug": "philips-add6910-ro-water-station",
+    "brand": "Philips",
+    "brandSlug": "philips",
+    "name": "ADD6910 RO Water Station",
+    "category": "Countertop RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/philips.png",
+    "source": "https://www.philips.com/c-p/ADD6910_90/ro-water-station",
+    "summary": "Philips ADD6910 RO Water Station: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Bauart": "Auftischgerät",
+      "Ausgabe": "Temperaturwahl",
+      "Bedienung": "Touchdisplay"
+    }
+  },
+  {
+    "id": "xiaomi-mijia-smart-water-purifier-n800g",
+    "slug": "xiaomi-mijia-smart-water-purifier-n800g",
+    "brand": "Xiaomi",
+    "brandSlug": "xiaomi",
+    "name": "Mijia Smart Water Purifier N800G",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/xiaomi.png",
+    "source": "https://www.mi.com/global/product/mijia-smart-water-purifier-n800g/",
+    "summary": "Xiaomi Mijia Smart Water Purifier N800G: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Kapazität": "800 GPD",
+      "Durchfluss": "2 l/min",
+      "Filterleistung": "4.000 l",
+      "Abwasserverhältnis": "2:1",
+      "Abmessungen": "127 × 420 × 310 mm",
+      "Leistung": "75 W"
+    }
+  },
+  {
+    "id": "viomi-kunlun-ai-mineral-water-purifier",
+    "slug": "viomi-kunlun-ai-mineral-water-purifier",
+    "brand": "Viomi",
+    "brandSlug": "viomi",
+    "name": "Kunlun AI Mineral Water Purifier",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/viomi.png",
+    "source": "https://ir.viomi.com/news-releases/news-release-details/viomi-unveils-ai-water-purifier-kunlun",
+    "summary": "Viomi Kunlun AI Mineral Water Purifier: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "KI-gestützte Wasseraufbereitung",
+      "Remineralisierung": "Mineralwasser-Funktion",
+      "Bauart": "Untertisch / Direct Flow",
+      "Überwachung": "Intelligente Wasserqualitätskontrolle"
+    }
+  },
+  {
+    "id": "angel-a7-home-water-purifier",
+    "slug": "angel-a7-home-water-purifier",
+    "brand": "Angel",
+    "brandSlug": "angel",
+    "name": "A7 Home Water Purifier",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/angel.png",
+    "source": "https://www.angelgroup.com/",
+    "summary": "Angel A7 Home Water Purifier: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Mehrstufige Wasseraufbereitung",
+      "Bauart": "Untertisch",
+      "Überwachung": "Intelligente Statusanzeige",
+      "Datenquelle": "Offizielle Herstellerseite"
+    }
+  },
+  {
+    "id": "qinyuan-krl5006",
+    "slug": "qinyuan-krl5006",
+    "brand": "Qinyuan",
+    "brandSlug": "qinyuan",
+    "name": "KRL5006",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/qinyuan.svg",
+    "source": "https://www.qinyuan.cn/",
+    "summary": "Qinyuan KRL5006: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Bauart": "Tankloses Untertischsystem",
+      "Ausgabe": "Direct Flow",
+      "Datenquelle": "Offizielle Herstellerseite"
+    }
+  },
+  {
+    "id": "midea-jetpure-cwrc600-a106",
+    "slug": "midea-jetpure-cwrc600-a106",
+    "brand": "Midea",
+    "brandSlug": "midea",
+    "name": "JetPure CWRC600-A106",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/midea.png",
+    "source": "https://www.midea.com/global/water-appliances/jetpure-water-purifier",
+    "summary": "Midea JetPure CWRC600-A106: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Kapazität": "600 GPD",
+      "Bauart": "Tanklos",
+      "Technologie": "Umkehrosmose",
+      "Montage": "Untertisch",
+      "Modell": "CWRC600-A106"
+    }
+  },
+  {
+    "id": "haier-hro12h69-su1",
+    "slug": "haier-hro12h69-su1",
+    "brand": "Haier",
+    "brandSlug": "haier",
+    "name": "HRO12H69-SU1",
+    "category": "Direct Flow RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/haier.png",
+    "source": "https://www.haier.com/xjd/jsj/20230330_208116.shtml",
+    "summary": "Haier HRO12H69-SU1: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Bauart": "Direct Flow",
+      "Bedienung": "Intelligente Anzeige",
+      "Montage": "Untertisch"
+    }
+  },
+  {
+    "id": "tyent-hybrid-h2-water-ionizer",
+    "slug": "tyent-hybrid-h2-water-ionizer",
+    "brand": "Tyent",
+    "brandSlug": "tyent",
+    "name": "Hybrid H2 Water Ionizer",
+    "category": "Water Ionizer",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/tyent.png",
+    "source": "https://www.tyentusa.com/products/new-alkaline-h2-hybrid-ionizer",
+    "summary": "Tyent Hybrid H2 Water Ionizer: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Wasserstoff": "bis 1,8 ppm",
+      "pH-Bereich": "1,7–12,5",
+      "Vorfilter": "Dual Ultra Filter",
+      "Reduktion": "über 200 Verunreinigungen",
+      "Garantie": "Lebenslange Herstellergarantie"
+    }
+  },
+  {
+    "id": "lourdes-hydrofix-premium-edition",
+    "slug": "lourdes-hydrofix-premium-edition",
+    "brand": "Lourdes",
+    "brandSlug": "lourdes",
+    "name": "Hydrofix Premium Edition",
+    "category": "Hydrogen Generator",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/lourdes.png",
+    "source": "https://h2-lourdes.com/products/hydrofix-premium-edition",
+    "summary": "Lourdes Hydrofix Premium Edition: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Elektrolyse / Wasserstoffwasser",
+      "Bauart": "Auftischgerät",
+      "Bedienung": "Automatischer Zyklus",
+      "Datenquelle": "Offizielle Produktseite"
+    }
+  },
+  {
+    "id": "fujiiryoki-hwp-77-water-purifier",
+    "slug": "fujiiryoki-hwp-77-water-purifier",
+    "brand": "Fujiiryoki",
+    "brandSlug": "fujiiryoki",
+    "name": "HWP-77 Water Purifier",
+    "category": "Water Ionizer",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/fujiiryoki.png",
+    "source": "https://www.fujiiryoki.co.jp/product/water/",
+    "summary": "Fujiiryoki HWP-77 Water Purifier: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Elektrolytische Wasseraufbereitung",
+      "Bauart": "Auftischsystem",
+      "Herkunft": "Japan",
+      "Datenquelle": "Offizielle Herstellerseite"
+    }
+  },
+  {
+    "id": "dupont-filmtec-bw30-pro-400",
+    "slug": "dupont-filmtec-bw30-pro-400",
+    "brand": "DuPont",
+    "brandSlug": "dupont",
+    "name": "FilmTec BW30 PRO-400",
+    "category": "RO Membrane",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/dupont.png",
+    "source": "https://www.dupont.com/water/technologies/bwro-solutions.html",
+    "summary": "DuPont FilmTec BW30 PRO-400: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Permeatleistung": "41,6 m³/Tag",
+      "Salzrückhalt": "99,60 %",
+      "Membranfläche": "37 m²",
+      "Feed Spacer": "28 mil",
+      "Testdruck": "15,5 bar"
+    }
+  },
+  {
+    "id": "hydranautics-espa2-ld",
+    "slug": "hydranautics-espa2-ld",
+    "brand": "Hydranautics",
+    "brandSlug": "hydranautics",
+    "name": "ESPA2-LD",
+    "category": "RO Membrane",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/hydranautics.png",
+    "source": "https://membranes.com/solutions/products/ro/espa/",
+    "summary": "Hydranautics ESPA2-LD: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Permeatleistung": "37,9 m³/Tag",
+      "Salzrückhalt": "99,6 %",
+      "Membranfläche": "37,2 m²",
+      "Feed Spacer": "34 mil",
+      "Maximaldruck": "41,4 bar"
+    }
+  },
+  {
+    "id": "toray-tm720d-400",
+    "slug": "toray-tm720d-400",
+    "brand": "Toray",
+    "brandSlug": "toray",
+    "name": "TM720D-400",
+    "category": "RO Membrane",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/toray.png",
+    "source": "https://www.water.toray/products/ro/",
+    "summary": "Toray TM720D-400: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Permeatleistung": "41,6 m³/Tag",
+      "Salzrückhalt": "99,8 %",
+      "Membranfläche": "37 m²",
+      "Feed Spacer": "34 mil",
+      "Testdruck": "15,5 bar"
+    }
+  },
+  {
+    "id": "lg-water-solutions-lg-bw-400-r-g2-most",
+    "slug": "lg-water-solutions-lg-bw-400-r-g2-most",
+    "brand": "LG Water Solutions",
+    "brandSlug": "lg-water-solutions",
+    "name": "LG BW 400 R G2 MOST",
+    "category": "RO Membrane",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/lg-water-solutions.png",
+    "source": "https://www.lgwatersolutions.com/products/reverse-osmosis/bwro/lg-bw-most/",
+    "summary": "LG Water Solutions LG BW 400 R G2 MOST: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Permeatleistung": "49,9 m³/Tag",
+      "Stabilisierter Salzrückhalt": "98,5 %",
+      "Membranfläche": "37 m²",
+      "Feed Spacer": "34 mil",
+      "Testdruck": "8,6 bar"
+    }
+  },
+  {
+    "id": "koch-separation-puron-mp-mbr-module",
+    "slug": "koch-separation-puron-mp-mbr-module",
+    "brand": "Koch Separation Solutions",
+    "brandSlug": "koch-separation",
+    "name": "PURON MP MBR Module",
+    "category": "Membrane Bioreactor",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/koch-separation.png",
+    "source": "https://www.kochseparation.com/products/puron-mp",
+    "summary": "Koch Separation Solutions PURON MP MBR Module: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Membranbioreaktor",
+      "Membran": "Hohlfaser-Ultrafiltration",
+      "Einsatz": "Kommunales und industrielles Abwasser",
+      "Betrieb": "Modular"
+    }
+  },
+  {
+    "id": "veolia-sirion-advanced",
+    "slug": "veolia-sirion-advanced",
+    "brand": "Veolia Water Technologies",
+    "brandSlug": "veolia",
+    "name": "Sirion Advanced",
+    "category": "Commercial RO",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/veolia.png",
+    "source": "https://www.veoliawatertechnologies.com/en/solutions/technologies/sirion-advanced",
+    "summary": "Veolia Water Technologies Sirion Advanced: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Kapazität": "bis 5.000 l/h",
+      "Technologie": "Umkehrosmose",
+      "Rückhalt gelöster Stoffe": "bis 98 %",
+      "Rückhalt großer Organika": "über 99 %",
+      "Einsatz": "Gewerbe und Industrie"
+    }
+  },
+  {
+    "id": "suez-ak4040tm",
+    "slug": "suez-ak4040tm",
+    "brand": "SUEZ Water Technologies",
+    "brandSlug": "suez",
+    "name": "AK4040TM",
+    "category": "RO Membrane",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/suez.png",
+    "source": "https://www.xylem.com/en-us/catalog/parts--consumables/membranes/low-pressure-membranes/4-low-pressure-membranes/suez-ak-low-pressure-ro-membrane-ak4040tm/",
+    "summary": "SUEZ Water Technologies AK4040TM: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Niederdruck-RO-Membran",
+      "Format": "4040",
+      "Einsatz": "Brackwasser",
+      "Produktlinie": "SUEZ AK"
+    }
+  },
+  {
+    "id": "grundfos-aqpure",
+    "slug": "grundfos-aqpure",
+    "brand": "Grundfos",
+    "brandSlug": "grundfos",
+    "name": "AQpure",
+    "category": "Ultrafiltration System",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/grundfos.png",
+    "source": "https://www.grundfos.com/about-us/cases/Grundfos-Direct-Sensors-and-AQpure",
+    "summary": "Grundfos AQpure: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Kapazität": "0,5–2 m³/h",
+      "Membran": "PVDF-Hohlfaser",
+      "Porengröße": "0,03 µm",
+      "Versorgung": "200–240 V",
+      "Einsatz": "Dezentrale Trinkwasseraufbereitung"
+    }
+  },
+  {
+    "id": "vontron-ulp21-4040",
+    "slug": "vontron-ulp21-4040",
+    "brand": "Vontron",
+    "brandSlug": "vontron",
+    "name": "ULP21-4040",
+    "category": "RO Membrane",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/vontron.png",
+    "source": "https://www.vontron.com/Product_Details/51.html",
+    "summary": "Vontron ULP21-4040: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Ultra-Low-Pressure RO",
+      "Format": "4040",
+      "Einsatz": "Brackwasser und Trinkwasser",
+      "Betrieb": "Niedriger Arbeitsdruck"
+    }
+  },
+  {
+    "id": "lanxess-lewabrane-b400-hr",
+    "slug": "lanxess-lewabrane-b400-hr",
+    "brand": "LANXESS",
+    "brandSlug": "lanxess",
+    "name": "Lewabrane B400 HR",
+    "category": "RO Membrane",
+    "price": null,
+    "currency": "EUR",
+    "rating": null,
+    "reviews": 0,
+    "image": "assets/brands/lanxess.png",
+    "source": "https://lanxess.com/en/Products-and-Brands/Brands/Lewabrane",
+    "summary": "LANXESS Lewabrane B400 HR: offizielle Produkt- und Technikdaten des Herstellers.",
+    "specs": {
+      "Technologie": "Brackwasser-RO-Membran",
+      "Membranfläche": "37 m²",
+      "Format": "8040",
+      "Ausführung": "High Rejection",
+      "Einsatz": "Industrielle Wasseraufbereitung"
     }
   }
 ]
