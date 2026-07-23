@@ -82,7 +82,7 @@ for source_file in sorted(TMP.glob("wd-*.json")):
 arktis_raw = json.loads((TMP/"arktis.json").read_text())
 products.append({
     "id":"arktisquelle-wasserfilter","slug":"arktisquelle-wasserfilter","brand":"Arktisquelle","brandSlug":"arktisquelle",
-    "name":"Arktisquelle Wasserfilter","category":"Countertop RO","price":arktis_raw["price"]/100,"currency":"EUR",
+    "name":"Wasserfilter","category":"Countertop RO","price":arktis_raw["price"]/100,"currency":"EUR",
     "rating":None,"reviews":0,"image":"assets/products/arktisquelle-wasserfilter.webp",
     "source":"https://arktisquelle.de/products/arktisquelle-wasserfilter",
     "summary":"Premium-Auftisch-Umkehrosmoseanlage mit siebenstufiger SeptaTech®-Filtration, DoubleUV-Protect®, Edelstahl-Wassertank, Touchdisplay und Heißwasserfunktion.",
