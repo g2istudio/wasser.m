@@ -54,7 +54,7 @@ TITLE_DESC = {}
 def optimize_html(path):
     global TITLE_DESC
     text = path.read_text()
-    text = text.replace("https://wasser.market/", "https://hitmoda.ru/")
+    text = text.replace("https://wasser.market/", "https://wasser.market/")
     rel = path.relative_to(ROOT).as_posix()
     prefix = "../" * rel.count("/")
     title_match = re.search(r"<title>(.*?)</title>", text, flags=re.I | re.S)
@@ -66,7 +66,7 @@ def optimize_html(path):
         desc_match = re.search(r'<p[^>]*class=["\'][^"\']*lead[^"\']*["\'][^>]*>(.*?)</p>', text, flags=re.I | re.S)
     description = re.sub(r"<[^>]+>", "", html_lib.unescape(desc_match.group(1))).strip() if desc_match else title
     description = re.sub(r"\s+", " ", description)[:300]
-    canonical = f"https://hitmoda.ru/{rel if rel != 'index.html' else ''}"
+    canonical = f"https://wasser.market/{rel if rel != 'index.html' else ''}"
 
     # Replace the monolithic stylesheet with core + page-type bundles.
     text = re.sub(r'href=["\'](?:\.\./)*assets/css/(core|brand|content|product)\.css\?v=[^"\']+["\']',
@@ -134,7 +134,7 @@ def optimize_html(path):
                       "brand":{"@type":"Brand","name":product.get("brand")},"category":product.get("category"),
                       "description":description,"url":canonical}
             if product.get("image"):
-                schema["image"] = "https://hitmoda.ru/" + product["image"]
+                schema["image"] = "https://wasser.market/" + product["image"]
             if isinstance(product.get("price"), (int, float)):
                 schema["offers"] = {"@type":"Offer","price":product["price"],"priceCurrency":product.get("currency", "EUR"),"url":canonical}
             text = text.replace("</head>", '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
@@ -144,7 +144,7 @@ def optimize_html(path):
             schema = {"@context":"https://schema.org","@type":"Brand","name":brand.get("name"),
                       "description":brand.get("description_de") or brand.get("description"),"url":canonical}
             if brand.get("logo"):
-                schema["logo"] = "https://hitmoda.ru/" + brand["logo"]
+                schema["logo"] = "https://wasser.market/" + brand["logo"]
             text = text.replace("</head>", '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False, separators=(",", ":")) + "</script></head>", 1)
 
     # Defer external behavior scripts; keep inline code ordering intact.
