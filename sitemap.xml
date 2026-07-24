@@ -1,233 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://wasser.market/articles/activated-carbon-en.html</loc></url>
-<url><loc>https://wasser.market/articles/activated-carbon.html</loc></url>
-<url><loc>https://wasser.market/articles/ceramic-filtration-en.html</loc></url>
-<url><loc>https://wasser.market/articles/ceramic-filtration.html</loc></url>
-<url><loc>https://wasser.market/articles/electrodeionization-en.html</loc></url>
-<url><loc>https://wasser.market/articles/electrodeionization.html</loc></url>
-<url><loc>https://wasser.market/articles/electrolysis-water-en.html</loc></url>
-<url><loc>https://wasser.market/articles/electrolysis-water.html</loc></url>
-<url><loc>https://wasser.market/articles/hydrogen-generation-en.html</loc></url>
-<url><loc>https://wasser.market/articles/hydrogen-generation.html</loc></url>
-<url><loc>https://wasser.market/articles/ion-exchange-en.html</loc></url>
-<url><loc>https://wasser.market/articles/ion-exchange.html</loc></url>
-<url><loc>https://wasser.market/articles/kdf-media-en.html</loc></url>
-<url><loc>https://wasser.market/articles/kdf-media.html</loc></url>
-<url><loc>https://wasser.market/articles/legionella-biofilm-en.html</loc></url>
-<url><loc>https://wasser.market/articles/legionella-biofilm.html</loc></url>
-<url><loc>https://wasser.market/articles/microplastics-water-en.html</loc></url>
-<url><loc>https://wasser.market/articles/microplastics-water.html</loc></url>
-<url><loc>https://wasser.market/articles/nanofiltration-en.html</loc></url>
-<url><loc>https://wasser.market/articles/nanofiltration.html</loc></url>
-<url><loc>https://wasser.market/articles/ozone-water-en.html</loc></url>
-<url><loc>https://wasser.market/articles/ozone-water.html</loc></url>
-<url><loc>https://wasser.market/articles/pfas-drinking-water-en.html</loc></url>
-<url><loc>https://wasser.market/articles/pfas-drinking-water.html</loc></url>
-<url><loc>https://wasser.market/articles/ph-drinking-water-en.html</loc></url>
-<url><loc>https://wasser.market/articles/ph-drinking-water.html</loc></url>
-<url><loc>https://wasser.market/articles/reverse-osmosis-en.html</loc></url>
-<url><loc>https://wasser.market/articles/reverse-osmosis.html</loc></url>
-<url><loc>https://wasser.market/articles/tds-en.html</loc></url>
-<url><loc>https://wasser.market/articles/tds.html</loc></url>
-<url><loc>https://wasser.market/articles/ultrafiltration-en.html</loc></url>
-<url><loc>https://wasser.market/articles/ultrafiltration.html</loc></url>
-<url><loc>https://wasser.market/articles/uv-c-water-en.html</loc></url>
-<url><loc>https://wasser.market/articles/uv-c-water.html</loc></url>
-<url><loc>https://wasser.market/brands/3m.html</loc></url>
-<url><loc>https://wasser.market/brands/alfiltra.html</loc></url>
-<url><loc>https://wasser.market/brands/alkaviva.html</loc></url>
-<url><loc>https://wasser.market/brands/angel.html</loc></url>
-<url><loc>https://wasser.market/brands/ao-smith.html</loc></url>
-<url><loc>https://wasser.market/brands/aora.html</loc></url>
-<url><loc>https://wasser.market/brands/apec.html</loc></url>
-<url><loc>https://wasser.market/brands/aqmos.html</loc></url>
-<url><loc>https://wasser.market/brands/aqua-global.html</loc></url>
-<url><loc>https://wasser.market/brands/aquaphor.html</loc></url>
-<url><loc>https://wasser.market/brands/aquapro.html</loc></url>
-<url><loc>https://wasser.market/brands/aquatru.html</loc></url>
-<url><loc>https://wasser.market/brands/aquion-de.html</loc></url>
-<url><loc>https://wasser.market/brands/arktisquelle.html</loc></url>
-<url><loc>https://wasser.market/brands/atlas-filtri.html</loc></url>
-<url><loc>https://wasser.market/brands/bela-aqua.html</loc></url>
-<url><loc>https://wasser.market/brands/blackwater.html</loc></url>
-<url><loc>https://wasser.market/brands/blanco.html</loc></url>
-<url><loc>https://wasser.market/brands/bluewater.html</loc></url>
-<url><loc>https://wasser.market/brands/brita.html</loc></url>
-<url><loc>https://wasser.market/brands/bwt.html</loc></url>
-<url><loc>https://wasser.market/brands/canature.html</loc></url>
-<url><loc>https://wasser.market/brands/carbonit.html</loc></url>
-<url><loc>https://wasser.market/brands/coway.html</loc></url>
-<url><loc>https://wasser.market/brands/crystal-quest.html</loc></url>
-<url><loc>https://wasser.market/brands/culligan.html</loc></url>
-<url><loc>https://wasser.market/brands/dupont.html</loc></url>
-<url><loc>https://wasser.market/brands/echo-water.html</loc></url>
-<url><loc>https://wasser.market/brands/express-water.html</loc></url>
-<url><loc>https://wasser.market/brands/franke.html</loc></url>
-<url><loc>https://wasser.market/brands/fujiiryoki.html</loc></url>
-<url><loc>https://wasser.market/brands/gewapur.html</loc></url>
-<url><loc>https://wasser.market/brands/greifenstein.html</loc></url>
-<url><loc>https://wasser.market/brands/grohe-blue.html</loc></url>
-<url><loc>https://wasser.market/brands/gruenbeck.html</loc></url>
-<url><loc>https://wasser.market/brands/grundfos.html</loc></url>
-<url><loc>https://wasser.market/brands/haier.html</loc></url>
-<url><loc>https://wasser.market/brands/happyfilter.html</loc></url>
-<url><loc>https://wasser.market/brands/ho3-filter.html</loc></url>
-<url><loc>https://wasser.market/brands/home-master.html</loc></url>
-<url><loc>https://wasser.market/brands/hydranautics.html</loc></url>
-<url><loc>https://wasser.market/brands/ionbottles.html</loc></url>
-<url><loc>https://wasser.market/brands/ispring.html</loc></url>
-<url><loc>https://wasser.market/brands/judo.html</loc></url>
-<url><loc>https://wasser.market/brands/kinetico.html</loc></url>
-<url><loc>https://wasser.market/brands/koch-separation.html</loc></url>
-<url><loc>https://wasser.market/brands/lanxess.html</loc></url>
-<url><loc>https://wasser.market/brands/level-up-way.html</loc></url>
-<url><loc>https://wasser.market/brands/lg-water-solutions.html</loc></url>
-<url><loc>https://wasser.market/brands/lg.html</loc></url>
-<url><loc>https://wasser.market/brands/lourdes.html</loc></url>
-<url><loc>https://wasser.market/brands/midea.html</loc></url>
-<url><loc>https://wasser.market/brands/mrwater.html</loc></url>
-<url><loc>https://wasser.market/brands/myaqua.html</loc></url>
-<url><loc>https://wasser.market/brands/osmofresh.html</loc></url>
-<url><loc>https://wasser.market/brands/osmotech.html</loc></url>
-<url><loc>https://wasser.market/brands/osmounity.html</loc></url>
-<url><loc>https://wasser.market/brands/panasonic.html</loc></url>
-<url><loc>https://wasser.market/brands/pentair.html</loc></url>
-<url><loc>https://wasser.market/brands/pentek.html</loc></url>
-<url><loc>https://wasser.market/brands/philips.html</loc></url>
-<url><loc>https://wasser.market/brands/piurify.html</loc></url>
-<url><loc>https://wasser.market/brands/purepro.html</loc></url>
-<url><loc>https://wasser.market/brands/purway.html</loc></url>
-<url><loc>https://wasser.market/brands/qinyuan.html</loc></url>
-<url><loc>https://wasser.market/brands/quooker.html</loc></url>
-<url><loc>https://wasser.market/brands/rowa-4-you.html</loc></url>
-<url><loc>https://wasser.market/brands/sonvita.html</loc></url>
-<url><loc>https://wasser.market/brands/sprudelux.html</loc></url>
-<url><loc>https://wasser.market/brands/stillundlaut.html</loc></url>
-<url><loc>https://wasser.market/brands/suez.html</loc></url>
-<url><loc>https://wasser.market/brands/toray.html</loc></url>
-<url><loc>https://wasser.market/brands/truu.html</loc></url>
-<url><loc>https://wasser.market/brands/tyent.html</loc></url>
-<url><loc>https://wasser.market/brands/veolia.html</loc></url>
-<url><loc>https://wasser.market/brands/viomi.html</loc></url>
-<url><loc>https://wasser.market/brands/vontron.html</loc></url>
-<url><loc>https://wasser.market/brands/walutec.html</loc></url>
-<url><loc>https://wasser.market/brands/wasserhaus.html</loc></url>
-<url><loc>https://wasser.market/brands/wasserladen.html</loc></url>
-<url><loc>https://wasser.market/brands/wasserwelt.html</loc></url>
-<url><loc>https://wasser.market/brands/waterdrop.html</loc></url>
-<url><loc>https://wasser.market/brands/wertach.html</loc></url>
-<url><loc>https://wasser.market/brands/xiaomi.html</loc></url>
-<url><loc>https://wasser.market/brands.html</loc></url>
-<url><loc>https://wasser.market/community/reviews/blackwater-pearl-after-8-months.html</loc></url>
-<url><loc>https://wasser.market/community.html</loc></url>
-<url><loc>https://wasser.market/compare.html</loc></url>
-<url><loc>https://wasser.market/hydrogen-bottles.html</loc></url>
-<url><loc>https://wasser.market/</loc></url>
-<url><loc>https://wasser.market/knowledge.html</loc></url>
-<url><loc>https://wasser.market/products/alfiltra-ro-professional.html</loc></url>
-<url><loc>https://wasser.market/products/alkaviva-hi-output.html</loc></url>
-<url><loc>https://wasser.market/products/aora-gt600-umkehrosmose-wasserfilter-ohne-tank-1-57-l-min.html</loc></url>
-<url><loc>https://wasser.market/products/aora-w12-auftisch-osmoseanlage-mit-6-temperaturstufen-15-100-c.html</loc></url>
-<url><loc>https://wasser.market/products/aora-w23-auftisch-osmoseanlage-mit-6-temperaturstufen-15-100-c.html</loc></url>
-<url><loc>https://wasser.market/products/aqmos-aq-ro-800-gpd.html</loc></url>
-<url><loc>https://wasser.market/products/aqua-global-basic.html</loc></url>
-<url><loc>https://wasser.market/products/aqua-global-flexible-touch.html</loc></url>
-<url><loc>https://wasser.market/products/aqua-global-hydrogenflasche-glas-schwarz.html</loc></url>
-<url><loc>https://wasser.market/products/aqua-global-mini-touch-pro-black.html</loc></url>
-<url><loc>https://wasser.market/products/aqua-global-mini-touch.html</loc></url>
-<url><loc>https://wasser.market/products/aqua-global-sparkling-pro.html</loc></url>
-<url><loc>https://wasser.market/products/aqua-global-sparkling.html</loc></url>
-<url><loc>https://wasser.market/products/aquapro-high-flow-800-gpd.html</loc></url>
-<url><loc>https://wasser.market/products/aquion-premium-7.html</loc></url>
-<url><loc>https://wasser.market/products/arktisquelle-wasserfilter.html</loc></url>
-<url><loc>https://wasser.market/products/bela-aqua-evolution-classic-osmoseanlage-mit-tank.html</loc></url>
-<url><loc>https://wasser.market/products/bela-aqua-hydrogen-trinkflasche.html</loc></url>
-<url><loc>https://wasser.market/products/bela-aqua-oblige-directflow.html</loc></url>
-<url><loc>https://wasser.market/products/bela-aqua-oblige-minerale-directflow-osmoseanlage.html</loc></url>
-<url><loc>https://wasser.market/products/blackwater-drop.html</loc></url>
-<url><loc>https://wasser.market/products/blackwater-hydrogen-bottle.html</loc></url>
-<url><loc>https://wasser.market/products/blackwater-pearl.html</loc></url>
-<url><loc>https://wasser.market/products/blanco-unit-drink-systems.html</loc></url>
-<url><loc>https://wasser.market/products/bluewater-spirit-300.html</loc></url>
-<url><loc>https://wasser.market/products/brita-mypure-p1.html</loc></url>
-<url><loc>https://wasser.market/products/bwt-aqa-drink-pro-20.html</loc></url>
-<url><loc>https://wasser.market/products/bwt-bestaqua-roc.html</loc></url>
-<url><loc>https://wasser.market/products/carbonit-sanuno-classic.html</loc></url>
-<url><loc>https://wasser.market/products/carbonit-sanuno-grande-sparset.html</loc></url>
-<url><loc>https://wasser.market/products/culligan-c2-firewall-ro.html</loc></url>
-<url><loc>https://wasser.market/products/echo-flask.html</loc></url>
-<url><loc>https://wasser.market/products/franke-mythos-water-hub.html</loc></url>
-<url><loc>https://wasser.market/products/gewapur-ro-comfort-direct-flow.html</loc></url>
-<url><loc>https://wasser.market/products/greifenstein-direct-flow-premium.html</loc></url>
-<url><loc>https://wasser.market/products/grohe-blue-home.html</loc></url>
-<url><loc>https://wasser.market/products/gruenbeck-geno-osmo-x.html</loc></url>
-<url><loc>https://wasser.market/products/happyfilter-one-der-wasserspender-fuer-zuhause.html</loc></url>
-<url><loc>https://wasser.market/products/ho3-home-one.html</loc></url>
-<url><loc>https://wasser.market/products/ionbottles-atom.html</loc></url>
-<url><loc>https://wasser.market/products/judo-i-fill.html</loc></url>
-<url><loc>https://wasser.market/products/levelupway-2-in-1.html</loc></url>
-<url><loc>https://wasser.market/products/mrwater-premium-ro.html</loc></url>
-<url><loc>https://wasser.market/products/myaqua-1900.html</loc></url>
-<url><loc>https://wasser.market/products/osmofresh-fusion-pro.html</loc></url>
-<url><loc>https://wasser.market/products/osmotech-aquaristik-osmoseanlage-hobby-50-gpd.html</loc></url>
-<url><loc>https://wasser.market/products/osmotech-aquaristik-osmoseanlage-profi-50-gpd.html</loc></url>
-<url><loc>https://wasser.market/products/osmotech-ultimate-plus-superflow.html</loc></url>
-<url><loc>https://wasser.market/products/osmotech-ultimate-plus.html</loc></url>
-<url><loc>https://wasser.market/products/osmotech-vista.html</loc></url>
-<url><loc>https://wasser.market/products/osmounity-direct-flow.html</loc></url>
-<url><loc>https://wasser.market/products/piurify-hydrogenator-black.html</loc></url>
-<url><loc>https://wasser.market/products/purway-pur-booster-quick.html</loc></url>
-<url><loc>https://wasser.market/products/quooker-front-cube.html</loc></url>
-<url><loc>https://wasser.market/products/rowa-4-you-h2o-economy-3-blue.html</loc></url>
-<url><loc>https://wasser.market/products/rowa-4-you-h2o-rowa-select-8-l-tank.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-aqua-quell.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-aqua-smart-duo-evo-i.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-aqua-smart-duo-evo-ii.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-aqua-smart-duo.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-aqua-tower.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-aqua-vita-90-gpd-b-ware.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-aqua-vita-90-gpd-weiss.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-pura-up.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-pura.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-puraqua-max-800.html</loc></url>
-<url><loc>https://wasser.market/products/sonvita-puraqua-touch.html</loc></url>
-<url><loc>https://wasser.market/products/sprudelux-inox-silent-premium-sprudelanlage-hoher-co2-gehalt-geraeuscharm-edelstahl.html</loc></url>
-<url><loc>https://wasser.market/products/sprudelux-juman-supreme-premium-umkehrosmoseanlage-mit-sprudel-heisswasserfunktion-quick-change.html</loc></url>
-<url><loc>https://wasser.market/products/sprudelux-nuovo-premium-umkehrosmoseanlage-hoher-co2-gehalt-geraeuscharm-edelstahl.html</loc></url>
-<url><loc>https://wasser.market/products/sprudelux-power-soda-osmose-premium-untertisch-sprudelanlage.html</loc></url>
-<url><loc>https://wasser.market/products/sprudelux-power-soda-premium-auftisch-sprudelanlage.html</loc></url>
-<url><loc>https://wasser.market/products/sprudelux-power-soda-premium-untertisch-sprudelanlage.html</loc></url>
-<url><loc>https://wasser.market/products/sprudelux-pro-touch-premium-umkehrosmoseanlage-mit-sprudel-heisswasserfunktion-quick-change.html</loc></url>
-<url><loc>https://wasser.market/products/sprudelux-ultra-flat-premium-sprudelanlage-nur-10-5-cm-flach.html</loc></url>
-<url><loc>https://wasser.market/products/stillundlaut-home-soda-premium-untertisch-umkehrosmoseanlage-sprudel-kuehlung-nur-10.html</loc></url>
-<url><loc>https://wasser.market/products/truu-fountain-3.html</loc></url>
-<url><loc>https://wasser.market/products/walutec-el-nero-smart-medic-s.html</loc></url>
-<url><loc>https://wasser.market/products/walutec-el-nero-speedflow-medic-s.html</loc></url>
-<url><loc>https://wasser.market/products/walutec-hydrogen-bottle.html</loc></url>
-<url><loc>https://wasser.market/products/wasserhaus-zen-flow.html</loc></url>
-<url><loc>https://wasser.market/products/wasserladen-wp-a01-all-in-one-umkehr-osmose-auftischfilter.html</loc></url>
-<url><loc>https://wasser.market/products/wasserwelt-ww-premium-direct-flow.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-alkaline-ro-water-purifier-g5p500a.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-alkalische-ro-wasserfilter-mit-wasserhahn-g5p700a.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-g3p600-mz-mineralien-wasserfilter.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-g3p600-waterdrop-umkehrosmose-wasserfilteranlage.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-mineralien-umkehrosmose-wasserfilter-g3p800-mz.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-ro-heiss-kaltwasserspender-a1.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-sofortheiss-umkehrosmose-wasserfilter-k6.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-umkehrosmose-wasserfilter-corero-c1h.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-umkehrosmose-wasserfilter-x12.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-umkehrosmose-wasserfilter-x16.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-umkehrosmoseanlage-g3p800.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-umkehrosmoseanlage-wasserfilter-x8.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-untertisch-umkehrosmoseanlage-g2p600.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-waterdrop-c1sl-alkalisches-tisch-umkehrosmoseanlage.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-waterdrop-k19-hg-instant-hot-mineralisiertes-ro-wassersystem.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-waterdrop-remineralisierungs-ro-wasserspender-mit-heiss-kaltwasser-a2g.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-waterdrop-x-serie-umkehrosmose-system-x8-f2.html</loc></url>
-<url><loc>https://wasser.market/products/waterdrop-waterdrop-x8-tankloser-untertisch-umkehrosmose-wasserfilter-800-mit-f3-ersatzfilter.html</loc></url>
-<url><loc>https://wasser.market/products/wertach-biella.html</loc></url>
-<url><loc>https://wasser.market/products/wertach-pantera.html</loc></url>
-<url><loc>https://wasser.market/products.html</loc></url>
-<url><loc>https://wasser.market/technologies.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url><loc>https://wasser.market/</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/activated-carbon</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/activated-carbon-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ceramic-filtration</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ceramic-filtration-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/electrodeionization</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/electrodeionization-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/electrolysis-water</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/electrolysis-water-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/hydrogen-generation</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/hydrogen-generation-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ion-exchange</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ion-exchange-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/kdf-media</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/kdf-media-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/legionella-biofilm</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/legionella-biofilm-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/microplastics-water</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/microplastics-water-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/nanofiltration</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/nanofiltration-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ozone-water</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ozone-water-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/pfas-drinking-water</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/pfas-drinking-water-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ph-drinking-water</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ph-drinking-water-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/reverse-osmosis</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/reverse-osmosis-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/tds</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/tds-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ultrafiltration</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/ultrafiltration-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/uv-c-water</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/articles/uv-c-water-en</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/3m</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/alfiltra</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/alkaviva</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/angel</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/ao-smith</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/aora</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/apec</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/aqmos</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/aqua-global</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/aquaphor</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/aquapro</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/aquatru</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/aquion-de</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/arktisquelle</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/atlas-filtri</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/bela-aqua</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/blackwater</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/blanco</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/bluewater</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/brita</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/bwt</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/canature</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/carbonit</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/coway</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/crystal-quest</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/culligan</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/dupont</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/echo-water</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/express-water</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/franke</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/fujiiryoki</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/gewapur</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/greifenstein</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/grohe-blue</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/gruenbeck</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/grundfos</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/haier</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/happyfilter</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/ho3-filter</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/home-master</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/hydranautics</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/ionbottles</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/ispring</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/judo</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/kinetico</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/koch-separation</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/lanxess</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/level-up-way</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/lg</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/lg-water-solutions</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/lourdes</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/midea</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/mrwater</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/myaqua</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/osmofresh</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/osmotech</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/osmounity</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/panasonic</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/pentair</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/pentek</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/philips</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/piurify</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/purepro</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/purway</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/qinyuan</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/quooker</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/rowa-4-you</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/sonvita</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/sprudelux</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/stillundlaut</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/suez</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/toray</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/truu</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/tyent</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/veolia</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/viomi</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/vontron</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/walutec</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/wasserhaus</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/wasserladen</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/wasserwelt</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/waterdrop</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/wertach</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/brands/xiaomi</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/community</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/community/reviews/blackwater-pearl-after-8-months</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/compare</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/hydrogen-bottles</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/knowledge</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/products</loc><lastmod>2026-07-24</lastmod></url>
+<url><loc>https://wasser.market/products/3m-3mro301</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/3m.png</image:loc><image:title>3M 3MRO301</image:title></image:image></url>
+<url><loc>https://wasser.market/products/alfiltra-ro-professional</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/alfiltra-ro-professional.webp</image:loc><image:title>Alfiltra RO Professional</image:title></image:image></url>
+<url><loc>https://wasser.market/products/alkaviva-hi-output</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/alkaviva-hi-output.png</image:loc><image:title>AlkaViva Hi-Output H₂ Bottle</image:title></image:image></url>
+<url><loc>https://wasser.market/products/angel-a7-home-water-purifier</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/angel.png</image:loc><image:title>Angel A7 Home Water Purifier</image:title></image:image></url>
+<url><loc>https://wasser.market/products/ao-smith-ao-us-ro-4000</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/ao-smith.png</image:loc><image:title>A.O. Smith AO-US-RO-4000</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aora-gt600-umkehrosmose-wasserfilter-ohne-tank-1-57-l-min</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aora-gt600-umkehrosmose-wasserfilter-ohne-tank-1-57-l-min.webp</image:loc><image:title>AORA AORA GT600 Umkehrosmose Wasserfilter ohne Tank | 1,57 L/Min. Durchfluss | inkl. 3 Wege-Edelstahl- Wasserhahn | Quick Change Filter | geprüfte Qualität</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aora-w12-auftisch-osmoseanlage-mit-6-temperaturstufen-15-100-c</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aora-w12-auftisch-osmoseanlage-mit-6-temperaturstufen-15-100-c.webp</image:loc><image:title>AORA AORA W12 Auftisch Osmoseanlage mit 6 Temperaturstufen (~15-100°C) | kein Wasseranschluss nötig | 5 stufige Filterung | kalkfreies Trinkwasser | Mobile Umkehrosmoseanlage</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aora-w23-auftisch-osmoseanlage-mit-6-temperaturstufen-15-100-c</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aora-w23-auftisch-osmoseanlage-mit-6-temperaturstufen-15-100-c.webp</image:loc><image:title>AORA AORA W23 Auftisch Osmoseanlage mit 6 Temperaturstufen (~15-100°C) | mit Tank | 5 stufige Filterung | kalkfreies Trinkwasser | Mobile Umkehrosmoseanlage | Wasserstoff-Generator</image:title></image:image></url>
+<url><loc>https://wasser.market/products/apec-roes-50</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/apec.png</image:loc><image:title>APEC Water Systems ROES-50</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aqmos-aq-ro-800-gpd</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/aqmos.png</image:loc><image:title>Aqmos AQ-RO 800 GPD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aqua-global-basic</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aqua-global-1221.webp</image:loc><image:title>Aqua Global Basic</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aqua-global-flexible-touch</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/aqua-global.svg</image:loc><image:title>Aqua Global Flexible Touch</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aqua-global-hydrogenflasche-glas-schwarz</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aqua-global-1193.webp</image:loc><image:title>Aqua Global Hydrogenflasche Glas schwarz</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aqua-global-mini-touch</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aqua-global-1189.webp</image:loc><image:title>Aqua Global Mini Touch</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aqua-global-mini-touch-pro-black</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aqua-global-1457.webp</image:loc><image:title>Aqua Global Mini Touch PRO – Black</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aqua-global-sparkling</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aqua-global-1231.webp</image:loc><image:title>Aqua Global Sparkling</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aqua-global-sparkling-pro</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aqua-global-1237.webp</image:loc><image:title>Aqua Global Sparkling Pro</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aquaphor-ro-101s-morion</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/aquaphor.png</image:loc><image:title>Aquaphor RO-101S Morion</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aquapro-high-flow-800-gpd</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aquapro-high-flow-800-gpd.jpg</image:loc><image:title>AQUAPRO High Flow 800 GPD Reverse Osmosis System</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aquatru-classic-countertop-purifier</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/aquatru.png</image:loc><image:title>AquaTru Classic Countertop Purifier</image:title></image:image></url>
+<url><loc>https://wasser.market/products/aquion-premium-7</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/aquion-premium-7.jpg</image:loc><image:title>AQUION Premium 7</image:title></image:image></url>
+<url><loc>https://wasser.market/products/arktisquelle-wasserfilter</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/arktisquelle-wasserfilter.webp</image:loc><image:title>Arktisquelle Wasserfilter</image:title></image:image></url>
+<url><loc>https://wasser.market/products/atlas-filtri-hydra-self-cleaning-1-npt</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/atlas-filtri.png</image:loc><image:title>Atlas Filtri HYDRA Self-Cleaning 1″ NPT</image:title></image:image></url>
+<url><loc>https://wasser.market/products/bela-aqua-evolution-classic-osmoseanlage-mit-tank</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/bela-aqua-evolution-classic-osmoseanlage-mit-tank.webp</image:loc><image:title>Bela Aqua Bela Aqua Evolution Classic | Osmoseanlage mit Tank</image:title></image:image></url>
+<url><loc>https://wasser.market/products/bela-aqua-hydrogen-trinkflasche</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/bela-aqua-hydrogen-trinkflasche.webp</image:loc><image:title>Bela Aqua Hydrogen Trinkflasche</image:title></image:image></url>
+<url><loc>https://wasser.market/products/bela-aqua-oblige-directflow</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/bela-aqua-oblige-directflow.jpg</image:loc><image:title>Bela Aqua OBLIGE Directflow</image:title></image:image></url>
+<url><loc>https://wasser.market/products/bela-aqua-oblige-minerale-directflow-osmoseanlage</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/bela-aqua-oblige-minerale-directflow-osmoseanlage.webp</image:loc><image:title>Bela Aqua Bela Aqua OBLIGE Minerale | Directflow-Osmoseanlage</image:title></image:image></url>
+<url><loc>https://wasser.market/products/blackwater-drop</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/blackwater-drop.png</image:loc><image:title>BLACKWATER Drop</image:title></image:image></url>
+<url><loc>https://wasser.market/products/blackwater-hydrogen-bottle</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/blackwater-hydrogen-bottle.png</image:loc><image:title>BLACKWATER Hydrogen Bottle</image:title></image:image></url>
+<url><loc>https://wasser.market/products/blackwater-pearl</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/img/blackwater-pearl.jpg</image:loc><image:title>BLACKWATER Pearl</image:title></image:image></url>
+<url><loc>https://wasser.market/products/blanco-unit-drink-systems</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/blanco-unit-drink-systems.webp</image:loc><image:title>BLANCO BLANCO UNIT / DRINK.SYSTEMS</image:title></image:image></url>
+<url><loc>https://wasser.market/products/bluewater-spirit-300</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/bluewater-spirit-300cp.jpg</image:loc><image:title>Bluewater Spirit 300CP</image:title></image:image></url>
+<url><loc>https://wasser.market/products/brita-mypure-p1</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/brita-mypure-p1.jpg</image:loc><image:title>BRITA mypure P1</image:title></image:image></url>
+<url><loc>https://wasser.market/products/bwt-aqa-drink-pro-20</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/bwt-aqa-drink-pro-20.png</image:loc><image:title>BWT AQA drink PRO 20</image:title></image:image></url>
+<url><loc>https://wasser.market/products/bwt-bestaqua-roc</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/bwt-bestaqua-roc.webp</image:loc><image:title>BWT bestaqua ROC</image:title></image:image></url>
+<url><loc>https://wasser.market/products/canature-cro-400ux1</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/canature.png</image:loc><image:title>Canature CRO-400UX1</image:title></image:image></url>
+<url><loc>https://wasser.market/products/carbonit-sanuno-classic</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/carbonit-sanuno-classic.webp</image:loc><image:title>CARBONIT SANUNO Classic</image:title></image:image></url>
+<url><loc>https://wasser.market/products/carbonit-sanuno-grande-sparset</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/carbonit-sanuno-grande-sparset.webp</image:loc><image:title>CARBONIT SANUNO Grande Sparset</image:title></image:image></url>
+<url><loc>https://wasser.market/products/coway-neo-plus-chp-264l</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/coway.png</image:loc><image:title>Coway Neo Plus CHP-264L</image:title></image:image></url>
+<url><loc>https://wasser.market/products/crystal-quest-thunder-1000c</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/crystal-quest.png</image:loc><image:title>Crystal Quest Thunder 1000C</image:title></image:image></url>
+<url><loc>https://wasser.market/products/culligan-c2-firewall-ro</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/culligan-c2-firewall-ro.webp</image:loc><image:title>Culligan C2 Firewall® RO Water Dispenser</image:title></image:image></url>
+<url><loc>https://wasser.market/products/dupont-filmtec-bw30-pro-400</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/dupont.png</image:loc><image:title>DuPont FilmTec BW30 PRO-400</image:title></image:image></url>
+<url><loc>https://wasser.market/products/echo-flask</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/echo-flask.png</image:loc><image:title>ECHO Flask</image:title></image:image></url>
+<url><loc>https://wasser.market/products/express-water-ro5dx</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/express-water.png</image:loc><image:title>Express Water RO5DX</image:title></image:image></url>
+<url><loc>https://wasser.market/products/franke-mythos-water-hub</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/franke-mythos-water-hub.jpg</image:loc><image:title>Franke Mythos Water Hub</image:title></image:image></url>
+<url><loc>https://wasser.market/products/fujiiryoki-hwp-77-water-purifier</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/fujiiryoki.png</image:loc><image:title>Fujiiryoki HWP-77 Water Purifier</image:title></image:image></url>
+<url><loc>https://wasser.market/products/gewapur-ro-comfort-direct-flow</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/gewapur-osmo-star-2.webp</image:loc><image:title>Gewapur Osmo Star 2.0</image:title></image:image></url>
+<url><loc>https://wasser.market/products/greifenstein-direct-flow-premium</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/greifenstein-inox.jpg</image:loc><image:title>Greifenstein Wasserveredelung INOX</image:title></image:image></url>
+<url><loc>https://wasser.market/products/grohe-blue-home</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/grohe-blue.png</image:loc><image:title>GROHE Blue GROHE Blue Home</image:title></image:image></url>
+<url><loc>https://wasser.market/products/gruenbeck-geno-osmo-x</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/gruenbeck-geno-osmo-x.png</image:loc><image:title>Grünbeck GENO-OSMO-X</image:title></image:image></url>
+<url><loc>https://wasser.market/products/grundfos-aqpure</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/grundfos.png</image:loc><image:title>Grundfos AQpure</image:title></image:image></url>
+<url><loc>https://wasser.market/products/haier-hro12h69-su1</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/haier.png</image:loc><image:title>Haier HRO12H69-SU1</image:title></image:image></url>
+<url><loc>https://wasser.market/products/happyfilter-one-der-wasserspender-fuer-zuhause</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/happyfilter-one-der-wasserspender-fuer-zuhause.webp</image:loc><image:title>HappyFilter HappyFilter One - DER Wasserspender für Zuhause</image:title></image:image></url>
+<url><loc>https://wasser.market/products/ho3-home-one</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/ho3-home-one.webp</image:loc><image:title>HO3 Filter Home One</image:title></image:image></url>
+<url><loc>https://wasser.market/products/home-master-tmafc-artesian-full-contact</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/home-master.png</image:loc><image:title>Home Master TMAFC Artesian Full Contact</image:title></image:image></url>
+<url><loc>https://wasser.market/products/hydranautics-espa2-ld</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/hydranautics.png</image:loc><image:title>Hydranautics ESPA2-LD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/ionbottles-atom</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/ionbottles-atom.jpg</image:loc><image:title>ionBottles ATOM™</image:title></image:image></url>
+<url><loc>https://wasser.market/products/ispring-rcc7ak</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/ispring.png</image:loc><image:title>iSpring RCC7AK</image:title></image:image></url>
+<url><loc>https://wasser.market/products/judo-i-fill</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/judo.png</image:loc><image:title>JUDO i-fill</image:title></image:image></url>
+<url><loc>https://wasser.market/products/kinetico-k5-drinking-water-station-with-voc-guard</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/kinetico.png</image:loc><image:title>Kinetico K5 Drinking Water Station with VOC Guard</image:title></image:image></url>
+<url><loc>https://wasser.market/products/koch-separation-puron-mp-mbr-module</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/koch-separation.png</image:loc><image:title>Koch Separation Solutions PURON MP MBR Module</image:title></image:image></url>
+<url><loc>https://wasser.market/products/lanxess-lewabrane-b400-hr</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/lanxess.png</image:loc><image:title>LANXESS Lewabrane B400 HR</image:title></image:image></url>
+<url><loc>https://wasser.market/products/levelupway-2-in-1</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/levelupway-2-in-1.jpg</image:loc><image:title>2-in-1 Hydrogen Water Bottle</image:title></image:image></url>
+<url><loc>https://wasser.market/products/lg-puricare-self-service-tankless-water-purifier</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/lg.png</image:loc><image:title>LG PuriCare Self-Service Tankless Water Purifier</image:title></image:image></url>
+<url><loc>https://wasser.market/products/lg-water-solutions-lg-bw-400-r-g2-most</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/lg-water-solutions.png</image:loc><image:title>LG Water Solutions LG BW 400 R G2 MOST</image:title></image:image></url>
+<url><loc>https://wasser.market/products/lourdes-hydrofix-premium-edition</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/lourdes.png</image:loc><image:title>Lourdes Hydrofix Premium Edition</image:title></image:image></url>
+<url><loc>https://wasser.market/products/midea-jetpure-cwrc600-a106</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/midea.png</image:loc><image:title>Midea JetPure CWRC600-A106</image:title></image:image></url>
+<url><loc>https://wasser.market/products/mrwater-premium-ro</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/mrwater-premium-ro.png</image:loc><image:title>MisterWater Wasserfilteranlagen (Puria / Arctica / Silver Star / Futura)</image:title></image:image></url>
+<url><loc>https://wasser.market/products/myaqua-1900</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/myaqua-1900.jpg</image:loc><image:title>myAqua myAQUA 1900</image:title></image:image></url>
+<url><loc>https://wasser.market/products/osmofresh-fusion-pro</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/osmofresh-fusion-pro.webp</image:loc><image:title>OsmoFresh Fusion Pro</image:title></image:image></url>
+<url><loc>https://wasser.market/products/osmotech-aquaristik-osmoseanlage-hobby-50-gpd</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/osmotech-aquaristik-osmoseanlage-hobby-50-gpd.webp</image:loc><image:title>Osmotech Aquaristik Osmoseanlage Hobby 50 GPD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/osmotech-aquaristik-osmoseanlage-profi-50-gpd</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/osmotech-aquaristik-osmoseanlage-profi-50-gpd.webp</image:loc><image:title>Osmotech Aquaristik Osmoseanlage Profi 50 GPD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/osmotech-ultimate-plus</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/osmotech-ultimate-plus.webp</image:loc><image:title>Osmotech Ultimate Plus</image:title></image:image></url>
+<url><loc>https://wasser.market/products/osmotech-ultimate-plus-superflow</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/osmotech-ultimate-plus-superflow.webp</image:loc><image:title>Osmotech Ultimate Plus Superflow</image:title></image:image></url>
+<url><loc>https://wasser.market/products/osmotech-vista</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/osmotech-vista.webp</image:loc><image:title>Osmotech Vista</image:title></image:image></url>
+<url><loc>https://wasser.market/products/osmounity-direct-flow</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/osmounity-direct-flow.jpg</image:loc><image:title>Osmounity Direct Flow</image:title></image:image></url>
+<url><loc>https://wasser.market/products/panasonic-tk-as500</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/panasonic.png</image:loc><image:title>Panasonic TK-AS500</image:title></image:image></url>
+<url><loc>https://wasser.market/products/pentair-freshpoint-gro-350b</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/pentair.png</image:loc><image:title>Pentair FreshPoint GRO-350B</image:title></image:image></url>
+<url><loc>https://wasser.market/products/pentek-dura-series-standard-filter-housing</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/pentek.png</image:loc><image:title>Pentek Dura-Series Standard Filter Housing</image:title></image:image></url>
+<url><loc>https://wasser.market/products/philips-add6910-ro-water-station</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/philips.png</image:loc><image:title>Philips ADD6910 RO Water Station</image:title></image:image></url>
+<url><loc>https://wasser.market/products/piurify-hydrogenator-black</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/piurify-hydrogenator-black.webp</image:loc><image:title>PIURIFY Hydrogenator® Bottle Black</image:title></image:image></url>
+<url><loc>https://wasser.market/products/purepro-ro-105</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/purepro.png</image:loc><image:title>PurePro RO-105</image:title></image:image></url>
+<url><loc>https://wasser.market/products/purway-pur-booster-quick</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/purway-pur-booster-quick.jpg</image:loc><image:title>Purway PUR Booster Quick</image:title></image:image></url>
+<url><loc>https://wasser.market/products/qinyuan-krl5006</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/qinyuan.svg</image:loc><image:title>Qinyuan KRL5006</image:title></image:image></url>
+<url><loc>https://wasser.market/products/quooker-front-cube</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/quooker-front-cube.webp</image:loc><image:title>Quooker Front + CUBE</image:title></image:image></url>
+<url><loc>https://wasser.market/products/rowa-4-you-h2o-economy-3-blue</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/rowa-4-you-h2o-economy-3-blue.webp</image:loc><image:title>ROWA 4 you H2O Economy 3+ blue</image:title></image:image></url>
+<url><loc>https://wasser.market/products/rowa-4-you-h2o-rowa-select-8-l-tank</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/rowa-4-you-h2o-rowa-select-8-l-tank.webp</image:loc><image:title>ROWA 4 you H2O Rowa Select | 8 l Tank</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-aqua-quell</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-aqua-quell.webp</image:loc><image:title>SONVITA Aqua Quell</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-aqua-smart-duo</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-aqua-smart-duo.webp</image:loc><image:title>SONVITA Aqua Smart Duo</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-aqua-smart-duo-evo-i</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-aqua-smart-duo-evo-i.webp</image:loc><image:title>SONVITA Aqua Smart Duo evo I</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-aqua-smart-duo-evo-ii</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-aqua-smart-duo-evo-ii.webp</image:loc><image:title>SONVITA Aqua Smart Duo evo II</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-aqua-tower</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-aqua-tower.webp</image:loc><image:title>SONVITA Aqua Tower</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-aqua-vita-90-gpd-b-ware</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-aqua-vita-90-gpd-b-ware.webp</image:loc><image:title>SONVITA Aqua Vita 90 GPD B-Ware</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-aqua-vita-90-gpd-weiss</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-aqua-vita-90-gpd-weiss.webp</image:loc><image:title>SONVITA Aqua Vita 90 GPD | Weiß</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-pura</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-pura.webp</image:loc><image:title>SONVITA Pura</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-pura-up</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-pura-up.webp</image:loc><image:title>SONVITA Pura Up</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-puraqua-max-800</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-puraqua-max-800.webp</image:loc><image:title>SONVITA Puraqua Max 800</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sonvita-puraqua-touch</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sonvita-puraqua-touch.webp</image:loc><image:title>SONVITA Puraqua Touch</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sprudelux-inox-silent-premium-sprudelanlage-hoher-co2-gehalt-geraeuscharm-edelstahl</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sprudelux-inox-silent-premium-sprudelanlage-hoher-co2-gehalt-geraeuscharm-edelstahl.webp</image:loc><image:title>SPRUDELUX SPRUDELUX® INOX SILENT - Premium Sprudelanlage | hoher CO2 Gehalt | geräuscharm | Edelstahl</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sprudelux-juman-supreme-premium-umkehrosmoseanlage-mit-sprudel-heisswasserfunktion-quick-change</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sprudelux-juman-supreme-premium-umkehrosmoseanlage-mit-sprudel-heisswasserfunktion-quick-change.webp</image:loc><image:title>SPRUDELUX SPRUDELUX JUMAN SUPREME – Premium Umkehrosmoseanlage mit Sprudel &amp; Heißwasserfunktion | Quick Change Filter &amp; UVC-LED Technologie | mit Festwasseranschluss</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sprudelux-nuovo-premium-umkehrosmoseanlage-hoher-co2-gehalt-geraeuscharm-edelstahl</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sprudelux-nuovo-premium-umkehrosmoseanlage-hoher-co2-gehalt-geraeuscharm-edelstahl.webp</image:loc><image:title>SPRUDELUX SPRUDELUX® NUOVO - Premium Umkehrosmoseanlage | hoher CO2 Gehalt | geräuscharm | Edelstahl</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sprudelux-power-soda-osmose-premium-untertisch-sprudelanlage</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sprudelux-power-soda-osmose-premium-untertisch-sprudelanlage.webp</image:loc><image:title>SPRUDELUX SPRUDELUX® POWER SODA Osmose - Premium Untertisch-Sprudelanlage</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sprudelux-power-soda-premium-auftisch-sprudelanlage</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sprudelux-power-soda-premium-auftisch-sprudelanlage.webp</image:loc><image:title>SPRUDELUX SPRUDELUX® POWER SODA - Premium Auftisch-Sprudelanlage</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sprudelux-power-soda-premium-untertisch-sprudelanlage</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sprudelux-power-soda-premium-untertisch-sprudelanlage.webp</image:loc><image:title>SPRUDELUX SPRUDELUX® POWER SODA - Premium Untertisch-Sprudelanlage</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sprudelux-pro-touch-premium-umkehrosmoseanlage-mit-sprudel-heisswasserfunktion-quick-change</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sprudelux-pro-touch-premium-umkehrosmoseanlage-mit-sprudel-heisswasserfunktion-quick-change.webp</image:loc><image:title>SPRUDELUX SPRUDELUX Pro Touch - Premium Umkehrosmoseanlage mit Sprudel &amp; Heißwasserfunktion | Quick Change Filter &amp; UVC-LED Technologie | Tank bzw. Festwasseranschluss</image:title></image:image></url>
+<url><loc>https://wasser.market/products/sprudelux-ultra-flat-premium-sprudelanlage-nur-10-5-cm-flach</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/sprudelux-ultra-flat-premium-sprudelanlage-nur-10-5-cm-flach.webp</image:loc><image:title>SPRUDELUX SPRUDELUX® ULTRA FLAT - Premium Sprudelanlage | nur 10,5 cm flach | hoher CO2 Gehalt | geräuscharm | Edelstahl</image:title></image:image></url>
+<url><loc>https://wasser.market/products/stillundlaut-home-soda-premium-untertisch-umkehrosmoseanlage-sprudel-kuehlung-nur-10</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/stillundlaut-home-soda-premium-untertisch-umkehrosmoseanlage-sprudel-kuehlung-nur-10.webp</image:loc><image:title>stillundlaut STILLUNDLAUT HOME SODA – Premium Untertisch-Umkehrosmoseanlage | Sprudel &amp; Kühlung | nur 10 cm hoch | Edelstahl</image:title></image:image></url>
+<url><loc>https://wasser.market/products/suez-ak4040tm</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/suez.png</image:loc><image:title>SUEZ Water Technologies AK4040TM</image:title></image:image></url>
+<url><loc>https://wasser.market/products/toray-tm720d-400</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/toray.png</image:loc><image:title>Toray TM720D-400</image:title></image:image></url>
+<url><loc>https://wasser.market/products/truu-fountain-3</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/truu-fountain-3.webp</image:loc><image:title>truu fountain 3</image:title></image:image></url>
+<url><loc>https://wasser.market/products/tyent-hybrid-h2-water-ionizer</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/tyent.png</image:loc><image:title>Tyent Hybrid H2 Water Ionizer</image:title></image:image></url>
+<url><loc>https://wasser.market/products/veolia-sirion-advanced</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/veolia.png</image:loc><image:title>Veolia Water Technologies Sirion Advanced</image:title></image:image></url>
+<url><loc>https://wasser.market/products/viomi-kunlun-ai-mineral-water-purifier</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/viomi.png</image:loc><image:title>Viomi Kunlun AI Mineral Water Purifier</image:title></image:image></url>
+<url><loc>https://wasser.market/products/vontron-ulp21-4040</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/vontron.png</image:loc><image:title>Vontron ULP21-4040</image:title></image:image></url>
+<url><loc>https://wasser.market/products/walutec-el-nero-smart-medic-s</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/walutec-el-nero-smart.webp</image:loc><image:title>WALUTEC eL-Neró® smart + medic S</image:title></image:image></url>
+<url><loc>https://wasser.market/products/walutec-el-nero-speedflow-medic-s</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/walutec-el-nero-speedflow-medic-s.jpg</image:loc><image:title>WALUTEC eL-Neró® speedflow medic S</image:title></image:image></url>
+<url><loc>https://wasser.market/products/walutec-hydrogen-bottle</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/walutec-hydrogen-bottle.png</image:loc><image:title>WALUTEC Hydrogen Water Bottle</image:title></image:image></url>
+<url><loc>https://wasser.market/products/wasserhaus-zen-flow</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/wasserhaus-zen-flow.jpg</image:loc><image:title>Wasserhaus ZEN FLOW</image:title></image:image></url>
+<url><loc>https://wasser.market/products/wasserladen-wp-a01-all-in-one-umkehr-osmose-auftischfilter</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/wasserladen-wp-a01-all-in-one-umkehr-osmose-auftischfilter.webp</image:loc><image:title>Wasserladen WP-A01 | All in One Umkehr Osmose Auftischfilter</image:title></image:image></url>
+<url><loc>https://wasser.market/products/wasserwelt-ww-premium-direct-flow</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/wasserwelt.svg</image:loc><image:title>WasserWelt WW Premium Direct Flow</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-alkaline-ro-water-purifier-g5p500a</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-alkaline-ro-water-purifier-g5p500a.webp</image:loc><image:title>Waterdrop G5P500A Alkalische Umkehrosmoseanlage mit Wasserhahn</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-alkalische-ro-wasserfilter-mit-wasserhahn-g5p700a</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-alkalische-ro-wasserfilter-mit-wasserhahn-g5p700a.webp</image:loc><image:title>Waterdrop G5P700A Alkalischer Umkehrosmose Wasserfilter 700 GPD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-g3p600-mz-mineralien-wasserfilter</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-g3p600-mz-mineralien-wasserfilter.webp</image:loc><image:title>Waterdrop G3P600 Mineralien Umkehrosmose Wasserfilter mit MNR35 Ersatzfilter</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-g3p600-waterdrop-umkehrosmose-wasserfilteranlage</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-g3p600-waterdrop-umkehrosmose-wasserfilteranlage.webp</image:loc><image:title>Waterdrop G3P600 Smart Untertisch Umkehrosmose Wasserfilter 600 GPD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-mineralien-umkehrosmose-wasserfilter-g3p800-mz</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-mineralien-umkehrosmose-wasserfilter-g3p800-mz.webp</image:loc><image:title>Waterdrop G3P800 Mineralien Umkehrosmose Wasserfilter mit MNR35 Ersatzfilter</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-ro-heiss-kaltwasserspender-a1</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-ro-heiss-kaltwasserspender-a1.webp</image:loc><image:title>Waterdrop A1 Auftisch Umkehrosmose Wasserfilter mit UV</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-sofortheiss-umkehrosmose-wasserfilter-k6</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-sofortheiss-umkehrosmose-wasserfilter-k6.webp</image:loc><image:title>Waterdrop K6 Smart Umkehrosmose Wasserfilter mit Heißwasser</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-umkehrosmose-wasserfilter-corero-c1h</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-umkehrosmose-wasserfilter-corero-c1h.webp</image:loc><image:title>Waterdrop C1H Auftisch Umkehrosmose Wasserfilter Heißwasser</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-umkehrosmose-wasserfilter-x12</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-umkehrosmose-wasserfilter-x12.webp</image:loc><image:title>Waterdrop X12 Alkalischer Tankloser Umkehrosmose Wasserfilter 1200 GPD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-umkehrosmose-wasserfilter-x16</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-umkehrosmose-wasserfilter-x16.webp</image:loc><image:title>Waterdrop X16 Alkalischer Mineralisierender Umkehrosmose Wasserfilter</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-umkehrosmoseanlage-g3p800</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-umkehrosmoseanlage-g3p800.webp</image:loc><image:title>Waterdrop G3P800 Tankloser Umkehrosmose Wasserfilter 800 GPD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-umkehrosmoseanlage-wasserfilter-x8</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-umkehrosmoseanlage-wasserfilter-x8.webp</image:loc><image:title>Waterdrop X8 Tankloser Untertisch Umkehrosmose Wasserfilter 800 GPD</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-untertisch-umkehrosmoseanlage-g2p600</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-untertisch-umkehrosmoseanlage-g2p600.webp</image:loc><image:title>Waterdrop G2P600 Umkehrosmose-Wasserfiltrationssystem für Zuhause</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-waterdrop-c1sl-alkalisches-tisch-umkehrosmoseanlage</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-waterdrop-c1sl-alkalisches-tisch-umkehrosmoseanlage.webp</image:loc><image:title>Waterdrop C1SL Alkalisches Umkehrosmose-System für die Arbeitsplatte</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-waterdrop-k19-hg-instant-hot-mineralisiertes-ro-wassersystem</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-waterdrop-k19-hg-instant-hot-mineralisiertes-ro-wassersystem.webp</image:loc><image:title>Waterdrop K19-HG Instant Hot Mineralisiertes RO-Wassersystem</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-waterdrop-remineralisierungs-ro-wasserspender-mit-heiss-kaltwasser-a2g</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-waterdrop-remineralisierungs-ro-wasserspender-mit-heiss-kaltwasser-a2g.webp</image:loc><image:title>Waterdrop A2G Auftisch-Umkehrosmoseanlage mit Heiß- &amp; Kaltwasser</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-waterdrop-x-serie-umkehrosmose-system-x8-f2</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-waterdrop-x-serie-umkehrosmose-system-x8-f2.webp</image:loc><image:title>Waterdrop X-Serie Umkehrosmose-System, X8-F2</image:title></image:image></url>
+<url><loc>https://wasser.market/products/waterdrop-waterdrop-x8-tankloser-untertisch-umkehrosmose-wasserfilter-800-mit-f3-ersatzfilter</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/waterdrop-waterdrop-x8-tankloser-untertisch-umkehrosmose-wasserfilter-800-mit-f3-ersatzfilter.webp</image:loc><image:title>Waterdrop X8 Tankloser Untertisch Umkehrosmose Wasserfilter 800 GPD mit F3 Ersatzfilter</image:title></image:image></url>
+<url><loc>https://wasser.market/products/wertach-biella</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/img/wertach-biella.webp</image:loc><image:title>WERTACH Biella</image:title></image:image></url>
+<url><loc>https://wasser.market/products/wertach-pantera</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/products/wertach-pantera.webp</image:loc><image:title>WERTACH Pantera</image:title></image:image></url>
+<url><loc>https://wasser.market/products/xiaomi-mijia-smart-water-purifier-n800g</loc><lastmod>2026-07-24</lastmod><image:image><image:loc>https://wasser.market/assets/brands/xiaomi.png</image:loc><image:title>Xiaomi Mijia Smart Water Purifier N800G</image:title></image:image></url>
+<url><loc>https://wasser.market/technologies</loc><lastmod>2026-07-24</lastmod></url>
 </urlset>

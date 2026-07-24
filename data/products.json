@@ -944,7 +944,7 @@
     "price": 199,
     "currency": "EUR",
     "image": "assets/products/walutec-hydrogen-bottle.png",
-    "url": "products/walutec-hydrogen-bottle.html",
+    "url": "products/walutec-hydrogen-bottle",
     "reviews": 22,
     "specifications": {
       "H₂-Konzentration": "1.600–3.000 ppb",
@@ -964,7 +964,7 @@
     "price": 199,
     "currency": "EUR",
     "image": "assets/products/blackwater-hydrogen-bottle.png",
-    "url": "products/blackwater-hydrogen-bottle.html",
+    "url": "products/blackwater-hydrogen-bottle",
     "reviews": 0,
     "specifications": {
       "H₂-Konzentration": "1.500–3.000 ppb",
@@ -983,7 +983,7 @@
     "price": 120,
     "currency": "EUR",
     "image": "assets/products/piurify-hydrogenator-black.png",
-    "url": "products/piurify-hydrogenator-black.html",
+    "url": "products/piurify-hydrogenator-black",
     "reviews": 0,
     "specifications": {
       "H₂-Konzentration": "bis 6.300 ppb bei mehreren Zyklen",
@@ -1002,7 +1002,7 @@
     "price": 257,
     "currency": "EUR",
     "image": "assets/products/echo-flask.png",
-    "url": "products/echo-flask.html",
+    "url": "products/echo-flask",
     "reviews": 521,
     "specifications": {
       "Laborwert": "6,07 mg/l nach 10 min; 8,25 mg/l nach 20 min",
@@ -1021,7 +1021,7 @@
     "price": 128,
     "currency": "EUR",
     "image": "assets/products/ionbottles-atom.jpg",
-    "url": "products/ionbottles-atom.html",
+    "url": "products/ionbottles-atom",
     "reviews": 800,
     "specifications": {
       "H₂-Konzentration": "bis 5,0 ppm",
@@ -1040,7 +1040,7 @@
     "price": null,
     "currency": "EUR",
     "image": "assets/products/levelupway-2-in-1.jpg",
-    "url": "products/levelupway-2-in-1.html",
+    "url": "products/levelupway-2-in-1",
     "reviews": 0,
     "specifications": {
       "H₂-Konzentration": "bis 1.300 ppb laut Produkttitel",
@@ -1058,7 +1058,7 @@
     "price": null,
     "currency": "EUR",
     "image": "assets/products/alkaviva-hi-output.png",
-    "url": "products/alkaviva-hi-output.html",
+    "url": "products/alkaviva-hi-output",
     "reviews": 0,
     "specifications": {
       "H₂-Konzentration": "bis 5.000 ppb laut Produkttitel",

@@ -110,7 +110,7 @@ def set_meta(html, name, value, property_meta=False):
 
 def canonical_for(path):
     rel = path.relative_to(ROOT).as_posix()
-    return SITE + ("/" if rel == "index.html" else f"/{rel}")
+    return SITE + ("/" if rel == "index.html" else f"/{rel.removesuffix('.html')}")
 
 
 html_files = sorted(ROOT.rglob("*.html"))
@@ -162,7 +162,7 @@ for path in html_files:
 
     canonical = canonical_for(path)
     if path.name == "reviews.html":
-        canonical = SITE + "/community.html"
+        canonical = SITE + "/community"
         html = set_meta(html, "robots", "noindex,follow")
         if not h1_match:
             html = html.replace("<main>", '<main><h1 class="visually-hidden">Wasserfilter-Erfahrungen und Bewertungen</h1>', 1)
