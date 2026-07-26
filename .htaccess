@@ -15,10 +15,10 @@ RewriteRule ^index/?$ https://%{HTTP_HOST}/ [R=301,L,NE]
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]) [NC]
 RewriteRule ^(.+)\.html$ https://%{HTTP_HOST}/$1 [R=301,L,NE]
 
-# Normalize an unnecessary trailing slash when a sibling HTML landing page
-# exists (for example /brands/ -> /brands even though /brands is a folder).
-RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-RewriteRule ^(.+)/$ https://%{HTTP_HOST}/$1 [R=301,L,NE]
+# These landing pages share a name with a physical asset/content directory.
+# Serve both slash forms during the migration so previously cached Apache
+# DirectorySlash redirects cannot trap returning visitors in a redirect loop.
+RewriteRule ^(brands|community|products|professionals)/?$ $1.html [L]
 
 # Serve the existing static HTML file for an extensionless request.
 RewriteCond %{REQUEST_FILENAME} !-f
