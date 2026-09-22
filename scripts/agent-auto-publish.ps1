@@ -7,8 +7,10 @@ param(
 $ErrorActionPreference = "Stop"
 $Repo = Split-Path -Parent $PSScriptRoot
 $Lock = Join-Path $env:TEMP "wasser-market-agent-auto-import.lock"
+$Log = Join-Path $env:TEMP "wasser-market-agent-auto-import.log"
 
 if (Test-Path -LiteralPath $Lock) { throw "Agent import is already running." }
+Start-Transcript -Path $Log -Append | Out-Null
 try {
     Set-Content -LiteralPath $Lock -Value $PID -Encoding ascii
     Set-Location $Repo
@@ -35,6 +37,11 @@ try {
     git commit -m "Auto-import $Count reviewed agent products"
     git push origin main
 }
+catch {
+    Write-Error $_
+    exit 1
+}
 finally {
     Remove-Item -LiteralPath $Lock -Force -ErrorAction SilentlyContinue
+    Stop-Transcript | Out-Null
 }
