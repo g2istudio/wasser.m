@@ -1,0 +1,53 @@
+name: Diagnose FTP target
+
+on:
+  push:
+    branches:
+      - agent/two-product-pilot-20260923
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect FTP account and target directory
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }}
+        run: |
+          python - <<'PY'
+          import ftplib
+          import hashlib
+          import os
+          import socket
+          import urllib.request
+
+          host = os.environ["FTP_HOST"]
+          ftp_addresses = {item[4][0] for item in socket.getaddrinfo(host, 21)}
+          site_addresses = {item[4][0] for item in socket.getaddrinfo("wasser.market", 443)}
+          print("FTP host serves wasser.market:", bool(ftp_addresses & site_addresses))
+
+          ftp = ftplib.FTP_TLS(timeout=30)
+          ftp.connect(host, 21)
+          ftp.login(os.environ["FTP_USERNAME"], os.environ["FTP_PASSWORD"])
+          ftp.prot_p()
+          target = os.environ.get("FTP_SERVER_DIR", "")
+          if target:
+              ftp.cwd(target)
+
+          chunks = []
+          ftp.retrbinary("RETR data/products.json", chunks.append)
+          ftp_bytes = b"".join(chunks)
+          ftp.quit()
+
+          with urllib.request.urlopen("https://wasser.market/data/products.json", timeout=30) as response:
+              live_bytes = response.read()
+
+          print("Configured FTP target is live web root:", hashlib.sha256(ftp_bytes).digest() == hashlib.sha256(live_bytes).digest())
+          for label, payload in (("FTP target", ftp_bytes), ("Live site", live_bytes)):
+              text = payload.decode("utf-8", errors="replace")
+              print(f"{label} contains OsmoFresh Fusion Pro 2:", "osmofresh-fusion-pro-2" in text)
+              print(f"{label} contains Waterdrop G3P800:", "waterdrop-umkehrosmoseanlage-g3p800" in text)
+          PY
