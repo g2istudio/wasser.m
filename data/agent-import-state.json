@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "products": {
+    "Waterdrop::G3P800": {
+      "source_id": 1,
+      "source_hash": "23d20b2d10a3bcb037ee65e58f5ae7e1ebebf29de9eb2da8534d331dc76d2305",
+      "imported_at": "2026-09-23T04:48:27.534529+08:00"
+    },
+    "OsmoFresh::Fusion Pro 2": {
+      "source_id": 45,
+      "source_hash": "15446245c7d67a790d15f4d59c20de84802a22ef88cac64df990e55632e5949b",
+      "imported_at": "2026-09-23T04:48:27.53454+08:00"
+    }
+  }
+}
