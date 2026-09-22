@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "batch": "agent-two-products-2026-09-23",
+  "reviewed": true,
+  "products": [
+    {
+      "brand": "Waterdrop",
+      "model": "G3P800",
+      "local_id": 1,
+      "target_id": "waterdrop-umkehrosmoseanlage-g3p800",
+      "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "identity.model": {
+          "value": "G3P800",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "Model\tG3P800\tG3P600\tX12",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "/ Reverse Osmosis Systems",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Undersink",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "Discover why experts trust the Waterdrop Undersink RO System! Enjoy purified water instantly, with space-saving convenience perfect for your kitchen.",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "/ 800 GPD Tankless Reverse Osmosis System - Waterdrop G3P800",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "10-Stage Filtration - Removes PFAS, fluoride, lead, chromium and heavy metals.",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 800,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "/ 800 GPD Tankless Reverse Osmosis System - Waterdrop G3P800",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "Smart Display Faucet",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "The smart display faucet shows real-time TDS levels and filter status, helping you easily monitor water quality for safer drinking.",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "The smart display faucet shows real-time TDS levels and filter status, helping you easily monitor water quality for safer drinking.",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.smart_faucet": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "Smart Display Faucet",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "image": {
+        "url": "https://www.waterdropfilter.com/cdn/shop/files/G3P800-LOGO-2.png?v=1779938808&width=2134",
+        "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+        "alt_text": "800 GPD Tankless Reverse Osmosis System - Waterdrop G3P800",
+        "role": "primary",
+        "product_model": "G3P800"
+      },
+      "brand_logo": {
+        "url": "https://www.waterdropfilter.com/cdn/shop/files/wd_logo_pc.webp?v=1768552366&width=500",
+        "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+        "alt_text": "Waterdrop",
+        "role": "brand_logo"
+      }
+    },
+    {
+      "brand": "OsmoFresh",
+      "model": "Fusion Pro 2",
+      "local_id": 45,
+      "target_id": "osmofresh-fusion-pro-2",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "identity.model": {
+          "value": "Fusion Pro 2",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "FUSION PRO 2 - METALLIC GREY",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.8,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "0.8 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 1,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "1-5 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 5,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "1-5 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 38,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 38°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 2.6,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "2.6 W",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.cooling_power_w": {
+          "value": 120,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "120 Watt",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2400,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 2400 Watt",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "52x22x43,7cm (LxBxH)",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "52x22x43,7cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 220,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "220 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 520,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "520 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 437,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "437 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "7\" Pro Display",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "7\" Pro Display",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "commercial.current_price": {
+          "value": 1290.0,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "\"price\": 1290.0,",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "commercial.currency": {
+          "value": "EUR",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "\"priceCurrency\": \"EUR\",",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "image": {
+        "url": "https://www.osmofresh.de/media/38/4f/9c/1788855438/Osmofresh_7942.jpg?ts=1788855438",
+        "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+        "alt_text": "Fusion Pro 2 - JetBlack",
+        "role": "primary",
+        "product_model": "Fusion Pro 2"
+      },
+      "brand_logo": {
+        "url": "https://www.osmofresh.de/media/f1/b1/11/1753257158/Omsofresh_Logo_white.svg?ts=1753257158",
+        "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+        "alt_text": "osmofresh",
+        "role": "brand_logo"
+      }
+    }
+  ]
+}
