@@ -47,7 +47,7 @@ try {
 
     $Changed = & $GitExe status --porcelain
     if (-not $Changed) { Write-Host "No new PUBLISH_READY products."; exit 0 }
-    & $GitExe add assets/app.js brands data index.html products products.html sitemap.xml scripts/agent-auto-import.py scripts/agent-auto-publish.ps1 scripts/validate-agent-import.py scripts/AGENT-AUTO-IMPORT.md
+    & $GitExe add assets/app.js brands compare.html data index.html products products.html sitemap.xml scripts/agent-auto-import.py scripts/agent-auto-publish.ps1 scripts/validate-agent-import.py scripts/AGENT-AUTO-IMPORT.md
     $Count = (Get-Content data/agent-import-report.json -Raw | ConvertFrom-Json).accepted.Count
     & $GitExe commit -m "Auto-import $Count reviewed agent products"
     Assert-NativeSuccess "Cannot commit imported products"
