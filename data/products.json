@@ -11111,5 +11111,149 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "sydros-ro-600-vita",
+    "slug": "sydros-ro-600-vita",
+    "brand": "SYDROS",
+    "brandSlug": "sydros",
+    "name": "RO 600 VITA",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.sydros.de/products/ro-600-vita-umkehrosmose",
+    "image": "https://www.sydros.de/cdn/shop/files/SYDROS_RO_600_VITA_Umkehrosmoseanlage_Kompakt_Tanklos.png?v=1761212449&width=1946",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under-counter / countertop",
+      "Filterstufen": "5",
+      "Filteranzahl": "5",
+      "Membrantyp": "Reverse Osmosis",
+      "Durchfluss": "2.6 L/min",
+      "Abmessungen": "15,8 × 38,1 × 41,9 cm"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "SYDROS",
+        "model": "RO 600 VITA"
+      },
+      "source_id": 2,
+      "source_hash": "486b0dff1aad92b1fda7b64ce394ca07187576f372b2671b704a7a0238d14fea",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.sydros.de/products/ro-600-vita-umkehrosmose",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.sydros.de/products/ro-600-vita-umkehrosmose",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Under-counter / countertop",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0831/7599/7777/files/Bedinungsanleitung_RO_VITA_DEUTSCH_APPROV_V1.pdf?v=1781596648",
+              "source_type": "manufacturer_page",
+              "original_text": "unter der Spüle oder auf der Arbeitsfläche",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.sydros.de/products/ro-600-vita-umkehrosmose",
+              "source_type": "manufacturer_page",
+              "original_text": "5-Stufen",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.sydros.de/products/ro-600-vita-umkehrosmose",
+              "source_type": "manufacturer_page",
+              "original_text": "5-Stufen",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.sydros.de/products/ro-600-vita-umkehrosmose",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 2.6,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.sydros.de/products/ro-600-vita-umkehrosmose",
+              "source_type": "manufacturer_page",
+              "original_text": "2,6 L/min",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "15,8 × 38,1 × 41,9 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.sydros.de/products/ro-600-vita-umkehrosmose",
+              "source_type": "manufacturer_page",
+              "original_text": "15,8 × 38,1 × 41,9 cm",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
