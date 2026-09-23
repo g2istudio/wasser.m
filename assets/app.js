@@ -337,7 +337,21 @@ function initComparePage(){
   refreshSlotValues();
   renderCompareTable();
 }
-function renderCompareTable(){const table=document.getElementById('comparison');if(!table)return;const ps=selected.map(id=>products.find(p=>p.id===id)).filter(Boolean);if(ps.length<2){table.innerHTML=`<div style="padding:25px">${tr('Fügen Sie mindestens zwei Geräte zum Vergleich hinzu.','Add at least two products to compare.')}</div>`;return}const rows=[[tr('Allgemein','General'),null],[tr('Kategorie','Category'),'cat'],[tr('Preis','Price'),'price'],[tr('Markenland','Brand country'),'country'],[tr('Leistung','Performance'),null],[tr('Durchfluss','Flow rate'),'flow'],[tr('Jährliche Wartung','Annual maintenance'),'maint'],[tr('Kosten pro Liter','Cost per liter'),'liter'],[tr('Membran','Membrane'),'membrane'],[tr('Filtration','Filtration'),null],['PFAS','pfas'],[tr('Viren','Viruses'),'viruses'],[tr('Bakterien','Bacteria'),'bacteria'],[tr('Nitrate','Nitrates'),'nitrates'],[tr('Blei','Lead'),'lead'],[tr('Arsen','Arsenic'),'arsenic'],[tr('Mikroplastik','Microplastics'),'micro'],[tr('Wasserqualität','Water quality'),null],['TDS','tds'],[tr('Remineralisierung','Remineralization'),'remin'],[tr('Betrieb','Operation'),null],[tr('Geräuschpegel','Noise'),'noise'],[tr('Stromverbrauch','Power'),'power'],[tr('Garantie','Warranty'),'warranty']];table.innerHTML=`<table class="compare-table"><thead><tr><th>${tr('Parameter','Parameter')}</th>${ps.map(p=>`<th>${p.brand}<br><strong>${p.name}</strong></th>`).join('')}</tr></thead><tbody>${rows.map(r=>r[1]?`<tr><td>${r[0]}</td>${ps.map(p=>`<td>${p[r[1]]}</td>`).join('')}</tr>`:`<tr class="group-row"><td colspan="${ps.length+1}">${r[0]}</td></tr>`).join('')}</tbody></table>`}
+function renderCompareTable(){
+ const table=document.getElementById('comparison');if(!table)return;
+ const ps=selected.map(id=>products.find(p=>p.id===id)).filter(Boolean);
+ if(ps.length<2){table.innerHTML=`<div style="padding:25px">${tr('Fügen Sie mindestens zwei Geräte zum Vergleich hinzu.','Add at least two products to compare.')}</div>`;return}
+ const rows=[
+  [tr('Allgemein','General'),null],[tr('Kategorie','Category'),'cat'],[tr('Preis','Price'),'price'],[tr('Markenland','Brand country'),'country'],
+  [tr('Bauart','Configuration'),null],[tr('Installation','Installation'),'installation'],[tr('Filterstufen','Filter stages'),'stages'],[tr('Abmessungen','Dimensions'),'dimensions'],
+  [tr('Leistung','Performance'),null],[tr('Durchfluss','Flow rate'),'flow'],[tr('Jährliche Wartung','Annual maintenance'),'maint'],[tr('Kosten pro Liter','Cost per liter'),'liter'],[tr('Membran','Membrane'),'membrane'],
+  [tr('Filtration','Filtration'),null],['PFAS','pfas'],[tr('Viren','Viruses'),'viruses'],[tr('Bakterien','Bacteria'),'bacteria'],[tr('Nitrate','Nitrates'),'nitrates'],[tr('Blei','Lead'),'lead'],[tr('Arsen','Arsenic'),'arsenic'],[tr('Mikroplastik','Microplastics'),'micro'],
+  [tr('Wasserqualität','Water quality'),null],['TDS','tds'],[tr('Remineralisierung','Remineralization'),'remin'],
+  [tr('Betrieb','Operation'),null],[tr('Geräuschpegel','Noise'),'noise'],[tr('Stromverbrauch','Power'),'power'],[tr('Garantie','Warranty'),'warranty']
+ ];
+ const value=(product,key)=>{const current=product[key];return current===undefined||current===null||current===''?'—':current};
+ table.innerHTML=`<table class="compare-table"><thead><tr><th>${tr('Parameter','Parameter')}</th>${ps.map(p=>`<th>${p.brand}<br><strong>${p.name}</strong></th>`).join('')}</tr></thead><tbody>${rows.map(r=>r[1]?`<tr><td>${r[0]}</td>${ps.map(p=>`<td>${value(p,r[1])}</td>`).join('')}</tr>`:`<tr class="group-row"><td colspan="${ps.length+1}">${r[0]}</td></tr>`).join('')}</tbody></table>`
+}
 
 
 

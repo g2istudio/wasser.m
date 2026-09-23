@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DB = Path(r"C:\wasser-market-agent\data\wasser_market.db")
 STATE_PATH = ROOT / "data" / "agent-import-state.json"
 REPORT_PATH = ROOT / "data" / "agent-import-report.json"
+RENDERER_VERSION = 2
 
 FIELD_LABELS = {
     "system.technology": "Technologie",
@@ -344,7 +345,8 @@ def main() -> int:
     for row in ready:
         key = f'{row["brand"]}::{row["model"]}'
         prior = state["products"].get(key)
-        if prior and prior.get("source_hash") == row["hash"]:
+        if (prior and prior.get("source_hash") == row["hash"]
+                and prior.get("renderer_version") == RENDERER_VERSION):
             continue
         existing = next((p for p in products if p.get("agent_import", {}).get("identity") == {"brand": row["brand"], "model": row["model"]}), None)
         if prior is None and existing and existing.get("agent_import", {}).get("publication_status"):
@@ -376,7 +378,12 @@ def main() -> int:
         raise SystemExit("Import stopped: one or more records failed validation")
 
     for key, row in baseline:
-        state["products"][key] = {"source_id": row["id"], "source_hash": row["hash"], "imported_at": datetime.now(timezone.utc).isoformat()}
+        state["products"][key] = {
+            "source_id": row["id"],
+            "source_hash": row["hash"],
+            "renderer_version": RENDERER_VERSION,
+            "imported_at": datetime.now(timezone.utc).isoformat(),
+        }
     if not accepted:
         if baseline:
             dump(STATE_PATH, state)
@@ -421,15 +428,36 @@ def main() -> int:
     dump("data/brands.json", brands)
 
     app = read("assets/app.js")
+    brand_catalog = json.loads(read("data/brands.json"))
     for item in accepted:
         product = next(p for p in products if p["id"] == item["target_id"])
+        fields = product.get("agent_import", {}).get("fields", {})
+        def comparison_value(*paths):
+            for path in paths:
+                field = fields.get(path)
+                if field and field.get("value") is not None:
+                    return shown(field)
+            return "—"
+        brand_data = next((entry for entry in brand_catalog if entry.get("slug") == product["brandSlug"]), {})
         record = {k: "—" for k in ("flow", "maint", "liter", "membrane", "pfas", "viruses", "bacteria", "nitrates", "lead", "arsenic", "micro", "tds", "remin", "noise", "power", "warranty", "country")}
         record.update(id=product["id"], brand=product["brand"], name=product["name"], cat=product["category"],
                       price="—" if product.get("price") is None else f'{product["price"]:,.0f}'.replace(",", ".") + " €",
-                      priceValue=product.get("price"), features=[], image=product["image"], url="products/" + product["slug"])
+                      priceValue=product.get("price"), features=[], image=product["image"], url="products/" + product["slug"],
+                      country=brand_data.get("country") or "—",
+                      installation=comparison_value("system.installation_type"),
+                      stages=comparison_value("filtration.advertised_stage_count", "filtration.physical_filter_count"),
+                      dimensions=comparison_value("physical.dimensions_raw"),
+                      flow=comparison_value("performance.rated_capacity_gpd", "performance.dispensing_flow_lpm"),
+                      membrane=comparison_value("filtration.membrane_type", "filtration.membrane_capacity_gpd"),
+                      remin=comparison_value("water_output.remineralization"),
+                      noise=comparison_value("physical.noise_db"),
+                      power=comparison_value("electrical.maximum_power_w"),
+                      warranty=comparison_value("commercial.warranty_years"),
+                      tds=comparison_value("performance.tds_reduction_percent"))
         app = re.sub(r'^\{[^\n]*"id": "' + re.escape(product["id"]) + r'"[^\n]*\},?[ \t]*\n?', "", app, flags=re.M)
         app = app.replace("const products=[", "const products=[\n" + js(record) + ",", 1)
     write("assets/app.js", app)
+    app_version = "agent-" + hashlib.sha256(app.encode("utf-8")).hexdigest()[:12]
 
     sitemap = read("sitemap.xml")
     for item in accepted:
@@ -440,8 +468,24 @@ def main() -> int:
     index = re.sub(r'(<b id="overviewProducts">)\d+(</b>)', rf'\g<1>{len(products)}\2', read("index.html"))
     write("index.html", index)
 
+    cache_targets = {ROOT / "compare.html", ROOT / "products.html", ROOT / "index.html"}
+    for item in accepted:
+        cache_targets.add(ROOT / "products" / f'{item["target_id"]}.html')
+        product = next(p for p in products if p["id"] == item["target_id"])
+        cache_targets.add(ROOT / "brands" / f'{product["brandSlug"]}.html')
+    for target in cache_targets:
+        if not target.is_file():
+            continue
+        page = target.read_text(encoding="utf-8")
+        page = re.sub(
+            r'((?:\.\./)?assets/app\.js)(?:\?v=[^"\']*)?',
+            rf'\1?v={app_version}',
+            page,
+        )
+        target.write_text(page, encoding="utf-8")
+
     for key, row in baseline + pending:
-        state["products"][key] = {"source_id": row["id"], "source_hash": row["hash"], "imported_at": datetime.now(timezone.utc).isoformat()}
+        state["products"][key] = {"source_id": row["id"], "source_hash": row["hash"], "renderer_version": RENDERER_VERSION, "imported_at": datetime.now(timezone.utc).isoformat()}
     dump(STATE_PATH, state)
     report["catalog_before"], report["catalog_after"] = len(original), len(products)
     report["completed_at"] = datetime.now(timezone.utc).isoformat()
