@@ -285,6 +285,38 @@ def _manual_quote(manuals: list[tuple[str, str]], *terms: str) -> tuple[str, str
     return None
 
 
+def _dimension_signature(value: str) -> tuple[float, float, float] | None:
+    match = re.search(
+        r"(\d+(?:[.,]\d+)?)\s*[x×]\s*(\d+(?:[.,]\d+)?)\s*[x×]\s*"
+        r"(\d+(?:[.,]\d+)?)\s*(cm|mm)\b",
+        value,
+        re.I,
+    )
+    if not match:
+        return None
+    factor = 10 if match.group(4).casefold() == "cm" else 1
+    values = sorted(float(match.group(index).replace(",", ".")) * factor for index in range(1, 4))
+    return tuple(values)
+
+
+def _signatures_agree(left: tuple[float, ...], right: tuple[float, ...]) -> bool:
+    return len(left) == len(right) and all(
+        abs(a - b) <= max(5.0, 0.03 * max(a, b)) for a, b in zip(left, right)
+    )
+
+
+def _manual_power_values(manuals: list[tuple[str, str]]) -> set[float]:
+    values = set()
+    pattern = re.compile(
+        r"(?:Nennleistung(?:\s*\([^)]*\))?|Leistungsaufnahme)\s*:?[ ]*"
+        r"(\d+(?:[.,]\d+)?)\s*W\b",
+        re.I,
+    )
+    for _, text in manuals:
+        values.update(float(match.group(1).replace(",", ".")) for match in pattern.finditer(text))
+    return values
+
+
 def _brand_logo(documents: list[object], soup: BeautifulSoup, url: str) -> str:
     for document in documents:
         for node in _walk_json(document):
@@ -477,6 +509,18 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
                 dimensions = (match.group(0), match.group(0))
                 dimensions_source = manual_url
                 break
+    if dimensions and dimensions_source == source:
+        page_signature = _dimension_signature(dimensions[0])
+        manual_signatures = {
+            signature
+            for _, manual_text in manuals
+            for signature in [_dimension_signature(manual_text)]
+            if signature is not None
+        }
+        if page_signature and manual_signatures and not any(
+            _signatures_agree(page_signature, signature) for signature in manual_signatures
+        ):
+            dimensions = None
     if dimensions:
         normalized_dimensions = re.sub(r"(?<=\d)\s*[^\w\s.,]\s*(?=\d)", " × ", dimensions[0])
         product.physical.dimensions_raw = _evidence(normalized_dimensions, dimensions[1], dimensions_source)
@@ -492,7 +536,12 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
     voltage = _lookup(specs, "mains voltage", "voltage", "spannung")
     if voltage:
         product.electrical.voltage = _evidence(voltage[0], voltage[1], source)
-    _set_number(product.electrical, "maximum_power_w", _lookup(specs, "power watt", "rated power", "max power", "leistung"), source, "W")
+    power = _lookup(specs, "power watt", "rated power", "max power", "leistung")
+    page_power = _number(power[0]) if power else None
+    manual_power = _manual_power_values(manuals)
+    if page_power is not None and manual_power and all(abs(page_power - value) > 1 for value in manual_power):
+        power = None
+    _set_number(product.electrical, "maximum_power_w", power, source, "W")
 
     offers = node.get("offers") or {}
     if isinstance(offers, list):
