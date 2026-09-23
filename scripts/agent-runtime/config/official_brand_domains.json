@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "policy": "Only domains manually verified as a brand owner or manufacturer are crawlable. Search results from all other domains remain audit records and never enter the URL queue.",
+  "sites": [
+    {
+      "domain": "bemshop.de",
+      "brand": "BEM",
+      "evidence_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+      "evidence": "Official BEM storefront: product pages identify BEM as manufacturer and Bem GmbH as the responsible company."
+    },
+    {
+      "domain": "osmofresh.de",
+      "brand": "OsmoFresh",
+      "evidence_url": "https://www.osmofresh.de/",
+      "evidence": "Site identifies OsmoFresh as the manufacturer and sells its own named systems."
+    },
+    {
+      "domain": "waterdropfilter.de",
+      "brand": "Waterdrop",
+      "evidence_url": "https://www.waterdropfilter.de/",
+      "evidence": "Official German regional storefront linked to Waterdrop's international region selector."
+    },
+    {
+      "domain": "waterdropfilter.com",
+      "brand": "Waterdrop",
+      "evidence_url": "https://www.waterdropfilter.com/",
+      "evidence": "Official international Waterdrop storefront."
+    },
+    {
+      "domain": "wasserfilter-germany.com",
+      "brand": "Wasserfilter Germany",
+      "evidence_url": "https://wasserfilter-germany.com/de/",
+      "evidence": "Brand storefront for Wasserfilter Germany systems."
+    },
+    {
+      "domain": "gewapur.de",
+      "brand": "GeWaPur",
+      "evidence_url": "https://gewapur.de/umkehrosmoseanlagen-reverse-osmosis-systeme-ro/",
+      "evidence": "GeWaPur states that it develops and supplies its own reverse-osmosis systems."
+    },
+    {
+      "domain": "veoliawatertechnologies.de",
+      "brand": "Veolia Water Technologies",
+      "evidence_url": "https://www.veoliawatertechnologies.de/verfahren/umkehrosmose/umkehrosmoseanlage",
+      "evidence": "Official German Veolia Water Technologies product site."
+    },
+    {
+      "domain": "iemgmbh.de",
+      "brand": "IEM",
+      "evidence_url": "https://www.iemgmbh.de/",
+      "evidence": "IEM states that it develops and manufactures reverse-osmosis and ultrapure-water systems."
+    },
+    {
+      "domain": "greifenstein-wasser.de",
+      "brand": "Greifenstein",
+      "evidence_url": "https://greifenstein-wasser.de/",
+      "evidence": "Greifenstein identifies itself as developer and manufacturer of water-treatment systems."
+    },
+    {
+      "domain": "ecosoft.com",
+      "brand": "Ecosoft",
+      "evidence_url": "https://www.ecosoft.com/de-de/reverse-osmosis-filters",
+      "evidence": "Official Ecosoft regional catalog."
+    },
+    {
+      "domain": "walutec-germany.de",
+      "brand": "WALUTEC",
+      "evidence_url": "https://walutec-germany.de/",
+      "evidence": "Official WALUTEC Germany site for its drinking-water systems."
+    },
+    {
+      "domain": "hercowater.com",
+      "brand": "Herco",
+      "evidence_url": "https://hercowater.com/de/",
+      "evidence": "Official Herco Water Technology site."
+    },
+    {
+      "domain": "envirofalk.com",
+      "brand": "EnviroFALK",
+      "evidence_url": "https://www.envirofalk.com/",
+      "evidence": "Official EnviroFALK water-treatment site."
+    },
+    {
+      "domain": "alfiltra.de",
+      "brand": "Alfiltra / Filtraselect",
+      "evidence_url": "https://www.alfiltra.de/umkehrosmoseanlagen",
+      "evidence": "Official Alfiltra catalog for its Filtraselect systems."
+    },
+    {
+      "domain": "umkehrosmose.de",
+      "brand": "AFT",
+      "evidence_url": "https://umkehrosmose.de/",
+      "evidence": "Official AFT reverse-osmosis systems site."
+    },
+    {
+      "domain": "aft-shop.de",
+      "brand": "AFT",
+      "evidence_url": "https://aft-shop.de/umkehrosmoseanlage",
+      "evidence": "Official AFT product storefront."
+    },
+    {
+      "domain": "nordicfiltration.com",
+      "brand": "Nordic Filtration",
+      "evidence_url": "https://nordicfiltration.com/de/wasseraufbereitung/umkehrosmoseanlage",
+      "evidence": "Official Nordic Filtration product site with a German catalog."
+    }
+  ]
+}
