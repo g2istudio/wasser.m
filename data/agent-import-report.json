@@ -1,26 +1,54 @@
 {
   "mode": "apply",
-  "ready": 2,
+  "ready": 20,
   "baseline": 0,
-  "pending": 2,
+  "pending": 6,
   "accepted": [
     {
-      "source_id": 2,
-      "brand": "SYDROS",
-      "model": "RO 600 VITA",
+      "source_id": 60,
+      "brand": "BEM",
+      "model": "Akira",
       "action": "create",
-      "target_id": "sydros-ro-600-vita"
+      "target_id": "bem-akira"
     },
     {
-      "source_id": 3,
-      "brand": "SYDROS",
-      "model": "RO 800",
+      "source_id": 61,
+      "brand": "BEM",
+      "model": "IDA",
       "action": "create",
-      "target_id": "sydros-ro-800"
+      "target_id": "bem-ida"
+    },
+    {
+      "source_id": 62,
+      "brand": "BEM",
+      "model": "LINA",
+      "action": "create",
+      "target_id": "bem-lina"
+    },
+    {
+      "source_id": 63,
+      "brand": "BEM",
+      "model": "Orion Ultra Slim",
+      "action": "create",
+      "target_id": "bem-orion-ultra-slim"
+    },
+    {
+      "source_id": 64,
+      "brand": "BEM",
+      "model": "Unicora 2.0",
+      "action": "create",
+      "target_id": "bem-unicora-2-0"
+    },
+    {
+      "source_id": 65,
+      "brand": "BEM",
+      "model": "Robin",
+      "action": "create",
+      "target_id": "bem-robin"
     }
   ],
   "rejected": [],
-  "catalog_before": 159,
-  "catalog_after": 161,
-  "completed_at": "2026-09-23T05:12:23.983915+00:00"
+  "catalog_before": 153,
+  "catalog_after": 159,
+  "completed_at": "2026-09-23T03:23:09.951164+00:00"
 }

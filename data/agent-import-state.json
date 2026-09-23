@@ -100,16 +100,6 @@
       "source_id": 65,
       "source_hash": "72b0f3529fa234f12cd5a143905ae8438febe31f9300e9747ccaccbc33fdd5cf",
       "imported_at": "2026-09-23T03:23:09.950907+00:00"
-    },
-    "SYDROS::RO 600 VITA": {
-      "source_id": 2,
-      "source_hash": "486b0dff1aad92b1fda7b64ce394ca07187576f372b2671b704a7a0238d14fea",
-      "imported_at": "2026-09-23T05:12:23.983652+00:00"
-    },
-    "SYDROS::RO 800": {
-      "source_id": 3,
-      "source_hash": "44e3f610f85493f408724f00d8afb33adef9f78e9ab66f7818bbe2a866dd572b",
-      "imported_at": "2026-09-23T05:12:23.983667+00:00"
     }
   }
 }
