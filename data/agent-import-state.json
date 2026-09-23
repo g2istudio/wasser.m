@@ -114,7 +114,8 @@
     "WasserWelt::RO5": {
       "source_id": 66,
       "source_hash": "674cc7ce89a3fa776df2e54ae75d527298410696c248bffaba077e658a8939ea",
-      "imported_at": "2026-09-23T14:48:00.584002+00:00"
+      "renderer_version": 2,
+      "imported_at": "2026-09-23T14:59:35.358708+00:00"
     }
   }
 }
