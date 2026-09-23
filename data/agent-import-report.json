@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 2,
-      "brand": "SYDROS",
-      "model": "RO 600 VITA",
+      "source_id": 1,
+      "brand": "AQUAPHOR",
+      "model": "PRO100 M",
       "action": "create",
-      "target_id": "sydros-ro-600-vita"
+      "target_id": "aquaphor-pro100-m"
     }
   ],
   "rejected": [],
-  "catalog_before": 159,
-  "catalog_after": 160,
-  "completed_at": "2026-09-23T05:18:23.202536+00:00"
+  "catalog_before": 160,
+  "catalog_after": 161,
+  "completed_at": "2026-09-23T14:19:27.641756+00:00"
 }
