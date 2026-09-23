@@ -1,4 +1,10 @@
 const products=[
+{"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "bem-robin", "brand": "BEM", "name": "Robin", "cat": "Countertop RO", "price": "230 €", "priceValue": 229.99, "features": [], "image": "https://www.bemshop.de/media/a9/8c/bd/1740493642/oxid-01930751b3a271deab62477d3b2c7f22-1-1(33).jpg?ts=1740498335", "url": "products/bem-robin"},
+{"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "bem-unicora-2-0", "brand": "BEM", "name": "Unicora 2.0", "cat": "Countertop RO", "price": "400 €", "priceValue": 399.99, "features": [], "image": "https://www.bemshop.de/media/e5/e2/8b/1769696349/oxid-019334d1ce5d71ac98bf72d9032355df-1-610_unicora_01_29_26_1.jpg?ts=1769696349", "url": "products/bem-unicora-2-0"},
+{"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "bem-orion-ultra-slim", "brand": "BEM", "name": "Orion Ultra Slim", "cat": "Direct Flow RO", "price": "750 €", "priceValue": 750.0, "features": [], "image": "https://www.bemshop.de/media/20/7a/68/1771150947/oxid-018fe34a52b070c7b82460c1a246be16-1-600_bem_orion_wasserfilter_ultra_slim_01.jpg?ts=1771150947", "url": "products/bem-orion-ultra-slim"},
+{"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "bem-lina", "brand": "BEM", "name": "LINA", "cat": "Countertop RO", "price": "600 €", "priceValue": 599.99, "features": [], "image": "https://www.bemshop.de/media/37/38/39/1776261423/oxid-0193062a0e4a71aa972ccf4b7e9e03d8-1-597_kaufbei_bem_wasserfilter_lina_n2(2).jpg?ts=1776261423", "url": "products/bem-lina"},
+{"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "bem-ida", "brand": "BEM", "name": "IDA", "cat": "Countertop RO", "price": "600 €", "priceValue": 599.99, "features": [], "image": "https://www.bemshop.de/media/97/0c/8f/1776261564/oxid-0193062a65e571e68163c8a425ad4574-1-597_kaufbei_bem_wasserfilter_lina_n2(1).jpg?ts=1776261564", "url": "products/bem-ida"},
+{"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "bem-akira", "brand": "BEM", "name": "Akira", "cat": "Direct Flow RO", "price": "200 €", "priceValue": 199.99, "features": [], "image": "https://www.bemshop.de/media/33/39/05/1784703255/oxid-018fe34a04f17111abd5cf3c9f86f279-1-16(2)(1).jpg?ts=1784703255", "url": "products/bem-akira"},
 {"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "osmofresh-proline-x3", "brand": "OsmoFresh", "name": "Proline X3", "cat": "Direct Flow RO", "price": "—", "priceValue": null, "features": [], "image": "https://www.osmofresh.de/media/ab/7a/da/1720096039/OF_F_Proline_X3_Front_b.webp?ts=1720096039", "url": "products/osmofresh-proline-x3"},
 {"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "osmofresh-proline-x2", "brand": "OsmoFresh", "name": "Proline X2", "cat": "Direct Flow RO", "price": "239 €", "priceValue": 239.0, "features": [], "image": "https://www.osmofresh.de/media/ab/7a/da/1720096039/OF_F_Proline_X3_Front_b.webp?ts=1720096039", "url": "products/osmofresh-proline-x2"},
 {"flow": "—", "maint": "—", "liter": "—", "membrane": "—", "pfas": "—", "viruses": "—", "bacteria": "—", "nitrates": "—", "lead": "—", "arsenic": "—", "micro": "—", "tds": "—", "remin": "—", "noise": "—", "power": "—", "warranty": "—", "country": "—", "id": "osmofresh-smartline-gold", "brand": "OsmoFresh", "name": "Smartline Gold", "cat": "Direct Flow RO", "price": "59 €", "priceValue": 59.0, "features": [], "image": "https://www.osmofresh.de/media/fc/55/8d/1751628176/OF_SmartlineGold_Front.jpg?ts=1753082206", "url": "products/osmofresh-smartline-gold"},
@@ -167,6 +173,7 @@ let compareDockDismissed=false;
 const lang=()=>storageGet('wasserLang','de');
 const tr=(de,en)=>lang()==='de'?de:en;
 function basePrefix(){const parts=location.pathname.split('/').filter(Boolean);return '../'.repeat(Math.max(0,parts.length-1))}
+function catalogImageSrc(src){return /^https?:\/\//i.test(String(src||''))?src:basePrefix()+src}
 function save(){storageSet('wasserCompare',JSON.stringify(selected));renderDock()}
 function addCompare(id){compareDockActivated=true;compareDockDismissed=false;if(selected.includes(id)){selected=selected.filter(x=>x!==id)}else{if(selected.length>=3){alert(tr('Es können maximal 3 Geräte verglichen werden','You can compare a maximum of 3 devices'));return}selected.push(id)}save()}
 function ensureCompareDock(){
@@ -193,7 +200,7 @@ function linkProductCardImages(root=document){
  });
 }
 function productMatches(q){q=(q||'').trim().toLowerCase();if(!q)return products;return products.filter(p=>`${p.brand} ${p.name} ${p.cat}`.toLowerCase().includes(q)).slice(0,8)}
-function suggestionHTML(p){return `<div class="autocomplete-item" role="option" tabindex="0" data-id="${p.id}"><img src="${basePrefix()}${p.image}" alt=""><div><b>${p.brand} ${p.name}</b><span>${p.cat} · ${p.price}</span></div></div>`}
+function suggestionHTML(p){return `<div class="autocomplete-item" role="option" tabindex="0" data-id="${p.id}"><img src="${catalogImageSrc(p.image)}" alt=""><div><b>${p.brand} ${p.name}</b><span>${p.cat} · ${p.price}</span></div></div>`}
 function navigateToProduct(p){if(p) location.href=basePrefix()+p.url}
 
 function setupGeneralAutocomplete(){
@@ -722,7 +729,7 @@ async function setupCatalogCardSync(){
       const name=card.querySelector('h3');
       const price=card.querySelector('.price');
       if(image&&product.image){
-        image.src=basePrefix()+product.image;
+        image.src=catalogImageSrc(product.image);
         image.alt=`${product.brand} ${product.name}`;
       }
       if(brand)brand.textContent=product.brand||'';

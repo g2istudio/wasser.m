@@ -48,5 +48,10 @@
     "path": "assets/brands/blanco.svg",
     "source": "https://www.blanco.de/_nuxt/logo-white.120..svg",
     "website": "https://www.blanco.de"
+  },
+  "bem": {
+    "path": "assets/brands/bem.png",
+    "source": "https://www.bemshop.de/media/0b/95/91/1765990383/Logo%20Bem-Shop%20222x40px.png?ts=1765990383",
+    "website": "https://www.bemshop.de"
   }
 }

@@ -8026,5 +8026,3090 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "bem-akira",
+    "slug": "bem-akira",
+    "brand": "BEM",
+    "brandSlug": "bem",
+    "name": "Akira",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+    "image": "https://www.bemshop.de/media/33/39/05/1784703255/oxid-018fe34a04f17111abd5cf3c9f86f279-1-16(2)(1).jpg?ts=1784703255",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under-counter",
+      "Tanklos": "Ja",
+      "Stromanschluss erforderlich": "Ja",
+      "Integrierte Pumpe": "Ja",
+      "Filterstufen": "5",
+      "Filteranzahl": "5",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "600 GPD",
+      "Nennleistung": "600 GPD",
+      "Durchfluss": "1.0 L/min",
+      "Reinwasser-Abwasser-Verhältnis": "1.5:1",
+      "Min. Eingangsdruck": "1.0 bar",
+      "Max. Eingangsdruck": "4.0 bar",
+      "Remineralisierung": "Nein",
+      "Kaltwasser": "Nein",
+      "Heißwasser": "Nein",
+      "UV-Desinfektion": "Nein",
+      "Spannung": "220 V, 50 Hz",
+      "Max. Leistungsaufnahme": "65.0 W",
+      "Abmessungen": "36.5 x 16.5 x 33.5 cm",
+      "Breite": "165.0 mm",
+      "Tiefe": "335.0 mm",
+      "Höhe": "365.0 mm",
+      "Gewicht": "7.5 kg",
+      "Display": "Nein",
+      "TDS-Anzeige Ausgang": "Nein",
+      "Filterstatusanzeige": "Ja"
+    },
+    "price": 199.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BEM",
+        "model": "Akira"
+      },
+      "source_id": 60,
+      "source_hash": "33870d3c289068c0e36325ff8f0efd2664fb1750c72b5f6ad0202490550b3eb2",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "Under-counter",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.electricity_required": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.built_in_pump": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "5",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "5",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 600,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "600 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 600,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "600 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 1.0,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "60 l/h",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "1.5:1",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "1.5:1",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 1.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "1–4 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 4.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "1–4 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.cold_water": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.hot_water": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "protection.uv_disinfection": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": "220 V, 50 Hz",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "220 V, 50 Hz",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 65.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "65W",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "36.5 x 16.5 x 33.5 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "36.5 x 16.5 x 33.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 165.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "36.5 x 16.5 x 33.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 335.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "36.5 x 16.5 x 33.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 365.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "36.5 x 16.5 x 33.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 7.5,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "7.5 kg",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-akira-tankless-water-filter-with-5-stage-direct-flow-filtration-system/592",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "bem-ida",
+    "slug": "bem-ida",
+    "brand": "BEM",
+    "brandSlug": "bem",
+    "name": "IDA",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+    "image": "https://www.bemshop.de/media/97/0c/8f/1776261564/oxid-0193062a65e571e68163c8a425ad4574-1-597_kaufbei_bem_wasserfilter_lina_n2(1).jpg?ts=1776261564",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Tabletop",
+      "Tanklos": "Ja",
+      "Stromanschluss erforderlich": "Ja",
+      "Integrierte Pumpe": "Ja",
+      "Filterstufen": "3",
+      "Filteranzahl": "3",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "200 GPD",
+      "Nennleistung": "200 GPD",
+      "Durchfluss": "0.5 L/min",
+      "Reinwasser-Abwasser-Verhältnis": "2:1",
+      "Min. Eingangsdruck": "4.0 bar",
+      "Max. Eingangsdruck": "6.0 bar",
+      "Min. Eingangstemperatur": "5.0 °C",
+      "Max. Eingangstemperatur": "38.0 °C",
+      "Remineralisierung": "Ja",
+      "Kaltwasser": "Ja",
+      "Heißwasser": "Ja",
+      "Temperaturstufen": "6",
+      "Reinwassertank": "4.0 L",
+      "UV-Desinfektion": "Ja",
+      "Spannung": "220 V ~ 50 Hz",
+      "Max. Leistungsaufnahme": "2200.0 W",
+      "Abmessungen": "43 x 24 x 35 cm",
+      "Breite": "240.0 mm",
+      "Tiefe": "350.0 mm",
+      "Höhe": "430.0 mm",
+      "Gewicht": "9.6 kg",
+      "Display": "Ja",
+      "TDS-Anzeige Ausgang": "Ja",
+      "Filterstatusanzeige": "Ja"
+    },
+    "price": 599.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BEM",
+        "model": "IDA"
+      },
+      "source_id": 61,
+      "source_hash": "2b3d94c12c6d3593f576a2d9cba53dfa515a996831daaa328f03a823e69a626a",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Tabletop",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Tabletop",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.electricity_required": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.built_in_pump": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 3,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "3",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 3,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "3",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "200 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "200 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.5,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "30 liters per hour",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "2:1",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "2:1",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 4.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "4–6 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 6.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "4–6 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5.0,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "5–38 °C",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 38.0,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "5–38 °C",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.cold_water": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.hot_water": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.temperature_levels": {
+          "value": 6,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "6",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.purified_water_tank_l": {
+          "value": 4.0,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "4 l",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "protection.uv_disinfection": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": "220 V ~ 50 Hz",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "220 V ~ 50 Hz",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2200.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "2,200 W",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "43 x 24 x 35 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "43 x 24 x 35 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 240.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "43 x 24 x 35 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 350.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "43 x 24 x 35 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 430.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "43 x 24 x 35 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 9.6,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "9.6 kg",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-ida-osmosis-countertop-water-filter-including-uv-lamp-and-hydrogen-generator-without-container/596",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "bem-lina",
+    "slug": "bem-lina",
+    "brand": "BEM",
+    "brandSlug": "bem",
+    "name": "LINA",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+    "image": "https://www.bemshop.de/media/37/38/39/1776261423/oxid-0193062a0e4a71aa972ccf4b7e9e03d8-1-597_kaufbei_bem_wasserfilter_lina_n2(2).jpg?ts=1776261423",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Tabletop",
+      "Tanklos": "Nein",
+      "Stromanschluss erforderlich": "Ja",
+      "Integrierte Pumpe": "Ja",
+      "Filterstufen": "3",
+      "Filteranzahl": "3",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "200 GPD",
+      "Nennleistung": "200 GPD",
+      "Durchfluss": "0.5 L/min",
+      "Reinwasser-Abwasser-Verhältnis": "1:1",
+      "Min. Eingangstemperatur": "5.0 °C",
+      "Max. Eingangstemperatur": "38.0 °C",
+      "Remineralisierung": "Ja",
+      "Kaltwasser": "Ja",
+      "Heißwasser": "Ja",
+      "Temperaturstufen": "6",
+      "Rohwassertank": "6.0 L",
+      "Reinwassertank": "3.0 L",
+      "UV-Desinfektion": "Ja",
+      "Spannung": "220 V ~ 50 Hz",
+      "Max. Leistungsaufnahme": "2200.0 W",
+      "Abmessungen": "43 x 24 x 47.5 cm",
+      "Breite": "240.0 mm",
+      "Tiefe": "475.0 mm",
+      "Höhe": "430.0 mm",
+      "Gewicht": "11.0 kg",
+      "Display": "Ja",
+      "TDS-Anzeige Ausgang": "Ja",
+      "Filterstatusanzeige": "Ja"
+    },
+    "price": 599.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BEM",
+        "model": "LINA"
+      },
+      "source_id": 62,
+      "source_hash": "70762c862cd538432384b8214dd6d31b4c732cc39a37b3fa31cadbbaef958eb6",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Tabletop",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Tabletop",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.tankless": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.electricity_required": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.built_in_pump": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 3,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "3",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 3,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "3",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "200 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "200 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.5,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "max. 30 l/h",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "1:1",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "1:1",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5.0,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "5–38 °C",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 38.0,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "5–38 °C",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.cold_water": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.hot_water": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.temperature_levels": {
+          "value": 6,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "6",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.raw_water_tank_l": {
+          "value": 6.0,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "6 l",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.purified_water_tank_l": {
+          "value": 3.0,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "3 l",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "protection.uv_disinfection": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": "220 V ~ 50 Hz",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "220 V ~ 50 Hz",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2200.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "2,200 W",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "43 x 24 x 47.5 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "43 x 24 x 47.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 240.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "43 x 24 x 47.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 475.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "43 x 24 x 47.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 430.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "43 x 24 x 47.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 11.0,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "11 kg",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-lina-ro-countertop-water-filter-with-uv-hydrogen-and-6l-tank-new-version/597",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "bem-orion-ultra-slim",
+    "slug": "bem-orion-ultra-slim",
+    "brand": "BEM",
+    "brandSlug": "bem",
+    "name": "Orion Ultra Slim",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+    "image": "https://www.bemshop.de/media/20/7a/68/1771150947/oxid-018fe34a52b070c7b82460c1a246be16-1-600_bem_orion_wasserfilter_ultra_slim_01.jpg?ts=1771150947",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under-counter",
+      "Tanklos": "Ja",
+      "Stromanschluss erforderlich": "Ja",
+      "Integrierte Pumpe": "Ja",
+      "Filterstufen": "5",
+      "Filteranzahl": "5",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "800 GPD",
+      "Nennleistung": "800 GPD",
+      "Durchfluss": "1.5 L/min",
+      "Reinwasser-Abwasser-Verhältnis": "2:1",
+      "Min. Eingangsdruck": "0.97 bar",
+      "Max. Eingangsdruck": "4.14 bar",
+      "Remineralisierung": "Nein",
+      "Kaltwasser": "Nein",
+      "Heißwasser": "Nein",
+      "UV-Desinfektion": "Nein",
+      "Spannung": "100–240 V    50/60 Hz",
+      "Max. Leistungsaufnahme": "80.0 W",
+      "Abmessungen": "41.4 x 10.5 x 44.4 cm",
+      "Breite": "105.0 mm",
+      "Tiefe": "444.0 mm",
+      "Höhe": "414.0 mm",
+      "Gewicht": "12.2 kg",
+      "Display": "Nein",
+      "TDS-Anzeige Ausgang": "Ja",
+      "Filterstatusanzeige": "Ja"
+    },
+    "price": 750.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BEM",
+        "model": "Orion Ultra Slim"
+      },
+      "source_id": 63,
+      "source_hash": "f244e8ba97ea8ce56e4240fd4a2d21f7fc7aced5978d2097dabe3d32940ae222",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "Under-counter",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.electricity_required": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.built_in_pump": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "5",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "5",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 800,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "800 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 800,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "800 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 1.5,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "1.5 liters per minute",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "2:1",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "2:1",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 0.97,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "0.97–4.14 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 4.14,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "0.97–4.14 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.cold_water": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.hot_water": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "protection.uv_disinfection": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": "100–240 V    50/60 Hz",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "100–240 V    50/60 Hz",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 80.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "80W",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "41.4 x 10.5 x 44.4 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "41.4 x 10.5 x 44.4 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 105.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "41.4 x 10.5 x 44.4 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 444.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "41.4 x 10.5 x 44.4 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 414.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "41.4 x 10.5 x 44.4 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 12.2,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "12.2 kg",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-orion-ultra-slim-next-generation-reverse-osmosis-system/600",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "bem-unicora-2-0",
+    "slug": "bem-unicora-2-0",
+    "brand": "BEM",
+    "brandSlug": "bem",
+    "name": "Unicora 2.0",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+    "image": "https://www.bemshop.de/media/e5/e2/8b/1769696349/oxid-019334d1ce5d71ac98bf72d9032355df-1-610_unicora_01_29_26_1.jpg?ts=1769696349",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Tabletop",
+      "Tanklos": "Ja",
+      "Stromanschluss erforderlich": "Ja",
+      "Integrierte Pumpe": "Ja",
+      "Filterstufen": "2",
+      "Filteranzahl": "2",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "100 GPD",
+      "Nennleistung": "100 GPD",
+      "Durchfluss": "2.0 L/min",
+      "Reinwasser-Abwasser-Verhältnis": "1.2:1",
+      "Min. Eingangsdruck": "1.0 bar",
+      "Max. Eingangsdruck": "4.0 bar",
+      "Min. Eingangstemperatur": "5.0 °C",
+      "Max. Eingangstemperatur": "38.0 °C",
+      "Remineralisierung": "Nein",
+      "Kaltwasser": "Nein",
+      "Heißwasser": "Ja",
+      "Temperaturstufen": "6",
+      "UV-Desinfektion": "Ja",
+      "Spannung": "220 V~ / 50 Hz",
+      "Max. Leistungsaufnahme": "2100.0 W",
+      "Abmessungen": "34 x 43 x 20.5 cm",
+      "Breite": "430.0 mm",
+      "Tiefe": "205.0 mm",
+      "Höhe": "340.0 mm",
+      "Gewicht": "6.8 kg",
+      "Display": "Ja",
+      "TDS-Anzeige Ausgang": "Ja",
+      "Filterstatusanzeige": "Ja"
+    },
+    "price": 399.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BEM",
+        "model": "Unicora 2.0"
+      },
+      "source_id": 64,
+      "source_hash": "b8892928e41009a075eabb750c3a1c789fa0321ef6f9dfc17233a3f8cb528b0d",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Tabletop",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "Tabletop",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.electricity_required": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.built_in_pump": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 2,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "2",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 2,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "2",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 100,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "100 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 100,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "100 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 2.0,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "2.0 L/min",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "1.2:1",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "1.2:1",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 1.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "1–4 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 4.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "1–4 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5.0,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "5–38°C",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 38.0,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "5–38°C",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.cold_water": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.hot_water": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.temperature_levels": {
+          "value": 6,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "6",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "protection.uv_disinfection": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": "220 V~ / 50 Hz",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "220 V~ / 50 Hz",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2100.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "2,100 W",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "34 x 43 x 20.5 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "34 x 43 x 20.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 430.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "34 x 43 x 20.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 205.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "34 x 43 x 20.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 340.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "34 x 43 x 20.5 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 6.8,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "6.8 kg",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-unicora-2.0-new-generation-reverse-osmosis-water-filter-with-direct-connection/610",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "bem-robin",
+    "slug": "bem-robin",
+    "brand": "BEM",
+    "brandSlug": "bem",
+    "name": "Robin",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+    "image": "https://www.bemshop.de/media/a9/8c/bd/1740493642/oxid-01930751b3a271deab62477d3b2c7f22-1-1(33).jpg?ts=1740498335",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Tabletop",
+      "Tanklos": "Nein",
+      "Stromanschluss erforderlich": "Ja",
+      "Integrierte Pumpe": "Ja",
+      "Filterstufen": "5",
+      "Filteranzahl": "5",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "100 GPD",
+      "Nennleistung": "100 GPD",
+      "Durchfluss": "0.26 L/min",
+      "Reinwasser-Abwasser-Verhältnis": "1:1",
+      "Min. Eingangsdruck": "1.0 bar",
+      "Max. Eingangsdruck": "4.0 bar",
+      "Remineralisierung": "Nein",
+      "Kaltwasser": "Nein",
+      "Heißwasser": "Nein",
+      "Reinwassertank": "4.0 L",
+      "Spannung": "100–240 V - 50/60 Hz",
+      "Abmessungen": "36.5 x 13.6 x 25 cm",
+      "Breite": "136.0 mm",
+      "Tiefe": "250.0 mm",
+      "Höhe": "365.0 mm",
+      "Gewicht": "7.2 kg",
+      "Display": "Nein",
+      "TDS-Anzeige Ausgang": "Nein",
+      "Filterstatusanzeige": "Ja"
+    },
+    "price": 229.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BEM",
+        "model": "Robin"
+      },
+      "source_id": 65,
+      "source_hash": "72b0f3529fa234f12cd5a143905ae8438febe31f9300e9747ccaccbc33fdd5cf",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Tabletop",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "Tabletop",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.tankless": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.electricity_required": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.built_in_pump": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "5",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "5",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "RO membrane",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 100,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "100 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 100,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "100 GPD",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.26,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "15.6 l/h",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "1:1",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "1:1",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 1.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "1–4 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 4.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "1–4 bar",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.cold_water": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.hot_water": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.purified_water_tank_l": {
+          "value": 4.0,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "4 l",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": "100–240 V - 50/60 Hz",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "100–240 V - 50/60 Hz",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "36.5 x 13.6 x 25 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "36.5 x 13.6 x 25 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 136.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "36.5 x 13.6 x 25 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 250.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "36.5 x 13.6 x 25 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 365.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "36.5 x 13.6 x 25 cm",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 7.2,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "7.2 kg",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.bemshop.de/en/bem-robin-all-in-one-compact-reverse-osmosis-water-filtration-system-for-the-kitchen-drinking-water-filter/750",
+              "source_type": "manufacturer_page",
+              "original_text": "Yes",
+              "confidence": 0.99,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

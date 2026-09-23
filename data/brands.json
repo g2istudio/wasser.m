@@ -1120,5 +1120,19 @@
     "products_count": 1,
     "rating": null,
     "logo": "assets/brands/stillundlaut.png"
+  },
+  {
+    "slug": "bem",
+    "name": "BEM",
+    "country": "Germany",
+    "founded": null,
+    "website": "https://www.bemshop.de",
+    "group": "Reverse Osmosis",
+    "description_de": "Deutsche Marke für Auftisch- und Untertisch-Umkehrosmoseanlagen sowie Wasserstoffwasser-Systeme.",
+    "description_en": "German brand offering countertop and under-sink reverse-osmosis systems and hydrogen-water appliances.",
+    "products_count": 6,
+    "rating": null,
+    "logo": "assets/brands/bem.png",
+    "description": "Deutsche Marke für Auftisch- und Untertisch-Umkehrosmoseanlagen sowie Wasserstoffwasser-Systeme."
   }
 ]
