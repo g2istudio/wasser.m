@@ -1134,5 +1134,18 @@
     "rating": null,
     "logo": "assets/brands/bem.png",
     "description": "Deutsche Marke für Auftisch- und Untertisch-Umkehrosmoseanlagen sowie Wasserstoffwasser-Systeme."
+  },
+  {
+    "slug": "sydros",
+    "name": "SYDROS",
+    "country": "Germany",
+    "founded": null,
+    "website": "https://www.sydros.de",
+    "group": "Reverse Osmosis",
+    "description_de": "Deutscher Anbieter von Umkehrosmose- und Wasserfiltersystemen für Haushalt und Büro.",
+    "description_en": "German supplier of reverse-osmosis and water-filtration systems for homes and offices.",
+    "products_count": 0,
+    "rating": null,
+    "logo": "assets/brands/sydros.png"
   }
 ]
