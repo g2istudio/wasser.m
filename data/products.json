@@ -7600,5 +7600,431 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "osmofresh-proline-x2",
+    "slug": "osmofresh-proline-x2",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Proline X2",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/proline",
+    "image": "https://www.osmofresh.de/media/ab/7a/da/1720096039/OF_F_Proline_X3_Front_b.webp?ts=1720096039",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Untertisch",
+      "Filterstufen": "5",
+      "Membranleistung": "200 GPD",
+      "Nennleistung": "200 GPD",
+      "Durchfluss": "1.8 l/min",
+      "Min. Eingangsdruck": "1 bar",
+      "Standby-Leistung": "0.1 W",
+      "Abmessungen": "36x52x21 cm",
+      "Breite": "360 mm",
+      "Tiefe": "210 mm",
+      "Höhe": "520 mm",
+      "Gewicht": "16 kg",
+      "Display": "Nein"
+    },
+    "price": 239.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Proline X2"
+      },
+      "source_id": 56,
+      "source_hash": "ecb15e76ce7eb47db55760225b895fe6fd567add872153ed7b54c69a093135f3",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Untertisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch Osmoseanlage",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 4.8 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "PROLINE X2 - 200 GPD OHNE WASSERHAHN",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "PROLINE X2 - 200 GPD OHNE WASSERHAHN",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 1.8,
+          "unit": "l/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "1.8 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 1,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 1 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 0.1,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "0.1 W",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "36x52x21 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "36x52x21 cm (B,H,L)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 360,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "360 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 210,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "210 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 520,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "520 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 16,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "16 kg",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+              "source_type": "manufacturer_page",
+              "original_text": "Display",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-proline-x3",
+    "slug": "osmofresh-proline-x3",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Proline X3",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/proline",
+    "image": "https://www.osmofresh.de/media/ab/7a/da/1720096039/OF_F_Proline_X3_Front_b.webp?ts=1720096039",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under Sink",
+      "Filterstufen": "5",
+      "Nennleistung": "450–750 GPD",
+      "Durchfluss": "1.1–1.8 L/min",
+      "Abmessungen": "36 × 52 × 21 cm cm"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Proline X3"
+      },
+      "source_id": 57,
+      "source_hash": "1a564aa89e47cfddbea7be32e780a70e16cbb976f3a58b2b9586be80c6a1a245",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/proline",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "Die Osmose-Technologie ist ein bewährtes physikalisches Verfahren, mit dem du dein Leitungswasser zuverlässig von nahezu allen unerwünschten Stoffen befreist. Mithilfe von Druck und einer Membran werden selbst kleinste Partikel wie Viren, Bakterien, Medikamentenrückstände, Kalk, Fluor, Pestizide, Nitrat, Nitrit, Blei und sogar PFAS-Verbindungen effektiv aus dem Wasser gefiltert – für sauberes und sicheres Osmosewasser direkt aus deiner Proline X2/X3.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "system.installation_type": {
+          "value": "Under Sink",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch Osmoseanlage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "DIE 5 FILTERSTUFEN UND WOFÜR SIE DA SIND#FILTERSTUFEN",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": "450–750",
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "bei 1-3 Personen: 450 GPD // 1,1 L/min.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            },
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "bei 2-4 Personen: 600 GPD // 1,6 L/min.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            },
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "bei 3-6 Personen: 750 GPD // 1,8 L/min.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": "1.1–1.8",
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "bei 1-3 Personen: 450 GPD // 1,1 L/min.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            },
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "bei 2-4 Personen: 600 GPD // 1,6 L/min.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            },
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "bei 3-6 Personen: 750 GPD // 1,8 L/min.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "physical.dimensions_raw": {
+          "value": "36 × 52 × 21 cm",
+          "unit": "cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/proline-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "36x52x21cm",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

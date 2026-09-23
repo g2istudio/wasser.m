@@ -60,6 +60,16 @@
       "source_id": 55,
       "source_hash": "450cec5f96f6ca6a8a7354de0b2dd1211bcf5fa351396d2e7a3e15914d9ef637",
       "imported_at": "2026-09-23T02:08:40.357228+00:00"
+    },
+    "OsmoFresh::Proline X2": {
+      "source_id": 56,
+      "source_hash": "ecb15e76ce7eb47db55760225b895fe6fd567add872153ed7b54c69a093135f3",
+      "imported_at": "2026-09-23T02:09:34.721018+00:00"
+    },
+    "OsmoFresh::Proline X3": {
+      "source_id": 57,
+      "source_hash": "1a564aa89e47cfddbea7be32e780a70e16cbb976f3a58b2b9586be80c6a1a245",
+      "imported_at": "2026-09-23T02:09:34.721032+00:00"
     }
   }
 }
