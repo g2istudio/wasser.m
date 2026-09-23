@@ -128,6 +128,12 @@
       "source_hash": "1aafe0b9a569a57f2e2005531e3010739d360af3068dbd0e97eeb9d563d529ad",
       "renderer_version": 2,
       "imported_at": "2026-09-23T17:49:04.614688+00:00"
+    },
+    "Frizzlife::PX600": {
+      "source_id": 70,
+      "source_hash": "5439b9468b530ac0cabe2e5dd287d4c2085153b5ec981d693c54638fee51aeed",
+      "renderer_version": 2,
+      "imported_at": "2026-09-23T17:49:11.510983+00:00"
     }
   }
 }

@@ -11962,5 +11962,194 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "frizzlife-px600",
+    "slug": "frizzlife-px600",
+    "brand": "Frizzlife",
+    "brandSlug": "frizzlife",
+    "name": "PX600",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.frizzlife.de/products/px600",
+    "image": "https://www.frizzlife.de/cdn/shop/files/PX6002.png?v=1764747794&width=1612",
+    "brandLogo": "assets/brands/frizzlife.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "8",
+      "Filteranzahl": "8",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "600 GPD",
+      "Nennleistung": "600 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 459.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "Frizzlife",
+        "model": "PX600"
+      },
+      "source_id": 70,
+      "source_hash": "5439b9468b530ac0cabe2e5dd287d4c2085153b5ec981d693c54638fee51aeed",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.frizzlife.de/products/px600",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px600",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px600",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 8,
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px600",
+              "source_type": "manufacturer_page",
+              "original_text": "8 Stufen",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 8,
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px600",
+              "source_type": "manufacturer_page",
+              "original_text": "8 Stufen",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px600",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 600,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px600",
+              "source_type": "manufacturer_page",
+              "original_text": "600 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 600,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px600",
+              "source_type": "manufacturer_page",
+              "original_text": "600 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

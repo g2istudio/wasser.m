@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 69,
+      "source_id": 70,
       "brand": "Frizzlife",
-      "model": "WB99-H",
+      "model": "PX600",
       "action": "create",
-      "target_id": "frizzlife-wb99-h"
+      "target_id": "frizzlife-px600"
     }
   ],
   "rejected": [],
-  "catalog_before": 163,
-  "catalog_after": 164,
-  "completed_at": "2026-09-23T17:49:04.615140+00:00"
+  "catalog_before": 164,
+  "catalog_after": 165,
+  "completed_at": "2026-09-23T17:49:11.511265+00:00"
 }
