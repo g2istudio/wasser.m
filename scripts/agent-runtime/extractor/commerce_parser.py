@@ -607,6 +607,8 @@ def extract_commerce_product(url: str, brand: str, model: str,
     if voltage:
         product.electrical.voltage = _evidence(voltage[0], voltage[1], source)
     power = _lookup(specs, "power watt", "rated power", "max power", "leistung")
+    if power and not re.search(r"\b(?:W|Watt)\b", power[0], re.I):
+        power = None
     page_power = _number(power[0]) if power else None
     manual_power_facts = _manual_power_facts(manuals)
     manual_power = {item[1] for item in manual_power_facts}

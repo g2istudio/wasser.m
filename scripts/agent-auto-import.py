@@ -250,7 +250,9 @@ def render_page(product: dict, record: dict, fields: dict) -> str:
         evidence += f'<details><summary>{esc(FIELD_LABELS[path])}: {esc(shown(field))}</summary><p>ℹ Herstellerangabe · {esc(field.get("checked_at") or record["updated_at"][:10])}</p><blockquote>{esc(source["original_text"])}</blockquote><a href="{esc(source["source_url"])}" target="_blank" rel="noopener nofollow">Quelle beim Hersteller</a></details>'
     price = "—" if product.get("price") is None else f'{product["price"]:,.0f}'.replace(",", ".") + " €"
     brand_slug = product["brandSlug"]
-    main = f'''<main><div class="container"><div class="breadcrumbs"><a href="../products">Produkte</a> / {esc(title)}</div><section class="device-layout"><div class="device-photo"><img src="{esc(product["image"])}" alt="{esc(title)}" loading="eager"></div><div class="device-info"><a href="../brands/{brand_slug}"><img src="../assets/brands/{brand_slug}.png" alt="{esc(product["brand"])}" style="max-width:150px;max-height:55px;object-fit:contain"></a><h1>{esc(title)}</h1><span class="badge">{esc(product["category"])}</span><p class="lead">Technische Herstellerdaten mit feldbezogenen Quellen.</p><div class="price">{price}</div><p>Datenabgleich: {esc(record["updated_at"][:10])}.</p><a class="btn primary" href="{esc(product["source"])}" target="_blank" rel="noopener nofollow">Herstellerangebot ↗</a> <button class="btn" data-compare="{esc(product["id"])}">+ Compare</button></div></section><section class="panel"><h2>Technische Daten</h2><table class="spec-table">{rows}</table><p>Nicht verfügbare Herstellerangaben sind mit „—“ gekennzeichnet. Herstellerangaben sind keine unabhängigen Laborprüfungen.</p></section><section class="panel"><h2>Quellen und Datenprüfung</h2><p>ℹ Herstellerangabe · Zertifizierungen werden nur mit eigener überprüfbarer Evidenz übernommen.</p>{evidence}</section></div></main>'''
+    brand_logo = str(product.get("brandLogo") or f"assets/brands/{brand_slug}.png")
+    brand_logo_url = brand_logo if brand_logo.startswith("https://") else "../" + brand_logo.lstrip("./")
+    main = f'''<main><div class="container"><div class="breadcrumbs"><a href="../products">Produkte</a> / {esc(title)}</div><section class="device-layout"><div class="device-photo"><img src="{esc(product["image"])}" alt="{esc(title)}" loading="eager"></div><div class="device-info"><a href="../brands/{brand_slug}"><img src="{esc(brand_logo_url)}" alt="{esc(product["brand"])}" style="max-width:150px;max-height:55px;object-fit:contain"></a><h1>{esc(title)}</h1><span class="badge">{esc(product["category"])}</span><p class="lead">Technische Herstellerdaten mit feldbezogenen Quellen.</p><div class="price">{price}</div><p>Datenabgleich: {esc(record["updated_at"][:10])}.</p><a class="btn primary" href="{esc(product["source"])}" target="_blank" rel="noopener nofollow">Herstellerangebot ↗</a> <button class="btn" data-compare="{esc(product["id"])}">+ Compare</button></div></section><section class="panel"><h2>Technische Daten</h2><table class="spec-table">{rows}</table><p>Nicht verfügbare Herstellerangaben sind mit „—“ gekennzeichnet. Herstellerangaben sind keine unabhängigen Laborprüfungen.</p></section><section class="panel"><h2>Quellen und Datenprüfung</h2><p>ℹ Herstellerangabe · Zertifizierungen werden nur mit eigener überprüfbarer Evidenz übernommen.</p>{evidence}</section></div></main>'''
     return head + header + main + footer
 
 
@@ -273,6 +275,13 @@ def build_record(row: dict, products: list[dict]) -> tuple[dict, dict, bool]:
     brand_slug = slugify(brand)
     if not (ROOT / "brands" / f"{brand_slug}.html").exists():
         raise ValueError(f"brand page is missing: {brand_slug}")
+    brands = json.loads(read("data/brands.json"))
+    brand_record = next((item for item in brands if item.get("slug") == brand_slug), None)
+    if not brand_record or not brand_record.get("logo"):
+        raise ValueError(f"brand logo is missing: {brand_slug}")
+    brand_logo = str(brand_record["logo"])
+    if not brand_logo.startswith("https://") and not (ROOT / brand_logo).is_file():
+        raise ValueError(f"brand logo file is missing: {brand_logo}")
 
     matches = [p for p in products if
                (p.get("agent_import", {}).get("identity", {}).get("brand", "").casefold() == brand.casefold()
@@ -293,6 +302,7 @@ def build_record(row: dict, products: list[dict]) -> tuple[dict, dict, bool]:
     target["category"] = category(raw)
     target["source"] = source
     target["image"] = image
+    target["brandLogo"] = brand_logo
     target["summary"] = "Technische Herstellerdaten mit nachvollziehbaren Quellen."
     target["specs"] = {
         label: shown(fields[path]) if path in fields else "—"

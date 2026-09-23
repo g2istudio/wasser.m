@@ -57,6 +57,18 @@ class CommerceParserTests(unittest.TestCase):
         self.assertEqual(product.performance.rated_capacity_gpd.unit, "GPD")
         self.assertTrue(product.water_output.remineralization.value)
 
+    def test_liter_capacity_is_not_parsed_as_electrical_power(self):
+        html = """<html><head><title>Example RO5 Umkehrosmose</title>
+        <script type="application/ld+json">{"@type":"Product","name":"Example RO5","image":"https://example.com/ro5.jpg"}</script>
+        </head><body><dl><dt>Leistung</dt><dd>280 Liter pro Tag</dd></dl></body></html>"""
+        snapshot = PageSnapshot(
+            url="https://example.com/ro5", title="Example RO5 Umkehrosmose",
+            visible_text="Example RO5 Umkehrosmose Leistung 280 Liter pro Tag", raw_content=html,
+        )
+        with patch("extractor.commerce_parser._official_manuals", return_value=[]):
+            product, _, _ = extract_commerce_product(snapshot.url, "Example", "RO5", snapshot=snapshot)
+        self.assertIsNone(product.electrical.maximum_power_w.value)
+
     def test_keeps_conflicting_page_and_manual_values(self):
         html = """<html><head><title>Example RO 1</title>
         <script type="application/ld+json">{"@type":"Product","name":"Example RO 1","image":"https://example.com/1.jpg"}</script>
