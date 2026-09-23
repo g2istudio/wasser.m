@@ -8,12 +8,12 @@
       "source_id": 66,
       "brand": "WasserWelt",
       "model": "RO5",
-      "action": "create",
+      "action": "update",
       "target_id": "wasserwelt-ro5"
     }
   ],
   "rejected": [],
-  "catalog_before": 161,
+  "catalog_before": 162,
   "catalog_after": 162,
-  "completed_at": "2026-09-23T14:40:10.191353+00:00"
+  "completed_at": "2026-09-23T14:48:00.584273+00:00"
 }

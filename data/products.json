@@ -11494,7 +11494,7 @@
       "Filtrationsleistung": "—",
       "Heizleistung": "—",
       "Kühlleistung": "—",
-      "Max. Leistungsaufnahme": "280.0 W",
+      "Max. Leistungsaufnahme": "—",
       "Abmessungen": "420 x 250 x 450 mm",
       "Breite": "—",
       "Tiefe": "—",
@@ -11518,7 +11518,7 @@
         "model": "RO5"
       },
       "source_id": 66,
-      "source_hash": "fd80e08e8025d9d7540dc266bcfc24753cbdbdcae44804ed1cbbd1b23f8086e4",
+      "source_hash": "674cc7ce89a3fa776df2e54ae75d527298410696c248bffaba077e658a8939ea",
       "checked_at": "2026-09-23",
       "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
       "fields": {
@@ -11582,22 +11582,6 @@
           "verification_status": "official_specification",
           "checked_at": "2026-09-23"
         },
-        "electrical.maximum_power_w": {
-          "value": 280.0,
-          "unit": "W",
-          "evidence": [
-            {
-              "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
-              "source_type": "manufacturer_page",
-              "original_text": "280 Liter",
-              "confidence": 0.98,
-              "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
-            }
-          ],
-          "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
-        },
         "physical.dimensions_raw": {
           "value": "420 x 250 x 450 mm",
           "evidence": [
@@ -11615,6 +11599,7 @@
         }
       },
       "publication_status": "PUBLISH_READY"
-    }
+    },
+    "brandLogo": "assets/brands/wasserwelt.svg"
   }
 ]
