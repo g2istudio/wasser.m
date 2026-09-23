@@ -12340,5 +12340,194 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "frizzlife-pd1000-tam4",
+    "slug": "frizzlife-pd1000-tam4",
+    "brand": "Frizzlife",
+    "brandSlug": "frizzlife",
+    "name": "PD1000-TAM4",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.frizzlife.de/products/pd1000-tam4",
+    "image": "https://www.frizzlife.de/cdn/shop/files/PD1000_38b8d616-beb9-4727-ba2e-57f8fed96856.png?v=1764749755&width=1614",
+    "brandLogo": "assets/brands/frizzlife.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "1000 GPD",
+      "Nennleistung": "1000 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "1 ausgelegt. Bei zwei Teilen gefiltertem Wasser entsteht damit ein Teil Abwasser.",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "Ja",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 699.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "Frizzlife",
+        "model": "PD1000-TAM4"
+      },
+      "source_id": 72,
+      "source_hash": "93d4aca1238f143474eaa64d54bdedc52d330029eac32056af2186f6aaed1441",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
+              "source_type": "manufacturer_page",
+              "original_text": "1000 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
+              "source_type": "manufacturer_page",
+              "original_text": "1000 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "1 ausgelegt. Bei zwei Teilen gefiltertem Wasser entsteht damit ein Teil Abwasser.",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
+              "source_type": "manufacturer_page",
+              "original_text": "1 ausgelegt. Bei zwei Teilen gefiltertem Wasser entsteht damit ein Teil Abwasser.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
+              "source_type": "manufacturer_page",
+              "original_text": "Remineralisierung",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

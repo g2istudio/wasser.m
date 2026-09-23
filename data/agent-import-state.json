@@ -140,6 +140,12 @@
       "source_hash": "3aa6b5f5597abde198fa13a3e00c2e6666aee2c7696b476541b820fe4d0bc7c4",
       "renderer_version": 2,
       "imported_at": "2026-09-23T17:49:18.406581+00:00"
+    },
+    "Frizzlife::PD1000-TAM4": {
+      "source_id": 72,
+      "source_hash": "93d4aca1238f143474eaa64d54bdedc52d330029eac32056af2186f6aaed1441",
+      "renderer_version": 2,
+      "imported_at": "2026-09-23T17:49:25.232732+00:00"
     }
   }
 }
