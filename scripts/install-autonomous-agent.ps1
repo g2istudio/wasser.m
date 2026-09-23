@@ -15,7 +15,9 @@ if (-not (Test-Path -LiteralPath (Join-Path $AgentRoot ".env.example"))) {
     Copy-Item -LiteralPath (Join-Path $Runtime ".env.example") -Destination (Join-Path $AgentRoot ".env.example")
 }
 $Launcher = Join-Path $AgentRoot "wasser-agent.cmd"
-Set-Content -LiteralPath $Launcher -Encoding ascii -Value '@echo off', '"%~dp0.venv\Scripts\python.exe" "%~dp0wasser_agent.py" %*'
+$SiteRoot = Split-Path -Parent $PSScriptRoot
+$LauncherCommand = '"%~dp0.venv\Scripts\python.exe" "%~dp0wasser_agent.py" --site "' + $SiteRoot + '" %*'
+Set-Content -LiteralPath $Launcher -Encoding ascii -Value '@echo off', $LauncherCommand
 $Python = Join-Path $AgentRoot ".venv\Scripts\python.exe"
 if (Test-Path -LiteralPath $Python) {
     & $Python -m pip install "pypdf>=5,<7"
