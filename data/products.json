@@ -11444,5 +11444,177 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "wasserwelt-ro5",
+    "slug": "wasserwelt-ro5",
+    "brand": "WasserWelt",
+    "brandSlug": "wasserwelt",
+    "name": "RO5",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Reverse Osmosis",
+    "source": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
+    "image": "https://wasserweltfilter.de/wp-content/uploads/2023/06/94218d6f4cb8adc6e5eb6179099c828f.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "—",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "5",
+      "Filteranzahl": "5",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "280.0 W",
+      "Abmessungen": "420 x 250 x 450 mm",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 245.95,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "WasserWelt",
+        "model": "RO5"
+      },
+      "source_id": 66,
+      "source_hash": "fd80e08e8025d9d7540dc266bcfc24753cbdbdcae44804ed1cbbd1b23f8086e4",
+      "checked_at": "2026-09-23",
+      "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
+              "source_type": "manufacturer_page",
+              "original_text": "5 Stufen",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
+              "source_type": "manufacturer_page",
+              "original_text": "5 Stufen",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 280.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
+              "source_type": "manufacturer_page",
+              "original_text": "280 Liter",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "420 x 250 x 450 mm",
+          "evidence": [
+            {
+              "source_url": "https://wasserweltfilter.de/shop/umkehrosmose/kompakte/5-stufen-umkehrosmose-anlage-wasserfilter-ro5/",
+              "source_type": "manufacturer_page",
+              "original_text": "420 x 250 x 450 mm",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
