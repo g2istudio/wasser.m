@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+import re
 
 from pydantic import BaseModel
 
@@ -12,6 +13,17 @@ class ValidationReport:
     populated_fields: int = 0
     evidence_records: int = 0
     errors: list[str] = field(default_factory=list)
+
+
+def _evidence_in_text(quote: str | None, evidence_text: str) -> bool:
+    if not quote:
+        return False
+    if quote in evidence_text:
+        return True
+    # HTML tables often insert newlines or indentation between adjacent cells.
+    # Collapsing whitespace preserves the words and punctuation while allowing
+    # the same verbatim statement to survive layout normalization.
+    return re.sub(r"\s+", " ", quote).strip() in re.sub(r"\s+", " ", evidence_text).strip()
 
 
 def validate_product(
@@ -60,7 +72,7 @@ def validate_product(
                         expected_types.update({"manual", "manufacturer_datasheet", "manufacturer_page", "authorized_retailer"})
                     if item.source_type not in expected_types:
                         report.errors.append(f"Wrong evidence type: {path}")
-                    if not item.original_text or item.original_text not in evidence_text:
+                    if not _evidence_in_text(item.original_text, evidence_text):
                         report.errors.append(f"Non-verbatim evidence: {path}")
                     if is_question_text(item.original_text):
                         report.errors.append(f"Question cannot support a fact: {path}")
@@ -77,7 +89,7 @@ def validate_product(
                         expected_types.update({"manual", "manufacturer_datasheet", "manufacturer_page", "authorized_retailer"})
                     if item.source_url not in allowed_source_urls or item.source_type not in expected_types:
                         report.errors.append(f"Invalid object evidence source: {path}")
-                    if not item.original_text or item.original_text not in evidence_text:
+                    if not _evidence_in_text(item.original_text, evidence_text):
                         report.errors.append(f"Non-verbatim object evidence: {path}")
                     if is_question_text(item.original_text):
                         report.errors.append(f"Question cannot support an object claim: {path}")

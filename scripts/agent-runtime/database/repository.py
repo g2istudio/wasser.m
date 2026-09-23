@@ -27,6 +27,9 @@ CREATE TABLE IF NOT EXISTS products (
     status TEXT NOT NULL,
     source_url TEXT NOT NULL,
     product_json TEXT NOT NULL,
+    quality_status TEXT NOT NULL DEFAULT 'DATA_VERIFIED',
+    needs_review INTEGER NOT NULL DEFAULT 0,
+    source_conflict INTEGER NOT NULL DEFAULT 0,
     updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(brand, model)
 )
@@ -289,6 +292,14 @@ class ProductRepository:
                 connection.execute(
                     "ALTER TABLE products ADD COLUMN quality_status TEXT NOT NULL DEFAULT 'DATA_VERIFIED'"
                 )
+            if "needs_review" not in columns:
+                connection.execute(
+                    "ALTER TABLE products ADD COLUMN needs_review INTEGER NOT NULL DEFAULT 0"
+                )
+            if "source_conflict" not in columns:
+                connection.execute(
+                    "ALTER TABLE products ADD COLUMN source_conflict INTEGER NOT NULL DEFAULT 0"
+                )
             connection.execute(
                 "UPDATE products SET quality_status='DATA_VERIFIED' WHERE quality_status='VERIFIED'"
             )
@@ -505,18 +516,24 @@ class ProductRepository:
         with self._connect() as connection:
             connection.execute(
                 """
-                INSERT INTO products (brand, model, status, source_url, product_json, quality_status)
-                VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO products (
+                    brand, model, status, source_url, product_json, quality_status,
+                    needs_review, source_conflict
+                )
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(brand, model) DO UPDATE SET
                     status=excluded.status,
                     source_url=excluded.source_url,
                     product_json=excluded.product_json,
                     quality_status=excluded.quality_status,
+                    needs_review=excluded.needs_review,
+                    source_conflict=excluded.source_conflict,
                     updated_at=CURRENT_TIMESTAMP
                 """,
                 (
                     brand, model, record.status, source_url, payload,
                     "DATA_VERIFIED" if record.status == "VERIFIED" else record.status,
+                    int(record.needs_review), int(record.source_conflict),
                 ),
             )
 
@@ -542,7 +559,10 @@ class ProductRepository:
         return [WaterFilterProduct.model_validate_json(row["product_json"]) for row in rows]
 
     def product_rows(self, brand: str | None = None) -> list[dict]:
-        query = "SELECT brand, model, status, quality_status, source_url, product_json FROM products"
+        query = (
+            "SELECT brand, model, status, quality_status, source_url, product_json, "
+            "needs_review, source_conflict FROM products"
+        )
         parameters: tuple = ()
         if brand:
             query += " WHERE lower(brand)=lower(?)"

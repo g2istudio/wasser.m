@@ -5,6 +5,8 @@ from pathlib import Path
 from database.repository import ProductRepository, canonical_product_id, canonicalize_url
 from crawler.page_collector import PageSnapshot
 from extractor.commerce_parser import extract_commerce_product
+from extractor.publication import assess_publication
+from extractor.validation import _evidence_in_text
 from models.product import Evidence, ProductValue, UnmappedAttribute, WaterFilterProduct
 from provenance import persist_product_facts
 from runtime_control import BudgetExceeded, Budgets, RuntimeMeter, calculated_confidence
@@ -109,6 +111,27 @@ class RuntimeArchitectureTests(unittest.TestCase):
         second = client.signed_headers(b"{}", "example:x1:2", timestamp="1", nonce="n")
         self.assertEqual(first["X-Wasser-Signature"], second["X-Wasser-Signature"])
         self.assertEqual(first["Idempotency-Key"], "example:x1:2")
+
+    def test_missing_characteristics_do_not_block_publication(self):
+        product = WaterFilterProduct()
+        product.identity.brand.value = "Example"
+        product.identity.model.value = "RO100"
+        product.identity.product_name.value = "Example RO100 reverse osmosis system"
+        product.system.technology.value = "Reverse Osmosis"
+        product.image.url = "https://example.com/ro100.jpg"
+        product.images = [product.image]
+        product.sources.manufacturer_url = "https://example.com/ro100"
+        assessment = assess_publication(product)
+        self.assertTrue(assessment.ready)
+        self.assertIn("system.installation_type", assessment.missing)
+        self.assertIn("filtration.advertised_stage_count", assessment.missing)
+        self.assertEqual(assessment.blocking, [])
+
+    def test_evidence_matching_ignores_html_layout_whitespace(self):
+        self.assertTrue(_evidence_in_text(
+            "37,00 × 37,00 × 33,00 cm",
+            "37,00 ×\n                  37,00 ×\n33,00 cm",
+        ))
 
 
 if __name__ == "__main__":

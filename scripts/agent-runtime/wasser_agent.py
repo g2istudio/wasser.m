@@ -19,7 +19,7 @@ from crawler.worker import process_url, run_batch
 from database.repository import ProductRepository
 from extractor.publication import assess_publication
 from extractor.validation import validate_product
-from models.product import WaterFilterProduct
+from models.product import ProductRecord, WaterFilterProduct
 from provenance import persist_product_facts
 from runtime_control import BudgetExceeded, Budgets, RuntimeMeter
 from sources.brave_search import BraveSearchProvider, load_local_env
@@ -168,11 +168,30 @@ def reprocess(repository, meter, args) -> dict:
         product_id = repository.upsert_canonical_product(row["brand"], row["model"], taxonomy=product.taxonomy,
                                                          status=row["quality_status"], schema_version=args.schema_version)
         facts = persist_product_facts(repository, product_id, product, "reprocess")
-        report = validate_product(product, snapshot["normalized_content"], row["source_url"])
+        # Some commerce servers replace the multiplication sign in visible
+        # dimension text with U+FFFD while the structured value remains intact.
+        # Repair only the unambiguous numeric separator for evidence matching.
+        evidence_text = re.sub(
+            r"(?<=\d)\s*\N{REPLACEMENT CHARACTER}\s*(?=\d)",
+            " × ",
+            snapshot["normalized_content"],
+        )
+        report = validate_product(product, evidence_text, row["source_url"])
         publication = assess_publication(product)
-        status = "PUBLISH_READY" if report.valid and publication.ready and product.taxonomy != "UNKNOWN/NEW_TYPE" else "NEEDS_REVIEW"
+        status = (
+            "PUBLISH_READY"
+            if report.valid and publication.ready and product.taxonomy != "UNKNOWN/NEW_TYPE"
+            and not bool(row.get("source_conflict"))
+            else "NEEDS_REVIEW"
+        )
         repository.upsert_canonical_product(row["brand"], row["model"], taxonomy=product.taxonomy,
                                              status=status, schema_version=args.schema_version)
+        repository.save(ProductRecord(
+            product=product,
+            status=status,
+            needs_review=status == "NEEDS_REVIEW",
+            source_conflict=bool(row.get("source_conflict")),
+        ))
         meter.consume("pipeline", "products", 1, product_id)
         meter.event("PRODUCT_REPROCESSED", "reprocess", product_id,
                     {"schema_version": args.schema_version, "facts": facts, "status": status})

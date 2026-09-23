@@ -8,6 +8,7 @@ class PublicationAssessment:
     ready: bool
     profile: str
     missing: list[str] = field(default_factory=list)
+    blocking: list[str] = field(default_factory=list)
 
 
 def assess_publication(product: WaterFilterProduct) -> PublicationAssessment:
@@ -45,15 +46,22 @@ def assess_publication(product: WaterFilterProduct) -> PublicationAssessment:
             "filtration.advertised_stage_count": product.filtration.advertised_stage_count.value,
         }
 
-    universal = {
+    # Identity, classification, source and primary image are required to avoid
+    # publishing the wrong product. Missing technical characteristics are
+    # allowed after enrichment is exhausted and are rendered as an em dash.
+    blocking_fields = {
         "identity.brand": product.identity.brand.value,
         "identity.model": product.identity.model.value,
         "identity.product_name": product.identity.product_name.value,
         "system.technology": product.system.technology.value,
-        "physical.dimensions_raw": product.physical.dimensions_raw.value,
-        "identity.brand_logo": product.identity.brand_logo.url,
         "primary_image": product.images[0].url if len(product.images) == 1 else None,
         "sources.manufacturer_url": product.sources.manufacturer_url,
     }
-    missing = [path for path, value in {**universal, **required}.items() if value is None or value == ""]
-    return PublicationAssessment(ready=not missing, profile=profile, missing=missing)
+    optional_fields = {
+        "physical.dimensions_raw": product.physical.dimensions_raw.value,
+        "identity.brand_logo": product.identity.brand_logo.url,
+        **required,
+    }
+    blocking = [path for path, value in blocking_fields.items() if value is None or value == ""]
+    missing = [path for path, value in optional_fields.items() if value is None or value == ""]
+    return PublicationAssessment(ready=not blocking, profile=profile, missing=missing, blocking=blocking)
