@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 66,
-      "brand": "WasserWelt",
-      "model": "RO5",
-      "action": "update",
-      "target_id": "wasserwelt-ro5"
+      "source_id": 68,
+      "brand": "Frizzlife",
+      "model": "PD600-TAM3",
+      "action": "create",
+      "target_id": "frizzlife-pd600-tam3"
     }
   ],
   "rejected": [],
   "catalog_before": 162,
-  "catalog_after": 162,
-  "completed_at": "2026-09-23T14:59:35.358994+00:00"
+  "catalog_after": 163,
+  "completed_at": "2026-09-23T17:48:57.226311+00:00"
 }

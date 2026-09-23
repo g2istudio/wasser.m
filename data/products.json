@@ -11601,5 +11601,194 @@
       "publication_status": "PUBLISH_READY"
     },
     "brandLogo": "assets/brands/wasserwelt.svg"
+  },
+  {
+    "id": "frizzlife-pd600-tam3",
+    "slug": "frizzlife-pd600-tam3",
+    "brand": "Frizzlife",
+    "brandSlug": "frizzlife",
+    "name": "PD600-TAM3",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.frizzlife.de/products/pd600tam3",
+    "image": "https://www.frizzlife.de/cdn/shop/files/PD600_2_21ee22fc-50dd-421a-a2e2-5e7e438f51fe.png?v=1764746430&width=1614",
+    "brandLogo": "assets/brands/frizzlife.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "600 GPD",
+      "Nennleistung": "600 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "1 ausgelegt. Damit entstehen bei der Filtration zwei Teile gefiltertes Wasser und ein Teil Abwasser.",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "Ja",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 429.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "Frizzlife",
+        "model": "PD600-TAM3"
+      },
+      "source_id": 68,
+      "source_hash": "c564f52f1875346a66b74576ef5bd4eccf3363f08998ecf00ff3e35c24ad6bdf",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.frizzlife.de/products/pd600tam3",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd600tam3",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd600tam3",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd600tam3",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 600,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd600tam3",
+              "source_type": "manufacturer_page",
+              "original_text": "600 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 600,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd600tam3",
+              "source_type": "manufacturer_page",
+              "original_text": "600 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "1 ausgelegt. Damit entstehen bei der Filtration zwei Teile gefiltertes Wasser und ein Teil Abwasser.",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd600tam3",
+              "source_type": "manufacturer_page",
+              "original_text": "1 ausgelegt. Damit entstehen bei der Filtration zwei Teile gefiltertes Wasser und ein Teil Abwasser.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd600tam3",
+              "source_type": "manufacturer_page",
+              "original_text": "Remineralisierung",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

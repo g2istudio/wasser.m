@@ -116,6 +116,12 @@
       "source_hash": "674cc7ce89a3fa776df2e54ae75d527298410696c248bffaba077e658a8939ea",
       "renderer_version": 2,
       "imported_at": "2026-09-23T14:59:35.358708+00:00"
+    },
+    "Frizzlife::PD600-TAM3": {
+      "source_id": 68,
+      "source_hash": "c564f52f1875346a66b74576ef5bd4eccf3363f08998ecf00ff3e35c24ad6bdf",
+      "renderer_version": 2,
+      "imported_at": "2026-09-23T17:48:57.225999+00:00"
     }
   }
 }
