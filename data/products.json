@@ -12151,5 +12151,194 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "frizzlife-px500-a",
+    "slug": "frizzlife-px500-a",
+    "brand": "Frizzlife",
+    "brandSlug": "frizzlife",
+    "name": "PX500-A",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.frizzlife.de/products/px500-a",
+    "image": "https://www.frizzlife.de/cdn/shop/files/PX500_2_2be7ac18-27fc-4e5d-8cef-0d89dfe1e11d.png?v=1764748695&width=1614",
+    "brandLogo": "assets/brands/frizzlife.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "500 GPD",
+      "Nennleistung": "500 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "1. Das bedeutet: Für 1,5 Tassen gereinigtes Wasser entsteht etwa 1 Tasse Abwasser.",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "Ja",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 439.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "Frizzlife",
+        "model": "PX500-A"
+      },
+      "source_id": 71,
+      "source_hash": "3aa6b5f5597abde198fa13a3e00c2e6666aee2c7696b476541b820fe4d0bc7c4",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.frizzlife.de/products/px500-a",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px500-a",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px500-a",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px500-a",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 500,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px500-a",
+              "source_type": "manufacturer_page",
+              "original_text": "500 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 500,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px500-a",
+              "source_type": "manufacturer_page",
+              "original_text": "500 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "1. Das bedeutet: Für 1,5 Tassen gereinigtes Wasser entsteht etwa 1 Tasse Abwasser.",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px500-a",
+              "source_type": "manufacturer_page",
+              "original_text": "1. Das bedeutet: Für 1,5 Tassen gereinigtes Wasser entsteht etwa 1 Tasse Abwasser.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/px500-a",
+              "source_type": "manufacturer_page",
+              "original_text": "Remineralisierung",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
