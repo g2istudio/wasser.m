@@ -10,8 +10,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import datetime, timezone
+import hashlib
 from io import BytesIO
 import json
+import logging
 import re
 from typing import Iterable
 from urllib.parse import urljoin
@@ -24,8 +26,10 @@ try:
 except ImportError:  # The agent remains fail-closed when optional PDF support is absent.
     PdfReader = None
 
+logging.getLogger("pypdf").setLevel(logging.ERROR)
+
 from crawler.page_collector import PageSnapshot, product_json_ld_documents
-from models.product import Evidence, ProductImage, ProductSources, ProductValue, WaterFilterProduct
+from models.product import Evidence, ProductImage, ProductSources, ProductValue, UnmappedAttribute, WaterFilterProduct
 
 
 TODAY = datetime.now(timezone.utc).date().isoformat()
@@ -75,6 +79,7 @@ def _boolean(value: str | None) -> bool | None:
 
 
 def _evidence(value, quote: str, url: str, unit: str | None = None) -> ProductValue:
+    evidence_type = "manual" if ".pdf" in url.casefold() else "manufacturer_page"
     return ProductValue(
         value=value,
         unit=unit,
@@ -82,7 +87,7 @@ def _evidence(value, quote: str, url: str, unit: str | None = None) -> ProductVa
         checked_at=TODAY,
         evidence=[Evidence(
             source_url=url,
-            source_type="manufacturer_page",
+            source_type=evidence_type,
             original_text=_clean(quote),
             confidence=0.98,
             verification_status="official_specification",
@@ -244,7 +249,8 @@ def _find_quote(text: str, *terms: str) -> str:
     return ""
 
 
-def _official_manuals(soup: BeautifulSoup, page_url: str) -> list[tuple[str, str]]:
+def _official_manuals(soup: BeautifulSoup, page_url: str, request_hook=None,
+                      document_hook=None) -> list[tuple[str, str]]:
     """Read one product manual linked by the official product page, without AI."""
     if PdfReader is None:
         return []
@@ -262,8 +268,10 @@ def _official_manuals(soup: BeautifulSoup, page_url: str) -> list[tuple[str, str
         seen.add(href)
         priority = 0 if any(term in label for term in ("deutsch", "_de.", "german")) else 1
         candidates.append((priority, href))
-    for _, href in sorted(candidates):
+    for _, href in sorted(candidates)[:3]:
         try:
+            if request_hook:
+                request_hook(href)
             response = requests.get(href, headers={"User-Agent": USER_AGENT}, timeout=40)
             response.raise_for_status()
             if len(response.content) > 20_000_000 or not response.content.startswith(b"%PDF"):
@@ -271,6 +279,12 @@ def _official_manuals(soup: BeautifulSoup, page_url: str) -> list[tuple[str, str
             reader = PdfReader(BytesIO(response.content))
             text = _clean("\n".join((pdf_page.extract_text() or "") for pdf_page in reader.pages))[:200_000]
             if text:
+                if document_hook:
+                    document_hook(href, text, {
+                        "content_type": response.headers.get("Content-Type"),
+                        "content_length": len(response.content),
+                        "binary_sha256": hashlib.sha256(response.content).hexdigest(),
+                    })
                 return [(href, text)]
         except Exception:
             continue
@@ -305,16 +319,19 @@ def _signatures_agree(left: tuple[float, ...], right: tuple[float, ...]) -> bool
     )
 
 
-def _manual_power_values(manuals: list[tuple[str, str]]) -> set[float]:
-    values = set()
+def _manual_power_facts(manuals: list[tuple[str, str]]) -> list[tuple[str, float, str]]:
+    facts = []
     pattern = re.compile(
         r"(?:Nennleistung(?:\s*\([^)]*\))?|Leistungsaufnahme)\s*:?[ ]*"
         r"(\d+(?:[.,]\d+)?)\s*W\b",
         re.I,
     )
-    for _, text in manuals:
-        values.update(float(match.group(1).replace(",", ".")) for match in pattern.finditer(text))
-    return values
+    for manual_url, text in manuals:
+        facts.extend(
+            (manual_url, float(match.group(1).replace(",", ".")), match.group(0))
+            for match in pattern.finditer(text)
+        )
+    return facts
 
 
 def _brand_logo(documents: list[object], soup: BeautifulSoup, url: str) -> str:
@@ -334,25 +351,37 @@ def _brand_logo(documents: list[object], soup: BeautifulSoup, url: str) -> str:
     return ""
 
 
-def load_commerce_page(url: str, model: str) -> CommercePage:
-    response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=35)
-    response.raise_for_status()
-    if not response.encoding or response.encoding.casefold() in {"ascii", "iso-8859-1"}:
-        response.encoding = response.apparent_encoding or "utf-8"
-    if "�" in response.text and response.apparent_encoding:
-        response.encoding = response.apparent_encoding
-    soup = BeautifulSoup(response.text, "lxml")
+def load_commerce_page(url: str, model: str, snapshot: PageSnapshot | None = None) -> CommercePage:
+    headers: dict = {}
+    if snapshot is not None and snapshot.raw_content:
+        html = snapshot.raw_content
+        final_url = snapshot.url
+        headers = snapshot.http_metadata
+    else:
+        response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=35)
+        response.raise_for_status()
+        if not response.encoding or response.encoding.casefold() in {"ascii", "iso-8859-1"}:
+            response.encoding = response.apparent_encoding or "utf-8"
+        if "�" in response.text and response.apparent_encoding:
+            response.encoding = response.apparent_encoding
+        html = response.text
+        final_url = str(response.url)
+        headers = dict(response.headers)
+    soup = BeautifulSoup(html, "lxml")
     documents = _json_documents(soup)
-    snapshot = PageSnapshot(
-        url=str(response.url),
+    parsed_snapshot = PageSnapshot(
+        url=final_url,
         title=_clean(soup.title.get_text(" ", strip=True) if soup.title else ""),
         visible_text=_clean(soup.get_text("\n", strip=True))[:100_000],
         json_ld=[json.dumps(item, ensure_ascii=False) for item in documents],
+        raw_content=html,
+        fetch_method=snapshot.fetch_method if snapshot else "http",
+        http_metadata=headers,
     )
     return CommercePage(
-        platform=detect_platform(response.text, dict(response.headers)),
+        platform=detect_platform(html, headers),
         soup=soup,
-        snapshot=snapshot,
+        snapshot=parsed_snapshot,
         product=_product_node(documents, model),
         specs=_specs(soup),
     )
@@ -371,12 +400,16 @@ def _set_number(target, attr: str, item: tuple[str, str] | None, url: str, unit:
         setattr(target, attr, _evidence(_number(item[0]), item[1], url, unit))
 
 
-def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFilterProduct, PageSnapshot, str]:
-    page = load_commerce_page(url, model)
+def extract_commerce_product(url: str, brand: str, model: str,
+                             snapshot: PageSnapshot | None = None,
+                             request_hook=None, document_hook=None) -> tuple[WaterFilterProduct, PageSnapshot, str]:
+    page = load_commerce_page(url, model, snapshot=snapshot)
     soup, node, specs = page.soup, page.product, page.specs
     source = page.snapshot.url
     page_visible_text = page.snapshot.visible_text
-    manuals = _official_manuals(soup, source)
+    manuals = _official_manuals(
+        soup, source, request_hook=request_hook, document_hook=document_hook
+    )
     if manuals:
         page.snapshot.visible_text += "\n" + "\n".join(text for _, text in manuals)
     title = _clean(node.get("name")) or _clean((soup.select_one("h1") or soup.title).get_text(" ", strip=True))
@@ -511,15 +544,33 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
                 break
     if dimensions and dimensions_source == source:
         page_signature = _dimension_signature(dimensions[0])
-        manual_signatures = {
-            signature
-            for _, manual_text in manuals
-            for signature in [_dimension_signature(manual_text)]
-            if signature is not None
-        }
+        manual_dimension_facts = []
+        for manual_url, manual_text in manuals:
+            match = re.search(
+                r"\b\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\s*[x×]\s*"
+                r"\d+(?:[.,]\d+)?\s*(?:cm|mm|in(?:ch(?:es)?)?)\b",
+                manual_text,
+                re.I,
+            )
+            if match and _dimension_signature(match.group(0)):
+                manual_dimension_facts.append((manual_url, match.group(0), _dimension_signature(match.group(0))))
+        manual_signatures = {item[2] for item in manual_dimension_facts}
         if page_signature and manual_signatures and not any(
             _signatures_agree(page_signature, signature) for signature in manual_signatures
         ):
+            product.unmapped_attributes.append(UnmappedAttribute(
+                original_name="conflict.physical.dimensions_raw.page",
+                value=dimensions[0], source_url=source, evidence=dimensions[1],
+                extraction_method="html", confidence=0.4,
+                parser_version="2", schema_version=product.schema_version,
+            ))
+            for manual_url, manual_value, _ in manual_dimension_facts:
+                product.unmapped_attributes.append(UnmappedAttribute(
+                    original_name="conflict.physical.dimensions_raw.manual",
+                    value=manual_value, source_url=manual_url, evidence=manual_value,
+                    extraction_method="pdf", confidence=0.4,
+                    parser_version="2", schema_version=product.schema_version,
+                ))
             dimensions = None
     if dimensions:
         normalized_dimensions = re.sub(r"(?<=\d)\s*[^\w\s.,]\s*(?=\d)", " × ", dimensions[0])
@@ -538,8 +589,22 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
         product.electrical.voltage = _evidence(voltage[0], voltage[1], source)
     power = _lookup(specs, "power watt", "rated power", "max power", "leistung")
     page_power = _number(power[0]) if power else None
-    manual_power = _manual_power_values(manuals)
+    manual_power_facts = _manual_power_facts(manuals)
+    manual_power = {item[1] for item in manual_power_facts}
     if page_power is not None and manual_power and all(abs(page_power - value) > 1 for value in manual_power):
+        product.unmapped_attributes.append(UnmappedAttribute(
+            original_name="conflict.electrical.maximum_power_w.page",
+            value=page_power, unit="W", source_url=source, evidence=power[1],
+            extraction_method="html", confidence=0.4,
+            parser_version="2", schema_version=product.schema_version,
+        ))
+        for manual_url, manual_value, manual_quote in manual_power_facts:
+            product.unmapped_attributes.append(UnmappedAttribute(
+                original_name="conflict.electrical.maximum_power_w.manual",
+                value=manual_value, unit="W", source_url=manual_url, evidence=manual_quote,
+                extraction_method="pdf", confidence=0.4,
+                parser_version="2", schema_version=product.schema_version,
+            ))
         power = None
     _set_number(product.electrical, "maximum_power_w", power, source, "W")
 
@@ -557,4 +622,27 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
         manufacturer_url=source,
         additional_urls=[manual_url for manual_url, _ in manuals],
     )
+    mapped_labels = (
+        "installation", "montage", "stage", "stufe", "filter count", "membrane",
+        "capacity", "gpd", "durchfluss", "flow rate", "ratio", "abwasser",
+        "dimension", "abmess", "masse", "weight", "gewicht", "remineral",
+        "hot water", "heisswasser", "cold water", "kaltwasser", "uv ", "display",
+        "filter replacement", "filterstatus", "tds", "voltage", "spannung",
+        "power", "leistung", "price", "preis", "currency", "waehrung",
+    )
+    for label, (raw_value, evidence) in specs.items():
+        if any(term in label for term in mapped_labels):
+            continue
+        if not raw_value or len(raw_value) > 500 or len(evidence) > 1000:
+            continue
+        product.unmapped_attributes.append(UnmappedAttribute(
+            original_name=label,
+            value=raw_value,
+            source_url=source,
+            evidence=evidence,
+            extraction_method="html",
+            confidence=0.75,
+            parser_version="2",
+            schema_version=product.schema_version,
+        ))
     return product, page.snapshot, page.platform

@@ -1,10 +1,11 @@
 import unittest
+from unittest.mock import patch
 
 from bs4 import BeautifulSoup
 
 from crawler.candidate_worker import _model_from_official_title
 from crawler.page_collector import PageSnapshot
-from extractor.commerce_parser import _specs, detect_platform
+from extractor.commerce_parser import _specs, detect_platform, extract_commerce_product
 
 
 class CommerceParserTests(unittest.TestCase):
@@ -39,6 +40,25 @@ class CommerceParserTests(unittest.TestCase):
         for title, expected in cases.items():
             snapshot = PageSnapshot(url="https://www.sydros.de/products/example", title=title, visible_text="")
             self.assertEqual(_model_from_official_title(snapshot, "SYDROS", "H2"), expected)
+
+    def test_keeps_conflicting_page_and_manual_values(self):
+        html = """<html><head><title>Example RO 1</title>
+        <script type="application/ld+json">{"@type":"Product","name":"Example RO 1","image":"https://example.com/1.jpg"}</script>
+        </head><body><dl><dt>Dimensions</dt><dd>15 x 43 x 43 cm</dd>
+        <dt>Rated power</dt><dd>2200 W</dd></dl></body></html>"""
+        snapshot = PageSnapshot(url="https://example.com/ro1", title="Example RO 1",
+                                visible_text="Example RO 1 Dimensions 15 x 43 x 43 cm Rated power 2200 W",
+                                raw_content=html)
+        manual = "Dimensions 405 x 142 x 415 mm Nennleistung: 75 W"
+        with patch("extractor.commerce_parser._official_manuals", return_value=[("https://example.com/manual.pdf", manual)]):
+            product, _, _ = extract_commerce_product(snapshot.url, "Example", "RO1", snapshot=snapshot)
+        names = {item.original_name for item in product.unmapped_attributes}
+        self.assertIn("conflict.physical.dimensions_raw.page", names)
+        self.assertIn("conflict.physical.dimensions_raw.manual", names)
+        self.assertIn("conflict.electrical.maximum_power_w.page", names)
+        self.assertIn("conflict.electrical.maximum_power_w.manual", names)
+        self.assertIsNone(product.physical.dimensions_raw.value)
+        self.assertIsNone(product.electrical.maximum_power_w.value)
 
 
 if __name__ == "__main__":

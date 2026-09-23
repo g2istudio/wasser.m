@@ -11,6 +11,8 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
+__pycache__/
+*.py[cod]
 *.pid
 *.seed
 *.pid.lock

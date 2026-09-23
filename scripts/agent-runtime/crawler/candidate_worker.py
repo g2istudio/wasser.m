@@ -23,15 +23,17 @@ OFFICIAL_PRODUCT_TERMS = (
     "osmosis water filter",
     "osmose water filter",
     "ro countertop water filter",
+    "drinking water filter",
+    "water filtration system",
+    "wasserfiltersystem",
+    "wasserhahnfilter",
+    "untertischfilter",
+    "whole house filter",
 )
 
 ACCESSORY_TITLE_URL_TERMS = (
     "replacement",
     "ersatz",
-    "filter for",
-    "filter für",
-    "filter fur",
-    "filter fuer",
     "water pitcher",
     "ersatzfilter",
     "weiteres jahr",

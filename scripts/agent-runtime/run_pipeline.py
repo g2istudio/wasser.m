@@ -18,7 +18,7 @@ from sources.brave_search import load_local_env
 
 
 ROOT = Path(__file__).resolve().parent
-DEFAULT_SITE = Path(r"C:\Users\myuae\.codex\.chatgpt-projects\g-p-6a54146cf1408191a491af30e762e12e\wasser-site")
+DEFAULT_SITE = Path(os.getenv("WASSER_SITE_ROOT", str(Path.cwd())))
 
 
 def queued_candidates(repository: ProductRepository, limit: int) -> list[str]:
@@ -27,7 +27,9 @@ def queued_candidates(repository: ProductRepository, limit: int) -> list[str]:
 
 async def run(args) -> dict:
     load_local_env(ROOT / ".env")
-    os.environ["WASSER_ALLOW_AI"] = "false"
+    os.environ.setdefault("WASSER_ALLOW_AI", "true")
+    os.environ.setdefault("WASSER_AI_PROVIDER", "gemini")
+    os.environ.setdefault("WASSER_AI_FALLBACK_LOCAL", "false")
     repository = ProductRepository(args.db)
     report = {"mode": "publish" if args.publish else "dry-run", "discovery": None}
 

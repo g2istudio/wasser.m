@@ -12,6 +12,7 @@ param(
 $ErrorActionPreference = "Stop"
 $Python = Join-Path $AgentRoot ".venv\Scripts\python.exe"
 $Pipeline = Join-Path $AgentRoot "run_pipeline.py"
+$SiteRoot = Split-Path -Parent $PSScriptRoot
 $Log = Join-Path $env:TEMP "wasser-market-autonomous-pipeline.log"
 $Lock = Join-Path $env:TEMP "wasser-market-autonomous-pipeline.lock"
 
@@ -23,6 +24,7 @@ try {
     if (-not (Test-Path -LiteralPath $Pipeline)) { throw "Pipeline not found: $Pipeline" }
     $Arguments = @(
         $Pipeline,
+        "--site", $SiteRoot,
         "--query", "umkehrosmose system germany",
         "--country", "DE",
         "--language", "de",
@@ -42,4 +44,3 @@ finally {
     Remove-Item -LiteralPath $Lock -Force -ErrorAction SilentlyContinue
     Stop-Transcript | Out-Null
 }
-

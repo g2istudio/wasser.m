@@ -55,7 +55,10 @@ def validate_product(
                     report.evidence_records += 1
                     if item.source_url not in allowed_source_urls:
                         report.errors.append(f"Wrong evidence URL: {path}")
-                    if item.source_type != source_type:
+                    expected_types = {source_type}
+                    if item.source_url in product.sources.additional_urls or item.source_url == product.sources.manual_url:
+                        expected_types.update({"manual", "manufacturer_datasheet"})
+                    if item.source_type not in expected_types:
                         report.errors.append(f"Wrong evidence type: {path}")
                     if not item.original_text or item.original_text not in evidence_text:
                         report.errors.append(f"Non-verbatim evidence: {path}")
@@ -69,7 +72,10 @@ def validate_product(
             if isinstance(own_evidence, list):
                 for item in own_evidence:
                     report.evidence_records += 1
-                    if item.source_url not in allowed_source_urls or item.source_type != source_type:
+                    expected_types = {source_type}
+                    if item.source_url in product.sources.additional_urls or item.source_url == product.sources.manual_url:
+                        expected_types.update({"manual", "manufacturer_datasheet"})
+                    if item.source_url not in allowed_source_urls or item.source_type not in expected_types:
                         report.errors.append(f"Invalid object evidence source: {path}")
                     if not item.original_text or item.original_text not in evidence_text:
                         report.errors.append(f"Non-verbatim object evidence: {path}")
