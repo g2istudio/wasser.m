@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 68,
+      "source_id": 69,
       "brand": "Frizzlife",
-      "model": "PD600-TAM3",
+      "model": "WB99-H",
       "action": "create",
-      "target_id": "frizzlife-pd600-tam3"
+      "target_id": "frizzlife-wb99-h"
     }
   ],
   "rejected": [],
-  "catalog_before": 162,
-  "catalog_after": 163,
-  "completed_at": "2026-09-23T17:48:57.226311+00:00"
+  "catalog_before": 163,
+  "catalog_after": 164,
+  "completed_at": "2026-09-23T17:49:04.615140+00:00"
 }

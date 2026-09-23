@@ -11790,5 +11790,177 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "frizzlife-wb99-h",
+    "slug": "frizzlife-wb99-h",
+    "brand": "Frizzlife",
+    "brandSlug": "frizzlife",
+    "name": "WB99-H",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Reverse Osmosis",
+    "source": "https://www.frizzlife.de/products/wb99-h",
+    "image": "https://www.frizzlife.de/cdn/shop/files/WB99-H_91ad31d0-f426-4772-a0f9-d6f16fbd4cc0.png?v=1764750348&width=1614",
+    "brandLogo": "assets/brands/frizzlife.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Tabletop",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "1 ausgelegt. Das entspricht etwa 3,5 Tassen gefiltertem Wasser je 1 Tasse Abwasser und kann den Abwasseranteil gegenüber vielen herkömmlichen RO-Systemen verringern.",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "Ja",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "9.1 x 16.5 x 14.8 inches",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 499.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "Frizzlife",
+        "model": "WB99-H"
+      },
+      "source_id": 69,
+      "source_hash": "1aafe0b9a569a57f2e2005531e3010739d360af3068dbd0e97eeb9d563d529ad",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.frizzlife.de/products/wb99-h",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/wb99-h",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Tabletop",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/wb99-h",
+              "source_type": "manufacturer_page",
+              "original_text": "Auftisch",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/wb99-h",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.pure_to_drain_ratio": {
+          "value": "1 ausgelegt. Das entspricht etwa 3,5 Tassen gefiltertem Wasser je 1 Tasse Abwasser und kann den Abwasseranteil gegenüber vielen herkömmlichen RO-Systemen verringern.",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/wb99-h",
+              "source_type": "manufacturer_page",
+              "original_text": "1 ausgelegt. Das entspricht etwa 3,5 Tassen gefiltertem Wasser je 1 Tasse Abwasser und kann den Abwasseranteil gegenüber vielen herkömmlichen RO-Systemen verringern.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "water_output.remineralization": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/wb99-h",
+              "source_type": "manufacturer_page",
+              "original_text": "Remineralisierung",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "9.1 x 16.5 x 14.8 inches",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/wb99-h",
+              "source_type": "manufacturer_page",
+              "original_text": "9.1 x 16.5 x 14.8 inches",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

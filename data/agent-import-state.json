@@ -122,6 +122,12 @@
       "source_hash": "c564f52f1875346a66b74576ef5bd4eccf3363f08998ecf00ff3e35c24ad6bdf",
       "renderer_version": 2,
       "imported_at": "2026-09-23T17:48:57.225999+00:00"
+    },
+    "Frizzlife::WB99-H": {
+      "source_id": 69,
+      "source_hash": "1aafe0b9a569a57f2e2005531e3010739d360af3068dbd0e97eeb9d563d529ad",
+      "renderer_version": 2,
+      "imported_at": "2026-09-23T17:49:04.614688+00:00"
     }
   }
 }
