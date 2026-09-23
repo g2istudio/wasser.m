@@ -1147,5 +1147,18 @@
     "products_count": 1,
     "rating": null,
     "logo": "assets/brands/sydros.png"
+  },
+  {
+    "slug": "frizzlife",
+    "name": "Frizzlife",
+    "country": "Germany",
+    "founded": null,
+    "website": "https://www.frizzlife.de",
+    "group": "Reverse Osmosis",
+    "description_de": "Anbieter von Untertisch- und Auftisch-Umkehrosmoseanlagen, Direct-Flow-Systemen und Ersatzfiltern.",
+    "description_en": "Supplier of under-sink and countertop reverse-osmosis systems, direct-flow systems and replacement filters.",
+    "products_count": 0,
+    "rating": null,
+    "logo": "assets/brands/frizzlife.png"
   }
 ]

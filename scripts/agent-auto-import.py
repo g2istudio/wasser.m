@@ -427,6 +427,26 @@ def main() -> int:
         write(f'brands/{brand["slug"]}.html', page)
     dump("data/brands.json", brands)
 
+    brand_directory = read("brands.html")
+    for brand in brands:
+        if not any(item["brand"].casefold() == brand["name"].casefold() for item in accepted):
+            continue
+        count = sum(p["brand"].casefold() == brand["name"].casefold() for p in products)
+        pattern = (
+            r'(<a class="brand-directory-card" href="/brands/' + re.escape(brand["slug"])
+            + r'".*?<span class="brand-meta">).*?(</span>)'
+        )
+        brand_directory, replacements = re.subn(
+            pattern,
+            rf'\g<1>{esc(brand.get("country") or "—")} · {count} Modelle\2',
+            brand_directory,
+            count=1,
+            flags=re.S,
+        )
+        if replacements != 1:
+            raise SystemExit(f'Brand directory card not found: {brand["slug"]}')
+    write("brands.html", brand_directory)
+
     app = read("assets/app.js")
     brand_catalog = json.loads(read("data/brands.json"))
     for item in accepted:
@@ -468,7 +488,7 @@ def main() -> int:
     index = re.sub(r'(<b id="overviewProducts">)\d+(</b>)', rf'\g<1>{len(products)}\2', read("index.html"))
     write("index.html", index)
 
-    cache_targets = {ROOT / "compare.html", ROOT / "products.html", ROOT / "index.html"}
+    cache_targets = {ROOT / "compare.html", ROOT / "products.html", ROOT / "brands.html", ROOT / "index.html"}
     for item in accepted:
         cache_targets.add(ROOT / "products" / f'{item["target_id"]}.html')
         product = next(p for p in products if p["id"] == item["target_id"])
