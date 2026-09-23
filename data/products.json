@@ -12529,5 +12529,194 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "frizzlife-pd1200",
+    "slug": "frizzlife-pd1200",
+    "brand": "Frizzlife",
+    "brandSlug": "frizzlife",
+    "name": "PD1200",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.frizzlife.de/products/pd1200",
+    "image": "https://www.frizzlife.de/cdn/shop/files/PD1200_67cb0df5-65ad-44f3-a3fa-4c8953842905.png?v=1764747752&width=1614",
+    "brandLogo": "assets/brands/frizzlife.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "11",
+      "Filteranzahl": "11",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "1200 GPD",
+      "Nennleistung": "1200 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 899.99,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "Frizzlife",
+        "model": "PD1200"
+      },
+      "source_id": 73,
+      "source_hash": "02f70f81f0dd1ce00ef80c876ec8139ba45c2c2020ab4726500ecbb295283939",
+      "checked_at": "2026-09-23",
+      "source_url": "https://www.frizzlife.de/products/pd1200",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1200",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1200",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 11,
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1200",
+              "source_type": "manufacturer_page",
+              "original_text": "11-stufige",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 11,
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1200",
+              "source_type": "manufacturer_page",
+              "original_text": "11-stufige",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1200",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1200",
+              "source_type": "manufacturer_page",
+              "original_text": "1200 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.frizzlife.de/products/pd1200",
+              "source_type": "manufacturer_page",
+              "original_text": "1200 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

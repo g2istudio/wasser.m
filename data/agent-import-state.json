@@ -146,6 +146,12 @@
       "source_hash": "93d4aca1238f143474eaa64d54bdedc52d330029eac32056af2186f6aaed1441",
       "renderer_version": 2,
       "imported_at": "2026-09-23T17:49:25.232732+00:00"
+    },
+    "Frizzlife::PD1200": {
+      "source_id": 73,
+      "source_hash": "02f70f81f0dd1ce00ef80c876ec8139ba45c2c2020ab4726500ecbb295283939",
+      "renderer_version": 2,
+      "imported_at": "2026-09-23T17:49:32.253099+00:00"
     }
   }
 }
