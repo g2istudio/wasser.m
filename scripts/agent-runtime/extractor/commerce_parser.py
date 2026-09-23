@@ -140,11 +140,22 @@ def _product_node(documents: list[object], model: str) -> dict:
 def _specs(soup: BeautifulSoup) -> dict[str, tuple[str, str]]:
     result: dict[str, tuple[str, str]] = {}
 
-    def add(label: object, value: object) -> None:
+    def store(label: object, value: object) -> None:
         raw_label, raw_value = _clean(label), _clean(value)
         key = _key(raw_label)
         if key and raw_value and len(key) <= 120 and len(raw_value) <= 500:
             result.setdefault(key, (raw_value, raw_value))
+
+    def add(label: object, value: object) -> None:
+        raw_label, raw_value = _clean(label), _clean(value)
+        store(raw_label, raw_value)
+        # Commerce themes often put an entire specification list in one list
+        # item, separated by bullets.  Index each labelled segment as well.
+        combined = f"{raw_label}: {raw_value}"
+        for segment in re.split(r"\s*[•·]\s*", combined):
+            if ":" in segment:
+                nested_label, nested_value = segment.split(":", 1)
+                store(nested_label, nested_value)
 
     for row in soup.select("tr"):
         cells = [_clean(cell.get_text(" ", strip=True)) for cell in row.select("th,td")]
@@ -192,6 +203,31 @@ def _absolute_image(value: object, url: str) -> str:
     path = candidate.split("?", 1)[0].casefold()
     image_markers = (".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif", "/cdn/", "/media/", "/image/")
     return candidate if any(marker in path for marker in image_markers) else ""
+
+
+def _primary_image(node: dict, soup: BeautifulSoup, url: str) -> str:
+    image = _absolute_image(node.get("image"), url) or _absolute_image(
+        _meta(soup, "og:image", "twitter:image"), url
+    )
+    if image:
+        return image
+    # Some Shopify themes omit Product JSON-LD and OpenGraph images while the
+    # product gallery is still present in the main content.
+    for candidate in soup.select("main img, [id*=Product] img, [class*=product] img"):
+        attrs = " ".join(
+            (
+                _clean(candidate.get("src")),
+                _clean(candidate.get("data-src")),
+                _clean(candidate.get("alt")),
+                _clean(candidate.get("class")),
+            )
+        ).casefold()
+        if any(marker in attrs for marker in ("logo", "icon", "payment", "rating")):
+            continue
+        image = _absolute_image(candidate.get("src") or candidate.get("data-src"), url)
+        if image:
+            return image
+    return ""
 
 
 def _find_quote(text: str, *terms: str) -> str:
@@ -261,7 +297,7 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
     soup, node, specs = page.soup, page.product, page.specs
     source = page.snapshot.url
     title = _clean(node.get("name")) or _clean((soup.select_one("h1") or soup.title).get_text(" ", strip=True))
-    image = _absolute_image(node.get("image"), source) or _absolute_image(_meta(soup, "og:image", "twitter:image"), source)
+    image = _primary_image(node, soup, source)
     documents = _json_documents(soup)
     logo = _brand_logo(documents, soup, source)
 
@@ -277,7 +313,7 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
     product.image = ProductImage(url=image or None, source_url=source, alt_text=title, role="primary", product_model=model)
     product.images = [product.image] if image else []
 
-    structured_description = _clean(node.get("description"))
+    structured_description = _clean(node.get("description")) or _meta(soup, "description", "og:description")
     scoped_text = f"{title} {structured_description}"
     haystack = scoped_text.casefold()
     technology_quote = _find_quote(scoped_text, "reverse osmosis", "umkehrosmose", "osmoseanlage", "RO membrane")
@@ -292,7 +328,10 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
     if installation:
         product.system.installation_type = _evidence(installation[0], installation[1], source)
     else:
-        for terms, normalized in ((('countertop', 'auftisch'), 'Tabletop'), (('under sink', 'under-sink', 'undersink', 'untertisch'), 'Under-counter')):
+        for terms, normalized in (
+            (('countertop', 'auftisch', 'tischgeraet', 'tischgerät', 'tischwasserspender'), 'Tabletop'),
+            (('under sink', 'under-sink', 'undersink', 'untertisch'), 'Under-counter'),
+        ):
             quote = _find_quote(scoped_text, *terms)
             if quote:
                 product.system.installation_type = _evidence(normalized, quote, source)
@@ -317,6 +356,9 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
 
     capacity = _lookup(specs, "ro membrane capacity", "membrane capacity", "membranleistung", "capacity gpd")
     if not capacity:
+        candidate = _lookup(specs, "durchflussrate", "flow rate")
+        capacity = candidate if candidate and re.search(r"\bGPD\b", candidate[0], re.I) else None
+    if not capacity:
         matches = list(re.finditer(r"\b(\d{2,4})\s*GPD\b", scoped_text, re.I))
         values = {match.group(1) for match in matches}
         capacity = (matches[0].group(1), matches[0].group(0)) if len(values) == 1 else None
@@ -325,8 +367,17 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
         product.filtration.membrane_capacity_gpd = _evidence(gpd, capacity[1], source, "GPD")
         product.performance.rated_capacity_gpd = _evidence(gpd, capacity[1], source, "GPD")
 
-    flow = _lookup(specs, "clear water flow rate", "purified water flow rate", "flow rate", "durchfluss", "wasserleistung")
-    if flow:
+    flow = _lookup(
+        specs,
+        "durchflussrate kalt",
+        "durchflussrate",
+        "clear water flow rate",
+        "purified water flow rate",
+        "flow rate",
+        "durchfluss",
+        "wasserleistung",
+    )
+    if flow and re.search(r"(?:l\s*/\s*(?:min|h)|liter.*(?:minute|hour|stunde)|litre.*(?:minute|hour))", flow[0], re.I):
         value = _number(flow[0])
         if value is not None:
             if re.search(r"(?:l/h|liter.*hour|litre.*hour)", flow[0], re.I):
