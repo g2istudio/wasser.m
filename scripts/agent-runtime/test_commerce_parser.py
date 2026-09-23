@@ -41,6 +41,22 @@ class CommerceParserTests(unittest.TestCase):
             snapshot = PageSnapshot(url="https://www.sydros.de/products/example", title=title, visible_text="")
             self.assertEqual(_model_from_official_title(snapshot, "SYDROS", "H2"), expected)
 
+    def test_extracts_gpd_from_nonstandard_spec_value_and_remineralization_title(self):
+        html = """<html><head><title>AQUAPHOR PRO100 M mit Remineralisierung</title>
+        <script type="application/ld+json">{"@type":"Product","name":"AQUAPHOR PRO100 M mit Remineralisierung","image":"https://example.com/pro100.jpg"}</script>
+        </head><body><dl><dt>Filter PRO 100</dt><dd>100 GPD zur Entsalzung</dd></dl></body></html>"""
+        snapshot = PageSnapshot(
+            url="https://example.com/pro100-m",
+            title="AQUAPHOR PRO100 M mit Remineralisierung",
+            visible_text="AQUAPHOR PRO100 M mit Remineralisierung Filter PRO 100: 100 GPD zur Entsalzung",
+            raw_content=html,
+        )
+        with patch("extractor.commerce_parser._official_manuals", return_value=[]):
+            product, _, _ = extract_commerce_product(snapshot.url, "AQUAPHOR", "PRO100 M", snapshot=snapshot)
+        self.assertEqual(product.performance.rated_capacity_gpd.value, 100)
+        self.assertEqual(product.performance.rated_capacity_gpd.unit, "GPD")
+        self.assertTrue(product.water_output.remineralization.value)
+
     def test_keeps_conflicting_page_and_manual_values(self):
         html = """<html><head><title>Example RO 1</title>
         <script type="application/ld+json">{"@type":"Product","name":"Example RO 1","image":"https://example.com/1.jpg"}</script>

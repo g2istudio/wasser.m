@@ -494,6 +494,17 @@ def extract_commerce_product(url: str, brand: str, model: str,
         candidate = _lookup(specs, "durchflussrate", "flow rate")
         capacity = candidate if candidate and re.search(r"\bGPD\b", candidate[0], re.I) else None
     if not capacity:
+        # Some shops label cartridges by name (for example "Filter PRO 100")
+        # and put the actual membrane rating only in the value. Accept it only
+        # when all specification values agree on one GPD number.
+        spec_matches = []
+        for value, quote in specs.values():
+            match = re.search(r"\b(\d{2,4})\s*GPD\b", value, re.I)
+            if match:
+                spec_matches.append((match.group(1), quote))
+        spec_values = {item[0] for item in spec_matches}
+        capacity = spec_matches[0] if len(spec_values) == 1 else None
+    if not capacity:
         matches = list(re.finditer(r"\b(\d{2,4})\s*GPD\b", scoped_text, re.I))
         values = {match.group(1) for match in matches}
         capacity = (matches[0].group(1), matches[0].group(0)) if len(values) == 1 else None
@@ -577,6 +588,14 @@ def extract_commerce_product(url: str, brand: str, model: str,
         product.physical.dimensions_raw = _evidence(normalized_dimensions, dimensions[1], dimensions_source)
     _set_number(product.physical, "weight_kg", _lookup(specs, "net weight", "weight", "gewicht netto", "gewicht"), source, "kg")
     _set_boolean(product.water_output, "remineralization", _lookup(specs, "remineralization", "remineralisierung"), source)
+    if product.water_output.remineralization.value is None:
+        remineralization_quote = _find_quote(
+            scoped_text, "remineralization", "remineralisation", "remineralisierung"
+        )
+        if remineralization_quote:
+            product.water_output.remineralization = _evidence(
+                True, remineralization_quote, source
+            )
     _set_boolean(product.water_output, "hot_water", _lookup(specs, "hot water", "heisswasser"), source)
     _set_boolean(product.water_output, "cold_water", _lookup(specs, "active water cooling", "cold water", "kaltwasser"), source)
     _set_boolean(product.protection, "uv_disinfection", _lookup(specs, "uv disinfection", "uv sterilization", "uv-desinfektion"), source)

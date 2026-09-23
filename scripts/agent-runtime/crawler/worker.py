@@ -11,6 +11,7 @@ from crawler.candidate_worker import (
 from crawler.catalog_guard import find_existing_site_product
 from crawler.discovery import classify_snapshot, identify_snapshot
 from crawler.official_sites import load_official_registry
+from crawler.official_sites import canonical_domain, official_site_for_url
 from crawler.page_collector import collect_page
 from database.repository import ProductRepository
 from extractor.product_extractor import extract_product
@@ -19,8 +20,10 @@ from extractor.validation import validate_product
 from extractor.publication import assess_publication
 from models.product import Evidence, ProductRecord, ProductValue
 from provenance import persist_product_facts
-from runtime_control import RuntimeMeter, calculated_confidence, source_priority
+from runtime_control import BudgetExceeded, RuntimeMeter, calculated_confidence, source_priority
 from semantic_resolution import minimal_fragments, resolve_semantics
+from sources.brave_search import BraveSearchProvider
+from sources.firecrawl_search import FirecrawlSearchProvider
 
 
 @dataclass
@@ -30,7 +33,8 @@ class WorkResult:
     detail: str
 
 
-def _apply_semantic_resolution(product, item: dict, source_url: str, evidence_text: str) -> bool:
+def _apply_semantic_resolution(product, item: dict, source_url: str, evidence_text: str,
+                               source_type: str = "manufacturer_page") -> bool:
     path = str(item.get("field_path") or "").removeprefix("product.")
     parts = path.split(".")
     if len(parts) < 2 or item.get("value") is None:
@@ -46,7 +50,7 @@ def _apply_semantic_resolution(product, item: dict, source_url: str, evidence_te
     if not isinstance(current, ProductValue) or current.value is not None or not evidence or evidence not in evidence_text:
         return False
     confidence = calculated_confidence(
-        source_type="manufacturer_page",
+        source_type=source_type,
         exact_model_match=True,
         verbatim_evidence=True,
         conflicting=False,
@@ -59,7 +63,7 @@ def _apply_semantic_resolution(product, item: dict, source_url: str, evidence_te
         unit=item.get("unit"),
         evidence=[Evidence(
             source_url=source_url,
-            source_type="manufacturer_page",
+            source_type=source_type,
             original_text=evidence,
             confidence=confidence,
             verification_status="manufacturer_claim",
@@ -70,6 +74,143 @@ def _apply_semantic_resolution(product, item: dict, source_url: str, evidence_te
         verification_status="manufacturer_claim",
     ))
     return True
+
+
+async def _enrich_missing(repository, meter: RuntimeMeter | None, *, brand: str, model: str,
+                          primary_snapshot, product, product_id: str, issues: list[str]) -> tuple[dict | None, object | None]:
+    if not issues or not meter:
+        return None, None
+    # Keep the discovery query short. Search engines often return no results for
+    # a quoted model plus every missing field, while the semantic stage already
+    # knows which fields it must resolve from the returned pages.
+    query = f"{brand} {model} Umkehrosmose Datenblatt technische Daten"
+    meter.consume("brave", "queries", 1, product_id, {"query": query, "purpose": "missing_fields"})
+    results = BraveSearchProvider().search(query, count=10, country="DE", search_lang="de")
+    registry = load_official_registry("config/official_brand_domains.json")
+    brand_key = "".join(ch for ch in brand.casefold() if ch.isalnum())
+    primary_domain = canonical_domain(primary_snapshot.url)
+    model_key = "".join(ch for ch in model.casefold() if ch.isalnum())
+    sources: list[tuple[str, str]] = []
+    source_meta: dict[str, tuple[str, str]] = {}
+    seen = {primary_snapshot.url}
+    for result in results:
+        if len(sources) >= 3:
+            break
+        url = result.url
+        domain = canonical_domain(url)
+        result_key = "".join(
+            ch for ch in f"{result.title} {result.url} {result.description}".casefold()
+            if ch.isalnum()
+        )
+        official = official_site_for_url(url, registry)
+        domain_key = "".join(ch for ch in domain.casefold() if ch.isalnum())
+        allowed = domain == primary_domain or brand_key in domain_key or (
+            official and brand_key in "".join(ch for ch in str(official["brand"]).casefold() if ch.isalnum())
+        )
+        if (not allowed or url in seen or not url.startswith("https://")
+                or model_key not in result_key):
+            continue
+        seen.add(url)
+        try:
+            if ".pdf" in url.casefold():
+                data = FirecrawlSearchProvider().scrape(url)
+                meter.consume("firecrawl", "credits", 1, product_id, {"url": url, "purpose": "enrichment_pdf"})
+                text = str(data.get("markdown") or "")
+                raw = str(data.get("html") or text)
+                metadata = data.get("metadata") or {}
+                source_type = "manufacturer_datasheet" if official else "authorized_retailer"
+            else:
+                candidate = await collect_page(url)
+                meter.consume(
+                    "firecrawl" if candidate.fetch_method == "firecrawl" else "http",
+                    "credits" if candidate.fetch_method == "firecrawl" else "requests",
+                    1,
+                    product_id,
+                    {"url": url, "purpose": "enrichment", "method": candidate.fetch_method},
+                )
+                text = candidate.evidence_text
+                raw = candidate.raw_content or text
+                metadata = candidate.http_metadata
+                source_type = "manufacturer_page" if official or domain == primary_domain else "authorized_retailer"
+                fetched_identity = "".join(
+                    ch for ch in f"{candidate.title} {candidate.url}".casefold()
+                    if ch.isalnum()
+                )
+                if model_key not in fetched_identity:
+                    meter.event("ENRICHMENT_IDENTITY_REJECTED", "enrichment", product_id,
+                                {"url": url, "title": candidate.title, "expected_model": model})
+                    continue
+            if len(text) < 100:
+                continue
+            snapshot_id, created = repository.save_snapshot(url, raw, text, source_type, metadata)
+            repository.link_product_source(product_id, snapshot_id, source_priority(source_type), {"model": model})
+            if url not in product.sources.additional_urls:
+                product.sources.additional_urls.append(url)
+            sources.append((url, text))
+            source_meta[url] = (text, source_type)
+            meter.event("ENRICHMENT_SOURCE_STORED" if created else "ENRICHMENT_SOURCE_REUSED",
+                        "enrichment", product_id, {"url": url, "source_type": source_type})
+        except Exception as error:
+            meter.event("ENRICHMENT_SOURCE_FAILED", "enrichment", product_id,
+                        {"url": url, "error": f"{type(error).__name__}: {error}"})
+    if not sources:
+        meter.event("ENRICHMENT_NO_SOURCES", "enrichment", product_id,
+                    {"query": query, "issues": issues})
+        return None, None
+    result, usage, fragment_chars = resolve_semantics(
+        brand=brand,
+        model=model,
+        source_url=primary_snapshot.url,
+        evidence_text=primary_snapshot.evidence_text,
+        issues=issues,
+        additional_sources=sources,
+    )
+    meter.consume("gemini", "tokens", usage.total_tokens, product_id,
+                  {"model": usage.model, "fragment_chars": fragment_chars, "purpose": "enrichment",
+                   "estimated_cost_usd": usage.estimated_cost_usd})
+    applied = 0
+    for item in result.get("resolutions", []):
+        item_url = str(item.get("source_url") or primary_snapshot.url)
+        item_text, item_type = source_meta.get(
+            item_url, (primary_snapshot.evidence_text, "manufacturer_page")
+        )
+        evidence = str(item.get("evidence") or "")
+        if not evidence or evidence not in item_text:
+            continue
+        confidence = calculated_confidence(
+            source_type=item_type, exact_model_match=True, verbatim_evidence=True,
+            conflicting=False, extraction_method="gemini",
+        )
+        repository.save_fact(
+            product_id=product_id, field_path=str(item.get("field_path") or "unknown"),
+            value=item.get("value"), normalized_value=item.get("value"), unit=item.get("unit"),
+            source_url=item_url, source_type=item_type, evidence=evidence,
+            extraction_method="gemini", confidence=confidence, parser_version="2",
+            schema_version=product.schema_version, resolution_status="PROPOSED",
+        )
+        applied += int(_apply_semantic_resolution(
+            product, item, item_url, item_text, source_type=item_type
+        ))
+    for item in result.get("unmapped_attributes", []):
+        item_url = str(item.get("source_url") or primary_snapshot.url)
+        item_text, item_type = source_meta.get(
+            item_url, (primary_snapshot.evidence_text, "manufacturer_page")
+        )
+        evidence = str(item.get("evidence") or "")
+        if item.get("value") is None or not evidence or evidence not in item_text:
+            continue
+        repository.save_unmapped_attribute(
+            product_id=product_id, original_name=str(item.get("original_name") or "unknown"),
+            value=item.get("value"), unit=item.get("unit"), source_url=item_url,
+            evidence=evidence, proposed_field=item.get("proposed_field"), extraction_method="gemini",
+            confidence=calculated_confidence(
+                source_type=item_type, exact_model_match=True, verbatim_evidence=True,
+                conflicting=False, extraction_method="gemini",
+            ), parser_version="2", schema_version=product.schema_version,
+        )
+    meter.event("ENRICHMENT_COMPLETED", "enrichment", product_id,
+                {"sources": len(sources), "applied": applied, "issues": issues})
+    return result, usage
 
 
 async def process_url(
@@ -262,6 +403,7 @@ async def process_url(
                                 {"issues": semantic_issues, "fragment_chars": fragment_chars})
                 for item in semantic_result.get("resolutions", []):
                     evidence = str(item.get("evidence") or "")
+                    item_source_url = str(item.get("source_url") or snapshot.url)
                     if evidence and evidence in snapshot.evidence_text:
                         repository.save_fact(
                             product_id=product_id,
@@ -269,7 +411,7 @@ async def process_url(
                             value=item.get("value"),
                             normalized_value=item.get("value"),
                             unit=item.get("unit"),
-                            source_url=snapshot.url,
+                            source_url=item_source_url,
                             source_type="manufacturer_page",
                             evidence=evidence,
                             extraction_method="gemini",
@@ -278,16 +420,17 @@ async def process_url(
                             schema_version=product.schema_version,
                             resolution_status="PROPOSED",
                         )
-                        _apply_semantic_resolution(product, item, snapshot.url, snapshot.evidence_text)
+                        _apply_semantic_resolution(product, item, item_source_url, snapshot.evidence_text)
                 for item in semantic_result.get("unmapped_attributes", []):
                     evidence = str(item.get("evidence") or "")
+                    item_source_url = str(item.get("source_url") or snapshot.url)
                     if item.get("value") is not None and evidence and evidence in snapshot.evidence_text:
                         repository.save_unmapped_attribute(
                             product_id=product_id,
                             original_name=str(item.get("original_name") or "unknown"),
                             value=item.get("value"),
                             unit=item.get("unit"),
-                            source_url=snapshot.url,
+                            source_url=item_source_url,
                             evidence=evidence,
                             proposed_field=item.get("proposed_field"),
                             extraction_method="gemini",
@@ -314,6 +457,39 @@ async def process_url(
                 f"unmapped attribute: {item.original_name}" for item in product.unmapped_attributes[:20]
             )
 
+        enrichment_result = None
+        if semantic_issues and os.getenv("WASSER_ALLOW_AI", "false").casefold() in {"1", "true", "yes"}:
+            try:
+                enrichment_result, _ = await _enrich_missing(
+                    repository,
+                    meter,
+                    brand=brand,
+                    model=model,
+                    primary_snapshot=snapshot,
+                    product=product,
+                    product_id=product_id,
+                    issues=semantic_issues,
+                )
+                if enrichment_result is not None:
+                    report = validate_product(product, "\n".join(
+                        [snapshot.evidence_text] + [
+                            str(repository.latest_snapshot(url)["normalized_content"])
+                            for url in product.sources.additional_urls
+                            if repository.latest_snapshot(url)
+                        ]
+                    ), snapshot.url)
+                    publication = assess_publication(product)
+                    semantic_issues = list(report.errors) + list(publication.missing)
+                    semantic_issues.extend(
+                        f"unmapped attribute: {item.original_name}" for item in product.unmapped_attributes[:20]
+                    )
+            except BudgetExceeded:
+                raise
+            except Exception as enrichment_error:
+                if meter:
+                    meter.event("ENRICHMENT_FAILED", "enrichment", product_id,
+                                {"error": f"{type(enrichment_error).__name__}: {enrichment_error}"})
+
         if not report.valid:
             detail = "; ".join(report.errors[:5])
             repository.audit(meter.job_id if meter else None, product_id, "VALIDATION_FAILED", "validation",
@@ -322,7 +498,10 @@ async def process_url(
             return WorkResult(url, "NEEDS_REVIEW", detail)
 
         persisted = persist_product_facts(repository, product_id, product, platform)
-        unresolved = bool(semantic_result and semantic_result.get("unresolved_conflicts"))
+        unresolved = bool(
+            semantic_result and semantic_result.get("unresolved_conflicts")
+            or enrichment_result and enrichment_result.get("unresolved_conflicts")
+        )
         if publication.ready and taxonomy != "UNKNOWN/NEW_TYPE" and not has_conflict and not unresolved:
             record_status = "PUBLISH_READY"
         elif semantic_issues or taxonomy == "UNKNOWN/NEW_TYPE":

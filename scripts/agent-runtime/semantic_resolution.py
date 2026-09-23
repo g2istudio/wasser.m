@@ -20,10 +20,11 @@ SEMANTIC_SCHEMA = {
                     "field_path": {"type": "string"},
                     "value": {},
                     "unit": {"type": ["string", "null"]},
+                    "source_url": {"type": "string"},
                     "evidence": {"type": "string"},
                     "reason": {"type": "string"},
                 },
-                "required": ["field_path", "value", "evidence", "reason"],
+                "required": ["field_path", "value", "source_url", "evidence", "reason"],
             },
         },
         "unmapped_attributes": {
@@ -34,10 +35,11 @@ SEMANTIC_SCHEMA = {
                     "original_name": {"type": "string"},
                     "value": {},
                     "unit": {"type": ["string", "null"]},
+                    "source_url": {"type": "string"},
                     "evidence": {"type": "string"},
                     "proposed_field": {"type": ["string", "null"]},
                 },
-                "required": ["original_name", "value", "evidence"],
+                "required": ["original_name", "value", "source_url", "evidence"],
             },
         },
         "unresolved_conflicts": {"type": "array", "items": {"type": "string"}},
@@ -74,15 +76,23 @@ def minimal_fragments(text: str, model: str, issues: list[str], max_chars: int =
 
 
 def resolve_semantics(*, brand: str, model: str, source_url: str,
-                      evidence_text: str, issues: list[str]) -> tuple[dict, object, int]:
-    fragments = minimal_fragments(evidence_text, model, issues)
+                      evidence_text: str, issues: list[str],
+                      additional_sources: list[tuple[str, str]] | None = None) -> tuple[dict, object, int]:
+    sources = [(source_url, evidence_text), *(additional_sources or [])]
+    fragment_blocks = []
+    for candidate_url, candidate_text in sources:
+        selected = minimal_fragments(candidate_text, model, issues, max_chars=max(2000, 12000 // len(sources)))
+        if selected:
+            fragment_blocks.append(f"[SOURCE {candidate_url}]\n{selected}")
+    fragments = "\n\n".join(fragment_blocks)[:12000]
     prompt = f"""Resolve only the listed issues for one water-treatment product.
 Brand: {brand}
 Model: {model}
-Source: {source_url}
+Primary source: {source_url}
 Issues: {json.dumps(issues, ensure_ascii=False)}
 
 Use only the fragments below. Evidence must be copied verbatim from them. Do not invent values.
+Every resolution and unmapped attribute must include the exact SOURCE URL printed above its evidence.
 If a conflict cannot be resolved from product/variant/market context, place it in unresolved_conflicts.
 Unknown attributes must be preserved in unmapped_attributes; proposing a field does not change schema.
 
