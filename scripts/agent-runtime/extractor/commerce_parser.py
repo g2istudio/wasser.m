@@ -10,6 +10,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from io import BytesIO
 import json
 import re
 from typing import Iterable
@@ -17,6 +18,11 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 import requests
+
+try:
+    from pypdf import PdfReader
+except ImportError:  # The agent remains fail-closed when optional PDF support is absent.
+    PdfReader = None
 
 from crawler.page_collector import PageSnapshot, product_json_ld_documents
 from models.product import Evidence, ProductImage, ProductSources, ProductValue, WaterFilterProduct
@@ -238,6 +244,47 @@ def _find_quote(text: str, *terms: str) -> str:
     return ""
 
 
+def _official_manuals(soup: BeautifulSoup, page_url: str) -> list[tuple[str, str]]:
+    """Read one product manual linked by the official product page, without AI."""
+    if PdfReader is None:
+        return []
+    candidates: list[tuple[int, str]] = []
+    seen = set()
+    for anchor in soup.select("a[href]"):
+        href = urljoin(page_url, _clean(anchor.get("href")))
+        label = f"{anchor.get_text(' ', strip=True)} {href}".casefold()
+        if not href.startswith("https://") or ".pdf" not in href.casefold():
+            continue
+        if not any(term in label for term in ("anleitung", "manual", "bedienung")):
+            continue
+        if href in seen:
+            continue
+        seen.add(href)
+        priority = 0 if any(term in label for term in ("deutsch", "_de.", "german")) else 1
+        candidates.append((priority, href))
+    for _, href in sorted(candidates):
+        try:
+            response = requests.get(href, headers={"User-Agent": USER_AGENT}, timeout=40)
+            response.raise_for_status()
+            if len(response.content) > 20_000_000 or not response.content.startswith(b"%PDF"):
+                continue
+            reader = PdfReader(BytesIO(response.content))
+            text = _clean("\n".join((pdf_page.extract_text() or "") for pdf_page in reader.pages))[:200_000]
+            if text:
+                return [(href, text)]
+        except Exception:
+            continue
+    return []
+
+
+def _manual_quote(manuals: list[tuple[str, str]], *terms: str) -> tuple[str, str] | None:
+    for manual_url, text in manuals:
+        quote = _find_quote(text, *terms)
+        if quote:
+            return quote, manual_url
+    return None
+
+
 def _brand_logo(documents: list[object], soup: BeautifulSoup, url: str) -> str:
     for document in documents:
         for node in _walk_json(document):
@@ -296,6 +343,10 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
     page = load_commerce_page(url, model)
     soup, node, specs = page.soup, page.product, page.specs
     source = page.snapshot.url
+    page_visible_text = page.snapshot.visible_text
+    manuals = _official_manuals(soup, source)
+    if manuals:
+        page.snapshot.visible_text += "\n" + "\n".join(text for _, text in manuals)
     title = _clean(node.get("name")) or _clean((soup.select_one("h1") or soup.title).get_text(" ", strip=True))
     image = _primary_image(node, soup, source)
     documents = _json_documents(soup)
@@ -336,6 +387,15 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
             if quote:
                 product.system.installation_type = _evidence(normalized, quote, source)
                 break
+    if product.system.installation_type.value is None:
+        combined = _manual_quote(manuals, "unter der Spüle oder auf der Arbeitsfläche")
+        under_counter = _manual_quote(manuals, "Installationsdiagramm unter der Spüle", "Untertischeinbau")
+        if combined:
+            product.system.installation_type = _evidence(
+                "Under-counter / countertop", combined[0], combined[1]
+            )
+        elif under_counter:
+            product.system.installation_type = _evidence("Under-counter", under_counter[0], under_counter[1])
 
     _set_boolean(product.system, "tankless", _lookup(specs, "tankless", "tanklos"), source)
     _set_boolean(product.system, "tankless", _lookup(specs, "tank available", "tank vorhanden"), source, invert=True)
@@ -343,18 +403,28 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
     _set_boolean(product.system, "built_in_pump", _lookup(specs, "booster pump", "integrated pump", "pumpe"), source)
 
     stages = _lookup(specs, "filtration stages", "filter stages", "filterstufen", "anzahl filterstufen")
+    stages_source = source
     if not stages:
         matches = list(re.finditer(r"\b(\d{1,2})[- ](?:stage|stufige|stufen)\b", scoped_text, re.I))
         values = {match.group(1) for match in matches}
         stages = (matches[0].group(1), matches[0].group(0)) if len(values) == 1 else None
+    if not stages:
+        for manual_url, manual_text in manuals:
+            matches = list(re.finditer(r"\b(\d{1,2})[- ](?:stage|stufige|stufen)\b", manual_text, re.I))
+            values = {match.group(1) for match in matches}
+            if len(values) == 1:
+                stages = (matches[0].group(1), matches[0].group(0))
+                stages_source = manual_url
+                break
     if stages and _single_integer(stages[0]) is not None:
         stage_count = _single_integer(stages[0])
-        product.filtration.advertised_stage_count = _evidence(stage_count, stages[1], source)
-        product.filtration.physical_filter_count = _evidence(stage_count, stages[1], source)
+        product.filtration.advertised_stage_count = _evidence(stage_count, stages[1], stages_source)
+        product.filtration.physical_filter_count = _evidence(stage_count, stages[1], stages_source)
     if technology_quote:
         product.filtration.membrane_type = _evidence("Reverse Osmosis", technology_quote, source)
 
     capacity = _lookup(specs, "ro membrane capacity", "membrane capacity", "membranleistung", "capacity gpd")
+    capacity_source = source
     if not capacity:
         candidate = _lookup(specs, "durchflussrate", "flow rate")
         capacity = candidate if candidate and re.search(r"\bGPD\b", candidate[0], re.I) else None
@@ -362,10 +432,18 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
         matches = list(re.finditer(r"\b(\d{2,4})\s*GPD\b", scoped_text, re.I))
         values = {match.group(1) for match in matches}
         capacity = (matches[0].group(1), matches[0].group(0)) if len(values) == 1 else None
+    if not capacity:
+        for manual_url, manual_text in manuals:
+            matches = list(re.finditer(r"\b(\d{2,4})\s*GPD\b", manual_text, re.I))
+            values = {match.group(1) for match in matches}
+            if len(values) == 1:
+                capacity = (matches[0].group(1), matches[0].group(0))
+                capacity_source = manual_url
+                break
     if capacity and _integer(capacity[0]) is not None:
         gpd = _integer(capacity[0])
-        product.filtration.membrane_capacity_gpd = _evidence(gpd, capacity[1], source, "GPD")
-        product.performance.rated_capacity_gpd = _evidence(gpd, capacity[1], source, "GPD")
+        product.filtration.membrane_capacity_gpd = _evidence(gpd, capacity[1], capacity_source, "GPD")
+        product.performance.rated_capacity_gpd = _evidence(gpd, capacity[1], capacity_source, "GPD")
 
     flow = _lookup(
         specs,
@@ -388,12 +466,20 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
         product.performance.pure_to_drain_ratio = _evidence(ratio[0], ratio[1], source)
 
     dimensions = _lookup(specs, "dimensions product", "product dimensions", "dimensions", "abmessungen", "masse")
+    dimensions_source = source
     if not dimensions:
-        match = re.search(r"\b\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\s*(?:cm|mm|in(?:ch(?:es)?)?)\b", page.snapshot.visible_text, re.I)
+        match = re.search(r"\b\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\s*(?:cm|mm|in(?:ch(?:es)?)?)\b", page_visible_text, re.I)
         dimensions = (match.group(0), match.group(0)) if match else None
+    if not dimensions:
+        for manual_url, manual_text in manuals:
+            match = re.search(r"\b\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\s*(?:cm|mm|in(?:ch(?:es)?)?)\b", manual_text, re.I)
+            if match:
+                dimensions = (match.group(0), match.group(0))
+                dimensions_source = manual_url
+                break
     if dimensions:
         normalized_dimensions = re.sub(r"(?<=\d)\s*[^\w\s.,]\s*(?=\d)", " × ", dimensions[0])
-        product.physical.dimensions_raw = _evidence(normalized_dimensions, dimensions[1], source)
+        product.physical.dimensions_raw = _evidence(normalized_dimensions, dimensions[1], dimensions_source)
     _set_number(product.physical, "weight_kg", _lookup(specs, "net weight", "weight", "gewicht netto", "gewicht"), source, "kg")
     _set_boolean(product.water_output, "remineralization", _lookup(specs, "remineralization", "remineralisierung"), source)
     _set_boolean(product.water_output, "hot_water", _lookup(specs, "hot water", "heisswasser"), source)
@@ -418,5 +504,8 @@ def extract_commerce_product(url: str, brand: str, model: str) -> tuple[WaterFil
             product.commercial.current_price = _evidence(_number(str(price)), str(price), source, currency or None)
         if currency:
             product.commercial.currency = _evidence(currency, currency, source)
-    product.sources = ProductSources(manufacturer_url=source)
+    product.sources = ProductSources(
+        manufacturer_url=source,
+        additional_urls=[manual_url for manual_url, _ in manuals],
+    )
     return product, page.snapshot, page.platform
