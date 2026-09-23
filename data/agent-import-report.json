@@ -1,0 +1,82 @@
+{
+  "mode": "apply",
+  "ready": 14,
+  "baseline": 0,
+  "pending": 10,
+  "accepted": [
+    {
+      "source_id": 46,
+      "brand": "OsmoFresh",
+      "model": "Flow2",
+      "action": "create",
+      "target_id": "osmofresh-flow2"
+    },
+    {
+      "source_id": 47,
+      "brand": "OsmoFresh",
+      "model": "FlowOne+",
+      "action": "create",
+      "target_id": "osmofresh-flowone-plus"
+    },
+    {
+      "source_id": 48,
+      "brand": "OsmoFresh",
+      "model": "Fusion Air",
+      "action": "create",
+      "target_id": "osmofresh-fusion-air"
+    },
+    {
+      "source_id": 49,
+      "brand": "OsmoFresh",
+      "model": "Fusion Base",
+      "action": "create",
+      "target_id": "osmofresh-fusion-base"
+    },
+    {
+      "source_id": 50,
+      "brand": "OsmoFresh",
+      "model": "Fusion Ice",
+      "action": "create",
+      "target_id": "osmofresh-fusion-ice"
+    },
+    {
+      "source_id": 51,
+      "brand": "OsmoFresh",
+      "model": "Fusion Pro",
+      "action": "update",
+      "target_id": "osmofresh-fusion-pro"
+    },
+    {
+      "source_id": 52,
+      "brand": "OsmoFresh",
+      "model": "Fusion Stream",
+      "action": "create",
+      "target_id": "osmofresh-fusion-stream"
+    },
+    {
+      "source_id": 53,
+      "brand": "OsmoFresh",
+      "model": "Quella Life",
+      "action": "create",
+      "target_id": "osmofresh-quella-life"
+    },
+    {
+      "source_id": 54,
+      "brand": "OsmoFresh",
+      "model": "Quella Pro",
+      "action": "create",
+      "target_id": "osmofresh-quella-pro"
+    },
+    {
+      "source_id": 55,
+      "brand": "OsmoFresh",
+      "model": "Smartline Gold",
+      "action": "create",
+      "target_id": "osmofresh-smartline-gold"
+    }
+  ],
+  "rejected": [],
+  "catalog_before": 142,
+  "catalog_after": 151,
+  "completed_at": "2026-09-23T02:08:40.357495+00:00"
+}

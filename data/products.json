@@ -188,35 +188,362 @@
     "brand": "OsmoFresh",
     "name": "Fusion Pro",
     "category": "Countertop RO",
-    "price": 1290,
+    "price": 1290.0,
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/products/osmofresh-fusion-pro.webp",
+    "image": "https://www.osmofresh.de/media/44/a3/60/1773822405/OF_PD_FusionPro_1600x1600px_G01.webp?ts=1773822405",
     "featured": false,
     "specs": {
-      "Preis": "1.290 € (Herstellerseite bei Recherche)",
-      "Produktnummer": "ROFP",
-      "Einsatz": "Haushalt, 1–6 Personen",
-      "Wasserarten": "Still, gekühlt, heiß und zwei Sprudelstärken",
-      "Temperaturbereich Ausgabe": "4–95 °C",
-      "Anschluss": "Wassertank oder Festwasser, jederzeit umschaltbar",
-      "Filter": "7-in-1 Quick-Change-Kartusche",
-      "Filterwechsel": "Alle 12 Monate",
-      "Hygiene": "3-fache UV-C-LED; Microbial Resistance Technology",
-      "Display": "7 Zoll Touchdisplay mit zwei TDS-Anzeigen",
-      "Abwasserverhältnis": "Tankmodus 4:1; Leitungsmodus 1:2",
-      "Maße": "51 × 22 × 43,7 cm (L × B × H)",
-      "Gewicht": "21,6 kg ohne Wasser",
-      "Eingangsdruck": "1–5 bar",
-      "Eingangstemperatur": "5–45 °C",
-      "Ausgabemengen": "150 ml bis 1,2 l in 100-ml-Schritten",
+      "Technologie": "Umkehrosmose",
+      "Installation": "Auftisch",
+      "Filterstufen": "7",
+      "Filteranzahl": "1",
+      "Membranleistung": "200",
+      "Nennleistung": "200",
+      "Durchfluss": "0.8 l/min",
+      "Min. Eingangsdruck": "1 bar",
+      "Max. Eingangsdruck": "5 bar",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "45 °C",
+      "Rohwassertank": "5 l",
+      "Standby-Leistung": "2.6 W",
       "Kühlleistung": "120 W",
-      "Leistungsaufnahme": "ca. 2,6 W Standby; bis 2.400 W Betrieb",
-      "CO₂": "Kleine Kartusche oder große Flasche; CO₂-Flasche nicht enthalten",
-      "Zertifizierung": "TÜV Rheinland ID 1111314292; WQA/NSF/ANSI/CAN 372-2020"
+      "Max. Leistungsaufnahme": "2400 W",
+      "Abmessungen": "51x22x43,7cm (LxBxH)",
+      "Breite": "220 mm",
+      "Tiefe": "510 mm",
+      "Höhe": "437 mm",
+      "Display": "7\" Pro Display"
     },
-    "source": "https://www.osmofresh.de/osmoseanlagen/fusion-pro"
+    "source": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+    "brandSlug": "osmofresh",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Fusion Pro"
+      },
+      "source_id": 51,
+      "source_hash": "34959128001460a4886fcf90c5bdcd2877d80804cadf502fa7163d568827dd83",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Auftisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Auf der Küchenplatte (Auftisch) oder Wasserhahn (Untertisch)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "22. September 2026 07:32",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 1,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 1",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Proline X2 - X3 | 200-750 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Proline X2 - X3 | 200-750 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.8,
+          "unit": "l/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "0.8 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 1,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "1-5 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 5,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "1-5 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 4.7 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 45,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "17. September 2026 01:45",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.raw_water_tank_l": {
+          "value": 5,
+          "unit": "l",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 4.7 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 2.6,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "2.6 W",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.cooling_power_w": {
+          "value": 120,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "120 Watt",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2400,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 2400 Watt",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "51x22x43,7cm (LxBxH)",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "51x22x43,7cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 220,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "220 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 510,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "510 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 437,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "437 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "7\" Pro Display",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "7\" Pro Display",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   },
   {
     "id": "greifenstein-direct-flow-premium",
@@ -4255,6 +4582,3023 @@
         }
       },
       "publication_status": "PUBLISHABLE_PARTIAL"
+    }
+  },
+  {
+    "id": "osmofresh-flow2",
+    "slug": "osmofresh-flow2",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Flow2",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/flow2",
+    "image": "https://www.osmofresh.de/media/f9/6b/71/1767946038/OF_PD_Flow2_1600x1600px_G01.webp?ts=1767946038",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Untertisch",
+      "Filterstufen": "7",
+      "Membranleistung": "600 GPD",
+      "Nennleistung": "600–800 GPD",
+      "Durchfluss": "up to 2.1 L/min",
+      "Min. Eingangsdruck": "1 Bar",
+      "Max. Eingangsdruck": "5 Bar",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "45 °C",
+      "Standby-Leistung": "1 W",
+      "Max. Leistungsaufnahme": "120 W",
+      "Abmessungen": "38 x 13,5 x 39,3 cm",
+      "Breite": "135 mm",
+      "Höhe": "393 mm",
+      "Gewicht": "13 kg",
+      "Display": "Nein"
+    },
+    "price": 349.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Flow2"
+      },
+      "source_id": 46,
+      "source_hash": "5d053ac1e7885925245b9f4e84518e43f7f8e57e01348b384ae824dc3402bb96",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/flow2-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "Die Flow2 ist unsere Untertisch-Osmoseanlage mit dem geringsten Wartungsaufwand – für alle, die es im Alltag unkompliziert lieben. Dank QuickChange-Filtersystem wechselst du die Filter im Handumdrehen, ganz ohne Werkzeug und ohne großen Aufwand. Eine smarte Erinnerungsfunktion sagt dir rechtzeitig Bescheid, wenn es so weit ist, und die automatische Spülfunktion hält die Anlage dauerhaft sauber und leistungsfähig. So genießt du jederzeit frisches Osmosewasser in bester Qualität – und musst dich um fast nichts kümmern. Einfach, praktisch, zuverlässig.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "system.installation_type": {
+          "value": "Untertisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "6in1 Ersatzfilter für Flow2 - Untertisch Osmoseanlage Vorfilter und Nachfilter mit Mineralisierung",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/flow2-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "7-stufig (6in1 Filter + Membran)",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 600,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "600 GPD // bis 1,6 l/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": "600–800",
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/flow2-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "IN 600 ODER 800 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": "up to 2.1",
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/flow2-vorteile",
+              "source_type": "manufacturer_page",
+              "original_text": "BIS ZU 2,1 L/MIN (800 GPD)",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-22"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-22"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 1,
+          "unit": "Bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "1-5 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 5,
+          "unit": "Bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "1-5 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 5 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 45,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 45°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 1,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 1",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 120,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 120 Watt",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "38 x 13,5 x 39,3 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "38 x 13,5 x 39,3 cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 135,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "135 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 393,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "393 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 13,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "13 kg",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flow2",
+              "source_type": "manufacturer_page",
+              "original_text": "Display",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-flowone-plus",
+    "slug": "osmofresh-flowone-plus",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "FlowOne+",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/flowone",
+    "image": "https://www.osmofresh.de/media/e5/a5/9f/1713179942/OF_F_FlowOnePlus_Galerie_01.webp?ts=1713179942",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Untertisch",
+      "Filterstufen": "5",
+      "Filteranzahl": "1",
+      "Membranleistung": "750 GPD",
+      "Nennleistung": "750 GPD",
+      "Durchfluss": "1.8 L/min",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "45 °C",
+      "Spannung": "230V",
+      "Max. Leistungsaufnahme": "1400 W",
+      "Abmessungen": "45,4x16x43,4cm",
+      "Breite": "160 mm",
+      "Tiefe": "454 mm",
+      "Höhe": "434 mm",
+      "Gewicht": "15 kg",
+      "Display": "FlowTouch"
+    },
+    "price": 990.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "FlowOne+"
+      },
+      "source_id": 47,
+      "source_hash": "a39b7f81dc976dd3837072a715532e3e4b02630efac822635eeffa8082bfd4e5",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Untertisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch Osmoseanlage",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 5 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 1,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 1",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 750,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "Proline X2 - X3 | 200-750 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 750,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "Proline X2 - X3 | 200-750 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 1.8,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "1.8 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 5 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 45,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 45°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": "230V",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "230V",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 1400,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 1400 Watt",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "45,4x16x43,4cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "45,4x16x43,4cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 160,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "160 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 454,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "454 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 434,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "434 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 15,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "15 kg",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "FlowTouch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/flowone",
+              "source_type": "manufacturer_page",
+              "original_text": "Gesteuert wird alles über den FlowTouch, einen smarten Wasserhahn, der mehr kann als nur Wasser spenden. Mit einem Fingertipp regulierst du stufenlos die Vorhalte-Temperatur, siehst die aktuelle Wasserqualität live auf dem Display und wirst rechtzeitig an den nächsten Filterwechsel erinnert. Natürlich mit integrierter Kindersicherung, für eine sichere Bedienung im Alltag.",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-fusion-air",
+    "slug": "osmofresh-fusion-air",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Fusion Air",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+    "image": "https://www.osmofresh.de/media/90/3a/b3/1758772780/OF_PD_FusionAir_1600x1600px_G03.webp?ts=1758772780",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Auftisch",
+      "Filterstufen": "7",
+      "Filteranzahl": "2",
+      "Membranleistung": "1000 GPD",
+      "Nennleistung": "1000 GPD",
+      "Durchfluss": "0.9 L/min",
+      "Min. Eingangsdruck": "4 bar",
+      "Max. Eingangsdruck": "6 bar",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "45 °C",
+      "Rohwassertank": "4.7 L",
+      "Reinwassertank": "1.8 L",
+      "Spannung": "230 V",
+      "Standby-Leistung": "0.9 W",
+      "Filtrationsleistung": "30 W",
+      "Heizleistung": "2200 W",
+      "Max. Leistungsaufnahme": "2200 W",
+      "Abmessungen": "38x19,5x37,3cm",
+      "Breite": "195 mm",
+      "Tiefe": "380 mm",
+      "Höhe": "373 mm",
+      "Gewicht": "7.5 kg",
+      "Display": "Touch"
+    },
+    "price": 499.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Fusion Air"
+      },
+      "source_id": 48,
+      "source_hash": "d0d0d58f47c31fd0998c188b313709de4802401f55c3467c5c66aedc7137eb38",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Auftisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "DIE ERSTE TÜV-ZERTIFIZIERTE AUFTISCH-OSMOSEANLAGE#ZERTIFIZIERTE HYGIENE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 5 to 7",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 2,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "ca. 2:1",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.9,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "0.9 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 4,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "ca. 4-6 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 6,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "ca. 4-6 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 4.8 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 45,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 45°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.raw_water_tank_l": {
+          "value": 4.7,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "4.7 L",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.purified_water_tank_l": {
+          "value": 1.8,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "1.8 L",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": 230,
+          "unit": "V",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "230V",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 0.9,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "0.9 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.filtration_power_w": {
+          "value": 30,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "30 Tage Geld-Zurück-Garantie",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.heating_power_w": {
+          "value": 2200,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 2200 Watt (bei Entnahme von 95°C heißem Wasser)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2200,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 2200 Watt (bei Entnahme von 95°C heißem Wasser)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "38x19,5x37,3cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "38x19,5x37,3cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 195,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "195 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 380,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "380 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 373,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "373 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 7.5,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "7.5",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "Touch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-air",
+              "source_type": "manufacturer_page",
+              "original_text": "Die Filter sind bereits vorinstalliert, der Tank wird einfach eingesetzt, und alle nötigen Funktionen werden über das Touch-Display bedient.",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-fusion-base",
+    "slug": "osmofresh-fusion-base",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Fusion Base",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+    "image": "https://www.osmofresh.de/media/23/ba/ea/1780378805/OF_PD_FusionBase_1600x1600px_G01.webp?ts=1780378805",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Auftisch",
+      "Filterstufen": "7",
+      "Filteranzahl": "2",
+      "Membranleistung": "1000 GPD",
+      "Nennleistung": "1000 GPD",
+      "Min. Eingangsdruck": "4 Bar",
+      "Max. Eingangsdruck": "6 Bar",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "45 °C",
+      "Spannung": "230 V",
+      "Standby-Leistung": "0.9 W",
+      "Filtrationsleistung": "30 W",
+      "Abmessungen": "38x19,5x37,3cm",
+      "Breite": "195 mm",
+      "Tiefe": "380 mm",
+      "Höhe": "373 mm",
+      "Gewicht": "7.5 kg",
+      "Display": "Ja"
+    },
+    "price": 399.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Fusion Base"
+      },
+      "source_id": 49,
+      "source_hash": "0faa7c37a323fcf9437fca6f9443dc4d67e4cbe910e6e6fdbc0d21bcc8d23bd5",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Auftisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "TÜV-ZERTIFIZIERTE AUFTISCH-OSMOSEANLAGE#ZERTIFIZIERTE HYGIENE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 7 to 9",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.physical_filter_count": {
+          "value": 2,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "ca. 2:1",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 4,
+          "unit": "Bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "ca. 4-6 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 6,
+          "unit": "Bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "ca. 4-6 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 45°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 45,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "nur ca. 45 W Leistungsbedarf // Betrieb mit kompatibler Powerbank möglich",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": 230,
+          "unit": "V",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "230V",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 0.9,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "0.9 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.filtration_power_w": {
+          "value": 30,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "30 Tage Geld-Zurück-Garantie",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "38x19,5x37,3cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "38x19,5x37,3cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 195,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "195 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 380,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "380 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 373,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "373 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 7.5,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "7.5",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-base",
+              "source_type": "manufacturer_page",
+              "original_text": "Deine Anlage erinnert dich per Display an den Filterwechsel. Aus Haltbarkeitsgründen muss der Vor- und Nachfilter nach 6 Monaten und die Membran nach 12 Monaten gewechselt werden.",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-fusion-ice",
+    "slug": "osmofresh-fusion-ice",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Fusion Ice",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+    "image": "https://www.osmofresh.de/media/2e/51/af/1751551512/Fusion%20Ice%20Front.jpg?ts=1751551532",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Auftischanlage",
+      "Filterstufen": "7",
+      "Membranleistung": "1000 GPD",
+      "Nennleistung": "1000 GPD",
+      "Durchfluss": "0.6 L/min",
+      "Min. Eingangsdruck": "1.0 bar",
+      "Max. Eingangsdruck": "5.0 bar",
+      "Min. Eingangstemperatur": "5.0 °C",
+      "Max. Eingangstemperatur": "45.0 °C",
+      "Rohwassertank": "4.5 L",
+      "Reinwassertank": "2.0 L",
+      "Standby-Leistung": "1.9 W",
+      "Kühlleistung": "88.0 W",
+      "Max. Leistungsaufnahme": "2100.0 W",
+      "Abmessungen": "45,5 × 30,5 × 41,5 cm",
+      "Breite": "305.0 mm",
+      "Tiefe": "415.0 mm",
+      "Höhe": "455.0 mm",
+      "Display": "Touch"
+    },
+    "price": 899.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Fusion Ice"
+      },
+      "source_id": 50,
+      "source_hash": "3b3121054d1ec1016b5a1c99226f67e4e31b2c338d5369f816b3c63a64c9c1f5",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Auftischanlage",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "Auftischanlage mit Tankbetrieb",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 5 to 7",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.6,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "0.6 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 1.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "1-5 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 5.0,
+          "unit": "bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "1-5 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5.0,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 4.8 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 45.0,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 45°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.raw_water_tank_l": {
+          "value": 4.5,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "4.5 L",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.purified_water_tank_l": {
+          "value": 2.0,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "2 Liter Reinwasser, dort wo du es brauchst",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 1.9,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "1.9 W",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.cooling_power_w": {
+          "value": 88.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "88 Watt",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2100.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 2100 Watt",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "45,5 × 30,5 × 41,5 cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "45,5 × 30,5 × 41,5 cm (H × B × T)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 305.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "305 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 415.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "415 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 455.0,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "455 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "Touch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-ice",
+              "source_type": "manufacturer_page",
+              "original_text": "Die Filter sind bereits vorinstalliert, der Tank wird einfach eingesetzt, und alle nötigen Funktionen werden über das Touch-Display bedient.",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-fusion-stream",
+    "slug": "osmofresh-fusion-stream",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Fusion Stream",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+    "image": "https://www.osmofresh.de/media/5f/de/47/1759402875/OF_F_FusionStream_01_Front%20Kopie.jpg?ts=1759402992",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Auftisch",
+      "Filterstufen": "7",
+      "Membranleistung": "1000 GPD",
+      "Nennleistung": "1000 GPD",
+      "Durchfluss": "0.9 l/min",
+      "Min. Eingangsdruck": "4 Bar",
+      "Max. Eingangsdruck": "6 Bar",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "45 °C",
+      "Spannung": "230 V",
+      "Standby-Leistung": "0.9 W",
+      "Filtrationsleistung": "30 W",
+      "Max. Leistungsaufnahme": "2200 W",
+      "Abmessungen": "38x13x37,3cm",
+      "Breite": "133 mm",
+      "Tiefe": "380 mm",
+      "Höhe": "373 mm",
+      "Gewicht": "7 kg",
+      "Display": "Touch"
+    },
+    "price": 499.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Fusion Stream"
+      },
+      "source_id": 52,
+      "source_hash": "d616fe219d876ea6084b014a6503f255ec037fe64f1852275fa87b3a664ee14e",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Auftisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "DIE ERSTE TÜV-ZERTIFIZIERTE AUFTISCH-OSMOSEANLAGE#ZERTIFIZIERTE HYGIENE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 5 to 7",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.9,
+          "unit": "l/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "0.9 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 4,
+          "unit": "Bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "ca. 4-6 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 6,
+          "unit": "Bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "ca. 4-6 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 4.8 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 45,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 45°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": 230,
+          "unit": "V",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "230V",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 0.9,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "0.9 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.filtration_power_w": {
+          "value": 30,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "30 Tage Geld-Zurück-Garantie",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2200,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 2200 Watt (bei Entnahme von 95°C heißem Wasser)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "38x13x37,3cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "38x13x37,3cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 133,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "133 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 380,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "380 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 373,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "373 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 7,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "7 kg",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "Touch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-stream",
+              "source_type": "manufacturer_page",
+              "original_text": "Für die Installation deiner Fusion Stream benötigst du ein paar einfache Hilfsmittel. Die Filter sind bereits vorinstalliert und alle Funktionen steuerst du bequem über das Touch-Display. Für den Anschluss an die Kaltwasserleitung und das Abwasserrohr reicht ein verstellbarer Schraubenschlüssel oder Gabelschlüssel, außerdem eine Bohrmaschine mit 6-mm-Bohrer für die Abwasserschelle sowie ein scharfes Messer oder eine Schere, um die Schläuche auf die passende Länge zuzuschneiden. Zusätzlich brauchst du ein Gefäß mit etwa 2,5 Litern Fassungsvermögen, um beim Spülvorgang das Wasser aufzufangen – u",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-quella-life",
+    "slug": "osmofresh-quella-life",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Quella Life",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+    "image": "https://www.osmofresh.de/media/86/f1/32/1758717711/OF_PD_QuellaLife_1600x1600px_G03w.webp?ts=1758717711",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Auftisch",
+      "Filterstufen": "7",
+      "Membranleistung": "1000 GPD",
+      "Nennleistung": "1000 GPD",
+      "Durchfluss": "0.4 L/min",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "38 °C",
+      "Rohwassertank": "4 L",
+      "Reinwassertank": "1.8 L",
+      "Spannung": "230 V",
+      "Standby-Leistung": "20 W",
+      "Max. Leistungsaufnahme": "2200 W",
+      "Abmessungen": "45 x 20 x 39cm",
+      "Breite": "200 mm",
+      "Tiefe": "450 mm",
+      "Höhe": "390 mm",
+      "Display": "Touch"
+    },
+    "price": 399.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Quella Life"
+      },
+      "source_id": 53,
+      "source_hash": "eb879cfb38e7b9d10e36bedaf270c7aa8d99e746c0031e4908b908563579deff",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Auftisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "Auftisch Osmoseanlage",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "7-stufig",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.4,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "0.4 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 4.9 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 38,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 38°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.raw_water_tank_l": {
+          "value": 4,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "4 Liter",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.purified_water_tank_l": {
+          "value": 1.8,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "1.8",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": 230,
+          "unit": "V",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "230 V",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 20,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "45 x 20 x 39cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2200,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 2200 Watt (bei Entnahme von 95°C heißem Wasser)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "45 x 20 x 39cm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "45 x 20 x 39cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 200,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "200 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 450,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "450 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 390,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "390 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "Touch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-life",
+              "source_type": "manufacturer_page",
+              "original_text": "übersichtliches Touch-Display",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-quella-pro",
+    "slug": "osmofresh-quella-pro",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Quella Pro",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+    "image": "https://www.osmofresh.de/media/b8/78/b5/1701447625/OF_F_QuellaPro_Freisteller_white_1600x1600px.webp?ts=1701448090",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Auftisch",
+      "Filterstufen": "7",
+      "Membranleistung": "1000 GPD",
+      "Nennleistung": "1000 GPD",
+      "Durchfluss": "0.4 L/min",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "38 °C",
+      "Rohwassertank": "4.0 L",
+      "Reinwassertank": "1.8 L",
+      "Spannung": "230 V",
+      "Standby-Leistung": "0.5 W",
+      "Max. Leistungsaufnahme": "2200 W",
+      "Abmessungen": "45 x 20 x 39cm (LxBxH)",
+      "Breite": "200 mm",
+      "Tiefe": "450 mm",
+      "Höhe": "375 mm",
+      "Display": "Touch"
+    },
+    "price": 449.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Quella Pro"
+      },
+      "source_id": 54,
+      "source_hash": "a2ef497d0c246e67a034cb7fd1316b3a961f5ff96610ed078291dfa96e77dec1",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Auftisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Auftisch Osmoseanlage",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 5 to 7",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Pro Connect 600-1000 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 0.4,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "0.4 L/min",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 4.8 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 38,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 5°C - max. 38°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.raw_water_tank_l": {
+          "value": 4.0,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "4 Liter",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.purified_water_tank_l": {
+          "value": 1.8,
+          "unit": "L",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "1.8",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.voltage": {
+          "value": "230 V",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "230 V",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 0.5,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "0.5 W",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.maximum_power_w": {
+          "value": 2200,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "bis zu 2200 Watt (bei Entnahme von 95°C heißem Wasser)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "45 x 20 x 39cm (LxBxH)",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "45 x 20 x 39cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.width_mm": {
+          "value": 200,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "200 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 450,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "450 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 375,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "375 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": "Touch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/quella-pro",
+              "source_type": "manufacturer_page",
+              "original_text": "Display",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
+  },
+  {
+    "id": "osmofresh-smartline-gold",
+    "slug": "osmofresh-smartline-gold",
+    "brand": "OsmoFresh",
+    "brandSlug": "osmofresh",
+    "name": "Smartline Gold",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+    "image": "https://www.osmofresh.de/media/fc/55/8d/1751628176/OF_SmartlineGold_Front.jpg?ts=1753082206",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Umkehrosmose",
+      "Installation": "Untertisch",
+      "Filterstufen": "3",
+      "Membranleistung": "50 GPD",
+      "Nennleistung": "50 GPD",
+      "Min. Eingangsdruck": "3 Bar",
+      "Standby-Leistung": "0 W",
+      "Abmessungen": "35,5x8x12cm (LxBxH)",
+      "Tiefe": "355 mm",
+      "Höhe": "120 mm",
+      "Display": "Nein"
+    },
+    "price": 59.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "OsmoFresh",
+        "model": "Smartline Gold"
+      },
+      "source_id": 55,
+      "source_hash": "450cec5f96f6ca6a8a7354de0b2dd1211bcf5fa351396d2e7a3e15914d9ef637",
+      "checked_at": "2026-09-22",
+      "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+      "fields": {
+        "system.technology": {
+          "value": "Umkehrosmose",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "UMKEHROSMOSE",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "system.installation_type": {
+          "value": "Untertisch",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch Osmoseanlage",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 3,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "3 WEGE WASSERHAHN",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 50,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "50 GPD - 190 Liter pro Tag",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 50,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "50 GPD - 190 Liter pro Tag",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 3,
+          "unit": "Bar",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "mind. 3 Bar",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "electrical.standby_power_w": {
+          "value": 0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "Du hast 0 Produkte auf dem Merkzettel",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "35,5x8x12cm (LxBxH)",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "35,5x8x12cm (LxBxH)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.depth_mm": {
+          "value": 355,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "355 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.height_mm": {
+          "value": 120,
+          "unit": "mm",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "120 mm",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "smart_features.display": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/smartline-gold",
+              "source_type": "manufacturer_page",
+              "original_text": "Display",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
     }
   }
 ]
