@@ -349,7 +349,7 @@ function renderCompareTable(){
   [tr('Wasserqualität','Water quality'),null],['TDS','tds'],[tr('Remineralisierung','Remineralization'),'remin'],
   [tr('Betrieb','Operation'),null],[tr('Geräuschpegel','Noise'),'noise'],[tr('Stromverbrauch','Power'),'power'],[tr('Garantie','Warranty'),'warranty']
  ];
- const value=(product,key)=>{const current=product[key];return current===undefined||current===null||current===''?'—':current};
+ const value=(product,key)=>{const current=product[key];const missing=typeof current==='string'&&['not published','nicht veröffentlicht','n/a'].includes(current.trim().toLowerCase());return current===undefined||current===null||current===''||missing?'—':current};
  table.innerHTML=`<table class="compare-table"><thead><tr><th>${tr('Parameter','Parameter')}</th>${ps.map(p=>`<th>${p.brand}<br><strong>${p.name}</strong></th>`).join('')}</tr></thead><tbody>${rows.map(r=>r[1]?`<tr><td>${r[0]}</td>${ps.map(p=>`<td>${value(p,r[1])}</td>`).join('')}</tr>`:`<tr class="group-row"><td colspan="${ps.length+1}">${r[0]}</td></tr>`).join('')}</tbody></table>`
 }
 
