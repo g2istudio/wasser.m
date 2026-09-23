@@ -560,7 +560,7 @@ class ProductRepository:
 
     def product_rows(self, brand: str | None = None) -> list[dict]:
         query = (
-            "SELECT brand, model, status, quality_status, source_url, product_json, "
+            "SELECT id, brand, model, status, quality_status, source_url, product_json, "
             "needs_review, source_conflict FROM products"
         )
         parameters: tuple = ()

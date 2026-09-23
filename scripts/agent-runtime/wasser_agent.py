@@ -201,12 +201,29 @@ def reprocess(repository, meter, args) -> dict:
 
 def publish(args) -> dict:
     repository = ProductRepository(args.db)
+    if bool(args.brand) != bool(args.model):
+        raise RuntimeError("Targeted publication requires both --brand and --model")
+    eligible = [
+        row for row in repository.product_rows()
+        if row["status"] == args.status and row["quality_status"] == args.status
+    ]
+    if args.brand and args.model:
+        eligible = [
+            row for row in eligible
+            if row["brand"].casefold() == args.brand.casefold()
+            and row["model"].casefold() == args.model.casefold()
+        ]
+        if len(eligible) != 1:
+            raise RuntimeError(
+                f"Expected exactly one PUBLISH_READY target for {args.brand} {args.model}; found {len(eligible)}"
+            )
+    else:
+        eligible = eligible[:args.limit]
+
     if args.transport == "api" or args.transport == "auto" and os.getenv("WASSER_MARKET_API_URL"):
         client = WasserMarketApiClient()
         published = []
-        for row in repository.product_rows():
-            if row["status"] != args.status or row["quality_status"] != args.status:
-                continue
+        for row in eligible:
             payload = json.loads(row["product_json"])
             product_id = payload.get("canonical_product_id") or f"{row['brand']}:{row['model']}"
             version = payload.get("schema_version") or "1"
@@ -215,13 +232,13 @@ def publish(args) -> dict:
             else:
                 response = {"dry_run": True}
             published.append({"canonical_product_id": product_id, "response": response})
-            if len(published) >= args.limit:
-                break
         return {"transport": "api", "mode": "apply" if args.apply else "dry-run", "products": published}
 
     script = args.site / "scripts" / "agent-auto-publish.ps1"
     command = ["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(script),
                "-Database", str(args.db), "-Limit", str(args.limit)]
+    if args.brand and args.model:
+        command.extend(["-ProductId", str(eligible[0]["id"])])
     if not args.apply:
         command.append("-DryRun")
     completed = subprocess.run(command, cwd=args.site, text=True, capture_output=True)
@@ -293,6 +310,8 @@ def parser() -> argparse.ArgumentParser:
     pub = sub.add_parser("publish")
     pub.add_argument("--status", choices=["PUBLISH_READY"], default="PUBLISH_READY")
     pub.add_argument("--limit", type=int, default=10)
+    pub.add_argument("--brand")
+    pub.add_argument("--model")
     pub.add_argument("--apply", action="store_true")
     pub.add_argument("--transport", choices=["auto", "api", "git"], default="auto")
 

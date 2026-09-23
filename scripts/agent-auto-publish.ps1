@@ -1,6 +1,7 @@
 param(
     [string]$Database = "C:\wasser-market-agent\data\wasser_market.db",
     [int]$Limit = 10,
+    [int]$ProductId = 0,
     [switch]$DryRun,
     [string]$GitExe = "C:\Users\myuae\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe",
     [string]$PythonExe = "C:\Python314\python.exe",
@@ -32,6 +33,7 @@ try {
     Assert-NativeSuccess "Cannot update main"
 
     $Arguments = @("scripts/agent-auto-import.py", "--db", $Database, "--limit", $Limit)
+    if ($ProductId -gt 0) { $Arguments += @("--ids", $ProductId) }
     if (-not $DryRun) { $Arguments += "--apply" }
     & $PythonExe @Arguments
     if ($LASTEXITCODE -ne 0) { throw "Agent import validation failed." }
