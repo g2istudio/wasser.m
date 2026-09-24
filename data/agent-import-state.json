@@ -125,9 +125,9 @@
     },
     "Frizzlife::WB99-H": {
       "source_id": 69,
-      "source_hash": "1aafe0b9a569a57f2e2005531e3010739d360af3068dbd0e97eeb9d563d529ad",
-      "renderer_version": 2,
-      "imported_at": "2026-09-23T17:49:04.614688+00:00"
+      "source_hash": "ec5d28468e878dd620f1c45d4e002b9833b5f314cec2fa83754b8a0cb5ada81f",
+      "renderer_version": 3,
+      "imported_at": "2026-09-24T07:23:15.049382+00:00"
     },
     "Frizzlife::PX600": {
       "source_id": 70,

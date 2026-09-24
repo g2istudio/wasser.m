@@ -12087,6 +12087,7 @@
       "Automatische Spülung": "—",
       "UV-Desinfektion": "—",
       "Spannung": "—",
+      "Frequenz": "—",
       "Standby-Leistung": "—",
       "Filtrationsleistung": "—",
       "Heizleistung": "—",
@@ -12115,8 +12116,8 @@
         "model": "WB99-H"
       },
       "source_id": 69,
-      "source_hash": "1aafe0b9a569a57f2e2005531e3010739d360af3068dbd0e97eeb9d563d529ad",
-      "checked_at": "2026-09-23",
+      "source_hash": "ec5d28468e878dd620f1c45d4e002b9833b5f314cec2fa83754b8a0cb5ada81f",
+      "checked_at": "2026-09-24",
       "source_url": "https://www.frizzlife.de/products/wb99-h",
       "fields": {
         "system.technology": {
@@ -12128,11 +12129,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "system.installation_type": {
           "value": "Tabletop",
@@ -12143,11 +12144,11 @@
               "original_text": "Auftisch",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_type": {
           "value": "Reverse Osmosis",
@@ -12158,11 +12159,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "performance.pure_to_drain_ratio": {
           "value": "1 ausgelegt. Das entspricht etwa 3,5 Tassen gefiltertem Wasser je 1 Tasse Abwasser und kann den Abwasseranteil gegenüber vielen herkömmlichen RO-Systemen verringern.",
@@ -12173,11 +12174,11 @@
               "original_text": "1 ausgelegt. Das entspricht etwa 3,5 Tassen gefiltertem Wasser je 1 Tasse Abwasser und kann den Abwasseranteil gegenüber vielen herkömmlichen RO-Systemen verringern.",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "water_output.remineralization": {
           "value": true,
@@ -12188,11 +12189,11 @@
               "original_text": "Remineralisierung",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "physical.dimensions_raw": {
           "value": "9.1 x 16.5 x 14.8 inches",
@@ -12203,11 +12204,11 @@
               "original_text": "9.1 x 16.5 x 14.8 inches",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         }
       },
       "publication_status": "PUBLISH_READY"
