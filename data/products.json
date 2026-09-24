@@ -12558,10 +12558,10 @@
       "Durchfluss": "3.142 L/min",
       "Rückgewinnungsrate": "—",
       "Reinwasser-Abwasser-Verhältnis": "—",
-      "Min. Eingangsdruck": "20.0 psi",
-      "Max. Eingangsdruck": "80.0 psi",
-      "Min. Eingangstemperatur": "39.0 °F",
-      "Max. Eingangstemperatur": "100.0 °F",
+      "Min. Eingangsdruck": "20 psi",
+      "Max. Eingangsdruck": "80 psi",
+      "Min. Eingangstemperatur": "39 °F",
+      "Max. Eingangstemperatur": "100 °F",
       "TDS-Reduktion": "94–95 %",
       "Remineralisierung": "—",
       "Wasser bei Raumtemperatur": "—",
@@ -12576,11 +12576,12 @@
       "Automatische Spülung": "Ja",
       "UV-Desinfektion": "—",
       "Spannung": "110-240VAC",
+      "Frequenz": "50-60 Hz",
       "Standby-Leistung": "—",
       "Filtrationsleistung": "—",
       "Heizleistung": "—",
       "Kühlleistung": "—",
-      "Max. Leistungsaufnahme": "150.0 W",
+      "Max. Leistungsaufnahme": "150 W",
       "Abmessungen": "—",
       "Breite": "—",
       "Tiefe": "—",
@@ -12594,7 +12595,7 @@
       "Intelligenter Wasserhahn": "Ja",
       "WLAN": "—",
       "App": "—",
-      "Garantie": "1 years"
+      "Garantie": "1 Jahr"
     },
     "price": 899.99,
     "currency": "EUR",
@@ -12863,6 +12864,22 @@
               "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
               "source_type": "manual",
               "original_text": "110-240VAC",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.frequency_hz": {
+          "value": "50-60",
+          "unit": "Hz",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "50-60HZ",
               "confidence": 0.98,
               "verification_status": "official_specification",
               "checked_at": "2026-09-24"
