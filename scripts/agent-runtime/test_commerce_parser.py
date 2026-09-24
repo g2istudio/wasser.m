@@ -101,7 +101,7 @@ class CommerceParserTests(unittest.TestCase):
         Rated flow 0.83 gallons/m @25 C Min.20psi Max. 80psi Municipal water
         1st stage PPC filter 2nd stage RO membrane 3rd stage TC filter
         Smart RO Faucet Filter Life Indicator automatically flushed for 30 seconds
-        Leakage detection system TDS result displayed on the faucet screen
+        Leakage detection system The system tests the TDS and displays it on the faucet screen
         TDS removing rate for PD1200 is about 94-95%
         ONE YEAR LIMITED FRIZZLIFE WARRANTY tankless RO system"""
         with patch("extractor.commerce_parser._official_manuals", return_value=[("https://example.com/manual.pdf", manual)]):
@@ -119,10 +119,24 @@ class CommerceParserTests(unittest.TestCase):
         self.assertTrue(product.system.tankless.value)
         self.assertTrue(product.smart_features.smart_faucet.value)
         self.assertTrue(product.smart_features.filter_life_indicator.value)
+        self.assertTrue(product.smart_features.outlet_tds_display.value)
         self.assertTrue(product.protection.automatic_flush.value)
         self.assertTrue(product.protection.leak_detection.value)
         self.assertEqual(product.performance.tds_reduction_percent.value, "94–95")
         self.assertEqual(product.commercial.warranty_years.value, 1)
+
+    def test_does_not_treat_tds_faq_question_as_a_display(self):
+        html = """<html><head><title>Example PX500-A Reverse Osmosis</title>
+        <script type="application/ld+json">{"@type":"Product","name":"Example PX500-A","image":"https://example.com/px500.jpg"}</script>
+        </head><body><p>Reverse osmosis system.</p></body></html>"""
+        snapshot = PageSnapshot(
+            url="https://example.com/px500-a", title="Example PX500-A Reverse Osmosis",
+            visible_text="Example PX500-A Reverse osmosis system.", raw_content=html,
+        )
+        manual = "Why out TDS value of PX500-A is higher than normal RO system? Filter Life Indicator display."
+        with patch("extractor.commerce_parser._official_manuals", return_value=[("https://example.com/manual.pdf", manual)]):
+            product, _, _ = extract_commerce_product(snapshot.url, "Example", "PX500-A", snapshot=snapshot)
+        self.assertIsNone(product.smart_features.outlet_tds_display.value)
 
 
 if __name__ == "__main__":

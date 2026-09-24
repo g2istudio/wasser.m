@@ -685,7 +685,10 @@ def extract_commerce_product(url: str, brand: str, model: str,
             product.smart_features.filter_life_indicator = _evidence(
                 True, filter_indicator[0].group(0), filter_indicator[1]
             )
-        tds_display = _manual_match(manuals, r"\bTDS\s+(?:display|result).*?(?:faucet\s+screen|display)")
+        tds_display = _manual_match(
+            manuals,
+            r"\btest(?:s|ing)?\s+the\s+TDS\b[^.?!]{0,160}\bdisplay(?:s|ed)?\s+(?:it\s+)?on\s+the\s+(?:faucet\s+)?screen\b",
+        )
         if product.smart_features.outlet_tds_display.value is None and tds_display:
             product.smart_features.outlet_tds_display = _evidence(True, tds_display[0].group(0), tds_display[1])
         automatic_flush = _manual_match(manuals, r"\bautomatically\s+flush(?:ed)?\s+for\s+30\s+seconds\b")
