@@ -11619,22 +11619,22 @@
     "specs": {
       "Technologie": "Reverse Osmosis",
       "Installation": "Under-counter",
-      "Tanklos": "—",
+      "Tanklos": "Ja",
       "Stromanschluss erforderlich": "—",
       "Integrierte Pumpe": "—",
       "Filterstufen": "—",
-      "Filteranzahl": "—",
+      "Filteranzahl": "3",
       "Membrantyp": "Reverse Osmosis",
       "Membranleistung": "600 GPD",
       "Nennleistung": "600 GPD",
-      "Durchfluss": "—",
+      "Durchfluss": "1.552 L/min",
       "Rückgewinnungsrate": "—",
       "Reinwasser-Abwasser-Verhältnis": "1 ausgelegt. Damit entstehen bei der Filtration zwei Teile gefiltertes Wasser und ein Teil Abwasser.",
-      "Min. Eingangsdruck": "—",
-      "Max. Eingangsdruck": "—",
-      "Min. Eingangstemperatur": "—",
-      "Max. Eingangstemperatur": "—",
-      "TDS-Reduktion": "—",
+      "Min. Eingangsdruck": "20 psi",
+      "Max. Eingangsdruck": "80 psi",
+      "Min. Eingangstemperatur": "39 °F",
+      "Max. Eingangstemperatur": "100 °F",
+      "TDS-Reduktion": "94–95 %",
       "Remineralisierung": "Ja",
       "Wasser bei Raumtemperatur": "—",
       "Kaltwasser": "—",
@@ -11643,16 +11643,17 @@
       "Rohwassertank": "—",
       "Reinwassertank": "—",
       "Drucktank": "—",
-      "Leckageschutz": "—",
+      "Leckageschutz": "Ja",
       "Automatische Abschaltung": "—",
-      "Automatische Spülung": "—",
+      "Automatische Spülung": "Ja",
       "UV-Desinfektion": "—",
-      "Spannung": "—",
+      "Spannung": "110-240VAC",
+      "Frequenz": "50-60 Hz",
       "Standby-Leistung": "—",
       "Filtrationsleistung": "—",
       "Heizleistung": "—",
       "Kühlleistung": "—",
-      "Max. Leistungsaufnahme": "—",
+      "Max. Leistungsaufnahme": "85 W",
       "Abmessungen": "—",
       "Breite": "—",
       "Tiefe": "—",
@@ -11661,12 +11662,12 @@
       "Geräuschpegel": "—",
       "Display": "—",
       "TDS-Anzeige Eingang": "—",
-      "TDS-Anzeige Ausgang": "—",
-      "Filterstatusanzeige": "—",
+      "TDS-Anzeige Ausgang": "Ja",
+      "Filterstatusanzeige": "Ja",
       "Intelligenter Wasserhahn": "—",
       "WLAN": "—",
       "App": "—",
-      "Garantie": "—"
+      "Garantie": "1 Jahr"
     },
     "price": 429.99,
     "currency": "EUR",
@@ -11676,8 +11677,8 @@
         "model": "PD600-TAM3"
       },
       "source_id": 68,
-      "source_hash": "c564f52f1875346a66b74576ef5bd4eccf3363f08998ecf00ff3e35c24ad6bdf",
-      "checked_at": "2026-09-23",
+      "source_hash": "f2220a455790757f138b616ea457133f97799c3869ab64aa723a0852acc1780e",
+      "checked_at": "2026-09-24",
       "source_url": "https://www.frizzlife.de/products/pd600tam3",
       "fields": {
         "system.technology": {
@@ -11689,11 +11690,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "system.installation_type": {
           "value": "Under-counter",
@@ -11704,11 +11705,41 @@
               "original_text": "Untertisch",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "tankless RO system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "filtration.physical_filter_count": {
+          "value": 3,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "1st stage PP+CB 2-in-1 filter ASR211 One year or cumulative water production for 60 hours(around 900-1000gal) 2nd stage 3rd stage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_type": {
           "value": "Reverse Osmosis",
@@ -11719,11 +11750,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_capacity_gpd": {
           "value": 600,
@@ -11735,11 +11766,11 @@
               "original_text": "600 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "performance.rated_capacity_gpd": {
           "value": 600,
@@ -11751,11 +11782,27 @@
               "original_text": "600 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 1.552,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "0.41 gallons/m",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "performance.pure_to_drain_ratio": {
           "value": "1 ausgelegt. Damit entstehen bei der Filtration zwei Teile gefiltertes Wasser und ein Teil Abwasser.",
@@ -11766,11 +11813,91 @@
               "original_text": "1 ausgelegt. Damit entstehen bei der Filtration zwei Teile gefiltertes Wasser und ein Teil Abwasser.",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 20.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 80.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 39.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max 100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 100.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max 100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.tds_reduction_percent": {
+          "value": "94–95",
+          "unit": "%",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "TDS removing rate for PD600 is about 94-95%",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "water_output.remineralization": {
           "value": true,
@@ -11781,11 +11908,134 @@
               "original_text": "Remineralisierung",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "protection.leak_detection": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "Leakage detection system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "protection.automatic_flush": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "automatically flush for 30 seconds",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.voltage": {
+          "value": "110-240VAC",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "110-240VAC",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.frequency_hz": {
+          "value": "50-60",
+          "unit": "Hz",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "50-60HZ",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.maximum_power_w": {
+          "value": 85.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "85W",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "TDS result will not show up until the system has kept producing water for 1 minute. ! Note: Please fully open the drinking faucet when dispensing water. Otherwise, it may cause system to malfunction čFig.35, Fig.36Ď ! Note: When the system keeps producing water continuously for 30 minutes, the system will enter into protection status and all the components stop working. The indicators will flash in red. In this condition, please unplug the power for 10 seconds and then power on again. plugged 7. User Interface × √ Model: PD600-TAM3 When the system is powered on, you will hear a beep. All indicators will be on for 3 seconds, and then the system will automatically flush for 30 seconds. After flushing, if there is no water production, it will turn into standby status. When the system is producing water, the power indicator will flash in blue. When the system is powered on and keeps producing water for 1 minute, the system will automatically test the TDS of RO water. The TDS reading will be unchanged if the system is in standby status or is being flushed. Different colors suggest different remaining lifespan: C. Indicator constant lit in red: the filter is expired When the system keeps producing water continuously for 30 minutes, the system will enter into protection status and all the components stop working. The indicators will flash in red. In this condition, please unplug the power for 10 seconds then power on again. A.Flushing when powered on: when powered on, the system will be automatically flushed for 30 seconds. B. Flushing when cumulative water production reaches 10 minutes: If the cumulative water production reaches 10 minutes, after returning into standby status, it will be automatically flushed for 10 seconds. Note: If the filter is expired, the buzzer will keep beeping when producing water to remind users of replacing filter. Filter life may vary depending on source water quality and water usage. Power-on Water production TDS display",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "Filter life indicator",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "commercial.warranty_years": {
+          "value": 1,
+          "unit": "years",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD600TAM3_Manual.pdf?v=1702972049",
+              "source_type": "manual",
+              "original_text": "ONE YEAR LIMITED FRIZZLIFE WARRANTY",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         }
       },
       "publication_status": "PUBLISH_READY"
