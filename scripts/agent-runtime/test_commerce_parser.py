@@ -88,6 +88,42 @@ class CommerceParserTests(unittest.TestCase):
         self.assertIsNone(product.physical.dimensions_raw.value)
         self.assertIsNone(product.electrical.maximum_power_w.value)
 
+    def test_extracts_generic_operating_specs_from_official_manual(self):
+        html = """<html><head><title>Example PD1200 Tankless Reverse Osmosis</title>
+        <script type="application/ld+json">{"@type":"Product","name":"Example PD1200 Tankless Reverse Osmosis","description":"11-stage 1200 GPD under-sink reverse osmosis system.","image":"https://example.com/pd1200.jpg"}</script>
+        </head><body><p>11-stage 1200 GPD under-sink reverse osmosis system.</p></body></html>"""
+        snapshot = PageSnapshot(
+            url="https://example.com/pd1200", title="Example PD1200 Tankless Reverse Osmosis",
+            visible_text="Example PD1200 11-stage 1200 GPD under-sink reverse osmosis system.",
+            raw_content=html,
+        )
+        manual = """Min.39ºF,Max 100ºF 110-240VAC 150W Rated Power 50-60HZ
+        Rated flow 0.83 gallons/m @25 C Min.20psi Max. 80psi Municipal water
+        1st stage PPC filter 2nd stage RO membrane 3rd stage TC filter
+        Smart RO Faucet Filter Life Indicator automatically flushed for 30 seconds
+        Leakage detection system TDS result displayed on the faucet screen
+        TDS removing rate for PD1200 is about 94-95%
+        ONE YEAR LIMITED FRIZZLIFE WARRANTY tankless RO system"""
+        with patch("extractor.commerce_parser._official_manuals", return_value=[("https://example.com/manual.pdf", manual)]):
+            product, _, _ = extract_commerce_product(snapshot.url, "Example", "PD1200", snapshot=snapshot)
+        self.assertEqual(product.filtration.advertised_stage_count.value, 11)
+        self.assertEqual(product.filtration.physical_filter_count.value, 3)
+        self.assertAlmostEqual(product.performance.dispensing_flow_lpm.value, 3.142, places=3)
+        self.assertEqual(product.performance.minimum_inlet_pressure.value, 20)
+        self.assertEqual(product.performance.maximum_inlet_pressure.value, 80)
+        self.assertEqual(product.performance.minimum_feed_temperature.value, 39)
+        self.assertEqual(product.performance.maximum_feed_temperature.value, 100)
+        self.assertEqual(product.electrical.maximum_power_w.value, 150)
+        self.assertEqual(product.electrical.voltage.value, "110-240VAC")
+        self.assertEqual(product.electrical.frequency_hz.value, "50-60")
+        self.assertTrue(product.system.tankless.value)
+        self.assertTrue(product.smart_features.smart_faucet.value)
+        self.assertTrue(product.smart_features.filter_life_indicator.value)
+        self.assertTrue(product.protection.automatic_flush.value)
+        self.assertTrue(product.protection.leak_detection.value)
+        self.assertEqual(product.performance.tds_reduction_percent.value, "94–95")
+        self.assertEqual(product.commercial.warranty_years.value, 1)
+
 
 if __name__ == "__main__":
     unittest.main()

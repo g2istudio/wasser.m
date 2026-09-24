@@ -327,11 +327,27 @@ def _manual_power_facts(manuals: list[tuple[str, str]]) -> list[tuple[str, float
         re.I,
     )
     for manual_url, text in manuals:
-        facts.extend(
+        found = [
             (manual_url, float(match.group(1).replace(",", ".")), match.group(0))
             for match in pattern.finditer(text)
-        )
+        ]
+        facts.extend(found)
+        if not found:
+            candidates = list(re.finditer(r"\b(\d{2,4}(?:[.,]\d+)?)\s*W\b", text, re.I))
+            values = {float(match.group(1).replace(",", ".")) for match in candidates}
+            if len(values) == 1 and candidates:
+                match = candidates[0]
+                facts.append((manual_url, next(iter(values)), match.group(0)))
     return facts
+
+
+def _manual_match(manuals: list[tuple[str, str]], pattern: str) -> tuple[re.Match, str] | None:
+    compiled = re.compile(pattern, re.I)
+    for manual_url, text in manuals:
+        match = compiled.search(text)
+        if match:
+            return match, manual_url
+    return None
 
 
 def _brand_logo(documents: list[object], soup: BeautifulSoup, url: str) -> str:
@@ -484,7 +500,15 @@ def extract_commerce_product(url: str, brand: str, model: str,
     if stages and _single_integer(stages[0]) is not None:
         stage_count = _single_integer(stages[0])
         product.filtration.advertised_stage_count = _evidence(stage_count, stages[1], stages_source)
-        product.filtration.physical_filter_count = _evidence(stage_count, stages[1], stages_source)
+    physical_filters = _lookup(specs, "physical filter count", "filter count", "anzahl filter")
+    if physical_filters and _single_integer(physical_filters[0]) is not None:
+        product.filtration.physical_filter_count = _evidence(
+            _single_integer(physical_filters[0]), physical_filters[1], source
+        )
+    elif manuals:
+        manual_stages = _manual_match(manuals, r"\b1st\s+stage\b.*?\b2nd\s+stage\b.*?\b3rd\s+stage\b")
+        if manual_stages:
+            product.filtration.physical_filter_count = _evidence(3, manual_stages[0].group(0), manual_stages[1])
     if technology_quote:
         product.filtration.membrane_type = _evidence("Reverse Osmosis", technology_quote, source)
 
@@ -603,6 +627,92 @@ def extract_commerce_product(url: str, brand: str, model: str,
     _set_boolean(product.smart_features, "filter_life_indicator", _lookup(specs, "filter replacement indicator", "filterstatusanzeige"), source)
     _set_boolean(product.smart_features, "outlet_tds_display", _lookup(specs, "tds display", "tds-anzeige"), source)
 
+    if manuals:
+        tankless = _manual_match(manuals, r"\btankless\s+(?:reverse osmosis|RO)\s+system\b")
+        if product.system.tankless.value is None and tankless:
+            product.system.tankless = _evidence(True, tankless[0].group(0), tankless[1])
+
+        temperature = _manual_match(
+            manuals,
+            r"Min\.?\s*(\d+(?:[.,]\d+)?)\s*[º°]?\s*F\s*,?\s*Max\.?\s*(\d+(?:[.,]\d+)?)\s*[º°]?\s*F",
+        )
+        if temperature:
+            quote, manual_url = temperature[0].group(0), temperature[1]
+            product.performance.minimum_feed_temperature = _evidence(
+                float(temperature[0].group(1).replace(",", ".")), quote, manual_url, "°F"
+            )
+            product.performance.maximum_feed_temperature = _evidence(
+                float(temperature[0].group(2).replace(",", ".")), quote, manual_url, "°F"
+            )
+
+        pressure = _manual_match(
+            manuals,
+            r"Min\.?\s*(\d+(?:[.,]\d+)?)\s*psi\s*,?\s*Max\.?\s*(\d+(?:[.,]\d+)?)\s*psi",
+        )
+        if pressure:
+            quote, manual_url = pressure[0].group(0), pressure[1]
+            product.performance.minimum_inlet_pressure = _evidence(
+                float(pressure[0].group(1).replace(",", ".")), quote, manual_url, "psi"
+            )
+            product.performance.maximum_inlet_pressure = _evidence(
+                float(pressure[0].group(2).replace(",", ".")), quote, manual_url, "psi"
+            )
+
+        rated_flow = _manual_match(manuals, r"(?:Rated\s+flow\s*)?(\d+(?:[.,]\d+)?)\s*gallons?/m\b")
+        if product.performance.dispensing_flow_lpm.value is None and rated_flow:
+            gallons_per_minute = float(rated_flow[0].group(1).replace(",", "."))
+            product.performance.dispensing_flow_lpm = _evidence(
+                round(gallons_per_minute * 3.785411784, 3), rated_flow[0].group(0), rated_flow[1], "L/min"
+            )
+
+        voltage_manual = _manual_match(manuals, r"\b\d{2,3}\s*[-–]\s*\d{2,3}\s*VAC\b")
+        if product.electrical.voltage.value is None and voltage_manual:
+            product.electrical.voltage = _evidence(
+                _clean(voltage_manual[0].group(0)), voltage_manual[0].group(0), voltage_manual[1]
+            )
+        frequency_manual = _manual_match(manuals, r"\b\d{2,3}\s*[-–]\s*\d{2,3}\s*HZ\b")
+        if product.electrical.frequency_hz.value is None and frequency_manual:
+            product.electrical.frequency_hz = _evidence(
+                _clean(frequency_manual[0].group(0)).removesuffix("HZ").strip(),
+                frequency_manual[0].group(0), frequency_manual[1], "Hz",
+            )
+
+        smart_faucet = _manual_match(manuals, r"\bSmart\s+RO\s+Faucet\b")
+        if product.smart_features.smart_faucet.value is None and smart_faucet:
+            product.smart_features.smart_faucet = _evidence(True, smart_faucet[0].group(0), smart_faucet[1])
+        filter_indicator = _manual_match(manuals, r"\bFilter\s+[Ll]ife\s+[Ii]ndicator\b")
+        if product.smart_features.filter_life_indicator.value is None and filter_indicator:
+            product.smart_features.filter_life_indicator = _evidence(
+                True, filter_indicator[0].group(0), filter_indicator[1]
+            )
+        tds_display = _manual_match(manuals, r"\bTDS\s+(?:display|result).*?(?:faucet\s+screen|display)")
+        if product.smart_features.outlet_tds_display.value is None and tds_display:
+            product.smart_features.outlet_tds_display = _evidence(True, tds_display[0].group(0), tds_display[1])
+        automatic_flush = _manual_match(manuals, r"\bautomatically\s+flush(?:ed)?\s+for\s+30\s+seconds\b")
+        if product.protection.automatic_flush.value is None and automatic_flush:
+            product.protection.automatic_flush = _evidence(
+                True, automatic_flush[0].group(0), automatic_flush[1]
+            )
+        leak_detection = _manual_match(manuals, r"\bLeakage\s+detection\s+system\b")
+        if product.protection.leak_detection.value is None and leak_detection:
+            product.protection.leak_detection = _evidence(True, leak_detection[0].group(0), leak_detection[1])
+
+        tds_reduction = _manual_match(
+            manuals, r"TDS\s+removing\s+rate.*?about\s+(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)%"
+        )
+        if product.performance.tds_reduction_percent.value is None and tds_reduction:
+            product.performance.tds_reduction_percent = _evidence(
+                f"{tds_reduction[0].group(1)}–{tds_reduction[0].group(2)}",
+                tds_reduction[0].group(0), tds_reduction[1], "%",
+            )
+        warranty = _manual_match(manuals, r"\b(ONE|TWO|THREE|\d+)\s+YEAR\s+LIMITED.*?WARRANTY\b")
+        if product.commercial.warranty_years.value is None and warranty:
+            years = {"one": 1, "two": 2, "three": 3}.get(warranty[0].group(1).casefold())
+            years = years if years is not None else int(warranty[0].group(1))
+            product.commercial.warranty_years = _evidence(
+                years, warranty[0].group(0), warranty[1], "years"
+            )
+
     voltage = _lookup(specs, "mains voltage", "voltage", "spannung")
     if voltage:
         product.electrical.voltage = _evidence(voltage[0], voltage[1], source)
@@ -627,7 +737,13 @@ def extract_commerce_product(url: str, brand: str, model: str,
                 parser_version="2", schema_version=product.schema_version,
             ))
         power = None
-    _set_number(product.electrical, "maximum_power_w", power, source, "W")
+    if page_power is None and len(manual_power) == 1 and manual_power_facts:
+        manual_url, manual_value, manual_quote = manual_power_facts[0]
+        product.electrical.maximum_power_w = _evidence(
+            manual_value, manual_quote, manual_url, "W"
+        )
+    else:
+        _set_number(product.electrical, "maximum_power_w", power, source, "W")
 
     offers = node.get("offers") or {}
     if isinstance(offers, list):
