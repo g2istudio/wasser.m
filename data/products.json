@@ -13079,22 +13079,22 @@
     "specs": {
       "Technologie": "Reverse Osmosis",
       "Installation": "Under-counter",
-      "Tanklos": "—",
+      "Tanklos": "Ja",
       "Stromanschluss erforderlich": "—",
       "Integrierte Pumpe": "—",
       "Filterstufen": "—",
-      "Filteranzahl": "—",
+      "Filteranzahl": "3",
       "Membrantyp": "Reverse Osmosis",
       "Membranleistung": "1000 GPD",
       "Nennleistung": "1000 GPD",
-      "Durchfluss": "—",
+      "Durchfluss": "2.65 L/min",
       "Rückgewinnungsrate": "—",
       "Reinwasser-Abwasser-Verhältnis": "1 ausgelegt. Bei zwei Teilen gefiltertem Wasser entsteht damit ein Teil Abwasser.",
-      "Min. Eingangsdruck": "—",
-      "Max. Eingangsdruck": "—",
-      "Min. Eingangstemperatur": "—",
-      "Max. Eingangstemperatur": "—",
-      "TDS-Reduktion": "—",
+      "Min. Eingangsdruck": "20 psi",
+      "Max. Eingangsdruck": "80 psi",
+      "Min. Eingangstemperatur": "39 °F",
+      "Max. Eingangstemperatur": "100 °F",
+      "TDS-Reduktion": "94–95 %",
       "Remineralisierung": "Ja",
       "Wasser bei Raumtemperatur": "—",
       "Kaltwasser": "—",
@@ -13103,16 +13103,17 @@
       "Rohwassertank": "—",
       "Reinwassertank": "—",
       "Drucktank": "—",
-      "Leckageschutz": "—",
+      "Leckageschutz": "Ja",
       "Automatische Abschaltung": "—",
-      "Automatische Spülung": "—",
+      "Automatische Spülung": "Ja",
       "UV-Desinfektion": "—",
-      "Spannung": "—",
+      "Spannung": "110-240VAC",
+      "Frequenz": "50-60 Hz",
       "Standby-Leistung": "—",
       "Filtrationsleistung": "—",
       "Heizleistung": "—",
       "Kühlleistung": "—",
-      "Max. Leistungsaufnahme": "—",
+      "Max. Leistungsaufnahme": "135 W",
       "Abmessungen": "—",
       "Breite": "—",
       "Tiefe": "—",
@@ -13121,12 +13122,12 @@
       "Geräuschpegel": "—",
       "Display": "—",
       "TDS-Anzeige Eingang": "—",
-      "TDS-Anzeige Ausgang": "—",
-      "Filterstatusanzeige": "—",
+      "TDS-Anzeige Ausgang": "Ja",
+      "Filterstatusanzeige": "Ja",
       "Intelligenter Wasserhahn": "—",
       "WLAN": "—",
       "App": "—",
-      "Garantie": "—"
+      "Garantie": "1 Jahr"
     },
     "price": 699.99,
     "currency": "EUR",
@@ -13136,8 +13137,8 @@
         "model": "PD1000-TAM4"
       },
       "source_id": 72,
-      "source_hash": "93d4aca1238f143474eaa64d54bdedc52d330029eac32056af2186f6aaed1441",
-      "checked_at": "2026-09-23",
+      "source_hash": "710216a2e90e78162ab4573a88de69ffb277d665659b47745dd4ee817f53c76e",
+      "checked_at": "2026-09-24",
       "source_url": "https://www.frizzlife.de/products/pd1000-tam4",
       "fields": {
         "system.technology": {
@@ -13149,11 +13150,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "system.installation_type": {
           "value": "Under-counter",
@@ -13164,11 +13165,41 @@
               "original_text": "Untertisch",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "tankless RO system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "filtration.physical_filter_count": {
+          "value": 3,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "1st stage 2nd stage 3rd stage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_type": {
           "value": "Reverse Osmosis",
@@ -13179,11 +13210,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_capacity_gpd": {
           "value": 1000,
@@ -13195,11 +13226,11 @@
               "original_text": "1000 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "performance.rated_capacity_gpd": {
           "value": 1000,
@@ -13211,11 +13242,27 @@
               "original_text": "1000 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 2.65,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "0.7 gallons/m",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "performance.pure_to_drain_ratio": {
           "value": "1 ausgelegt. Bei zwei Teilen gefiltertem Wasser entsteht damit ein Teil Abwasser.",
@@ -13226,11 +13273,91 @@
               "original_text": "1 ausgelegt. Bei zwei Teilen gefiltertem Wasser entsteht damit ein Teil Abwasser.",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 20.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 80.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 39.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max 100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 100.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max 100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.tds_reduction_percent": {
+          "value": "94–95",
+          "unit": "%",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "TDS removing rate for PD1000 is about 94-95%",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "water_output.remineralization": {
           "value": true,
@@ -13241,11 +13368,134 @@
               "original_text": "Remineralisierung",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "protection.leak_detection": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "Leakage detection system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "protection.automatic_flush": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "automatically flush for 30 seconds",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.voltage": {
+          "value": "110-240VAC",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "110-240VAC",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.frequency_hz": {
+          "value": "50-60",
+          "unit": "Hz",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "50-60HZ",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.maximum_power_w": {
+          "value": 135.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "135W",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "TDS result will not show up until the system has kept producing water for 1 minute. ! Note: Please fully open the drinking faucet when dispensing water. Otherwise, it may cause system to malfunction čFig.35, Fig.36Ď ! Note: When the system keeps produ cing water continuously for 30 minutes, the system will enter int o protection status and all the components stop working.The indicators will flash in red. In this condition, please unplug the power for 10 seconds and then power on again. The system will automatically flush for 30 seconds after the power supply is plugged 7. User Interface FRIZZLIFE INC. www.frizzlife.comPage 9 Model: PD1000-TAM4 × √ ! Note: If the filter is expired, the buzzer will keep beeping when producing water to remind use rs of rep lacing filte r. Filt er life may vary depending on source water quality and water usage. When the system is powered on, you will hear a beep. All indicators will be on for 3 seconds, and then the system will automatically flush for 30 seconds. After flu shing, if there is no water produ ction, it will turn into standby status. Power-on Water production When the system is producing water, the power indicator will flash in blue. TDS display",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "Filter life indicator",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "commercial.warranty_years": {
+          "value": 1,
+          "unit": "years",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1000TAM4_Manual.pdf?v=1702972051",
+              "source_type": "manual",
+              "original_text": "ONE YEAR LIMITED FRIZZLIFE WARRANTY",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         }
       },
       "publication_status": "PUBLISH_READY"

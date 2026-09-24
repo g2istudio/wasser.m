@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 71,
+      "source_id": 72,
       "brand": "Frizzlife",
-      "model": "PX500-A",
+      "model": "PD1000-TAM4",
       "action": "update",
-      "target_id": "frizzlife-px500-a"
+      "target_id": "frizzlife-pd1000-tam4"
     }
   ],
   "rejected": [],
   "catalog_before": 168,
   "catalog_after": 168,
-  "completed_at": "2026-09-24T07:23:30.492501+00:00"
+  "completed_at": "2026-09-24T07:23:37.721691+00:00"
 }
