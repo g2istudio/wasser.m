@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DB = Path(r"C:\wasser-market-agent\data\wasser_market.db")
 STATE_PATH = ROOT / "data" / "agent-import-state.json"
 REPORT_PATH = ROOT / "data" / "agent-import-report.json"
-RENDERER_VERSION = 2
+RENDERER_VERSION = 3
 
 FIELD_LABELS = {
     "system.technology": "Technologie",
@@ -57,6 +57,7 @@ FIELD_LABELS = {
     "protection.automatic_flush": "Automatische Spülung",
     "protection.uv_disinfection": "UV-Desinfektion",
     "electrical.voltage": "Spannung",
+    "electrical.frequency_hz": "Frequenz",
     "electrical.standby_power_w": "Standby-Leistung",
     "electrical.filtration_power_w": "Filtrationsleistung",
     "electrical.heating_power_w": "Heizleistung",
@@ -155,7 +156,11 @@ def shown(field: dict) -> str:
     value = field["value"]
     if isinstance(value, bool):
         value = "Ja" if value else "Nein"
+    elif isinstance(value, float) and value.is_integer():
+        value = int(value)
     unit = field.get("unit") or ""
+    if unit == "years":
+        unit = "Jahr" if value == 1 else "Jahre"
     return f"{value} {unit}".strip()
 
 
