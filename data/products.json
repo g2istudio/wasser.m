@@ -12231,22 +12231,22 @@
     "specs": {
       "Technologie": "Reverse Osmosis",
       "Installation": "Under-counter",
-      "Tanklos": "—",
+      "Tanklos": "Ja",
       "Stromanschluss erforderlich": "—",
       "Integrierte Pumpe": "—",
       "Filterstufen": "8",
-      "Filteranzahl": "8",
+      "Filteranzahl": "3",
       "Membrantyp": "Reverse Osmosis",
       "Membranleistung": "600 GPD",
       "Nennleistung": "600 GPD",
-      "Durchfluss": "—",
+      "Durchfluss": "1.552 L/min",
       "Rückgewinnungsrate": "—",
       "Reinwasser-Abwasser-Verhältnis": "—",
-      "Min. Eingangsdruck": "—",
-      "Max. Eingangsdruck": "—",
-      "Min. Eingangstemperatur": "—",
-      "Max. Eingangstemperatur": "—",
-      "TDS-Reduktion": "—",
+      "Min. Eingangsdruck": "20 psi",
+      "Max. Eingangsdruck": "80 psi",
+      "Min. Eingangstemperatur": "39 °F",
+      "Max. Eingangstemperatur": "100 °F",
+      "TDS-Reduktion": "94–95 %",
       "Remineralisierung": "—",
       "Wasser bei Raumtemperatur": "—",
       "Kaltwasser": "—",
@@ -12255,16 +12255,17 @@
       "Rohwassertank": "—",
       "Reinwassertank": "—",
       "Drucktank": "—",
-      "Leckageschutz": "—",
+      "Leckageschutz": "Ja",
       "Automatische Abschaltung": "—",
-      "Automatische Spülung": "—",
+      "Automatische Spülung": "Ja",
       "UV-Desinfektion": "—",
-      "Spannung": "—",
+      "Spannung": "110-240VAC",
+      "Frequenz": "50-60 Hz Hz",
       "Standby-Leistung": "—",
       "Filtrationsleistung": "—",
       "Heizleistung": "—",
       "Kühlleistung": "—",
-      "Max. Leistungsaufnahme": "—",
+      "Max. Leistungsaufnahme": "85 W",
       "Abmessungen": "—",
       "Breite": "—",
       "Tiefe": "—",
@@ -12273,12 +12274,12 @@
       "Geräuschpegel": "—",
       "Display": "—",
       "TDS-Anzeige Eingang": "—",
-      "TDS-Anzeige Ausgang": "—",
-      "Filterstatusanzeige": "—",
+      "TDS-Anzeige Ausgang": "Ja",
+      "Filterstatusanzeige": "Ja",
       "Intelligenter Wasserhahn": "—",
       "WLAN": "—",
       "App": "—",
-      "Garantie": "—"
+      "Garantie": "1 Jahr"
     },
     "price": 459.99,
     "currency": "EUR",
@@ -12288,8 +12289,8 @@
         "model": "PX600"
       },
       "source_id": 70,
-      "source_hash": "5439b9468b530ac0cabe2e5dd287d4c2085153b5ec981d693c54638fee51aeed",
-      "checked_at": "2026-09-23",
+      "source_hash": "2ca5b0fa3ef5358eeef2ecfdee4ecf0bcbbd3ecf8350887720a28f58585eac82",
+      "checked_at": "2026-09-24",
       "source_url": "https://www.frizzlife.de/products/px600",
       "fields": {
         "system.technology": {
@@ -12301,11 +12302,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "system.installation_type": {
           "value": "Under-counter",
@@ -12316,11 +12317,26 @@
               "original_text": "Untertisch",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "tankless RO system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "filtration.advertised_stage_count": {
           "value": 8,
@@ -12331,26 +12347,26 @@
               "original_text": "8 Stufen",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.physical_filter_count": {
-          "value": 8,
+          "value": 3,
           "evidence": [
             {
-              "source_url": "https://www.frizzlife.de/products/px600",
-              "source_type": "manufacturer_page",
-              "original_text": "8 Stufen",
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "1st stage 2nd stage ASR713Post carbon filter 3rd stage",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_type": {
           "value": "Reverse Osmosis",
@@ -12361,11 +12377,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_capacity_gpd": {
           "value": 600,
@@ -12377,11 +12393,11 @@
               "original_text": "600 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "performance.rated_capacity_gpd": {
           "value": 600,
@@ -12393,11 +12409,230 @@
               "original_text": "600 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 1.552,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "0.41 gallons/m",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 20.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 80.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 39.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max.100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 100.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max.100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.tds_reduction_percent": {
+          "value": "94–95",
+          "unit": "%",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "TDS removing rate for PX600 is about 94-95%",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "protection.leak_detection": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "Leakage detection system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "protection.automatic_flush": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "automatically flush for 30 seconds",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.voltage": {
+          "value": "110-240VAC",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "110-240VAC",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.frequency_hz": {
+          "value": "50-60 Hz",
+          "unit": "Hz",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "50-60 Hz",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.maximum_power_w": {
+          "value": 85.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "85W",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "TDS Display Filter life indicator When the system is powered on, you will hear a beep. All indicators will be on for 3 seconds, and then the system will automatically flush for 30 seconds. After flushing, if there is no water production, it will turn into standby status. When the system is powered on and keeps producing water for 30 seconds, the system will automatically test the TDS of RO water. The TDS reading will be unchanged if the system is in standby status or is being flushed. Different colors suggest different remaining lifespan: A. Indicator constant lit in white/blue the filter is normally working. B. Indicator flashed in red: the filter lifetime is about to be expired (remaining lifespan <5%). C. Indicator constant lit in red: the filter is expired. 11 Automatic flushing Long-time operation reminder Note: When the system is being flushed, the indicator will flash in blue. When the system keeps producing water continuously for 30 minutes, the system will enter into protection status and all the components stop working. The indicators will flash in red. In this condition, please unplug the power for 10 seconds then power on again. A. Flushing when powered on: when powered on, the system will be automatically flushed for 30 seconds. B. Flushing when cumulative water production reaches 10 minutes: If the cumulative water production reaches 10 minutes, after returning into standby status, it will be automatically flushed for 10 seconds. C. Flushing when constant water production: if the system constantly keeps producing water for 10 minutes, it will be automatically flushed for 15 seconds. D.Flushing when in standby status: When the system is in standby status, it will automatically flushed for 30 seconds every 24 hours. A. Select filter: when the system is powered on, long press the \"Reset\" for 3 seconds, the buzzer will beep and you can start to select the filter you want to change. Press \"Reset\"button to change between the filters and the selected filter lifetime indicator will flash. B. Reset: after selecting the filter, long press \"Reset\" button for 3 seconds. You will hear a beep. The selected filter’s indicator will return to blue light once the filter is changed and sucessfully reset. If you do not operate within 10 seconds, it will automatically exit this mode and resume normal display",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "Filter life indicator",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "commercial.warranty_years": {
+          "value": 1,
+          "unit": "years",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PX600_Manual..pdf?v=1729494335",
+              "source_type": "manual",
+              "original_text": "ONE YEAR LIMITED FRIZZLIFE WARRANTY",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         }
       },
       "publication_status": "PUBLISH_READY"
