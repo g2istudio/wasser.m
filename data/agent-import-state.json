@@ -137,9 +137,9 @@
     },
     "Frizzlife::PX500-A": {
       "source_id": 71,
-      "source_hash": "3aa6b5f5597abde198fa13a3e00c2e6666aee2c7696b476541b820fe4d0bc7c4",
-      "renderer_version": 2,
-      "imported_at": "2026-09-23T17:49:18.406581+00:00"
+      "source_hash": "b0d91c199d8c1a226a98f776b906737e6312a233374b73812d24361a20e9ad0b",
+      "renderer_version": 3,
+      "imported_at": "2026-09-24T07:23:30.491886+00:00"
     },
     "Frizzlife::PD1000-TAM4": {
       "source_id": 72,

@@ -12655,22 +12655,22 @@
     "specs": {
       "Technologie": "Reverse Osmosis",
       "Installation": "Under-counter",
-      "Tanklos": "—",
+      "Tanklos": "Ja",
       "Stromanschluss erforderlich": "—",
       "Integrierte Pumpe": "—",
       "Filterstufen": "—",
-      "Filteranzahl": "—",
+      "Filteranzahl": "3",
       "Membrantyp": "Reverse Osmosis",
       "Membranleistung": "500 GPD",
       "Nennleistung": "500 GPD",
-      "Durchfluss": "—",
+      "Durchfluss": "1.287 L/min",
       "Rückgewinnungsrate": "—",
       "Reinwasser-Abwasser-Verhältnis": "1. Das bedeutet: Für 1,5 Tassen gereinigtes Wasser entsteht etwa 1 Tasse Abwasser.",
-      "Min. Eingangsdruck": "—",
-      "Max. Eingangsdruck": "—",
-      "Min. Eingangstemperatur": "—",
-      "Max. Eingangstemperatur": "—",
-      "TDS-Reduktion": "—",
+      "Min. Eingangsdruck": "20 psi",
+      "Max. Eingangsdruck": "80 psi",
+      "Min. Eingangstemperatur": "39 °F",
+      "Max. Eingangstemperatur": "100 °F",
+      "TDS-Reduktion": "94–95 %",
       "Remineralisierung": "Ja",
       "Wasser bei Raumtemperatur": "—",
       "Kaltwasser": "—",
@@ -12679,16 +12679,17 @@
       "Rohwassertank": "—",
       "Reinwassertank": "—",
       "Drucktank": "—",
-      "Leckageschutz": "—",
+      "Leckageschutz": "Ja",
       "Automatische Abschaltung": "—",
-      "Automatische Spülung": "—",
+      "Automatische Spülung": "Ja",
       "UV-Desinfektion": "—",
-      "Spannung": "—",
+      "Spannung": "110-240VAC",
+      "Frequenz": "50-60 Hz",
       "Standby-Leistung": "—",
       "Filtrationsleistung": "—",
       "Heizleistung": "—",
       "Kühlleistung": "—",
-      "Max. Leistungsaufnahme": "—",
+      "Max. Leistungsaufnahme": "60 W",
       "Abmessungen": "—",
       "Breite": "—",
       "Tiefe": "—",
@@ -12698,11 +12699,11 @@
       "Display": "—",
       "TDS-Anzeige Eingang": "—",
       "TDS-Anzeige Ausgang": "—",
-      "Filterstatusanzeige": "—",
+      "Filterstatusanzeige": "Ja",
       "Intelligenter Wasserhahn": "—",
       "WLAN": "—",
       "App": "—",
-      "Garantie": "—"
+      "Garantie": "1 Jahr"
     },
     "price": 439.99,
     "currency": "EUR",
@@ -12712,8 +12713,8 @@
         "model": "PX500-A"
       },
       "source_id": 71,
-      "source_hash": "3aa6b5f5597abde198fa13a3e00c2e6666aee2c7696b476541b820fe4d0bc7c4",
-      "checked_at": "2026-09-23",
+      "source_hash": "b0d91c199d8c1a226a98f776b906737e6312a233374b73812d24361a20e9ad0b",
+      "checked_at": "2026-09-24",
       "source_url": "https://www.frizzlife.de/products/px500-a",
       "fields": {
         "system.technology": {
@@ -12725,11 +12726,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "system.installation_type": {
           "value": "Under-counter",
@@ -12740,11 +12741,41 @@
               "original_text": "Untertisch",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "tankless RO system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "filtration.physical_filter_count": {
+          "value": 3,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "1st stage 2nd stage ASR313-AAlkaline filter 3rd stage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_type": {
           "value": "Reverse Osmosis",
@@ -12755,11 +12786,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_capacity_gpd": {
           "value": 500,
@@ -12771,11 +12802,11 @@
               "original_text": "500 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "performance.rated_capacity_gpd": {
           "value": 500,
@@ -12787,11 +12818,27 @@
               "original_text": "500 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 1.287,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "0.34 gallons/m",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "performance.pure_to_drain_ratio": {
           "value": "1. Das bedeutet: Für 1,5 Tassen gereinigtes Wasser entsteht etwa 1 Tasse Abwasser.",
@@ -12802,11 +12849,91 @@
               "original_text": "1. Das bedeutet: Für 1,5 Tassen gereinigtes Wasser entsteht etwa 1 Tasse Abwasser.",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 20.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 80.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 39.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max.100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 100.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max.100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.tds_reduction_percent": {
+          "value": "94–95",
+          "unit": "%",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "TDS removing rate for PX500-A is about 94-95%",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "water_output.remineralization": {
           "value": true,
@@ -12817,11 +12944,119 @@
               "original_text": "Remineralisierung",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "protection.leak_detection": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "Leakage detection system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "protection.automatic_flush": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "automatically flush for 30 seconds",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.voltage": {
+          "value": "110-240VAC",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "110-240VAC",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.frequency_hz": {
+          "value": "50-60",
+          "unit": "Hz",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "50-60HZ",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.maximum_power_w": {
+          "value": 60.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "60W",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "Filter life indicator",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "commercial.warranty_years": {
+          "value": 1,
+          "unit": "years",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopifycdn.net/s/files/1/0159/8429/5990/files/PX500-A_Manual.pdf?v=1637571850",
+              "source_type": "manual",
+              "original_text": "ONE YEAR LIMITED FRIZZLIFE WARRANTY",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         }
       },
       "publication_status": "PUBLISH_READY"

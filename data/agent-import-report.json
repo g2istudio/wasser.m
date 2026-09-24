@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 70,
+      "source_id": 71,
       "brand": "Frizzlife",
-      "model": "PX600",
+      "model": "PX500-A",
       "action": "update",
-      "target_id": "frizzlife-px600"
+      "target_id": "frizzlife-px500-a"
     }
   ],
   "rejected": [],
   "catalog_before": 168,
   "catalog_after": 168,
-  "completed_at": "2026-09-24T07:23:22.675121+00:00"
+  "completed_at": "2026-09-24T07:23:30.492501+00:00"
 }
