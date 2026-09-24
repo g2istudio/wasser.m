@@ -12547,22 +12547,22 @@
     "specs": {
       "Technologie": "Reverse Osmosis",
       "Installation": "Under-counter",
-      "Tanklos": "—",
+      "Tanklos": "Ja",
       "Stromanschluss erforderlich": "—",
       "Integrierte Pumpe": "—",
       "Filterstufen": "11",
-      "Filteranzahl": "11",
+      "Filteranzahl": "3",
       "Membrantyp": "Reverse Osmosis",
       "Membranleistung": "1200 GPD",
       "Nennleistung": "1200 GPD",
-      "Durchfluss": "—",
+      "Durchfluss": "3.142 L/min",
       "Rückgewinnungsrate": "—",
       "Reinwasser-Abwasser-Verhältnis": "—",
-      "Min. Eingangsdruck": "—",
-      "Max. Eingangsdruck": "—",
-      "Min. Eingangstemperatur": "—",
-      "Max. Eingangstemperatur": "—",
-      "TDS-Reduktion": "—",
+      "Min. Eingangsdruck": "20.0 psi",
+      "Max. Eingangsdruck": "80.0 psi",
+      "Min. Eingangstemperatur": "39.0 °F",
+      "Max. Eingangstemperatur": "100.0 °F",
+      "TDS-Reduktion": "94–95 %",
       "Remineralisierung": "—",
       "Wasser bei Raumtemperatur": "—",
       "Kaltwasser": "—",
@@ -12571,16 +12571,16 @@
       "Rohwassertank": "—",
       "Reinwassertank": "—",
       "Drucktank": "—",
-      "Leckageschutz": "—",
+      "Leckageschutz": "Ja",
       "Automatische Abschaltung": "—",
-      "Automatische Spülung": "—",
+      "Automatische Spülung": "Ja",
       "UV-Desinfektion": "—",
-      "Spannung": "—",
+      "Spannung": "110-240VAC",
       "Standby-Leistung": "—",
       "Filtrationsleistung": "—",
       "Heizleistung": "—",
       "Kühlleistung": "—",
-      "Max. Leistungsaufnahme": "—",
+      "Max. Leistungsaufnahme": "150.0 W",
       "Abmessungen": "—",
       "Breite": "—",
       "Tiefe": "—",
@@ -12589,12 +12589,12 @@
       "Geräuschpegel": "—",
       "Display": "—",
       "TDS-Anzeige Eingang": "—",
-      "TDS-Anzeige Ausgang": "—",
-      "Filterstatusanzeige": "—",
-      "Intelligenter Wasserhahn": "—",
+      "TDS-Anzeige Ausgang": "Ja",
+      "Filterstatusanzeige": "Ja",
+      "Intelligenter Wasserhahn": "Ja",
       "WLAN": "—",
       "App": "—",
-      "Garantie": "—"
+      "Garantie": "1 years"
     },
     "price": 899.99,
     "currency": "EUR",
@@ -12604,8 +12604,8 @@
         "model": "PD1200"
       },
       "source_id": 73,
-      "source_hash": "02f70f81f0dd1ce00ef80c876ec8139ba45c2c2020ab4726500ecbb295283939",
-      "checked_at": "2026-09-23",
+      "source_hash": "6ce372be624f13a9f57139d8df4e12e8fbe79c2e78452063abe61dafc7decaa1",
+      "checked_at": "2026-09-24",
       "source_url": "https://www.frizzlife.de/products/pd1200",
       "fields": {
         "system.technology": {
@@ -12617,11 +12617,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "system.installation_type": {
           "value": "Under-counter",
@@ -12632,11 +12632,26 @@
               "original_text": "Untertisch",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "system.tankless": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "tankless RO system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         },
         "filtration.advertised_stage_count": {
           "value": 11,
@@ -12647,26 +12662,26 @@
               "original_text": "11-stufige",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.physical_filter_count": {
-          "value": 11,
+          "value": 3,
           "evidence": [
             {
-              "source_url": "https://www.frizzlife.de/products/pd1200",
-              "source_type": "manufacturer_page",
-              "original_text": "11-stufige",
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "1st stage 2nd stage 3rd stage",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_type": {
           "value": "Reverse Osmosis",
@@ -12677,11 +12692,11 @@
               "original_text": "Umkehrosmose",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "filtration.membrane_capacity_gpd": {
           "value": 1200,
@@ -12693,11 +12708,11 @@
               "original_text": "1200 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
         },
         "performance.rated_capacity_gpd": {
           "value": 1200,
@@ -12709,11 +12724,229 @@
               "original_text": "1200 GPD",
               "confidence": 0.98,
               "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
+              "checked_at": "2026-09-24"
             }
           ],
           "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
+          "checked_at": "2026-09-24"
+        },
+        "performance.dispensing_flow_lpm": {
+          "value": 3.142,
+          "unit": "L/min",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "0.83 gallons/m",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_inlet_pressure": {
+          "value": 20.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_inlet_pressure": {
+          "value": 80.0,
+          "unit": "psi",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "Min.20psi Max. 80psi",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.minimum_feed_temperature": {
+          "value": 39.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max 100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.maximum_feed_temperature": {
+          "value": 100.0,
+          "unit": "°F",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "Min.39ºF,Max 100ºF",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "performance.tds_reduction_percent": {
+          "value": "94–95",
+          "unit": "%",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "TDS removing rate for PD1200 is about 94-95%",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "protection.leak_detection": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "Leakage detection system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "protection.automatic_flush": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "automatically flush for 30 seconds",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.voltage": {
+          "value": "110-240VAC",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "110-240VAC",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "electrical.maximum_power_w": {
+          "value": 150.0,
+          "unit": "W",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "150W",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.outlet_tds_display": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "TDS result will not show up until the system has kept producing water for 1 minute. Note: When the system keeps producing water continuously for 30 minutes, the system will enter into protection status and all the components stop working. The indicators on the system will flash in red; The smart faucet will show error code E02. In this condition, please unplug the power for 10 seconds and then power on again. Note: Please fully open the drinking faucet when dispensing water. Otherwise,it may cause system to malfunction\u000f The system will automatically flush for 30 seconds after the power supply is connected. Turn on the RO faucet. Allow it to run for 20 minutes. Congratulations! You have successfully installed the system! Power-on TDS display",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.filter_life_indicator": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "Filter Life Indicator",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "smart_features.smart_faucet": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "Smart RO Faucet",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
+        },
+        "commercial.warranty_years": {
+          "value": 1,
+          "unit": "years",
+          "evidence": [
+            {
+              "source_url": "https://cdn.shopify.com/s/files/1/0159/8429/5990/files/PD1200_manual..pdf?v=1729494338",
+              "source_type": "manual",
+              "original_text": "ONE YEAR LIMITED FRIZZLIFE WARRANTY",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-24"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-24"
         }
       },
       "publication_status": "PUBLISH_READY"

@@ -8,12 +8,12 @@
       "source_id": 73,
       "brand": "Frizzlife",
       "model": "PD1200",
-      "action": "create",
+      "action": "update",
       "target_id": "frizzlife-pd1200"
     }
   ],
   "rejected": [],
-  "catalog_before": 167,
+  "catalog_before": 168,
   "catalog_after": 168,
-  "completed_at": "2026-09-23T17:49:32.253430+00:00"
+  "completed_at": "2026-09-24T02:19:40.666675+00:00"
 }
