@@ -4,42 +4,50 @@
     "Waterdrop::G3P800": {
       "source_id": 1,
       "source_hash": "23d20b2d10a3bcb037ee65e58f5ae7e1ebebf29de9eb2da8534d331dc76d2305",
-      "imported_at": "2026-09-23T04:48:27.534529+08:00"
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:06.865350+00:00"
     },
     "OsmoFresh::Fusion Pro 2": {
       "source_id": 45,
       "source_hash": "15446245c7d67a790d15f4d59c20de84802a22ef88cac64df990e55632e5949b",
-      "imported_at": "2026-09-23T04:48:27.53454+08:00"
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:06.865369+00:00"
     },
     "OsmoFresh::Flow2": {
       "source_id": 46,
       "source_hash": "5d053ac1e7885925245b9f4e84518e43f7f8e57e01348b384ae824dc3402bb96",
-      "imported_at": "2026-09-23T02:08:40.357198+00:00"
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:06.865372+00:00"
     },
     "OsmoFresh::FlowOne+": {
       "source_id": 47,
       "source_hash": "a39b7f81dc976dd3837072a715532e3e4b02630efac822635eeffa8082bfd4e5",
-      "imported_at": "2026-09-23T02:08:40.357214+00:00"
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:06.865374+00:00"
     },
     "OsmoFresh::Fusion Air": {
       "source_id": 48,
       "source_hash": "d0d0d58f47c31fd0998c188b313709de4802401f55c3467c5c66aedc7137eb38",
-      "imported_at": "2026-09-23T02:08:40.357217+00:00"
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:06.865376+00:00"
     },
     "OsmoFresh::Fusion Base": {
       "source_id": 49,
       "source_hash": "0faa7c37a323fcf9437fca6f9443dc4d67e4cbe910e6e6fdbc0d21bcc8d23bd5",
-      "imported_at": "2026-09-23T02:08:40.357219+00:00"
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:06.865378+00:00"
     },
     "OsmoFresh::Fusion Ice": {
       "source_id": 50,
       "source_hash": "3b3121054d1ec1016b5a1c99226f67e4e31b2c338d5369f816b3c63a64c9c1f5",
-      "imported_at": "2026-09-23T02:08:40.357221+00:00"
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:06.865379+00:00"
     },
     "OsmoFresh::Fusion Pro": {
       "source_id": 51,
       "source_hash": "34959128001460a4886fcf90c5bdcd2877d80804cadf502fa7163d568827dd83",
-      "imported_at": "2026-09-23T02:08:40.357222+00:00"
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:06.865380+00:00"
     },
     "OsmoFresh::Fusion Stream": {
       "source_id": 52,

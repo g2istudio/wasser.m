@@ -197,24 +197,55 @@
     "specs": {
       "Technologie": "Umkehrosmose",
       "Installation": "Auftisch",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
       "Filterstufen": "7",
       "Filteranzahl": "1",
+      "Membrantyp": "—",
       "Membranleistung": "200",
       "Nennleistung": "200",
       "Durchfluss": "0.8 l/min",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
       "Min. Eingangsdruck": "1 bar",
       "Max. Eingangsdruck": "5 bar",
       "Min. Eingangstemperatur": "5 °C",
       "Max. Eingangstemperatur": "45 °C",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
       "Rohwassertank": "5 l",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
       "Standby-Leistung": "2.6 W",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
       "Kühlleistung": "120 W",
       "Max. Leistungsaufnahme": "2400 W",
       "Abmessungen": "51x22x43,7cm (LxBxH)",
       "Breite": "220 mm",
       "Tiefe": "510 mm",
       "Höhe": "437 mm",
-      "Display": "7\" Pro Display"
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "7\" Pro Display",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
     },
     "source": "https://www.osmofresh.de/osmoseanlagen/fusion-pro",
     "brandSlug": "osmofresh",
@@ -543,7 +574,8 @@
         }
       },
       "publication_status": "PUBLISH_READY"
-    }
+    },
+    "brandLogo": "assets/brands/osmofresh.png"
   },
   {
     "id": "greifenstein-direct-flow-premium",
@@ -1776,54 +1808,72 @@
     "currency": "EUR",
     "rating": null,
     "reviews": 0,
-    "image": "assets/products/waterdrop-umkehrosmoseanlage-g3p800.webp",
-    "source": "https://www.waterdropfilter.de/products/umkehrosmoseanlage-g3p800",
-    "summary": "G3P800 Tankloser Umkehrosmose Wasserfilter 800 GPD: aktuelle Umkehrosmoseanlage aus dem deutschen Waterdrop-Sortiment mit den auf der Herstellerseite dokumentierten Leistungs-, Filter- und Bedienmerkmalen.",
+    "image": "https://www.waterdropfilter.com/cdn/shop/files/G3P800-LOGO-2.png?v=1779938808&width=2134",
+    "source": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
     "specs": {
-      "Modell": "G3P800",
-      "Bauart": "Tanklose Untertisch-Umkehrosmoseanlage",
-      "Filtration": "10-stufige tanklose Umkehrosmose-Filtration",
-      "RO-Leistung": "800 GPD",
-      "Mineralisierung": "Nein / nicht Bestandteil dieses Sets",
-      "Heißwasser": "Nein",
-      "Kaltwasser": "Nein",
-      "Reinwasser-Abwasser-Verhältnis": "3:1",
-      "Bedienung": "Intelligenter Wasserhahn mit Filterstatusanzeige",
-      "Filterwechsel": "Vor-/Nachfilter ca. 6–12 Monate; RO-Membran modellabhängig bis 24 Monate",
-      "Tank": "Tanklos",
-      "Installation": "Untertisch an Wasser, Abfluss und Strom",
-      "Zertifizierung": "NSF/ANSI 42, 58 und 372",
-      "Abmessungen": "45,9 × 14,4 × 45,0 cm",
-      "Garantie": "1 Jahr laut Vergleichstabelle des Herstellers",
-      "Wasserhahn": "Smart Display mit TDS- und Filterstatusanzeige",
-      "Filterlebensdauer": "CF ca. 6 Monate; CB ca. 12 Monate; RO ca. 24 Monate",
-      "Gewicht": "16,33 kg",
-      "Agent-Abgleich": "G3P800 · 800 GPD · 10 Filterstufen (US-Herstellerseite)"
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Undersink",
+      "Tanklos": "Ja",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "10",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
+      "Membranleistung": "800 GPD",
+      "Nennleistung": "800 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "Ja",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "18.11*5.67*17.73 in",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "32.4 pounds",
+      "Geräuschpegel": "—",
+      "Display": "Smart Display Faucet",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "Ja",
+      "Intelligenter Wasserhahn": "Ja",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "1 Years"
     },
     "agent_import": {
-      "batch": "agent-two-products-2026-09-23",
       "identity": {
         "brand": "Waterdrop",
         "model": "G3P800"
       },
-      "checked_at": "2026-09-23",
+      "source_id": 1,
+      "source_hash": "23d20b2d10a3bcb037ee65e58f5ae7e1ebebf29de9eb2da8534d331dc76d2305",
+      "checked_at": "2026-09-22",
       "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
       "fields": {
-        "identity.model": {
-          "value": "G3P800",
-          "evidence": [
-            {
-              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
-              "source_type": "manufacturer_page",
-              "original_text": "Model\tG3P800\tG3P600\tX12",
-              "confidence": 0.95,
-              "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
-            }
-          ],
-          "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
-        },
         "system.technology": {
           "value": "Reverse Osmosis",
           "evidence": [
@@ -1884,6 +1934,22 @@
           "verification_status": "official_specification",
           "checked_at": "2026-09-23"
         },
+        "filtration.membrane_capacity_gpd": {
+          "value": 800,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "/ 800 GPD Tankless Reverse Osmosis System - Waterdrop G3P800",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
         "performance.rated_capacity_gpd": {
           "value": 800,
           "unit": "GPD",
@@ -1892,6 +1958,53 @@
               "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
               "source_type": "manufacturer_page",
               "original_text": "/ 800 GPD Tankless Reverse Osmosis System - Waterdrop G3P800",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "protection.automatic_flush": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "Automatic Flushing Design",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.dimensions_raw": {
+          "value": "18.11*5.67*17.73",
+          "unit": "in",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "Product Dimensions (In)\t18.11*5.67*17.73\t18.11*5.67*17.73\t18.2*6.25*16.72",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "physical.weight_kg": {
+          "value": 32.4,
+          "unit": "pounds",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "32.4 pounds",
               "confidence": 0.95,
               "verification_status": "official_specification",
               "checked_at": "2026-09-23"
@@ -1944,10 +2057,27 @@
           ],
           "verification_status": "official_specification",
           "checked_at": "2026-09-23"
+        },
+        "commercial.warranty_years": {
+          "value": 1,
+          "unit": "Years",
+          "evidence": [
+            {
+              "source_url": "https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1",
+              "source_type": "manufacturer_page",
+              "original_text": "Warranty\t1 Year\t1 Year\t2 Years",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
         }
       },
-      "publication_status": "PUBLISHABLE_PARTIAL"
-    }
+      "publication_status": "PUBLISH_READY"
+    },
+    "brandLogo": "assets/brands/waterdrop.png"
   },
   {
     "id": "waterdrop-umkehrosmoseanlage-wasserfilter-x8",
@@ -4307,36 +4437,77 @@
     "currency": "EUR",
     "image": "https://www.osmofresh.de/media/38/4f/9c/1788855438/Osmofresh_7942.jpg?ts=1788855438",
     "source": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
-    "summary": "Umkehrosmoseanlage mit 7-Zoll-Display. Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
     "specs": {
       "Technologie": "Umkehrosmose",
+      "Installation": "Auftisch",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "7",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
+      "Membranleistung": "200 GPD",
+      "Nennleistung": "200 GPD",
       "Durchfluss": "0.8 L/min",
-      "Display": "7\" Pro Display",
-      "Eingangsdruck": "1–5 bar",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "1 bar",
+      "Max. Eingangsdruck": "5 bar",
+      "Min. Eingangstemperatur": "5 °C",
       "Max. Eingangstemperatur": "38 °C",
-      "Standby": "2.6 W",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "5 l",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "2.6 W",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
       "Kühlleistung": "120 W",
       "Max. Leistungsaufnahme": "2400 W",
-      "Maße (L × B × H)": "52x22x43,7cm (LxBxH)",
-      "Membranleistung (GPD)": "—",
-      "Rohwassertank": "—"
+      "Abmessungen": "52x22x43,7cm (LxBxH)",
+      "Breite": "220 mm",
+      "Tiefe": "520 mm",
+      "Höhe": "437 mm",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "7\" Pro Display",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
     },
     "agent_import": {
-      "batch": "agent-two-products-2026-09-23",
       "identity": {
         "brand": "OsmoFresh",
         "model": "Fusion Pro 2"
       },
-      "checked_at": "2026-09-23",
+      "source_id": 45,
+      "source_hash": "15446245c7d67a790d15f4d59c20de84802a22ef88cac64df990e55632e5949b",
+      "checked_at": "2026-09-22",
       "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
       "fields": {
-        "identity.model": {
-          "value": "Fusion Pro 2",
+        "system.technology": {
+          "value": "Umkehrosmose",
           "evidence": [
             {
               "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
               "source_type": "manufacturer_page",
-              "original_text": "FUSION PRO 2 - METALLIC GREY",
+              "original_text": "UMKEHROSMOSE",
               "confidence": 0.95,
               "verification_status": "official_specification",
               "checked_at": "2026-09-23"
@@ -4345,13 +4516,60 @@
           "verification_status": "official_specification",
           "checked_at": "2026-09-23"
         },
-        "system.technology": {
-          "value": "Umkehrosmose",
+        "system.installation_type": {
+          "value": "Auftisch",
           "evidence": [
             {
               "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
               "source_type": "manufacturer_page",
-              "original_text": "UMKEHROSMOSE",
+              "original_text": "Auf der Küchenplatte (Auftisch) oder Wasserhahn (Untertisch)",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 7,
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "slide 7 to 9",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "Proline X2 - X3 | 200-750 GPD",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 200,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "Proline X2 - X3 | 200-750 GPD",
               "confidence": 0.95,
               "verification_status": "official_specification",
               "checked_at": "2026-09-23"
@@ -4408,6 +4626,22 @@
           "verification_status": "official_specification",
           "checked_at": "2026-09-23"
         },
+        "performance.minimum_feed_temperature": {
+          "value": 5,
+          "unit": "°C",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 5 von 5 Sternen",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
         "performance.maximum_feed_temperature": {
           "value": 38,
           "unit": "°C",
@@ -4416,6 +4650,22 @@
               "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
               "source_type": "manufacturer_page",
               "original_text": "mind. 5°C - max. 38°C",
+              "confidence": 0.95,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-23"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-23"
+        },
+        "tanks.raw_water_tank_l": {
+          "value": 5,
+          "unit": "l",
+          "evidence": [
+            {
+              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
+              "source_type": "manufacturer_page",
+              "original_text": "Durchschnittliche Bewertung von 5 von 5 Sternen",
               "confidence": 0.95,
               "verification_status": "official_specification",
               "checked_at": "2026-09-23"
@@ -4549,40 +4799,11 @@
           ],
           "verification_status": "official_specification",
           "checked_at": "2026-09-23"
-        },
-        "commercial.current_price": {
-          "value": 1290.0,
-          "evidence": [
-            {
-              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
-              "source_type": "manufacturer_page",
-              "original_text": "\"price\": 1290.0,",
-              "confidence": 0.95,
-              "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
-            }
-          ],
-          "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
-        },
-        "commercial.currency": {
-          "value": "EUR",
-          "evidence": [
-            {
-              "source_url": "https://www.osmofresh.de/osmoseanlagen/fusion-pro-2",
-              "source_type": "manufacturer_page",
-              "original_text": "\"priceCurrency\": \"EUR\",",
-              "confidence": 0.95,
-              "verification_status": "official_specification",
-              "checked_at": "2026-09-23"
-            }
-          ],
-          "verification_status": "official_specification",
-          "checked_at": "2026-09-23"
         }
       },
-      "publication_status": "PUBLISHABLE_PARTIAL"
-    }
+      "publication_status": "PUBLISH_READY"
+    },
+    "brandLogo": "assets/brands/osmofresh.png"
   },
   {
     "id": "osmofresh-flow2",
@@ -4600,21 +4821,55 @@
     "specs": {
       "Technologie": "Reverse Osmosis",
       "Installation": "Untertisch",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
       "Filterstufen": "7",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
       "Membranleistung": "600 GPD",
       "Nennleistung": "600–800 GPD",
       "Durchfluss": "up to 2.1 L/min",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
       "Min. Eingangsdruck": "1 Bar",
       "Max. Eingangsdruck": "5 Bar",
       "Min. Eingangstemperatur": "5 °C",
       "Max. Eingangstemperatur": "45 °C",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
       "Standby-Leistung": "1 W",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
       "Max. Leistungsaufnahme": "120 W",
       "Abmessungen": "38 x 13,5 x 39,3 cm",
       "Breite": "135 mm",
+      "Tiefe": "—",
       "Höhe": "393 mm",
       "Gewicht": "13 kg",
-      "Display": "Nein"
+      "Geräuschpegel": "—",
+      "Display": "Nein",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
     },
     "price": 349.0,
     "currency": "EUR",
@@ -4897,7 +5152,8 @@
         }
       },
       "publication_status": "PUBLISH_READY"
-    }
+    },
+    "brandLogo": "assets/brands/osmofresh.png"
   },
   {
     "id": "osmofresh-flowone-plus",
@@ -4915,21 +5171,55 @@
     "specs": {
       "Technologie": "Umkehrosmose",
       "Installation": "Untertisch",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
       "Filterstufen": "5",
       "Filteranzahl": "1",
+      "Membrantyp": "—",
       "Membranleistung": "750 GPD",
       "Nennleistung": "750 GPD",
       "Durchfluss": "1.8 L/min",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
       "Min. Eingangstemperatur": "5 °C",
       "Max. Eingangstemperatur": "45 °C",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
       "Spannung": "230V",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
       "Max. Leistungsaufnahme": "1400 W",
       "Abmessungen": "45,4x16x43,4cm",
       "Breite": "160 mm",
       "Tiefe": "454 mm",
       "Höhe": "434 mm",
       "Gewicht": "15 kg",
-      "Display": "FlowTouch"
+      "Geräuschpegel": "—",
+      "Display": "FlowTouch",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
     },
     "price": 990.0,
     "currency": "EUR",
@@ -5210,7 +5500,8 @@
         }
       },
       "publication_status": "PUBLISH_READY"
-    }
+    },
+    "brandLogo": "assets/brands/osmofresh.png"
   },
   {
     "id": "osmofresh-fusion-air",
@@ -5228,28 +5519,55 @@
     "specs": {
       "Technologie": "Umkehrosmose",
       "Installation": "Auftisch",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
       "Filterstufen": "7",
       "Filteranzahl": "2",
+      "Membrantyp": "—",
       "Membranleistung": "1000 GPD",
       "Nennleistung": "1000 GPD",
       "Durchfluss": "0.9 L/min",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
       "Min. Eingangsdruck": "4 bar",
       "Max. Eingangsdruck": "6 bar",
       "Min. Eingangstemperatur": "5 °C",
       "Max. Eingangstemperatur": "45 °C",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
       "Rohwassertank": "4.7 L",
       "Reinwassertank": "1.8 L",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
       "Spannung": "230 V",
+      "Frequenz": "—",
       "Standby-Leistung": "0.9 W",
       "Filtrationsleistung": "30 W",
       "Heizleistung": "2200 W",
+      "Kühlleistung": "—",
       "Max. Leistungsaufnahme": "2200 W",
       "Abmessungen": "38x19,5x37,3cm",
       "Breite": "195 mm",
       "Tiefe": "380 mm",
       "Höhe": "373 mm",
       "Gewicht": "7.5 kg",
-      "Display": "Touch"
+      "Geräuschpegel": "—",
+      "Display": "Touch",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
     },
     "price": 499.0,
     "currency": "EUR",
@@ -5643,7 +5961,8 @@
         }
       },
       "publication_status": "PUBLISH_READY"
-    }
+    },
+    "brandLogo": "assets/brands/osmofresh.png"
   },
   {
     "id": "osmofresh-fusion-base",
@@ -5661,23 +5980,55 @@
     "specs": {
       "Technologie": "Umkehrosmose",
       "Installation": "Auftisch",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
       "Filterstufen": "7",
       "Filteranzahl": "2",
+      "Membrantyp": "—",
       "Membranleistung": "1000 GPD",
       "Nennleistung": "1000 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
       "Min. Eingangsdruck": "4 Bar",
       "Max. Eingangsdruck": "6 Bar",
       "Min. Eingangstemperatur": "5 °C",
       "Max. Eingangstemperatur": "45 °C",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
       "Spannung": "230 V",
+      "Frequenz": "—",
       "Standby-Leistung": "0.9 W",
       "Filtrationsleistung": "30 W",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
       "Abmessungen": "38x19,5x37,3cm",
       "Breite": "195 mm",
       "Tiefe": "380 mm",
       "Höhe": "373 mm",
       "Gewicht": "7.5 kg",
-      "Display": "Ja"
+      "Geräuschpegel": "—",
+      "Display": "Ja",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
     },
     "price": 399.0,
     "currency": "EUR",
@@ -5991,7 +6342,8 @@
         }
       },
       "publication_status": "PUBLISH_READY"
-    }
+    },
+    "brandLogo": "assets/brands/osmofresh.png"
   },
   {
     "id": "osmofresh-fusion-ice",
@@ -6009,24 +6361,55 @@
     "specs": {
       "Technologie": "Umkehrosmose",
       "Installation": "Auftischanlage",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
       "Filterstufen": "7",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
       "Membranleistung": "1000 GPD",
       "Nennleistung": "1000 GPD",
       "Durchfluss": "0.6 L/min",
-      "Min. Eingangsdruck": "1.0 bar",
-      "Max. Eingangsdruck": "5.0 bar",
-      "Min. Eingangstemperatur": "5.0 °C",
-      "Max. Eingangstemperatur": "45.0 °C",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "1 bar",
+      "Max. Eingangsdruck": "5 bar",
+      "Min. Eingangstemperatur": "5 °C",
+      "Max. Eingangstemperatur": "45 °C",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
       "Rohwassertank": "4.5 L",
-      "Reinwassertank": "2.0 L",
+      "Reinwassertank": "2 L",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
       "Standby-Leistung": "1.9 W",
-      "Kühlleistung": "88.0 W",
-      "Max. Leistungsaufnahme": "2100.0 W",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "88 W",
+      "Max. Leistungsaufnahme": "2100 W",
       "Abmessungen": "45,5 × 30,5 × 41,5 cm",
-      "Breite": "305.0 mm",
-      "Tiefe": "415.0 mm",
-      "Höhe": "455.0 mm",
-      "Display": "Touch"
+      "Breite": "305 mm",
+      "Tiefe": "415 mm",
+      "Höhe": "455 mm",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "Touch",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
     },
     "price": 899.0,
     "currency": "EUR",
@@ -6357,7 +6740,8 @@
         }
       },
       "publication_status": "PUBLISH_READY"
-    }
+    },
+    "brandLogo": "assets/brands/osmofresh.png"
   },
   {
     "id": "osmofresh-fusion-stream",
