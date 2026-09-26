@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 90,
+      "source_id": 91,
       "brand": "NU Aqua",
-      "model": "Efficiency Series 600 GPD",
+      "model": "Reef Series 4 Stage 100 GPD RODI",
       "action": "create",
-      "target_id": "nu-aqua-efficiency-series-600-gpd"
+      "target_id": "nu-aqua-reef-series-4-stage-100-gpd-rodi"
     }
   ],
   "rejected": [],
-  "catalog_before": 174,
-  "catalog_after": 175,
-  "completed_at": "2026-09-26T19:43:43.917716+00:00"
+  "catalog_before": 175,
+  "catalog_after": 176,
+  "completed_at": "2026-09-26T19:43:51.362574+00:00"
 }

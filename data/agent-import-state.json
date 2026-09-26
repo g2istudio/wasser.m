@@ -202,6 +202,12 @@
       "source_hash": "f6159a35eb0a2a4b39031369eaae1962a04c4b44d7a20d30856530a07f0f3c73",
       "renderer_version": 3,
       "imported_at": "2026-09-26T19:43:43.917187+00:00"
+    },
+    "NU Aqua::Reef Series 4 Stage 100 GPD RODI": {
+      "source_id": 91,
+      "source_hash": "03cfadf5fc599bb4a0a6d1cf5a0024480cbf72c9765c532a56bff3d49d0b163b",
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:43:51.362242+00:00"
     }
   }
 }

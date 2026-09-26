@@ -15500,5 +15500,165 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "nu-aqua-reef-series-4-stage-100-gpd-rodi",
+    "slug": "nu-aqua-reef-series-4-stage-100-gpd-rodi",
+    "brand": "NU Aqua",
+    "brandSlug": "nu-aqua",
+    "name": "Reef Series 4 Stage 100 GPD RODI",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Reverse Osmosis",
+    "source": "https://nuaquasystems.com/products/nu-aqua-reef-series-4-stage-100gpd-rodi-reverse-osmosis-system",
+    "image": "https://nuaquasystems.com/cdn/shop/files/Reverse-Osmosis-System-NUAqua-Aquarium-Main_1024x.png?v=1764614987",
+    "brandLogo": "assets/brands/nu-aqua.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "—",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "4",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "100 GPD",
+      "Nennleistung": "100 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "NU Aqua",
+        "model": "Reef Series 4 Stage 100 GPD RODI"
+      },
+      "source_id": 91,
+      "source_hash": "03cfadf5fc599bb4a0a6d1cf5a0024480cbf72c9765c532a56bff3d49d0b163b",
+      "checked_at": "2026-09-26",
+      "source_url": "https://nuaquasystems.com/products/nu-aqua-reef-series-4-stage-100gpd-rodi-reverse-osmosis-system",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-reef-series-4-stage-100gpd-rodi-reverse-osmosis-system",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-reef-series-4-stage-100gpd-rodi-reverse-osmosis-system",
+              "source_type": "manufacturer_page",
+              "original_text": "4 Stage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-reef-series-4-stage-100gpd-rodi-reverse-osmosis-system",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 100,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-reef-series-4-stage-100gpd-rodi-reverse-osmosis-system",
+              "source_type": "manufacturer_page",
+              "original_text": "100GPD Reverse Osmosis Membrane: The RO membrane is highly effective in removing heavy metals, copper, chromium, lead, fluoride, nitrate, salts, and many other contaminants.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 100,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-reef-series-4-stage-100gpd-rodi-reverse-osmosis-system",
+              "source_type": "manufacturer_page",
+              "original_text": "100GPD Reverse Osmosis Membrane: The RO membrane is highly effective in removing heavy metals, copper, chromium, lead, fluoride, nitrate, salts, and many other contaminants.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
