@@ -428,7 +428,16 @@ def extract_commerce_product(url: str, brand: str, model: str,
     )
     if manuals:
         page.snapshot.visible_text += "\n" + "\n".join(text for _, text in manuals)
-    title = _clean(node.get("name")) or _clean((soup.select_one("h1") or soup.title).get_text(" ", strip=True))
+    structured_title = _clean(node.get("name"))
+    document_title = _clean(soup.title.get_text(" ", strip=True) if soup.title else "")
+    title = structured_title or _clean((soup.select_one("h1") or soup.title).get_text(" ", strip=True))
+    if (
+        structured_title
+        and document_title
+        and re.search(r"(?:\s/\s|\b(?:replacement|carbon|voc)\s+filter\b|\bcartridge\b)", structured_title, re.I)
+        and re.search(r"\breverse\s+osmosis\b|\bRO\b", document_title, re.I)
+    ):
+        title = document_title
     image = _primary_image(node, soup, source)
     documents = _json_documents(soup)
     logo = _brand_logo(documents, soup, source)
@@ -448,7 +457,18 @@ def extract_commerce_product(url: str, brand: str, model: str,
     structured_description = _clean(node.get("description")) or _meta(soup, "description", "og:description")
     scoped_text = f"{title} {structured_description}"
     haystack = scoped_text.casefold()
-    technology_quote = _find_quote(scoped_text, "reverse osmosis", "umkehrosmose", "osmoseanlage", "RO membrane")
+    technology_quote = _find_quote(
+        scoped_text, "reverse osmosis", "umkehrosmose", "osmoseanlage", "RO membrane", "RO filtration"
+    )
+    if technology_quote and technology_quote not in page_visible_text:
+        technology_quote = _find_quote(
+            page_visible_text,
+            "reverse osmosis",
+            "umkehrosmose",
+            "osmoseanlage",
+            "RO membrane",
+            "RO filtration",
+        )
     if not technology_quote:
         ro_membrane = _lookup(specs, "ro membrane", "reverse osmosis membrane", "umkehrosmosemembran")
         if ro_membrane and _boolean(ro_membrane[0]) is True:
@@ -497,6 +517,15 @@ def extract_commerce_product(url: str, brand: str, model: str,
                 stages = (matches[0].group(1), matches[0].group(0))
                 stages_source = manual_url
                 break
+    if stages and stages_source == source and stages[1] not in page_visible_text:
+        stage_value = _single_integer(stages[0])
+        exact_stage = re.search(
+            rf"\b{stage_value}[- ](?:stage|stufige|stufen)\b",
+            page_visible_text,
+            re.I,
+        ) if stage_value is not None else None
+        if exact_stage:
+            stages = (stages[0], exact_stage.group(0))
     if stages and _single_integer(stages[0]) is not None:
         stage_count = _single_integer(stages[0])
         product.filtration.advertised_stage_count = _evidence(stage_count, stages[1], stages_source)

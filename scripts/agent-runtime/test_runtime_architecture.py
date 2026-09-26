@@ -4,6 +4,7 @@ from pathlib import Path
 
 from database.repository import ProductRepository, canonical_product_id, canonicalize_url
 from crawler.page_collector import PageSnapshot
+from crawler.worker import _has_source_conflict, _semantic_fragments_available
 from extractor.commerce_parser import extract_commerce_product
 from extractor.publication import assess_publication
 from extractor.validation import _evidence_in_text
@@ -34,6 +35,17 @@ class RuntimeArchitectureTests(unittest.TestCase):
             canonical_product_id("Waterdrop", "G3P800", "US 110V"),
         )
         self.assertEqual(canonical_product_id("Grünbeck", "X 1"), "grunbeck:x1")
+
+    def test_conflict_detection_checks_values_instead_of_schema_literals(self):
+        product = WaterFilterProduct()
+        self.assertFalse(_has_source_conflict(product.model_dump(mode="json")))
+        product.system.technology.verification_status = "conflicting_sources"
+        self.assertTrue(_has_source_conflict(product.model_dump(mode="json")))
+
+    def test_semantic_fallback_requires_relevant_fragments(self):
+        issues = ["system.installation_type", "unmapped attribute: overall rating"]
+        self.assertFalse(_semantic_fragments_available("Buy now. Five stars.", "Carafe", issues))
+        self.assertTrue(_semantic_fragments_available("Model Carafe uses a 4-stage RO membrane.", "Carafe", issues))
 
     def test_url_and_snapshot_deduplication(self):
         self.assertEqual(

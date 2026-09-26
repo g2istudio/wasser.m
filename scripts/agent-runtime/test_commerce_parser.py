@@ -31,6 +31,30 @@ class CommerceParserTests(unittest.TestCase):
         self.assertEqual(specs["durchflussrate"][0], "2,6 L/min")
         self.assertEqual(specs["masse"][0], "15 × 43 × 43 cm")
 
+    def test_stage_evidence_uses_verbatim_page_punctuation(self):
+        html = """<html><head><title>AquaTru Carafe</title><meta name="description" content="4-stage reverse osmosis filtration">
+        <script type="application/ld+json">{"@type":"Product","name":"AquaTru Carafe","image":"https://example.com/carafe.jpg"}</script>
+        </head><body><p>AquaTru Carafe with 4-stage reverse osmosis filtration.</p></body></html>"""
+        snapshot = PageSnapshot(
+            url="https://example.com/carafe", title="AquaTru Carafe",
+            visible_text="AquaTru Carafe with 4-stage reverse osmosis filtration.", raw_content=html,
+        )
+        with patch("extractor.commerce_parser._official_manuals", return_value=[]):
+            product, _, _ = extract_commerce_product(snapshot.url, "AquaTru", "Carafe", snapshot=snapshot)
+        evidence = product.filtration.advertised_stage_count.evidence[0].original_text
+        self.assertEqual(evidence, "4-stage")
+
+    def test_uses_product_page_title_when_jsonld_selects_a_filter_variant(self):
+        html = """<html><head><title>AquaTru Carafe | Countertop RO Water Purifier</title>
+        <meta name="description" content="Compact 4 stage RO filtration">
+        <script type="application/ld+json">{"@type":"Product","name":"AquaTru Carafe - Carafe / VOC Carbon Filter","image":"https://example.com/carafe.jpg","description":"Compact 4 stage RO filtration"}</script>
+        </head><body><h1>AquaTru Carafe</h1><p>4-stage Ultra Reverse Osmosis filtration</p></body></html>"""
+        snapshot = PageSnapshot(url="https://example.com/carafe", title="", visible_text="", raw_content=html)
+        with patch("extractor.commerce_parser._official_manuals", return_value=[]):
+            product, _, _ = extract_commerce_product(snapshot.url, "AquaTru", "Carafe Countertop", snapshot=snapshot)
+        self.assertEqual(product.identity.product_name.value, "AquaTru Carafe | Countertop RO Water Purifier")
+        self.assertEqual(product.system.technology.value, "Reverse Osmosis")
+
     def test_uses_leading_official_title_identity(self):
         cases = {
             "SYDROS Pureflow RO-Tischwasserspender mit UV-C, H2 – Sydros": "Pureflow",

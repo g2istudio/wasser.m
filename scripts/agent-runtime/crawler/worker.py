@@ -33,6 +33,23 @@ class WorkResult:
     detail: str
 
 
+def _has_source_conflict(value) -> bool:
+    """Return true only when an extracted value actually carries a conflict."""
+    if isinstance(value, dict):
+        if value.get("verification_status") == "conflicting_sources":
+            return True
+        if str(value.get("original_name") or "").startswith("conflict."):
+            return True
+        return any(_has_source_conflict(item) for item in value.values())
+    if isinstance(value, list):
+        return any(_has_source_conflict(item) for item in value)
+    return False
+
+
+def _semantic_fragments_available(evidence_text: str, model: str, issues: list[str]) -> bool:
+    return bool(minimal_fragments(evidence_text, model, issues))
+
+
 def _apply_semantic_resolution(product, item: dict, source_url: str, evidence_text: str,
                                source_type: str = "manufacturer_page") -> bool:
     path = str(item.get("field_path") or "").removeprefix("product.")
@@ -378,7 +395,7 @@ async def process_url(
                 )
 
         product_dump = product.model_dump(mode="json")
-        has_conflict = "conflicting_sources" in str(product_dump)
+        has_conflict = _has_source_conflict(product_dump)
         semantic_issues = list(report.errors) + list(publication.missing)
         semantic_issues.extend(
             f"unmapped attribute: {item.original_name}" for item in product.unmapped_attributes[:20]
@@ -386,7 +403,10 @@ async def process_url(
         if has_conflict:
             semantic_issues.append("conflicting values in source evidence")
         semantic_result = None
-        if semantic_issues and os.getenv("WASSER_ALLOW_AI", "false").casefold() in {"1", "true", "yes"}:
+        allow_ai = os.getenv("WASSER_ALLOW_AI", "false").casefold() in {"1", "true", "yes"}
+        if semantic_issues and allow_ai and _semantic_fragments_available(
+            snapshot.evidence_text, model, semantic_issues
+        ):
             try:
                 semantic_result, usage, fragment_chars = resolve_semantics(
                     brand=brand,
@@ -448,6 +468,13 @@ async def process_url(
                 if meter:
                     meter.event("SEMANTIC_RESOLUTION_FAILED", "semantic_resolution", product_id,
                                 {"error": f"{type(semantic_error).__name__}: {semantic_error}"})
+        elif semantic_issues and allow_ai and meter:
+            meter.event(
+                "SEMANTIC_SKIPPED_NO_FRAGMENTS",
+                "semantic_resolution",
+                product_id,
+                {"issues": semantic_issues},
+            )
 
         if semantic_result is not None:
             report = validate_product(product, snapshot.evidence_text, snapshot.url)
@@ -458,7 +485,7 @@ async def process_url(
             )
 
         enrichment_result = None
-        if semantic_issues and os.getenv("WASSER_ALLOW_AI", "false").casefold() in {"1", "true", "yes"}:
+        if semantic_issues and allow_ai:
             try:
                 enrichment_result, _ = await _enrich_missing(
                     repository,
