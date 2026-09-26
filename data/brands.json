@@ -1160,5 +1160,19 @@
     "products_count": 6,
     "rating": null,
     "logo": "assets/brands/frizzlife.png"
+  },
+  {
+    "slug": "nu-aqua",
+    "name": "NU Aqua",
+    "country": "United States",
+    "founded": null,
+    "website": "https://nuaquasystems.com",
+    "group": "Reverse Osmosis",
+    "description_de": "US-amerikanische Marke für Umkehrosmose-, RODI- und Wasserfiltersysteme.",
+    "description_en": "US brand offering reverse-osmosis, RODI, and water-filtration systems.",
+    "products_count": 0,
+    "rating": null,
+    "logo": "assets/brands/nu-aqua.png",
+    "description": "US-amerikanische Marke für Umkehrosmose-, RODI- und Wasserfiltersysteme."
   }
 ]
