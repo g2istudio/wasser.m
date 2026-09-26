@@ -15165,5 +15165,180 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "nu-aqua-platinum-series-7-stage-100-gpd",
+    "slug": "nu-aqua-platinum-series-7-stage-100-gpd",
+    "brand": "NU Aqua",
+    "brandSlug": "nu-aqua",
+    "name": "Platinum Series 7 Stage 100 GPD",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Reverse Osmosis",
+    "source": "https://nuaquasystems.com/products/nu-aqua-platinum-series-7-stage-alkaline-and-uv-ultraviolet-100gpd-ro-system",
+    "image": "https://nuaquasystems.com/cdn/shop/files/7_STAGE_RO_SYSTEM_662ac2b1-547d-483b-b012-294c093b3c77_1024x.png?v=1782501094",
+    "brandLogo": "assets/brands/nu-aqua.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "The cost of installing a reverse osmosis system yourself will vary depending on the cost of the system, the cost of the tools and parts, and the cost of your time. The cost of hiring a professional plumber to install the system will also vary depending on the plumber's rates.",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "100 GPD",
+      "Nennleistung": "100 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "Ja",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "NU Aqua",
+        "model": "Platinum Series 7 Stage 100 GPD"
+      },
+      "source_id": 89,
+      "source_hash": "0a87b9a5dd6a0cc6e5e05872c99613a2ad2045b2cd037a5565b9851052ab5a62",
+      "checked_at": "2026-09-26",
+      "source_url": "https://nuaquasystems.com/products/nu-aqua-platinum-series-7-stage-alkaline-and-uv-ultraviolet-100gpd-ro-system",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-platinum-series-7-stage-alkaline-and-uv-ultraviolet-100gpd-ro-system",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "system.installation_type": {
+          "value": "The cost of installing a reverse osmosis system yourself will vary depending on the cost of the system, the cost of the tools and parts, and the cost of your time. The cost of hiring a professional plumber to install the system will also vary depending on the plumber's rates.",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-platinum-series-7-stage-alkaline-and-uv-ultraviolet-100gpd-ro-system",
+              "source_type": "manufacturer_page",
+              "original_text": "The cost of installing a reverse osmosis system yourself will vary depending on the cost of the system, the cost of the tools and parts, and the cost of your time. The cost of hiring a professional plumber to install the system will also vary depending on the plumber's rates.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-platinum-series-7-stage-alkaline-and-uv-ultraviolet-100gpd-ro-system",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 100,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-platinum-series-7-stage-alkaline-and-uv-ultraviolet-100gpd-ro-system",
+              "source_type": "manufacturer_page",
+              "original_text": "100GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 100,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-platinum-series-7-stage-alkaline-and-uv-ultraviolet-100gpd-ro-system",
+              "source_type": "manufacturer_page",
+              "original_text": "100GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "water_output.remineralization": {
+          "value": true,
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-platinum-series-7-stage-alkaline-and-uv-ultraviolet-100gpd-ro-system",
+              "source_type": "manufacturer_page",
+              "original_text": "remineralization",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
