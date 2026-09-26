@@ -166,6 +166,12 @@
       "source_hash": "78b6beeefa94d6efef4069d128d40c1036c6607c1a5f252cdd90d13d427babe3",
       "renderer_version": 3,
       "imported_at": "2026-09-26T19:39:27.151761+00:00"
+    },
+    "AquaTru::Classic Countertop": {
+      "source_id": 93,
+      "source_hash": "1834c8c5cc547d03f37ebfeda1251135f6813b9d3f77e44444d55619bbf176ca",
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:34.736134+00:00"
     }
   }
 }
