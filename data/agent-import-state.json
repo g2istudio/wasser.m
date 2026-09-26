@@ -160,6 +160,12 @@
       "source_hash": "6ce372be624f13a9f57139d8df4e12e8fbe79c2e78452063abe61dafc7decaa1",
       "renderer_version": 3,
       "imported_at": "2026-09-24T02:22:05.985646+00:00"
+    },
+    "AquaTru::Carafe Countertop": {
+      "source_id": 92,
+      "source_hash": "78b6beeefa94d6efef4069d128d40c1036c6607c1a5f252cdd90d13d427babe3",
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:27.151761+00:00"
     }
   }
 }

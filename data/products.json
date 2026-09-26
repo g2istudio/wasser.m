@@ -14323,5 +14323,179 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "aquatru-carafe-countertop",
+    "slug": "aquatru-carafe-countertop",
+    "brand": "AquaTru",
+    "brandSlug": "aquatru",
+    "name": "Carafe Countertop",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Reverse Osmosis",
+    "source": "https://aquatru.com/products/carafe-countertop",
+    "image": "https://aquatru.com/cdn/shop/files/Carafe_2000x2000_a889b1f8-02b0-47d4-9d07-291b989ce27d.png?v=1787676620&width=1920",
+    "brandLogo": "assets/brands/aquatru.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Tabletop",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "4",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "13” (H) x 14” (D) x 7.5” (W)",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "9 kg",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "AquaTru",
+        "model": "Carafe Countertop"
+      },
+      "source_id": 92,
+      "source_hash": "78b6beeefa94d6efef4069d128d40c1036c6607c1a5f252cdd90d13d427babe3",
+      "checked_at": "2026-09-26",
+      "source_url": "https://aquatru.com/products/carafe-countertop",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/carafe-countertop",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "system.installation_type": {
+          "value": "Tabletop",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/carafe-countertop",
+              "source_type": "manufacturer_page",
+              "original_text": "Countertop",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/carafe-countertop",
+              "source_type": "manufacturer_page",
+              "original_text": "4-stage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/carafe-countertop",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "physical.dimensions_raw": {
+          "value": "13” (H) x 14” (D) x 7.5” (W)",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/carafe-countertop",
+              "source_type": "manufacturer_page",
+              "original_text": "13” (H) x 14” (D) x 7.5” (W)",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "physical.weight_kg": {
+          "value": 9.0,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/carafe-countertop",
+              "source_type": "manufacturer_page",
+              "original_text": "Approx. 9 lbs",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
