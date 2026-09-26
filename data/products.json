@@ -15022,5 +15022,148 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "nu-aqua-8-stage-countertop-uv",
+    "slug": "nu-aqua-8-stage-countertop-uv",
+    "brand": "NU Aqua",
+    "brandSlug": "nu-aqua",
+    "name": "8 Stage Countertop UV",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Reverse Osmosis",
+    "source": "https://nuaquasystems.com/products/nu-aqua-8-stage-countertop-reverse-osmosis-water-filter-system-with-uv",
+    "image": "https://nuaquasystems.com/cdn/shop/files/Countertop-Reverse-Osmosis-System-NU-Aqua-Ambient-Main_1024x.png?v=1764614834",
+    "brandLogo": "assets/brands/nu-aqua.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Tabletop",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "8",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "NU Aqua",
+        "model": "8 Stage Countertop UV"
+      },
+      "source_id": 88,
+      "source_hash": "4b7bd1f1c85d4a50fe7e0cf84a2c87504545ad05d3fe70d47d16ad27bcd704a4",
+      "checked_at": "2026-09-26",
+      "source_url": "https://nuaquasystems.com/products/nu-aqua-8-stage-countertop-reverse-osmosis-water-filter-system-with-uv",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-8-stage-countertop-reverse-osmosis-water-filter-system-with-uv",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "system.installation_type": {
+          "value": "Tabletop",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-8-stage-countertop-reverse-osmosis-water-filter-system-with-uv",
+              "source_type": "manufacturer_page",
+              "original_text": "Countertop",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 8,
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-8-stage-countertop-reverse-osmosis-water-filter-system-with-uv",
+              "source_type": "manufacturer_page",
+              "original_text": "8-Stage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-8-stage-countertop-reverse-osmosis-water-filter-system-with-uv",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

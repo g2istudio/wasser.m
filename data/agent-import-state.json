@@ -184,6 +184,12 @@
       "source_hash": "a70a4109fceeee2c54e709913b80788f75032ed3bae24aa695aa80c55db87ebb",
       "renderer_version": 3,
       "imported_at": "2026-09-26T19:39:49.577512+00:00"
+    },
+    "NU Aqua::8 Stage Countertop UV": {
+      "source_id": 88,
+      "source_hash": "4b7bd1f1c85d4a50fe7e0cf84a2c87504545ad05d3fe70d47d16ad27bcd704a4",
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:43:29.441959+00:00"
     }
   }
 }
