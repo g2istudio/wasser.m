@@ -14862,5 +14862,165 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "aquatru-freestanding",
+    "slug": "aquatru-freestanding",
+    "brand": "AquaTru",
+    "brandSlug": "aquatru",
+    "name": "Freestanding",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Reverse Osmosis",
+    "source": "https://aquatru.com/products/aquatru-freestanding-model-1",
+    "image": "https://aquatru.com/cdn/shop/files/AQT-Model1-PDP-2000x2000-1-4_75839806-edcb-4a4e-9be0-256df50ecdb9.jpg?v=1757431814&width=1920",
+    "brandLogo": "assets/brands/aquatru.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Free-standing",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "5",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "15″ (L) x 12″ (W) x 48″ (H)",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "AquaTru",
+        "model": "Freestanding"
+      },
+      "source_id": 87,
+      "source_hash": "a70a4109fceeee2c54e709913b80788f75032ed3bae24aa695aa80c55db87ebb",
+      "checked_at": "2026-09-26",
+      "source_url": "https://aquatru.com/products/aquatru-freestanding-model-1",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-freestanding-model-1",
+              "source_type": "manufacturer_page",
+              "original_text": "reverse osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "system.installation_type": {
+          "value": "Free-standing",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-freestanding-model-1",
+              "source_type": "manufacturer_page",
+              "original_text": "Installation: Free-standing unit; professional installation by a certified plumber is recommended for warranty purposes.",
+              "confidence": 0.97,
+              "verification_status": "manufacturer_claim",
+              "extraction_method": "gemini",
+              "parser_version": "2",
+              "schema_version": "1"
+            }
+          ],
+          "verification_status": "manufacturer_claim"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-freestanding-model-1",
+              "source_type": "manufacturer_page",
+              "original_text": "5-stage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-freestanding-model-1",
+              "source_type": "manufacturer_page",
+              "original_text": "reverse osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "physical.dimensions_raw": {
+          "value": "15″ (L) x 12″ (W) x 48″ (H)",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-freestanding-model-1",
+              "source_type": "manufacturer_page",
+              "original_text": "Dimensions: 15″ (L) x 12″ (W) x 48″ (H)",
+              "confidence": 0.97,
+              "verification_status": "manufacturer_claim",
+              "extraction_method": "gemini",
+              "parser_version": "2",
+              "schema_version": "1"
+            }
+          ],
+          "verification_status": "manufacturer_claim"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
