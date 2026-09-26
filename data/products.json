@@ -14671,5 +14671,196 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "aquatru-under-sink",
+    "slug": "aquatru-under-sink",
+    "brand": "AquaTru",
+    "brandSlug": "aquatru",
+    "name": "Under Sink",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://aquatru.com/products/aquatru-under-sink",
+    "image": "https://aquatru.com/cdn/shop/files/new-under-sink-steel.png?v=1790102626&width=1920",
+    "brandLogo": "assets/brands/aquatru.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Requires installation under the sink",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "4",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "54 GPD",
+      "Nennleistung": "54 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "Manifold (with filters installed): 11” x 11” x 4” Tank: 10” (Dia) x 14” (H)",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "AquaTru",
+        "model": "Under Sink"
+      },
+      "source_id": 94,
+      "source_hash": "942fbbec51c87c719820e61f07540129c5c56a8fcf14cf3cd3c04b75d7365732",
+      "checked_at": "2026-09-26",
+      "source_url": "https://aquatru.com/products/aquatru-under-sink",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-under-sink",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "system.installation_type": {
+          "value": "Requires installation under the sink",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-under-sink",
+              "source_type": "manufacturer_page",
+              "original_text": "Requires installation under the sink",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-under-sink",
+              "source_type": "manufacturer_page",
+              "original_text": "4-stage",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-under-sink",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 54,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-under-sink",
+              "source_type": "manufacturer_page",
+              "original_text": "54 GPD (gallons per day)",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 54,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-under-sink",
+              "source_type": "manufacturer_page",
+              "original_text": "54 GPD (gallons per day)",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "physical.dimensions_raw": {
+          "value": "Manifold (with filters installed): 11” x 11” x 4” Tank: 10” (Dia) x 14” (H)",
+          "evidence": [
+            {
+              "source_url": "https://aquatru.com/products/aquatru-under-sink",
+              "source_type": "manufacturer_page",
+              "original_text": "Dimensions Manifold (with filters installed): 11” x 11” x 4” Tank: 10” (Dia) x 14” (H)",
+              "confidence": 0.97,
+              "verification_status": "manufacturer_claim",
+              "extraction_method": "gemini",
+              "parser_version": "2",
+              "schema_version": "1"
+            }
+          ],
+          "verification_status": "manufacturer_claim"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

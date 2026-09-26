@@ -172,6 +172,12 @@
       "source_hash": "1834c8c5cc547d03f37ebfeda1251135f6813b9d3f77e44444d55619bbf176ca",
       "renderer_version": 3,
       "imported_at": "2026-09-26T19:39:34.736134+00:00"
+    },
+    "AquaTru::Under Sink": {
+      "source_id": 94,
+      "source_hash": "942fbbec51c87c719820e61f07540129c5c56a8fcf14cf3cd3c04b75d7365732",
+      "renderer_version": 3,
+      "imported_at": "2026-09-26T19:39:42.109550+00:00"
     }
   }
 }
