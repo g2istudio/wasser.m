@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 89,
+      "source_id": 90,
       "brand": "NU Aqua",
-      "model": "Platinum Series 7 Stage 100 GPD",
+      "model": "Efficiency Series 600 GPD",
       "action": "create",
-      "target_id": "nu-aqua-platinum-series-7-stage-100-gpd"
+      "target_id": "nu-aqua-efficiency-series-600-gpd"
     }
   ],
   "rejected": [],
-  "catalog_before": 173,
-  "catalog_after": 174,
-  "completed_at": "2026-09-26T19:43:36.743695+00:00"
+  "catalog_before": 174,
+  "catalog_after": 175,
+  "completed_at": "2026-09-26T19:43:43.917716+00:00"
 }

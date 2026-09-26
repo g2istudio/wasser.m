@@ -15340,5 +15340,165 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "nu-aqua-efficiency-series-600-gpd",
+    "slug": "nu-aqua-efficiency-series-600-gpd",
+    "brand": "NU Aqua",
+    "brandSlug": "nu-aqua",
+    "name": "Efficiency Series 600 GPD",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Reverse Osmosis",
+    "source": "https://nuaquasystems.com/products/nu-aqua-efficiency-series-tankless-600gpd-reverse-osmosis-system-2-1-pure-to-waste-preorder",
+    "image": "https://nuaquasystems.com/cdn/shop/files/NU-AQUA-TANKLESS-RO-SYSTEM-SYSTEM-FAUCET_1024x.png?v=1764614862",
+    "brandLogo": "assets/brands/nu-aqua.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "The cost of installing a reverse osmosis system yourself will vary depending on the cost of the system, the cost of the tools and parts, and the cost of your time. The cost of hiring a professional plumber to install the system will also vary depending on the plumber's rates.",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "800 GPD",
+      "Nennleistung": "800 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "NU Aqua",
+        "model": "Efficiency Series 600 GPD"
+      },
+      "source_id": 90,
+      "source_hash": "f6159a35eb0a2a4b39031369eaae1962a04c4b44d7a20d30856530a07f0f3c73",
+      "checked_at": "2026-09-26",
+      "source_url": "https://nuaquasystems.com/products/nu-aqua-efficiency-series-tankless-600gpd-reverse-osmosis-system-2-1-pure-to-waste-preorder",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-efficiency-series-tankless-600gpd-reverse-osmosis-system-2-1-pure-to-waste-preorder",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "system.installation_type": {
+          "value": "The cost of installing a reverse osmosis system yourself will vary depending on the cost of the system, the cost of the tools and parts, and the cost of your time. The cost of hiring a professional plumber to install the system will also vary depending on the plumber's rates.",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-efficiency-series-tankless-600gpd-reverse-osmosis-system-2-1-pure-to-waste-preorder",
+              "source_type": "manufacturer_page",
+              "original_text": "The cost of installing a reverse osmosis system yourself will vary depending on the cost of the system, the cost of the tools and parts, and the cost of your time. The cost of hiring a professional plumber to install the system will also vary depending on the plumber's rates.",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-efficiency-series-tankless-600gpd-reverse-osmosis-system-2-1-pure-to-waste-preorder",
+              "source_type": "manufacturer_page",
+              "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 800,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-efficiency-series-tankless-600gpd-reverse-osmosis-system-2-1-pure-to-waste-preorder",
+              "source_type": "manufacturer_page",
+              "original_text": "800GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 800,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://nuaquasystems.com/products/nu-aqua-efficiency-series-tankless-600gpd-reverse-osmosis-system-2-1-pure-to-waste-preorder",
+              "source_type": "manufacturer_page",
+              "original_text": "800GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-26"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-26"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
