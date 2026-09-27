@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 130,
-      "brand": "BWT",
-      "model": "Perla",
+      "source_id": 131,
+      "brand": "AQM-A1",
+      "model": "AQM-1",
       "action": "create",
-      "target_id": "bwt-perla"
+      "target_id": "aqm-a1-aqm-1"
     }
   ],
   "rejected": [],
-  "catalog_before": 181,
-  "catalog_after": 182,
-  "completed_at": "2026-09-27T03:48:33.888591+00:00"
+  "catalog_before": 182,
+  "catalog_after": 183,
+  "completed_at": "2026-09-27T17:48:55.910654+00:00"
 }

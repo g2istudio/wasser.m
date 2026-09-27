@@ -16536,5 +16536,211 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "aqm-a1-aqm-1",
+    "slug": "aqm-a1-aqm-1",
+    "brand": "AQM-A1",
+    "brandSlug": "aqm-a1",
+    "name": "AQM-1",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop RO",
+    "source": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+    "image": "https://static.wixstatic.com/media/9fe50b_cb69dedf88d04aaab980c3fd6038ff92~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+    "brandLogo": "https://static.wixstatic.com/media/9fe50b_6c2904bfd09c4f60b8530d77e80acc78~mv2.png/v1/fill/w_102,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20final_Dunkel%20Logo%20ohne%20Kreis.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Auftisch, Festwasseranschluss",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "4",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "80 GPD",
+      "Nennleistung": "80 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "22x42x43cm",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "7.5 kg",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 1490.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "AQM-A1",
+        "model": "AQM-1"
+      },
+      "source_id": 131,
+      "source_hash": "784c5d336ced5b55d3f31f9a4ad5fef1fdc408dbf0da80045f5cd9d086fde3bd",
+      "checked_at": "2026-09-27",
+      "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "system.installation_type": {
+          "value": "Auftisch, Festwasseranschluss",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+              "source_type": "manufacturer_page",
+              "original_text": "Auftisch, Festwasseranschluss",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+              "source_type": "manufacturer_page",
+              "original_text": "4-stufige",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 80,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+              "source_type": "manufacturer_page",
+              "original_text": "80 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 80,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+              "source_type": "manufacturer_page",
+              "original_text": "80 GPD",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "physical.dimensions_raw": {
+          "value": "22x42x43cm",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+              "source_type": "manufacturer_page",
+              "original_text": "22x42x43cm",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "physical.weight_kg": {
+          "value": 7.5,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm1-umkehrosmoseanlage",
+              "source_type": "manufacturer_page",
+              "original_text": "7,5kg",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
