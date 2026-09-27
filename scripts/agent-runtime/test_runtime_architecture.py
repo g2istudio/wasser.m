@@ -7,6 +7,7 @@ from crawler.page_collector import PageSnapshot
 from crawler.worker import _has_source_conflict, _semantic_fragments_available
 from extractor.commerce_parser import extract_commerce_product
 from extractor.publication import assess_publication
+from extractor.taxonomy import minimum_publishable_fields
 from extractor.validation import _evidence_in_text
 from models.product import Evidence, ProductValue, UnmappedAttribute, WaterFilterProduct
 from provenance import persist_product_facts
@@ -150,6 +151,11 @@ class RuntimeArchitectureTests(unittest.TestCase):
         self.assertEqual(assessment.profile, "water_softener")
         self.assertTrue(assessment.ready)
         self.assertEqual(assessment.blocking, [])
+
+    def test_profile_rules_are_shared_configuration(self):
+        self.assertEqual(minimum_publishable_fields("water_softener"), 2)
+        self.assertEqual(minimum_publishable_fields("reverse_osmosis"), 4)
+        self.assertEqual(minimum_publishable_fields("unknown"), 4)
 
     def test_evidence_matching_ignores_html_layout_whitespace(self):
         self.assertTrue(_evidence_in_text(

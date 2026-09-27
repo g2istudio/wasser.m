@@ -29,6 +29,7 @@ except ImportError:  # The agent remains fail-closed when optional PDF support i
 logging.getLogger("pypdf").setLevel(logging.ERROR)
 
 from crawler.page_collector import PageSnapshot, product_json_ld_documents
+from extractor.category_rules import classify_installation, classify_technology
 from models.product import Evidence, ProductImage, ProductSources, ProductValue, UnmappedAttribute, WaterFilterProduct
 
 
@@ -457,86 +458,20 @@ def extract_commerce_product(url: str, brand: str, model: str,
     structured_description = _clean(node.get("description")) or _meta(soup, "description", "og:description")
     scoped_text = f"{title} {structured_description}"
     haystack = scoped_text.casefold()
-    technology_quote = _find_quote(
-        scoped_text, "reverse osmosis", "umkehrosmose", "osmoseanlage", "RO membrane", "RO filtration"
+    technology = classify_technology(
+        source, scoped_text, page_visible_text, page.snapshot.evidence_text, specs,
+        find_quote=_find_quote, lookup=_lookup,
     )
-    if technology_quote and technology_quote not in page_visible_text:
-        technology_quote = _find_quote(
-            page_visible_text,
-            "reverse osmosis",
-            "umkehrosmose",
-            "osmoseanlage",
-            "RO membrane",
-            "RO filtration",
-        )
-    if not technology_quote:
-        ro_membrane = _lookup(specs, "ro membrane", "reverse osmosis membrane", "umkehrosmosemembran")
-        if ro_membrane and _boolean(ro_membrane[0]) is True:
-            technology_quote = _find_quote(page.snapshot.evidence_text, "RO membrane", "reverse osmosis membrane", "Umkehrosmosemembran")
-    if technology_quote:
-        product.system.technology = _evidence("Reverse Osmosis", technology_quote, source)
-    elif "/reverse-osmosis/" in source.casefold():
-        quote = _find_quote(page_visible_text, "Reverse Osmosis")
-        if quote:
-            product.system.technology = _evidence("Reverse Osmosis", quote, source)
-    elif "/softener/" in source.casefold():
-        quote = _find_quote(page_visible_text, "ion exchange process", "water softener")
-        if quote:
-            product.system.technology = _evidence("Ion Exchange Water Softening", quote, source)
-    elif any(marker in source.casefold() for marker in ("/water-dispenser/", "/plumbed-in-water-dispenser/")):
-        quote = _find_quote(
-            page_visible_text,
-            "Water Dispenser",
-            "drinking water filter system",
-            "water filtration system",
-        )
-        if quote:
-            normalized = "Water Dispenser" if "dispenser" in quote.casefold() else "Water Filtration"
-            product.system.technology = _evidence(normalized, quote, source)
-    elif "/under-the-sink-solutions/" in source.casefold():
-        quote = _find_quote(
-            page_visible_text,
-            "drinking water filtration system",
-            "drinking water filter system",
-            "under sink water filter system",
-        )
-        if quote:
-            product.system.technology = _evidence("Water Filtration", quote, source)
+    technology_quote = technology[1] if technology and technology[0] == "Reverse Osmosis" else ""
+    if technology:
+        product.system.technology = _evidence(technology[0], technology[1], source)
 
-    installation = _lookup(specs, "installation type", "installation", "installationsart", "montageart")
+    installation = classify_installation(
+        source, scoped_text, page_visible_text, specs, manuals,
+        find_quote=_find_quote, lookup=_lookup, manual_quote=_manual_quote,
+    )
     if installation:
-        product.system.installation_type = _evidence(installation[0], installation[1], source)
-    else:
-        for terms, normalized in (
-            (('countertop', 'auftisch', 'tischgeraet', 'tischgerät', 'tischwasserspender'), 'Tabletop'),
-            (('under sink', 'under-sink', 'undersink', 'untertisch'), 'Under-counter'),
-        ):
-            quote = _find_quote(scoped_text, *terms)
-            if quote:
-                product.system.installation_type = _evidence(normalized, quote, source)
-                break
-    if product.system.installation_type.value is None:
-        combined = _manual_quote(manuals, "unter der Spüle oder auf der Arbeitsfläche")
-        under_counter = _manual_quote(manuals, "Installationsdiagramm unter der Spüle", "Untertischeinbau")
-        if combined:
-            product.system.installation_type = _evidence(
-                "Under-counter / countertop", combined[0], combined[1]
-            )
-        elif under_counter:
-            product.system.installation_type = _evidence("Under-counter", under_counter[0], under_counter[1])
-    if product.system.installation_type.value is None and any(
-        marker in source.casefold()
-        for marker in ("/reverse-osmosis/", "/water-dispenser/", "/under-the-sink-solutions/")
-    ):
-        quote = _find_quote(
-            page_visible_text,
-            "fitted under the sink",
-            "Under the sink drinking water filter system",
-            "under sink water filter system",
-            "under the sink solution",
-        )
-        if quote:
-            product.system.installation_type = _evidence("Under-counter", quote, source)
+        product.system.installation_type = _evidence(installation[0], installation[1], installation[2])
 
     _set_boolean(product.system, "tankless", _lookup(specs, "tankless", "tanklos"), source)
     _set_boolean(product.system, "tankless", _lookup(specs, "tank available", "tank vorhanden"), source, invert=True)

@@ -1,6 +1,7 @@
 from dataclasses import dataclass, field
 
 from models.product import WaterFilterProduct
+from extractor.taxonomy import missing_profile_fields, profile_for
 
 
 @dataclass
@@ -13,54 +14,8 @@ class PublicationAssessment:
 
 def assess_publication(product: WaterFilterProduct) -> PublicationAssessment:
     """Category-aware minimum completeness gate for public model pages."""
-    name = str(product.identity.product_name.value or "").lower()
-    technology = str(product.system.technology.value or "").lower()
-    combined = f"{name} {technology}"
-    if "reverse osmosis" in combined or "umkehrosmose" in combined or " ro " in f" {combined} ":
-        profile = "reverse_osmosis"
-        required = {
-            "system.installation_type": product.system.installation_type.value,
-            "filtration.advertised_stage_count": product.filtration.advertised_stage_count.value,
-            "performance.rated_capacity_gpd_or_dispensing_flow_lpm": (
-                product.performance.rated_capacity_gpd.value
-                or product.performance.dispensing_flow_lpm.value
-            ),
-        }
-    elif "water soft" in combined or "ion exchange" in combined:
-        profile = "water_softener"
-        required = {
-            "system.installation_type": product.system.installation_type.value,
-        }
-    elif "water dispenser" in combined:
-        profile = "water_dispenser"
-        required = {
-            "system.installation_type": product.system.installation_type.value,
-        }
-    elif "water filtration" in combined:
-        profile = "water_filtration"
-        required = {
-            "system.installation_type": product.system.installation_type.value,
-            "filtration.advertised_stage_count": product.filtration.advertised_stage_count.value,
-        }
-    elif "whole house" in combined:
-        profile = "whole_house"
-        required = {
-            "system.installation_type": product.system.installation_type.value,
-            "filtration.advertised_stage_count": product.filtration.advertised_stage_count.value,
-            "performance.dispensing_flow_lpm": product.performance.dispensing_flow_lpm.value,
-        }
-    elif "under sink" in combined or "undersink" in combined:
-        profile = "under_sink"
-        required = {
-            "system.installation_type": product.system.installation_type.value,
-            "filtration.advertised_stage_count": product.filtration.advertised_stage_count.value,
-        }
-    else:
-        profile = "generic_system"
-        required = {
-            "system.installation_type": product.system.installation_type.value,
-            "filtration.advertised_stage_count": product.filtration.advertised_stage_count.value,
-        }
+    profile_config = profile_for(product)
+    profile = str(profile_config["name"])
 
     # Identity, classification, source and primary image are required to avoid
     # publishing the wrong product. Missing technical characteristics are
@@ -76,8 +31,8 @@ def assess_publication(product: WaterFilterProduct) -> PublicationAssessment:
     optional_fields = {
         "physical.dimensions_raw": product.physical.dimensions_raw.value,
         "identity.brand_logo": product.identity.brand_logo.url,
-        **required,
     }
     blocking = [path for path, value in blocking_fields.items() if value is None or value == ""]
     missing = [path for path, value in optional_fields.items() if value is None or value == ""]
+    missing.extend(path for path in missing_profile_fields(product, profile_config) if path not in missing)
     return PublicationAssessment(ready=not blocking, profile=profile, missing=missing, blocking=blocking)

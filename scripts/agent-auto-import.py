@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DB = Path(r"C:\wasser-market-agent\data\wasser_market.db")
 STATE_PATH = ROOT / "data" / "agent-import-state.json"
 REPORT_PATH = ROOT / "data" / "agent-import-report.json"
+PROFILE_CONFIG_PATH = ROOT / "scripts" / "agent-runtime" / "config" / "product_profiles.json"
 RENDERER_VERSION = 3
 
 FIELD_LABELS = {
@@ -100,6 +101,14 @@ def write(path: str, value: str) -> None:
 def dump(path: Path | str, value: object) -> None:
     target = path if isinstance(path, Path) else ROOT / path
     target.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def minimum_publishable_fields(profile_name: str) -> int:
+    data = json.loads(PROFILE_CONFIG_PATH.read_text(encoding="utf-8"))
+    profiles = data.get("profiles") or []
+    profile = next((item for item in profiles if item.get("name") == profile_name), None)
+    fallback = next((item for item in profiles if item.get("name") == "generic_system"), {})
+    return int((profile or fallback).get("minimum_publishable_evidence_fields", 4))
 
 
 def esc(value: object) -> str:
@@ -275,8 +284,7 @@ def build_record(row: dict, products: list[dict]) -> tuple[dict, dict, bool]:
     if urlparse(source).scheme != "https":
         raise ValueError("manufacturer source must use HTTPS")
     fields = {path: field for path in FIELD_LABELS if (field := safe_field(raw, path))}
-    sparse_profiles = {"water_softener", "water_dispenser", "water_filtration"}
-    minimum_fields = 2 if raw.get("taxonomy") in sparse_profiles else 4
+    minimum_fields = minimum_publishable_fields(str(raw.get("taxonomy") or "generic_system"))
     if len(fields) < minimum_fields:
         raise ValueError(f"fewer than {minimum_fields} publishable evidenced fields")
     image = primary_image(raw, model)

@@ -19,6 +19,31 @@ Codex dependency. Codex is used only to change and test its source code.
 Discovery, extraction, validation and publication are independent commands.
 Mass discovery therefore never implies mass publication.
 
+## Module map
+
+- `crawler/discovery.py` and `crawler/candidate_worker.py`: discover brands,
+  product URLs and model candidates.
+- `crawler/http_collector.py` and `crawler/page_collector.py`: fetch and cache
+  source pages.
+- `extractor/commerce_parser.py`: orchestrate deterministic field extraction.
+- `extractor/category_rules.py`: classify technology and installation from
+  source-backed rules.
+- `extractor/taxonomy.py` and `config/product_profiles.json`: category profiles,
+  required field groups and publication evidence thresholds.
+- `crawler/semantic_policy.py`: decide whether conflicts or missing evidence
+  justify semantic resolution.
+- `semantic_resolution.py` and `sources/gemini_client.py`: send only selected
+  fragments to Gemini when the deterministic stages cannot resolve a fact.
+- `extractor/validation.py`, `extractor/verification.py` and
+  `extractor/publication.py`: validate facts and assign the publication state.
+- `sources/wasser_market_api.py` and `scripts/agent-auto-import.py`: protected
+  API and deterministic site publication.
+
+New categories and their minimum evidence thresholds should normally be added
+to `config/product_profiles.json`. Parser code changes remain necessary only
+when the source introduces a new representation that existing generic rules do
+not understand.
+
 ## Stored layers
 
 - `source_snapshots`: immutable raw and normalized source content, HTTP

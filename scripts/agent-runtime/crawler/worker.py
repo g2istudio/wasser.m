@@ -18,6 +18,10 @@ from extractor.product_extractor import extract_product
 from extractor.commerce_parser import extract_commerce_product
 from extractor.validation import validate_product
 from extractor.publication import assess_publication
+from crawler.semantic_policy import (
+    has_source_conflict as _has_source_conflict,
+    semantic_fragments_available as _semantic_fragments_available,
+)
 from models.product import Evidence, ProductRecord, ProductValue
 from provenance import persist_product_facts
 from runtime_control import BudgetExceeded, RuntimeMeter, calculated_confidence, source_priority
@@ -31,23 +35,6 @@ class WorkResult:
     url: str
     status: str
     detail: str
-
-
-def _has_source_conflict(value) -> bool:
-    """Return true only when an extracted value actually carries a conflict."""
-    if isinstance(value, dict):
-        if value.get("verification_status") == "conflicting_sources":
-            return True
-        if str(value.get("original_name") or "").startswith("conflict."):
-            return True
-        return any(_has_source_conflict(item) for item in value.values())
-    if isinstance(value, list):
-        return any(_has_source_conflict(item) for item in value)
-    return False
-
-
-def _semantic_fragments_available(evidence_text: str, model: str, issues: list[str]) -> bool:
-    return bool(minimal_fragments(evidence_text, model, issues))
 
 
 def _apply_semantic_resolution(product, item: dict, source_url: str, evidence_text: str,

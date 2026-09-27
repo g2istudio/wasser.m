@@ -1,0 +1,63 @@
+{
+  "profiles": [
+    {
+      "name": "reverse_osmosis",
+      "terms": ["reverse osmosis", "umkehrosmose", " ro "],
+      "required": [
+        ["system.installation_type"],
+        ["filtration.advertised_stage_count"],
+        ["performance.rated_capacity_gpd", "performance.dispensing_flow_lpm"]
+      ],
+      "minimum_publishable_evidence_fields": 4
+    },
+    {
+      "name": "water_softener",
+      "terms": ["water soft", "ion exchange"],
+      "required": [["system.installation_type"]],
+      "minimum_publishable_evidence_fields": 2
+    },
+    {
+      "name": "water_dispenser",
+      "terms": ["water dispenser"],
+      "required": [["system.installation_type"]],
+      "minimum_publishable_evidence_fields": 2
+    },
+    {
+      "name": "water_filtration",
+      "terms": ["water filtration"],
+      "required": [
+        ["system.installation_type"],
+        ["filtration.advertised_stage_count"]
+      ],
+      "minimum_publishable_evidence_fields": 2
+    },
+    {
+      "name": "whole_house",
+      "terms": ["whole house"],
+      "required": [
+        ["system.installation_type"],
+        ["filtration.advertised_stage_count"],
+        ["performance.dispensing_flow_lpm"]
+      ],
+      "minimum_publishable_evidence_fields": 4
+    },
+    {
+      "name": "under_sink",
+      "terms": ["under sink", "undersink"],
+      "required": [
+        ["system.installation_type"],
+        ["filtration.advertised_stage_count"]
+      ],
+      "minimum_publishable_evidence_fields": 4
+    },
+    {
+      "name": "generic_system",
+      "terms": [],
+      "required": [
+        ["system.installation_type"],
+        ["filtration.advertised_stage_count"]
+      ],
+      "minimum_publishable_evidence_fields": 4
+    }
+  ]
+}
