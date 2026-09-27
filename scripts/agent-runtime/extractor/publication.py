@@ -26,6 +26,22 @@ def assess_publication(product: WaterFilterProduct) -> PublicationAssessment:
                 or product.performance.dispensing_flow_lpm.value
             ),
         }
+    elif "water soft" in combined or "ion exchange" in combined:
+        profile = "water_softener"
+        required = {
+            "system.installation_type": product.system.installation_type.value,
+        }
+    elif "water dispenser" in combined:
+        profile = "water_dispenser"
+        required = {
+            "system.installation_type": product.system.installation_type.value,
+        }
+    elif "water filtration" in combined:
+        profile = "water_filtration"
+        required = {
+            "system.installation_type": product.system.installation_type.value,
+            "filtration.advertised_stage_count": product.filtration.advertised_stage_count.value,
+        }
     elif "whole house" in combined:
         profile = "whole_house"
         required = {

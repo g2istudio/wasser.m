@@ -475,6 +475,33 @@ def extract_commerce_product(url: str, brand: str, model: str,
             technology_quote = _find_quote(page.snapshot.evidence_text, "RO membrane", "reverse osmosis membrane", "Umkehrosmosemembran")
     if technology_quote:
         product.system.technology = _evidence("Reverse Osmosis", technology_quote, source)
+    elif "/reverse-osmosis/" in source.casefold():
+        quote = _find_quote(page_visible_text, "Reverse Osmosis")
+        if quote:
+            product.system.technology = _evidence("Reverse Osmosis", quote, source)
+    elif "/softener/" in source.casefold():
+        quote = _find_quote(page_visible_text, "ion exchange process", "water softener")
+        if quote:
+            product.system.technology = _evidence("Ion Exchange Water Softening", quote, source)
+    elif any(marker in source.casefold() for marker in ("/water-dispenser/", "/plumbed-in-water-dispenser/")):
+        quote = _find_quote(
+            page_visible_text,
+            "Water Dispenser",
+            "drinking water filter system",
+            "water filtration system",
+        )
+        if quote:
+            normalized = "Water Dispenser" if "dispenser" in quote.casefold() else "Water Filtration"
+            product.system.technology = _evidence(normalized, quote, source)
+    elif "/under-the-sink-solutions/" in source.casefold():
+        quote = _find_quote(
+            page_visible_text,
+            "drinking water filtration system",
+            "drinking water filter system",
+            "under sink water filter system",
+        )
+        if quote:
+            product.system.technology = _evidence("Water Filtration", quote, source)
 
     installation = _lookup(specs, "installation type", "installation", "installationsart", "montageart")
     if installation:

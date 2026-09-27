@@ -137,6 +137,18 @@ class RuntimeArchitectureTests(unittest.TestCase):
         self.assertTrue(assessment.ready)
         self.assertIn("system.installation_type", assessment.missing)
         self.assertIn("filtration.advertised_stage_count", assessment.missing)
+
+    def test_new_water_treatment_profiles_are_publishable_with_missing_specs(self):
+        product = WaterFilterProduct()
+        product.identity.brand.value = "BWT"
+        product.identity.model.value = "Perla"
+        product.identity.product_name.value = "BWT Perla"
+        product.system.technology.value = "Ion Exchange Water Softening"
+        product.sources.manufacturer_url = "https://example.com/perla"
+        product.images = [product.image.model_copy(update={"url": "https://example.com/perla.jpg", "role": "primary"})]
+        assessment = assess_publication(product)
+        self.assertEqual(assessment.profile, "water_softener")
+        self.assertTrue(assessment.ready)
         self.assertEqual(assessment.blocking, [])
 
     def test_evidence_matching_ignores_html_layout_whitespace(self):

@@ -55,6 +55,36 @@ class CommerceParserTests(unittest.TestCase):
         self.assertEqual(product.identity.product_name.value, "AquaTru Carafe | Countertop RO Water Purifier")
         self.assertEqual(product.system.technology.value, "Reverse Osmosis")
 
+    def test_classifies_new_official_product_categories_without_ai(self):
+        cases = (
+            (
+                "https://example.com/products/reverse-osmosis/thero/",
+                "Thero 90",
+                "Level 4 Reverse Osmosis removes ions.",
+                "Reverse Osmosis",
+            ),
+            (
+                "https://example.com/products/softener/perla/",
+                "BWT Perla",
+                "A duplex water softener that operates according to the ion exchange process.",
+                "Ion Exchange Water Softening",
+            ),
+            (
+                "https://example.com/products/under-the-sink-solutions/pure-loft/",
+                "Pure Loft",
+                "Under the sink drinking water filter system and designer kitchen tap.",
+                "Water Filtration",
+            ),
+        )
+        for url, name, description, expected in cases:
+            html = f'''<html><head><title>{name}</title>
+            <script type="application/ld+json">{{"@type":"Product","name":"{name}","image":"https://example.com/item.jpg"}}</script>
+            </head><body><h1>{name}</h1><p>{description}</p></body></html>'''
+            snapshot = PageSnapshot(url=url, title=name, visible_text=description, raw_content=html)
+            with patch("extractor.commerce_parser._official_manuals", return_value=[]):
+                product, _, _ = extract_commerce_product(url, "BWT", name, snapshot=snapshot)
+            self.assertEqual(product.system.technology.value, expected)
+
     def test_uses_leading_official_title_identity(self):
         cases = {
             "SYDROS Pureflow RO-Tischwasserspender mit UV-C, H2 – Sydros": "Pureflow",
