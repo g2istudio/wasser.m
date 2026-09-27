@@ -70,9 +70,16 @@ class PanelTests(unittest.TestCase):
         product.identity.model.value = "X1"
         product.sources.manufacturer_url = "https://example.com/x1"
         repository.save(ProductRecord(product=product, status="NEEDS_REVIEW", needs_review=True))
-        summaries = product_summaries(db)
+        site = self.root / "site"
+        (site / "data").mkdir(parents=True)
+        (site / "data" / "products.json").write_text(
+            '[{"brand":"Example","name":"X1","slug":"example-x1"}]', encoding="utf-8"
+        )
+        summaries = product_summaries(db, site)
         self.assertEqual(summaries[0]["brand"], "Example")
         self.assertTrue(summaries[0]["updated_at"])
+        self.assertTrue(summaries[0]["published"])
+        self.assertEqual(summaries[0]["published_slug"], "example-x1")
 
 
 if __name__ == "__main__":

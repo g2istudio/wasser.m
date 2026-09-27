@@ -18,7 +18,7 @@ import time
 from urllib.parse import urlsplit
 import webbrowser
 
-from database.repository import ProductRepository
+from database.repository import ProductRepository, canonical_product_id
 
 
 ROOT = Path(__file__).resolve().parent
@@ -198,15 +198,36 @@ class TaskRunner:
                 self.store.finish(task["id"], error=f"{type(error).__name__}: {error}")
 
 
-def product_summaries(db_path: Path) -> list[dict]:
+def published_products(site: Path | None) -> dict[str, str]:
+    """Return canonical identities already present in the public site catalog."""
+    catalog = site / "data" / "products.json" if site else None
+    if not catalog or not catalog.is_file():
+        return {}
+    try:
+        products = json.loads(catalog.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    result = {}
+    for item in products if isinstance(products, list) else []:
+        identity = (item.get("agent_import") or {}).get("identity") or {}
+        brand = str(identity.get("brand") or item.get("brand") or "").strip()
+        model = str(identity.get("model") or item.get("name") or "").strip()
+        if brand and model:
+            result[canonical_product_id(brand, model)] = str(item.get("slug") or item.get("id") or "")
+    return result
+
+
+def product_summaries(db_path: Path, site: Path | None = None) -> list[dict]:
     repository = ProductRepository(db_path)
     rows = repository.product_rows()
+    published = published_products(site)
     summaries = []
     for row in rows:
         try:
             product = json.loads(row["product_json"])
         except (TypeError, json.JSONDecodeError):
             product = {}
+        product_id = canonical_product_id(row["brand"], row["model"])
         summaries.append({
             "id": row["id"], "brand": row["brand"], "model": row["model"],
             "status": row["quality_status"] if row["status"] == row["quality_status"] else "NEEDS_REVIEW",
@@ -214,6 +235,8 @@ def product_summaries(db_path: Path) -> list[dict]:
             "source_url": row["source_url"], "updated_at": row["updated_at"],
             "needs_review": bool(row.get("needs_review")),
             "source_conflict": bool(row.get("source_conflict")),
+            "published": product_id in published,
+            "published_slug": published.get(product_id),
         })
     return summaries
 
@@ -260,7 +283,7 @@ class PanelHandler(BaseHTTPRequestHandler):
         if self.path == "/api/state":
             self.send_json({
                 "tasks": self.app.store.list(),
-                "products": product_summaries(self.app.db),
+                "products": product_summaries(self.app.db, self.app.site),
                 "queue": ProductRepository(self.app.db).queue_summary(),
             })
             return
@@ -293,7 +316,11 @@ class PanelHandler(BaseHTTPRequestHandler):
                 return
             if self.path == "/api/publish":
                 brand, model = str(data.get("brand") or "").strip(), str(data.get("model") or "").strip()
-                ready = {(item["brand"], item["model"]) for item in product_summaries(self.app.db) if item["status"] == "PUBLISH_READY"}
+                summaries = product_summaries(self.app.db, self.app.site)
+                selected = next((item for item in summaries if item["brand"] == brand and item["model"] == model), None)
+                if selected and selected["published"]:
+                    raise ValueError("This product is already published on the site")
+                ready = {(item["brand"], item["model"]) for item in summaries if item["status"] == "PUBLISH_READY"}
                 if (brand, model) not in ready:
                     raise ValueError("This exact product is not PUBLISH_READY")
                 task_id = self.app.store.enqueue("publish", {
