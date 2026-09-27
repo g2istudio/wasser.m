@@ -3907,28 +3907,6 @@
     }
   },
   {
-    "id": "aquatru-classic-countertop-purifier",
-    "slug": "aquatru-classic-countertop-purifier",
-    "brand": "AquaTru",
-    "brandSlug": "aquatru",
-    "name": "Classic Countertop Purifier",
-    "category": "Countertop RO",
-    "price": null,
-    "currency": "EUR",
-    "rating": null,
-    "reviews": 0,
-    "image": "assets/brands/aquatru.png",
-    "source": "https://aquatruwater.com/products/countertop-reverse-osmosis-water-purifier",
-    "summary": "AquaTru Classic Countertop Purifier: offizielle Produkt- und Technikdaten des Herstellers.",
-    "specs": {
-      "Filtration": "4-stufige Umkehrosmose",
-      "Rohwassertank": "3,8 l",
-      "Reinwassertank": "2,8 l",
-      "Gewicht": "7,7 kg",
-      "Prüfung": "Reduktion von 84 Schadstoffen"
-    }
-  },
-  {
     "id": "coway-neo-plus-chp-264l",
     "slug": "coway-neo-plus-chp-264l",
     "brand": "Coway",
