@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WasserMarket Agent</title>
+  <style>
+    :root{font-family:Inter,Segoe UI,sans-serif;color:#10253b;background:#edf4f7;line-height:1.45}
+    *{box-sizing:border-box}body{margin:0}.wrap{max-width:1180px;margin:auto;padding:28px 18px 60px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}h1{font-size:26px;margin:0}h2{font-size:18px;margin:0 0 16px}
+    .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#18a66a;margin-right:7px}.muted{color:#617487;font-size:13px}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.card{background:#fff;border:1px solid #d9e5ea;border-radius:16px;padding:20px;box-shadow:0 8px 25px #23405a0d;margin-bottom:18px}
+    label{display:block;font-size:13px;font-weight:650;margin:12px 0 6px}textarea,input,select{width:100%;border:1px solid #cbd9e0;border-radius:9px;padding:10px 12px;font:inherit;background:#fbfdfe}textarea{min-height:150px;resize:vertical}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{display:flex;align-items:center;gap:8px;font-weight:500}.check input{width:auto}
+    button{border:0;border-radius:9px;padding:10px 16px;font-weight:700;cursor:pointer;background:#0b78d0;color:#fff}button.secondary{background:#e6f0f6;color:#17405c}button:disabled{opacity:.45;cursor:not-allowed}
+    details{margin-top:12px}.budgets{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.budgets input{padding:8px}
+    table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid #e6eef2;vertical-align:top}th{color:#607384}.scroll{max-height:460px;overflow:auto}
+    .pill{display:inline-block;padding:3px 8px;border-radius:20px;background:#edf2f5;font-size:11px;font-weight:750}.PUBLISH_READY,.COMPLETED{background:#dff6e9;color:#0a7042}.NEEDS_REVIEW,.FAILED{background:#ffe5e1;color:#9b2d20}.RUNNING{background:#dcefff;color:#075d9d}.QUEUED{background:#fff2cb;color:#795800}
+    .task{border:1px solid #e1ebef;border-radius:11px;padding:12px;margin-bottom:9px}.task-head{display:flex;justify-content:space-between;gap:10px}.error{color:#a22b20;white-space:pre-wrap}.usage{color:#50677a;font-size:12px;margin-top:5px}.notice{padding:10px 12px;border-radius:9px;background:#e9f5ff;margin-bottom:12px;display:none}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}.budgets{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body><div class="wrap">
+  <header><div><h1>WasserMarket Agent</h1><div class="muted">Локальная обработка без Codex</div></div><div><span class="dot"></span>Панель работает</div></header>
+  <div id="notice" class="notice"></div>
+  <div class="grid">
+    <div>
+      <section class="card"><h2>Добавить товары</h2>
+        <label for="urls">Официальные страницы товаров — по одной ссылке в строке</label>
+        <textarea id="urls" placeholder="https://manufacturer.example/products/model"></textarea>
+        <div class="row"><div><label for="brand">Бренд, если известен</label><input id="brand" placeholder="Определится автоматически"></div><div><label for="model">Модель для одной ссылки</label><input id="model" placeholder="Определится автоматически"></div></div>
+        <label class="check"><input id="gemini" type="checkbox" checked> Использовать Gemini только при необходимости</label>
+        <label class="check"><input id="force" type="checkbox"> Повторно обработать уже существующую карточку</label>
+        <details><summary>Лимиты одного товара</summary><div class="budgets">
+          <div><label>Brave</label><input id="brave" type="number" min="0" value="3"></div>
+          <div><label>HTTP</label><input id="http" type="number" min="1" value="30"></div>
+          <div><label>Firecrawl</label><input id="firecrawl" type="number" min="0" value="3"></div>
+          <div><label>Gemini tokens</label><input id="tokens" type="number" min="0" value="12000"></div>
+          <div><label>Время, сек.</label><input id="runtime" type="number" min="60" value="600"></div>
+        </div></details>
+        <p><button id="start">Поставить в очередь</button></p>
+      </section>
+      <section class="card"><h2>Очередь и результаты</h2><div id="tasks"></div></section>
+    </div>
+    <div>
+      <section class="card"><h2>Готовые и проверяемые карточки</h2><div class="scroll"><table><thead><tr><th>Товар</th><th>Статус</th><th></th></tr></thead><tbody id="products"></tbody></table></div></section>
+      <section class="card"><h2>Состояние очереди</h2><div id="queue" class="muted">Загрузка…</div></section>
+    </div>
+  </div>
+</div>
+<script>
+const token='__PANEL_TOKEN__';
+const $=id=>document.getElementById(id); const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function notice(message,bad=false){const n=$('notice');n.style.display='block';n.style.background=bad?'#ffe5e1':'#e9f5ff';n.textContent=message;setTimeout(()=>n.style.display='none',5000)}
+async function post(path,data){const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json','X-Wasser-Panel-Token':token},body:JSON.stringify(data)});const j=await r.json();if(!r.ok)throw Error(j.error||'Ошибка');return j}
+function usage(task){const rows=task.result?.usage||[];return rows.map(x=>`${x.provider}: ${x.amount} ${x.metric}`).join(' · ')||''}
+function renderTasks(tasks){$('tasks').innerHTML=tasks.length?tasks.map(t=>`<div class="task"><div class="task-head"><strong>#${t.id} ${t.kind==='publish'?'Публикация':'Обработка'}</strong><span class="pill ${esc(t.status)}">${esc(t.status)}</span></div><div class="muted">${esc(t.payload.url||`${t.payload.brand} ${t.payload.model}`)}</div>${t.error?`<div class="error">${esc(t.error)}</div>`:''}<div class="usage">${esc(usage(t))}</div>${t.status==='FAILED'?`<p><button class="secondary retry" data-id="${t.id}">Повторить</button></p>`:''}</div>`).join(''):'<div class="muted">Задач пока нет.</div>';document.querySelectorAll('.retry').forEach(b=>b.onclick=async()=>{await post('/api/retry',{task_id:+b.dataset.id});refresh()})}
+function renderProducts(items){items.sort((a,b)=>String(b.updated_at).localeCompare(String(a.updated_at)));$('products').innerHTML=items.map(p=>`<tr><td><strong>${esc(p.brand)} ${esc(p.model)}</strong><br><span class="muted">${esc(p.taxonomy||'')}</span></td><td><span class="pill ${esc(p.status)}">${esc(p.status)}</span>${p.source_conflict?'<br><span class="error">конфликт источников</span>':''}</td><td>${p.status==='PUBLISH_READY'?`<button class="publish" data-brand="${esc(p.brand)}" data-model="${esc(p.model)}">Опубликовать</button>`:''}</td></tr>`).join('');document.querySelectorAll('.publish').forEach(b=>b.onclick=async()=>{if(!confirm(`Опубликовать ${b.dataset.brand} ${b.dataset.model}?`))return;try{await post('/api/publish',{brand:b.dataset.brand,model:b.dataset.model,transport:'auto'});notice('Публикация поставлена в очередь');refresh()}catch(e){notice(e.message,true)}})}
+async function refresh(){try{const r=await fetch('/api/state',{cache:'no-store'});const s=await r.json();renderTasks(s.tasks);renderProducts(s.products);$('queue').textContent=Object.entries(s.queue).map(([k,v])=>`${k}: ${v}`).join(' · ')||'Очередь пуста'}catch(e){notice(e.message,true)}}
+$('start').onclick=async()=>{try{const model=$('model').value.trim(),lines=$('urls').value.trim().split(/\r?\n/).filter(Boolean);if(model&&lines.length!==1)throw Error('Модель можно указать только для одной ссылки');const data={urls:$('urls').value,brand:$('brand').value,model,allow_gemini:$('gemini').checked,force:$('force').checked,budgets:{max_brave_queries:+$('brave').value,max_http_requests:+$('http').value,max_firecrawl_credits:+$('firecrawl').value,max_gemini_tokens:+$('tokens').value,max_runtime:+$('runtime').value}};const r=await post('/api/jobs',data);notice(`Добавлено задач: ${r.task_ids.length}`);$('urls').value='';refresh()}catch(e){notice(e.message,true)}};
+refresh();setInterval(refresh,3000);
+</script></body></html>

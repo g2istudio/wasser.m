@@ -561,7 +561,7 @@ class ProductRepository:
     def product_rows(self, brand: str | None = None) -> list[dict]:
         query = (
             "SELECT id, brand, model, status, quality_status, source_url, product_json, "
-            "needs_review, source_conflict FROM products"
+            "needs_review, source_conflict, updated_at FROM products"
         )
         parameters: tuple = ()
         if brand:

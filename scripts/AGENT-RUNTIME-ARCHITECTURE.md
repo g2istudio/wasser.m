@@ -72,6 +72,17 @@ C:\wasser-market-agent\wasser-agent.cmd reprocess --schema-version 3
 C:\wasser-market-agent\wasser-agent.cmd costs
 ```
 
+For normal day-to-day work, start the local panel and paste official product
+URLs there. The panel binds only to `127.0.0.1`, keeps a durable one-product-at-
+a-time queue and calls the same CLI without Codex:
+
+```powershell
+C:\wasser-market-agent\wasser-panel.cmd
+```
+
+Processing and publication remain separate actions in the panel. Only an exact
+`PUBLISH_READY` brand/model pair can be queued for publication.
+
 Publication selects the direct protected API when `WASSER_MARKET_API_URL`,
 `WASSER_MARKET_API_KEY` and `WASSER_MARKET_API_SECRET` are configured. Requests
 use HTTPS, a bearer key, an HMAC-SHA256 signature, timestamp, nonce and the

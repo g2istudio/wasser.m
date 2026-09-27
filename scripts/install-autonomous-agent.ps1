@@ -2,13 +2,13 @@ param([string]$AgentRoot = "C:\wasser-market-agent")
 
 $ErrorActionPreference = "Stop"
 $Runtime = Join-Path $PSScriptRoot "agent-runtime"
-foreach ($Directory in @("extractor", "crawler", "config", "database", "models", "sources")) {
+foreach ($Directory in @("extractor", "crawler", "config", "database", "models", "sources", "panel")) {
     New-Item -ItemType Directory -Force -Path (Join-Path $AgentRoot $Directory) | Out-Null
 }
-foreach ($Directory in @("extractor", "crawler", "config", "database", "models", "sources")) {
+foreach ($Directory in @("extractor", "crawler", "config", "database", "models", "sources", "panel")) {
     Copy-Item -Path (Join-Path $Runtime "$Directory\*") -Destination (Join-Path $AgentRoot $Directory) -Recurse -Force
 }
-foreach ($File in @("run_pipeline.py", "run_discovery.py", "wasser_agent.py", "runtime_control.py", "provenance.py", "semantic_resolution.py", "test_commerce_parser.py", "test_runtime_architecture.py")) {
+foreach ($File in @("run_pipeline.py", "run_discovery.py", "wasser_agent.py", "wasser_panel.py", "runtime_control.py", "provenance.py", "semantic_resolution.py", "test_commerce_parser.py", "test_runtime_architecture.py", "test_panel.py")) {
     Copy-Item -LiteralPath (Join-Path $Runtime $File) -Destination (Join-Path $AgentRoot $File) -Force
 }
 if (-not (Test-Path -LiteralPath (Join-Path $AgentRoot ".env.example"))) {
@@ -18,6 +18,9 @@ $Launcher = Join-Path $AgentRoot "wasser-agent.cmd"
 $SiteRoot = Split-Path -Parent $PSScriptRoot
 $LauncherCommand = '"%~dp0.venv\Scripts\python.exe" "%~dp0wasser_agent.py" --site "' + $SiteRoot + '" %*'
 Set-Content -LiteralPath $Launcher -Encoding ascii -Value '@echo off', $LauncherCommand
+$PanelLauncher = Join-Path $AgentRoot "wasser-panel.cmd"
+$PanelCommand = '"%~dp0.venv\Scripts\python.exe" "%~dp0wasser_panel.py" --site "' + $SiteRoot + '" %*'
+Set-Content -LiteralPath $PanelLauncher -Encoding ascii -Value '@echo off', $PanelCommand
 $Python = Join-Path $AgentRoot ".venv\Scripts\python.exe"
 if (Test-Path -LiteralPath $Python) {
     & $Python -m pip install "pypdf>=5,<7"

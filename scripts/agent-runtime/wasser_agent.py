@@ -143,6 +143,20 @@ async def process_model(repository, meter, args) -> dict:
     return {"job_id": meter.job_id, "result": result.__dict__, "usage": repository.usage_totals(meter.job_id)}
 
 
+async def process_direct_url(repository, meter, args) -> dict:
+    """Process one official product URL while allowing identity auto-detection."""
+    repository.enqueue_urls([args.url], args.url, provider="panel")
+    result = await process_url(
+        repository,
+        args.url,
+        meter=meter,
+        force=args.force,
+        expected_brand=args.brand or None,
+        expected_model=args.model or None,
+    )
+    return {"job_id": meter.job_id, "result": result.__dict__, "usage": repository.usage_totals(meter.job_id)}
+
+
 async def process_pending(repository, meter, args) -> dict:
     if args.command == "resume":
         results = []
@@ -292,6 +306,12 @@ def parser() -> argparse.ArgumentParser:
     process.add_argument("--search-limit", type=int, default=10)
     process.add_argument("--force", action="store_true")
 
+    direct = sub.add_parser("process-url")
+    direct.add_argument("--url", required=True)
+    direct.add_argument("--brand")
+    direct.add_argument("--model")
+    direct.add_argument("--force", action="store_true")
+
     pending = sub.add_parser("process-pending")
     pending.add_argument("--limit", type=int, default=10)
     pending.add_argument("--force", action="store_true")
@@ -319,7 +339,7 @@ def parser() -> argparse.ArgumentParser:
     costs.add_argument("--job-id")
     costs.add_argument("--product-id")
 
-    for item in (brands, discover, process, pending, resume, again, validate):
+    for item in (brands, discover, process, direct, pending, resume, again, validate):
         add_budget_args(item)
     return root
 
@@ -356,6 +376,8 @@ async def run(args) -> dict:
             result = await discover_products(repository, meter, args)
         elif args.command == "process":
             result = await process_model(repository, meter, args)
+        elif args.command == "process-url":
+            result = await process_direct_url(repository, meter, args)
         elif args.command in {"process-pending", "resume"}:
             result = await process_pending(repository, meter, args)
         elif args.command == "reprocess":
