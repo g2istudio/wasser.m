@@ -16310,5 +16310,118 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "bwt-aqa-drink-pure-loft",
+    "slug": "bwt-aqa-drink-pure-loft",
+    "brand": "BWT",
+    "brandSlug": "bwt",
+    "name": "AQA drink PURE LOFT",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop",
+    "source": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-loft/",
+    "image": "https://www.bwt.com/en-gb/-/media/bwt/global-data/images/products/uts/aqadrinkpureloft_main1_1280x1280.png?rev=2bd35ce0eaad4b0b8ed431abe3d01fce",
+    "brandLogo": "assets/brands/bwt.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Water Filtration",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BWT",
+        "model": "AQA drink PURE LOFT"
+      },
+      "source_id": 115,
+      "source_hash": "d09cc4faaef389e6cc1bf04d08da6c37594d8623808e1c5044346004f8633acf",
+      "checked_at": "2026-09-27",
+      "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-loft/",
+      "fields": {
+        "system.technology": {
+          "value": "Water Filtration",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-loft/",
+              "source_type": "manufacturer_page",
+              "original_text": "drinking water filter system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-loft/",
+              "source_type": "manufacturer_page",
+              "original_text": "Under the sink drinking water filter system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

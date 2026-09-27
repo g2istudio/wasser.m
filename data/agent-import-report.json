@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 114,
+      "source_id": 115,
       "brand": "BWT",
-      "model": "AQA drink PURE URBAN",
+      "model": "AQA drink PURE LOFT",
       "action": "create",
-      "target_id": "bwt-aqa-drink-pure-urban"
+      "target_id": "bwt-aqa-drink-pure-loft"
     }
   ],
   "rejected": [],
-  "catalog_before": 179,
-  "catalog_after": 180,
-  "completed_at": "2026-09-27T03:48:19.377815+00:00"
+  "catalog_before": 180,
+  "catalog_after": 181,
+  "completed_at": "2026-09-27T03:48:26.440101+00:00"
 }
