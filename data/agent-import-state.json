@@ -214,6 +214,12 @@
       "source_hash": "89da10fab93bc9b368724f63f13aa3d1f3e79e70377b7493be8f7682b5288a74",
       "renderer_version": 3,
       "imported_at": "2026-09-27T03:43:59.928534+00:00"
+    },
+    "BWT::AQA drink 60 CA": {
+      "source_id": 110,
+      "source_hash": "0a4ba5030a3900b0b69ff744b864ec02490a249a2bbe8c1e8240d804e2985830",
+      "renderer_version": 3,
+      "imported_at": "2026-09-27T03:44:08.071734+00:00"
     }
   }
 }

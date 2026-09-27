@@ -15783,5 +15783,148 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "bwt-aqa-drink-60-ca",
+    "slug": "bwt-aqa-drink-60-ca",
+    "brand": "BWT",
+    "brandSlug": "bwt",
+    "name": "AQA drink 60 CA",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Water Dispenser",
+    "source": "https://www.bwt.com/en-gb/products/plumbed-in-water-dispenser/aqa-drink-60/aqa-drink-60-ca/",
+    "image": "https://www.bwt.com/en-gb/-/media/bwt/uk/water-dispenser/plumbed-in/bwt-water-cooler-aqa-drink-60_main_1_1280x1280.png?rev=536233a7ea40431bafc6ba2357cc11a0",
+    "brandLogo": "assets/brands/bwt.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Water Dispenser",
+      "Installation": "—",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "Nein",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "220 - 240 /50 socket",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "32 x 47 x 51",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BWT",
+        "model": "AQA drink 60 CA"
+      },
+      "source_id": 110,
+      "source_hash": "0a4ba5030a3900b0b69ff744b864ec02490a249a2bbe8c1e8240d804e2985830",
+      "checked_at": "2026-09-27",
+      "source_url": "https://www.bwt.com/en-gb/products/plumbed-in-water-dispenser/aqa-drink-60/aqa-drink-60-ca/",
+      "fields": {
+        "system.technology": {
+          "value": "Water Dispenser",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/plumbed-in-water-dispenser/aqa-drink-60/aqa-drink-60-ca/",
+              "source_type": "manufacturer_page",
+              "original_text": "Water Dispenser",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "water_output.hot_water": {
+          "value": false,
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/plumbed-in-water-dispenser/aqa-drink-60/aqa-drink-60-ca/",
+              "source_type": "manufacturer_page",
+              "original_text": "No",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "electrical.voltage": {
+          "value": "220 - 240 /50 socket",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/plumbed-in-water-dispenser/aqa-drink-60/aqa-drink-60-ca/",
+              "source_type": "manufacturer_page",
+              "original_text": "220 - 240 /50 socket",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "physical.dimensions_raw": {
+          "value": "32 x 47 x 51",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/plumbed-in-water-dispenser/aqa-drink-60/aqa-drink-60-ca/",
+              "source_type": "manufacturer_page",
+              "original_text": "32 x 47 x 51",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
