@@ -125,6 +125,9 @@ class PanelStore:
             item["payload"] = json.loads(item.pop("payload_json"))
             item["result"] = json.loads(item.pop("result_json")) if item.get("result_json") else None
             item.pop("result_json", None)
+            outcome = (item.get("result") or {}).get("result") or {}
+            item["outcome_status"] = str(outcome.get("status") or item["status"])
+            item["outcome_detail"] = str(outcome.get("detail") or "")
             result.append(item)
         return result
 

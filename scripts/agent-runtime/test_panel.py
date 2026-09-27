@@ -35,6 +35,17 @@ class PanelTests(unittest.TestCase):
         self.assertTrue(restarted.retry(task_id))
         self.assertEqual(restarted.list()[0]["status"], "QUEUED")
 
+    def test_completed_task_exposes_pipeline_outcome(self):
+        task_id = self.store.enqueue("process_url", {"url": "https://example.com/x1"})
+        self.store.next_task()
+        self.store.finish(task_id, result={
+            "result": {"status": "SKIPPED", "detail": "Already exists on Wasser.Market"}
+        })
+        item = self.store.list()[0]
+        self.assertEqual(item["status"], "COMPLETED")
+        self.assertEqual(item["outcome_status"], "SKIPPED")
+        self.assertIn("Already exists", item["outcome_detail"])
+
     def test_runner_builds_argument_list_without_shell(self):
         runner = TaskRunner(self.store, self.root / "agent.db", self.root / "site")
         task = {
