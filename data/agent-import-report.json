@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 131,
-      "brand": "AQM-A1",
-      "model": "AQM-1",
+      "source_id": 132,
+      "brand": "AQM",
+      "model": "D1000",
       "action": "create",
-      "target_id": "aqm-a1-aqm-1"
+      "target_id": "aqm-d1000"
     }
   ],
   "rejected": [],
-  "catalog_before": 182,
-  "catalog_after": 183,
-  "completed_at": "2026-09-27T17:48:55.910654+00:00"
+  "catalog_before": 183,
+  "catalog_after": 184,
+  "completed_at": "2026-09-27T17:49:17.648449+00:00"
 }

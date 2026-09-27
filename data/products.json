@@ -16742,5 +16742,211 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "aqm-d1000",
+    "slug": "aqm-d1000",
+    "brand": "AQM",
+    "brandSlug": "aqm",
+    "name": "D1000",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Direct Flow RO",
+    "source": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+    "image": "https://static.wixstatic.com/media/9fe50b_7f200bbb20004ab0b5546f995f463819~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+    "brandLogo": "https://static.wixstatic.com/media/9fe50b_6c2904bfd09c4f60b8530d77e80acc78~mv2.png/v1/fill/w_102,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20final_Dunkel%20Logo%20ohne%20Kreis.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Reverse Osmosis",
+      "Installation": "Untertisch, Festwasseranschluss",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "4",
+      "Filteranzahl": "—",
+      "Membrantyp": "Reverse Osmosis",
+      "Membranleistung": "1000 GPD",
+      "Nennleistung": "1000 GPD",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "15x33x44cm",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "8.7 kg",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": 1690.0,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "AQM",
+        "model": "D1000"
+      },
+      "source_id": 132,
+      "source_hash": "02ed99bfe951262d9c4f203c2b5f7cd4a940bd6285ef74c7367ab148f3cbd193",
+      "checked_at": "2026-09-27",
+      "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+      "fields": {
+        "system.technology": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "system.installation_type": {
+          "value": "Untertisch, Festwasseranschluss",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+              "source_type": "manufacturer_page",
+              "original_text": "Untertisch, Festwasseranschluss",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "filtration.advertised_stage_count": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+              "source_type": "manufacturer_page",
+              "original_text": "4-stufige",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "filtration.membrane_type": {
+          "value": "Reverse Osmosis",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+              "source_type": "manufacturer_page",
+              "original_text": "Umkehrosmose",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "filtration.membrane_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+              "source_type": "manufacturer_page",
+              "original_text": "180 l/h, 1000GPD-Membran",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "performance.rated_capacity_gpd": {
+          "value": 1000,
+          "unit": "GPD",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+              "source_type": "manufacturer_page",
+              "original_text": "180 l/h, 1000GPD-Membran",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "physical.dimensions_raw": {
+          "value": "15x33x44cm",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+              "source_type": "manufacturer_page",
+              "original_text": "15x33x44cm",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "physical.weight_kg": {
+          "value": 8.7,
+          "unit": "kg",
+          "evidence": [
+            {
+              "source_url": "https://www.aquacasita.de/product-page/aqm-d1000-direct-flow-anlage",
+              "source_type": "manufacturer_page",
+              "original_text": "8,7kg",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
