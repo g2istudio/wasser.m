@@ -15941,5 +15941,118 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "bwt-aqa-drink-cube-50",
+    "slug": "bwt-aqa-drink-cube-50",
+    "brand": "BWT",
+    "brandSlug": "bwt",
+    "name": "AQA drink CUBE 50",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop",
+    "source": "https://www.bwt.com/en-gb/products/water-dispenser/aqa-drink-cube-50/",
+    "image": "https://www.bwt.com/en-gb/-/media/bwt/uk/water-dispensers-products/aqa-cube-50-water-dispenser.jpg?rev=bcf9cb9624634881afd63c8290d7eb7a",
+    "brandLogo": "assets/brands/bwt.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Water Dispenser",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "—",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BWT",
+        "model": "AQA drink CUBE 50"
+      },
+      "source_id": 111,
+      "source_hash": "71496ccd1ec8da33645c1228556380a49f7b7704e7945d2752f9d02cc673796a",
+      "checked_at": "2026-09-27",
+      "source_url": "https://www.bwt.com/en-gb/products/water-dispenser/aqa-drink-cube-50/",
+      "fields": {
+        "system.technology": {
+          "value": "Water Dispenser",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/water-dispenser/aqa-drink-cube-50/",
+              "source_type": "manufacturer_page",
+              "original_text": "Water dispenser",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/water-dispenser/aqa-drink-cube-50/",
+              "source_type": "manufacturer_page",
+              "original_text": "Under the sink drinking water filter system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

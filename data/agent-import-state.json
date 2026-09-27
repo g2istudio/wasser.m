@@ -220,6 +220,12 @@
       "source_hash": "0a4ba5030a3900b0b69ff744b864ec02490a249a2bbe8c1e8240d804e2985830",
       "renderer_version": 3,
       "imported_at": "2026-09-27T03:44:08.071734+00:00"
+    },
+    "BWT::AQA drink CUBE 50": {
+      "source_id": 111,
+      "source_hash": "71496ccd1ec8da33645c1228556380a49f7b7704e7945d2752f9d02cc673796a",
+      "renderer_version": 3,
+      "imported_at": "2026-09-27T03:48:05.029608+00:00"
     }
   }
 }

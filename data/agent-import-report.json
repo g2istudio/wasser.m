@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 116,
+      "source_id": 111,
       "brand": "BWT",
-      "model": "THERO 90 BLU",
-      "action": "update",
-      "target_id": "bwt-thero-90-blu"
+      "model": "AQA drink CUBE 50",
+      "action": "create",
+      "target_id": "bwt-aqa-drink-cube-50"
     }
   ],
   "rejected": [],
   "catalog_before": 177,
-  "catalog_after": 177,
-  "completed_at": "2026-09-27T03:47:57.916996+00:00"
+  "catalog_after": 178,
+  "completed_at": "2026-09-27T03:48:05.030026+00:00"
 }
