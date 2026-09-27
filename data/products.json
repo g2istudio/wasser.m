@@ -15648,14 +15648,14 @@
     "rating": null,
     "reviews": 0,
     "featured": false,
-    "category": "Reverse Osmosis",
+    "category": "Countertop RO",
     "source": "https://www.bwt.com/en-gb/products/reverse-osmosis/bwt-thero-90/thero-90-blu/",
     "image": "https://www.bwt.com/en-gb/-/media/bwt/uk/products/thero-90-pro_main_1_1280-x-1280.png?rev=c91efad5549044e4947a6e49bcdf8cfa",
     "brandLogo": "assets/brands/bwt.png",
     "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
     "specs": {
       "Technologie": "Reverse Osmosis",
-      "Installation": "—",
+      "Installation": "Under-counter",
       "Tanklos": "—",
       "Stromanschluss erforderlich": "—",
       "Integrierte Pumpe": "—",
@@ -15714,7 +15714,7 @@
         "model": "THERO 90 BLU"
       },
       "source_id": 116,
-      "source_hash": "89da10fab93bc9b368724f63f13aa3d1f3e79e70377b7493be8f7682b5288a74",
+      "source_hash": "a3db93715f2d7aab24e0ae40f8c1b70bbcc155cdecf3b2e5cb0ec38243108dee",
       "checked_at": "2026-09-27",
       "source_url": "https://www.bwt.com/en-gb/products/reverse-osmosis/bwt-thero-90/thero-90-blu/",
       "fields": {
@@ -15725,6 +15725,21 @@
               "source_url": "https://www.bwt.com/en-gb/products/reverse-osmosis/bwt-thero-90/thero-90-blu/",
               "source_type": "manufacturer_page",
               "original_text": "Reverse Osmosis",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/reverse-osmosis/bwt-thero-90/thero-90-blu/",
+              "source_type": "manufacturer_page",
+              "original_text": "fitted under the sink",
               "confidence": 0.98,
               "verification_status": "official_specification",
               "checked_at": "2026-09-27"
