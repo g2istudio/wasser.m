@@ -275,8 +275,10 @@ def build_record(row: dict, products: list[dict]) -> tuple[dict, dict, bool]:
     if urlparse(source).scheme != "https":
         raise ValueError("manufacturer source must use HTTPS")
     fields = {path: field for path in FIELD_LABELS if (field := safe_field(raw, path))}
-    if len(fields) < 4:
-        raise ValueError("fewer than four publishable evidenced fields")
+    sparse_profiles = {"water_softener", "water_dispenser", "water_filtration"}
+    minimum_fields = 2 if raw.get("taxonomy") in sparse_profiles else 4
+    if len(fields) < minimum_fields:
+        raise ValueError(f"fewer than {minimum_fields} publishable evidenced fields")
     image = primary_image(raw, model)
     brand_slug = slugify(brand)
     if not (ROOT / "brands" / f"{brand_slug}.html").exists():

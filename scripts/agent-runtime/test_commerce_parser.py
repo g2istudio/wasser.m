@@ -84,6 +84,8 @@ class CommerceParserTests(unittest.TestCase):
             with patch("extractor.commerce_parser._official_manuals", return_value=[]):
                 product, _, _ = extract_commerce_product(url, "BWT", name, snapshot=snapshot)
             self.assertEqual(product.system.technology.value, expected)
+            if "under-the-sink-solutions" in url:
+                self.assertEqual(product.system.installation_type.value, "Under-counter")
 
     def test_uses_leading_official_title_identity(self):
         cases = {

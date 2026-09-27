@@ -524,6 +524,19 @@ def extract_commerce_product(url: str, brand: str, model: str,
             )
         elif under_counter:
             product.system.installation_type = _evidence("Under-counter", under_counter[0], under_counter[1])
+    if product.system.installation_type.value is None and any(
+        marker in source.casefold()
+        for marker in ("/reverse-osmosis/", "/water-dispenser/", "/under-the-sink-solutions/")
+    ):
+        quote = _find_quote(
+            page_visible_text,
+            "fitted under the sink",
+            "Under the sink drinking water filter system",
+            "under sink water filter system",
+            "under the sink solution",
+        )
+        if quote:
+            product.system.installation_type = _evidence("Under-counter", quote, source)
 
     _set_boolean(product.system, "tankless", _lookup(specs, "tankless", "tanklos"), source)
     _set_boolean(product.system, "tankless", _lookup(specs, "tank available", "tank vorhanden"), source, invert=True)
