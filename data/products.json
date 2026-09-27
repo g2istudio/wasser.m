@@ -16423,5 +16423,118 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "bwt-perla",
+    "slug": "bwt-perla",
+    "brand": "BWT",
+    "brandSlug": "bwt",
+    "name": "Perla",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Ion Exchange Water Softening",
+    "source": "https://www.bwt.com/en-gb/products/softener/bwt-perla/",
+    "image": "https://www.bwt.com/en-gb/-/media/bwt/global-data/images/products/perla_frontal_v1_1_1280x1280.png?rev=d2b5819b556340f4b29466bcb8cf4f69",
+    "brandLogo": "assets/brands/bwt.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Ion Exchange Water Softening",
+      "Installation": "—",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "394 x 797 x 505",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BWT",
+        "model": "Perla"
+      },
+      "source_id": 130,
+      "source_hash": "b6f58c5e50f028aacb05a64616a0f43bf93724843f2cebe4d52792a8eea4f0e4",
+      "checked_at": "2026-09-27",
+      "source_url": "https://www.bwt.com/en-gb/products/softener/bwt-perla/",
+      "fields": {
+        "system.technology": {
+          "value": "Ion Exchange Water Softening",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/softener/bwt-perla/",
+              "source_type": "manufacturer_page",
+              "original_text": "ion exchange process",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "physical.dimensions_raw": {
+          "value": "394 x 797 x 505",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/softener/bwt-perla/",
+              "source_type": "manufacturer_page",
+              "original_text": "394 x 797 x 505",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

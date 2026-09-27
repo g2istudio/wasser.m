@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 115,
+      "source_id": 130,
       "brand": "BWT",
-      "model": "AQA drink PURE LOFT",
+      "model": "Perla",
       "action": "create",
-      "target_id": "bwt-aqa-drink-pure-loft"
+      "target_id": "bwt-perla"
     }
   ],
   "rejected": [],
-  "catalog_before": 180,
-  "catalog_after": 181,
-  "completed_at": "2026-09-27T03:48:26.440101+00:00"
+  "catalog_before": 181,
+  "catalog_after": 182,
+  "completed_at": "2026-09-27T03:48:33.888591+00:00"
 }
