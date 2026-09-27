@@ -16054,5 +16054,133 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "bwt-aqa-drink-slim-2-duo",
+    "slug": "bwt-aqa-drink-slim-2-duo",
+    "brand": "BWT",
+    "brandSlug": "bwt",
+    "name": "AQA drink SLIM 2 DUO",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop",
+    "source": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-slim-2-duo/",
+    "image": "https://www.bwt.com/en-gb/-/media/bwt/uk/products/under-the-sink/aqa-drink-slim-2-duo_main_1280x1280.png?rev=55ca9e88b81e4ac1b2be7d83878921bd",
+    "brandLogo": "assets/brands/bwt.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Water Filtration",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "H 405 X W 167 X D190mm",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BWT",
+        "model": "AQA drink SLIM 2 DUO"
+      },
+      "source_id": 112,
+      "source_hash": "8ec0f1f078b013eef998b9d496e78b3070fe3fe40dbd5d0217624ebe6a694363",
+      "checked_at": "2026-09-27",
+      "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-slim-2-duo/",
+      "fields": {
+        "system.technology": {
+          "value": "Water Filtration",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-slim-2-duo/",
+              "source_type": "manufacturer_page",
+              "original_text": "drinking water filtration system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-slim-2-duo/",
+              "source_type": "manufacturer_page",
+              "original_text": "under the sink solution",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "physical.dimensions_raw": {
+          "value": "H 405 X W 167 X D190mm",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-slim-2-duo/",
+              "source_type": "manufacturer_page",
+              "original_text": "H 405 X W 167 X D190mm",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]

@@ -226,6 +226,12 @@
       "source_hash": "71496ccd1ec8da33645c1228556380a49f7b7704e7945d2752f9d02cc673796a",
       "renderer_version": 3,
       "imported_at": "2026-09-27T03:48:05.029608+00:00"
+    },
+    "BWT::AQA drink SLIM 2 DUO": {
+      "source_id": 112,
+      "source_hash": "8ec0f1f078b013eef998b9d496e78b3070fe3fe40dbd5d0217624ebe6a694363",
+      "renderer_version": 3,
+      "imported_at": "2026-09-27T03:48:12.258200+00:00"
     }
   }
 }

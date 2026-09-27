@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 111,
+      "source_id": 112,
       "brand": "BWT",
-      "model": "AQA drink CUBE 50",
+      "model": "AQA drink SLIM 2 DUO",
       "action": "create",
-      "target_id": "bwt-aqa-drink-cube-50"
+      "target_id": "bwt-aqa-drink-slim-2-duo"
     }
   ],
   "rejected": [],
-  "catalog_before": 177,
-  "catalog_after": 178,
-  "completed_at": "2026-09-27T03:48:05.030026+00:00"
+  "catalog_before": 178,
+  "catalog_after": 179,
+  "completed_at": "2026-09-27T03:48:12.258526+00:00"
 }
