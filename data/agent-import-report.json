@@ -5,15 +5,15 @@
   "pending": 1,
   "accepted": [
     {
-      "source_id": 112,
+      "source_id": 114,
       "brand": "BWT",
-      "model": "AQA drink SLIM 2 DUO",
+      "model": "AQA drink PURE URBAN",
       "action": "create",
-      "target_id": "bwt-aqa-drink-slim-2-duo"
+      "target_id": "bwt-aqa-drink-pure-urban"
     }
   ],
   "rejected": [],
-  "catalog_before": 178,
-  "catalog_after": 179,
-  "completed_at": "2026-09-27T03:48:12.258526+00:00"
+  "catalog_before": 179,
+  "catalog_after": 180,
+  "completed_at": "2026-09-27T03:48:19.377815+00:00"
 }

@@ -16182,5 +16182,133 @@
       },
       "publication_status": "PUBLISH_READY"
     }
+  },
+  {
+    "id": "bwt-aqa-drink-pure-urban",
+    "slug": "bwt-aqa-drink-pure-urban",
+    "brand": "BWT",
+    "brandSlug": "bwt",
+    "name": "AQA drink PURE URBAN",
+    "rating": null,
+    "reviews": 0,
+    "featured": false,
+    "category": "Countertop",
+    "source": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-urban/",
+    "image": "https://www.bwt.com/en-gb/-/media/bwt/global-data/images/products/uts/aqadrinkpureurban_main1_1280x1280.png?rev=fb85e4993f9641659071b60ac6edb87f",
+    "brandLogo": "assets/brands/bwt.png",
+    "summary": "Technische Herstellerdaten mit nachvollziehbaren Quellen.",
+    "specs": {
+      "Technologie": "Water Filtration",
+      "Installation": "Under-counter",
+      "Tanklos": "—",
+      "Stromanschluss erforderlich": "—",
+      "Integrierte Pumpe": "—",
+      "Filterstufen": "—",
+      "Filteranzahl": "—",
+      "Membrantyp": "—",
+      "Membranleistung": "—",
+      "Nennleistung": "—",
+      "Durchfluss": "—",
+      "Rückgewinnungsrate": "—",
+      "Reinwasser-Abwasser-Verhältnis": "—",
+      "Min. Eingangsdruck": "—",
+      "Max. Eingangsdruck": "—",
+      "Min. Eingangstemperatur": "—",
+      "Max. Eingangstemperatur": "—",
+      "TDS-Reduktion": "—",
+      "Remineralisierung": "—",
+      "Wasser bei Raumtemperatur": "—",
+      "Kaltwasser": "—",
+      "Heißwasser": "—",
+      "Temperaturstufen": "—",
+      "Rohwassertank": "—",
+      "Reinwassertank": "—",
+      "Drucktank": "—",
+      "Leckageschutz": "—",
+      "Automatische Abschaltung": "—",
+      "Automatische Spülung": "—",
+      "UV-Desinfektion": "—",
+      "Spannung": "—",
+      "Frequenz": "—",
+      "Standby-Leistung": "—",
+      "Filtrationsleistung": "—",
+      "Heizleistung": "—",
+      "Kühlleistung": "—",
+      "Max. Leistungsaufnahme": "—",
+      "Abmessungen": "h x d: 384 x 223 mm, swivel range: 150°",
+      "Breite": "—",
+      "Tiefe": "—",
+      "Höhe": "—",
+      "Gewicht": "—",
+      "Geräuschpegel": "—",
+      "Display": "—",
+      "TDS-Anzeige Eingang": "—",
+      "TDS-Anzeige Ausgang": "—",
+      "Filterstatusanzeige": "—",
+      "Intelligenter Wasserhahn": "—",
+      "WLAN": "—",
+      "App": "—",
+      "Garantie": "—"
+    },
+    "price": null,
+    "currency": "EUR",
+    "agent_import": {
+      "identity": {
+        "brand": "BWT",
+        "model": "AQA drink PURE URBAN"
+      },
+      "source_id": 114,
+      "source_hash": "099538e366b936062fbc0d7293bac297a026754362db0b5bd1bf6ab6fd545cb4",
+      "checked_at": "2026-09-27",
+      "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-urban/",
+      "fields": {
+        "system.technology": {
+          "value": "Water Filtration",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-urban/",
+              "source_type": "manufacturer_page",
+              "original_text": "Under sink water filter system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "system.installation_type": {
+          "value": "Under-counter",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-urban/",
+              "source_type": "manufacturer_page",
+              "original_text": "Under sink water filter system",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        },
+        "physical.dimensions_raw": {
+          "value": "h x d: 384 x 223 mm, swivel range: 150°",
+          "evidence": [
+            {
+              "source_url": "https://www.bwt.com/en-gb/products/under-the-sink-solutions/aqa-drink-pure-urban/",
+              "source_type": "manufacturer_page",
+              "original_text": "h x d: 384 x 223 mm, swivel range: 150°",
+              "confidence": 0.98,
+              "verification_status": "official_specification",
+              "checked_at": "2026-09-27"
+            }
+          ],
+          "verification_status": "official_specification",
+          "checked_at": "2026-09-27"
+        }
+      },
+      "publication_status": "PUBLISH_READY"
+    }
   }
 ]
