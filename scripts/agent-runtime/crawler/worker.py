@@ -516,6 +516,18 @@ async def process_url(
             semantic_result and semantic_result.get("unresolved_conflicts")
             or enrichment_result and enrichment_result.get("unresolved_conflicts")
         )
+        unresolved_details = list(
+            (semantic_result or {}).get("unresolved_conflicts") or
+            (enrichment_result or {}).get("unresolved_conflicts") or []
+        )
+        if unresolved_details:
+            repository.audit(
+                meter.job_id if meter else None,
+                product_id,
+                "SEMANTIC_REVIEW_REQUIRED",
+                "semantic_resolution",
+                {"warnings": unresolved_details},
+            )
         if publication.ready and taxonomy != "UNKNOWN/NEW_TYPE" and not has_conflict and not unresolved:
             record_status = "PUBLISH_READY"
         elif semantic_issues or taxonomy == "UNKNOWN/NEW_TYPE":
@@ -529,10 +541,13 @@ async def process_url(
             product=product,
             status=record_status,
             needs_review=record_status == "NEEDS_REVIEW",
-            source_conflict=has_conflict or unresolved,
+            # A source conflict must be backed by persisted conflicting facts.
+            # A Gemini warning can require review, but is not conflict evidence.
+            source_conflict=has_conflict,
         ))
         repository.audit(meter.job_id if meter else None, product_id, "PRODUCT_VALIDATED", "validation",
-                         {"status": record_status, "facts": persisted, "missing": publication.missing})
+                         {"status": record_status, "facts": persisted, "missing": publication.missing,
+                          "semantic_warnings": unresolved_details})
         detail = (
             f"{product.identity.brand.value} {product.identity.model.value}; "
             f"platform={platform}; evidence={report.evidence_records}; quality={record_status}"

@@ -80,7 +80,9 @@ class PanelTests(unittest.TestCase):
         product.identity.brand.value = "Example"
         product.identity.model.value = "X1"
         product.sources.manufacturer_url = "https://example.com/x1"
-        repository.save(ProductRecord(product=product, status="NEEDS_REVIEW", needs_review=True))
+        repository.save(ProductRecord(
+            product=product, status="NEEDS_REVIEW", needs_review=True, source_conflict=True
+        ))
         site = self.root / "site"
         (site / "data").mkdir(parents=True)
         (site / "data" / "products.json").write_text(
@@ -91,6 +93,7 @@ class PanelTests(unittest.TestCase):
         self.assertTrue(summaries[0]["updated_at"])
         self.assertTrue(summaries[0]["published"])
         self.assertEqual(summaries[0]["published_slug"], "example-x1")
+        self.assertFalse(summaries[0]["source_conflict"])
 
 
 if __name__ == "__main__":

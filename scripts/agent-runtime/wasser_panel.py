@@ -19,6 +19,7 @@ from urllib.parse import urlsplit
 import webbrowser
 
 from database.repository import ProductRepository, canonical_product_id
+from crawler.semantic_policy import has_source_conflict
 
 
 ROOT = Path(__file__).resolve().parent
@@ -237,7 +238,9 @@ def product_summaries(db_path: Path, site: Path | None = None) -> list[dict]:
             "record_status": row["status"], "taxonomy": product.get("taxonomy"),
             "source_url": row["source_url"], "updated_at": row["updated_at"],
             "needs_review": bool(row.get("needs_review")),
-            "source_conflict": bool(row.get("source_conflict")),
+            # Display only conflicts that remain auditable in the saved card.
+            # Old opaque semantic warnings must not be presented as source facts.
+            "source_conflict": has_source_conflict(product),
             "published": product_id in published,
             "published_slug": published.get(product_id),
         })
