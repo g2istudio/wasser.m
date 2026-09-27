@@ -24,7 +24,7 @@ DEFAULT_DB = Path(r"C:\wasser-market-agent\data\wasser_market.db")
 STATE_PATH = ROOT / "data" / "agent-import-state.json"
 REPORT_PATH = ROOT / "data" / "agent-import-report.json"
 PROFILE_CONFIG_PATH = ROOT / "scripts" / "agent-runtime" / "config" / "product_profiles.json"
-RENDERER_VERSION = 3
+RENDERER_VERSION = 4
 
 FIELD_LABELS = {
     "system.technology": "Technologie",
@@ -199,6 +199,89 @@ def primary_image(product: dict, model: str) -> str:
     return normalized_url(item["url"])
 
 
+def brand_profile(product: dict, brand: str, model: str, source: str, brands: list[dict]) -> tuple[dict, bool]:
+    """Return an existing brand or prepare a verified, deterministic profile.
+
+    This only changes the in-memory catalog. Files are written later in apply mode,
+    so a dry run remains free of side effects.
+    """
+    brand_slug = slugify(brand)
+    existing = next((item for item in brands if item.get("slug") == brand_slug), None)
+    page_exists = (ROOT / "brands" / f"{brand_slug}.html").exists()
+    if existing and existing.get("logo") and page_exists:
+        logo = str(existing["logo"])
+        if logo.startswith("https://") or (ROOT / logo).is_file():
+            return existing, False
+
+    manufacturer = safe_field(product, "identity.manufacturer_name")
+    if not manufacturer or str(manufacturer["value"]).strip().casefold() != brand.casefold():
+        raise ValueError(f"brand profile requires matching manufacturer evidence: {brand_slug}")
+    evidence_urls = {str(item.get("source_url")) for item in manufacturer["evidence"]}
+    if source not in evidence_urls:
+        raise ValueError(f"brand profile manufacturer evidence does not match product source: {brand_slug}")
+
+    logo_data = nested(product, "identity.brand_logo")
+    logo_url = str(logo_data.get("url") or "")
+    logo_source = str(logo_data.get("source_url") or "")
+    logo_model = str(logo_data.get("product_model") or "")
+    if (urlparse(logo_url).scheme != "https" or logo_source != source
+            or logo_data.get("role") != "brand_logo"):
+        raise ValueError(f"brand profile requires an official HTTPS logo: {brand_slug}")
+    if logo_model and model.casefold() not in logo_model.casefold() and logo_model.casefold() not in model.casefold():
+        raise ValueError(f"brand logo belongs to another model: {brand_slug}")
+
+    parsed_source = urlparse(source)
+    website = f"{parsed_source.scheme}://{parsed_source.netloc}"
+    country_field = safe_field(product, "identity.manufacturer_country")
+    country = shown(country_field) if country_field else "—"
+    description = f"Hersteller von Wasseraufbereitungs- und Filtersystemen. Das Markenprofil wurde aus einer verifizierten Produktquelle angelegt."
+    payload = {
+        "slug": brand_slug, "name": brand, "country": country, "founded": None,
+        "website": website, "group": "Wasserfiltration", "description_de": description,
+        "description_en": "Manufacturer of water treatment and filtration systems.",
+        "products_count": 0, "rating": None, "logo": normalized_url(logo_url),
+        "description": description,
+    }
+    if existing is None:
+        brands.append(payload)
+        existing = payload
+    else:
+        for key, value in payload.items():
+            if key not in existing or existing[key] in (None, "", "—"):
+                existing[key] = value
+    return existing, True
+
+
+def render_brand_page(brand: dict) -> str:
+    name, slug = str(brand["name"]), str(brand["slug"])
+    logo = str(brand["logo"])
+    logo_url = logo if logo.startswith("https://") else "../" + logo.lstrip("./")
+    description = str(brand.get("description_de") or brand.get("description") or "Wasserfiltration")
+    template = read("brands/nu-aqua.html")
+    head = template[:template.index("<body")]
+    header = template[template.index("<body"):template.index("<main")]
+    footer = template[template.index("</main>") + 7:]
+    head = re.sub(r"<title>.*?</title>", f"<title>{esc(name)} – Wasserfilter &amp; Produkte</title>", head)
+    head = re.sub(r'<meta name="description"[^>]*>', f'<meta name="description" content="{esc(description)}">', head)
+    head = re.sub(r'<link rel="canonical"[^>]*>', f'<link rel="canonical" href="https://wasser.market/brands/{slug}">', head)
+    head = re.sub(r'<meta property="og:url"[^>]*>', f'<meta property="og:url" content="https://wasser.market/brands/{slug}">', head)
+    main = f'''<main><div class="container"><div class="breadcrumbs"><a href="../">Home</a> / <a href="../brands">Marken</a> / {esc(name)}</div><section class="brand-hero"><div class="brand-hero-primary"><div class="brand-hero-logo"><img src="{esc(logo_url)}" alt="{esc(name)} Logo"></div><div class="brand-hero-copy"><span class="badge">Wasserfiltration</span><h1>{esc(name)}</h1><p class="lead">{esc(description)}</p></div></div><aside class="brand-hero-details"><h2>Markenprofil</h2><dl><div><dt>Land</dt><dd>{esc(brand.get("country") or "—")}</dd></div><div><dt>Modelle</dt><dd>0</dd></div></dl><a class="btn primary" href="{esc(brand["website"])}" target="_blank" rel="nofollow noopener">Offizielle Website ↗</a></aside></section><section class="panel"><h2>Produkte in der Datenbank</h2><div class="product-grid"></div></section></div></main>'''
+    return head + header + main + footer
+
+
+def brand_directory_card(brand: dict) -> str:
+    logo = str(brand["logo"])
+    logo_url = logo if logo.startswith("https://") else "/" + logo.lstrip("./")
+    description = str(brand.get("description_de") or brand.get("description") or "Wasserfiltration")
+    country = str(brand.get("country") or "—")
+    return (f'<a class="brand-directory-card" href="/brands/{esc(brand["slug"])}" '
+            f'data-brand-name="{esc(str(brand["name"]).casefold())}" data-brand-country="{esc(country.casefold())}">'
+            f'<div class="brand-logo-wrap"><img src="{esc(logo_url)}" alt="{esc(brand["name"])} Logo" loading="lazy"></div>'
+            f'<div class="brand-card-body"><span class="badge">Wasserfiltration</span><h3>{esc(brand["name"])}</h3>'
+            f'<p>{esc(description)}</p><span class="brand-meta">{esc(country)} · 0 Modelle</span>'
+            '<span class="brand-link">Profil ansehen →</span></div></a>')
+
+
 def load_ready(db_path: Path) -> list[dict]:
     connection = sqlite3.connect(db_path)
     connection.row_factory = sqlite3.Row
@@ -271,7 +354,7 @@ def render_page(product: dict, record: dict, fields: dict) -> str:
     return head + header + main + footer
 
 
-def build_record(row: dict, products: list[dict]) -> tuple[dict, dict, bool]:
+def build_record(row: dict, products: list[dict], brands: list[dict] | None = None) -> tuple[dict, dict, bool, bool]:
     raw = row["product"]
     brand_field = safe_field(raw, "identity.brand")
     model_field = safe_field(raw, "identity.model")
@@ -289,12 +372,8 @@ def build_record(row: dict, products: list[dict]) -> tuple[dict, dict, bool]:
         raise ValueError(f"fewer than {minimum_fields} publishable evidenced fields")
     image = primary_image(raw, model)
     brand_slug = slugify(brand)
-    if not (ROOT / "brands" / f"{brand_slug}.html").exists():
-        raise ValueError(f"brand page is missing: {brand_slug}")
-    brands = json.loads(read("data/brands.json"))
-    brand_record = next((item for item in brands if item.get("slug") == brand_slug), None)
-    if not brand_record or not brand_record.get("logo"):
-        raise ValueError(f"brand logo is missing: {brand_slug}")
+    brand_catalog = brands if brands is not None else json.loads(read("data/brands.json"))
+    brand_record, brand_created = brand_profile(raw, brand, model, source, brand_catalog)
     brand_logo = str(brand_record["logo"])
     if not brand_logo.startswith("https://") and not (ROOT / brand_logo).is_file():
         raise ValueError(f"brand logo file is missing: {brand_logo}")
@@ -336,7 +415,7 @@ def build_record(row: dict, products: list[dict]) -> tuple[dict, dict, bool]:
         "source_hash": row["hash"], "checked_at": row["updated_at"][:10],
         "source_url": source, "fields": fields, "publication_status": "PUBLISH_READY",
     }
-    return target, fields, created
+    return target, fields, created, brand_created
 
 
 def main() -> int:
@@ -351,6 +430,7 @@ def main() -> int:
 
     state = json.loads(STATE_PATH.read_text(encoding="utf-8")) if STATE_PATH.exists() else {"schema_version": 1, "products": {}}
     products = json.loads(read("data/products.json"))
+    brands = json.loads(read("data/brands.json"))
     original = copy.deepcopy(products)
     ready = load_ready(args.db)
     if args.ids:
@@ -371,15 +451,17 @@ def main() -> int:
     pending = pending[:max(args.limit, 0)]
 
     accepted, rejected = [], []
-    rendered = {}
+    rendered, new_brand_slugs = {}, set()
     for key, row in pending:
         try:
-            target, fields, created = build_record(row, products)
+            target, fields, created, brand_created = build_record(row, products, brands)
             if created:
                 if any(p["id"] == target["id"] or p["slug"] == target["slug"] for p in products):
                     raise ValueError("slug collision")
                 products.append(target)
             rendered[target["id"]] = render_page(target, row, fields)
+            if brand_created:
+                new_brand_slugs.add(target["brandSlug"])
             accepted.append({"source_id": row["id"], "brand": row["brand"], "model": row["model"], "action": "create" if created else "update", "target_id": target["id"]})
         except Exception as error:
             rejected.append({"source_id": row["id"], "brand": row["brand"], "model": row["model"], "error": str(error)})
@@ -407,6 +489,25 @@ def main() -> int:
     if len({p["id"] for p in products}) != len(products) or len({p["slug"] for p in products}) != len(products):
         raise SystemExit("Duplicate id or slug after import")
     dump("data/products.json", products)
+    for brand in brands:
+        if brand["slug"] in new_brand_slugs:
+            write(f'brands/{brand["slug"]}.html', render_brand_page(brand))
+    if new_brand_slugs:
+        logo_sources = json.loads(read("data/brand-logo-sources.json"))
+        for brand in brands:
+            if brand["slug"] in new_brand_slugs:
+                logo_sources[brand["slug"]] = {
+                    "path": brand["logo"], "source": brand["logo"], "website": brand["website"],
+                }
+        dump("data/brand-logo-sources.json", logo_sources)
+        directory = read("brands.html")
+        for brand in brands:
+            if brand["slug"] in new_brand_slugs and f'href="/brands/{brand["slug"]}"' not in directory:
+                directory = directory.replace(
+                    '<div class="brand-directory-grid" id="brandDirectoryGrid">',
+                    '<div class="brand-directory-grid" id="brandDirectoryGrid">' + brand_directory_card(brand), 1,
+                )
+        write("brands.html", directory)
     for product_id, page in rendered.items():
         write(f"products/{product_id}.html", page)
 
@@ -425,7 +526,6 @@ def main() -> int:
     catalog = re.sub(r'(<p id="productResultText">).*?(</p>)', rf'\g<1>{len(products)} Produkte in der Datenbank\2', catalog)
     write("products.html", catalog)
 
-    brands = json.loads(read("data/brands.json"))
     for brand in brands:
         affected = [item for item in accepted if item["brand"].casefold() == brand["name"].casefold()]
         if not affected:

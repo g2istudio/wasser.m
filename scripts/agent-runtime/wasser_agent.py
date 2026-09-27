@@ -257,7 +257,8 @@ def publish(args) -> dict:
         command.append("-DryRun")
     completed = subprocess.run(command, cwd=args.site, text=True, capture_output=True)
     if completed.returncode:
-        raise RuntimeError(completed.stderr[-2000:] or "Publication command failed")
+        details = "\n".join(part.strip() for part in (completed.stdout[-3000:], completed.stderr[-3000:]) if part.strip())
+        raise RuntimeError(details or "Publication command failed")
     return {"transport": "git", "mode": "apply" if args.apply else "dry-run", "output": completed.stdout[-4000:]}
 
 
